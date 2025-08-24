@@ -1,7 +1,7 @@
 <template>
-  <SharedHeader />
-  <slot />
-  <SharedFooter />
+  <div>
+    hihih
+  </div>
 </template>
 
 <script lang="ts" setup>

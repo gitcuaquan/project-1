@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/index.css'],
   modules: ['@nuxt/icon'],
   icon: {
-    size: '24px',
     provider: 'iconify',
     serverBundle: false,
   }

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar  navbar-expand-md fixed-top">
+  <nav class="navbar   navbar-expand-md">
     <div class="container">
       <a class="navbar-brand" href="#">Offcanvas navbar</a>
       <button
@@ -28,7 +28,7 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -57,7 +57,7 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex mt-3" role="search">
+          <form class="d-flex mt-3 mt-md-0" role="search">
             <input
               class="form-control me-2"
               type="search"
