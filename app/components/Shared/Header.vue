@@ -1,79 +1,91 @@
 <template>
-  <nav class="navbar   navbar-expand-md">
-    <div class="container">
-      <a class="navbar-brand" href="#">Offcanvas navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
+  <header>
+    <div id="top-header"></div>
+    <div id="main-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- logo -->
+          <div class="col-3">
+            <nuxt-link to="/">
+              <img src="/images/logo-tapmed.png" class="w-100" alt="" />
+            </nuxt-link>
+          </div>
+          <div class="col-6">
+            <div class="d-flex mt-3 gap-2 flex-column w-100">
+              <!-- tìm kiếm -->
+              <form
+                class="position-relative bg-white d-flex align-items-center overflow-hidden w-100 p-1 border rounded mt-md-0"
+                role="search"
+              >
+                <input
+                  class="form-control form-control-sm me-2 border-0 shadow-none"
+                  type="search"
+                  placeholder="Tìm kiếm sản phẩm"
+                  aria-label="Search"
+                />
+                <div
+                  class="bg-white p-1 position-absolute top-0 end-0 h-100 d-flex align-items-center"
+                >
+                  <button
+                    class="btn btn-sm d-flex align-items-center justify-content-center h-100 py-2 px-2 btn-success"
+                    type="button"
+                  >
+                    <Search :size="16" />
+                  </button>
+                </div>
+              </form>
+              <!-- menu button -->
+              <ul class="list-inline" id="category-list">
+                <li class="list-inline-item">Thuốc |</li>
+                <li class="list-inline-item">Thực phẩm chức năng |</li>
+                <li class="list-inline-item">Thiết bị y tế |</li>
+                <li class="list-inline-item">Mĩ phẩm |</li>
+                <li class="list-inline-item">Cá nhân</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
-              </a>
+                Dropdown button
+              </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <form class="d-flex mt-3 mt-md-0" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
+    <div id="bottom-header"></div>
+  </header>
 </template>
 
 <script lang="ts" setup></script>
 
-<style></style>
+<style scoped>
+#category-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#category-list .list-inline-item {
+  font-size: 0.875rem;
+  cursor: pointer;
+  /* Add transition for hover effect */
+  transition: all 0.2s ease;
+  &:hover {
+    color: var(--bs-success);
+  }
+}
+
+</style>

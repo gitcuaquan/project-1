@@ -2,7 +2,7 @@
   <nav>
     <ul class="pagination gap-1 justify-content-end">
       <li class="page-item">
-        <Icon name="material-symbols:arrow-back-ios-new" />
+      <ChevronLeft :size="16" />
       </li>
       <li class="page-item ">1</li>
       <li class="page-item">2</li>
@@ -10,7 +10,7 @@
       <li class="page-item active">4</li>
       <li class="page-item">5</li>
       <li class="page-item">
-        <Icon name="material-symbols:arrow-forward-ios" />
+       <ChevronRight :size="16" />
       </li>
     </ul>
   </nav>
