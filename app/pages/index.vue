@@ -1,5 +1,7 @@
 <template>
-sda
+  <ClientOnly>
+    <HomeSlideBanner />
+  </ClientOnly>
 </template>
 
 <script lang="ts" setup></script>

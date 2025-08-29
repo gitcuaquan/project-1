@@ -2,9 +2,26 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  css: ['~/assets/css/index.css'],
+  css: ['~/assets/css/main.scss'],
   modules: ['nuxt-lucide-icons'],
+  app: {
+    head: {
+      title: 'Tap Med Pharmacy',
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Tap Med Pharmacy - Your trusted pharmacy' },
+      ],
+    },
+  },
   lucide: {
     namePrefix: '',
+  }, vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
+        },
+      }
+    }
   }
 })
