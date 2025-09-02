@@ -3,12 +3,14 @@
     hihih
   </div>
   <!-- Scroll to Top Button -->
-  <button v-if="showButton" class="btn rounded-circle " id="scroll-to-top">
+  <button v-if="showButton" @click="scrollToTop" class="btn rounded-circle " id="scroll-to-top">
     <ArrowBigUpDash :size="24" color="#189847" />
   </button>
 </template>
 
 <script lang="ts" setup>
+import { onMounted, ref } from 'vue';
+
 
 const showButton = ref(false);
 
@@ -23,6 +25,9 @@ function checkScroll() {
   } else {
     showButton.value = false;
   }
+}
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
 

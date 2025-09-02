@@ -84,7 +84,8 @@
                   <a
                     class="dropdown-item d-flex align-items-center gap-2"
                     style="font-size: 14px"
-                    href="#"
+                    role="button"
+                    @click="data.showModal.login = true"
                   >
                     <LogIn :size="16" />Đăng nhập
                   </a>
@@ -93,7 +94,8 @@
                   <a
                     class="dropdown-item d-flex align-items-center gap-2"
                     style="font-size: 14px"
-                    href="#"
+                    role="button"
+                    @click="data.showModal.register = true"
                     ><UserPlus :size="16" />
                     Đăng ký
                   </a>
@@ -157,10 +159,23 @@
       </div>
     </nav>
   </div>
+ <ClientOnly>
+   <SharedModalLogin v-if="data.showModal.login" @close="data.showModal.login = false"/>
+   <SharedModalRegister v-if="data.showModal.register" @close="data.showModal.register = false" />
+ </ClientOnly>
 </template>
 
 <script lang="ts" setup>
 const sizeIcon = ref(35);
+
+const data = reactive({
+  showModal:{
+    login: false,
+    register: false
+  }
+})
+
+provide("data", data);
 
 const categories = [
   "Thuốc",

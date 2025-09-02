@@ -1,0 +1,66 @@
+<template>
+  <div class="rounded-3 p-3 shared-module-upload ratio ratio-1x1">
+    <div  class="d-flex align-items-center justify-content-center w-100">
+      <label v-if="!data.urlTemp"
+        :for="id"
+        class="d-flex flex-column align-items-center justify-content-center text-center mb-0"
+      >
+        <FileUp :stroke-width="1" :size="48" />
+        <small class="text-muted"> Click để tải lên</small>
+      </label>
+      <div v-else>
+        <img :src="data.urlTemp" class="img-fluid rounded-3" />
+        <button
+          type="button"
+          class="btn btn-link link-danger p-0 position-absolute  top-0 end-0"
+          @click="data.urlTemp = ''; data.file = null"
+        >
+          <X :stroke-width="1" />
+        </button>
+      </div>
+    </div>
+    <input
+      :id="id"
+      type="file"
+      accept="image/*,.pdf"
+      @input="handleFileInput"
+      class="form-control d-none"
+    />
+  </div>
+</template>
+
+<script lang="ts" setup>
+const id = useId();
+
+const data = reactive({
+  file: null as File | null,
+  urlTemp: ""
+});
+
+function handleFileInput(event: Event) {
+  const input = event.target as HTMLInputElement;
+  const files = input.files;
+  if (files && files[0]) {
+    // Handle the selected files
+    data.file = files[0];
+    data.urlTemp = URL.createObjectURL(data.file);
+  }
+}
+</script>
+
+<style scoped>
+.shared-module-upload {
+  position: relative;
+  overflow: hidden;
+  border: 1px dashed #ced4da;
+}
+.shared-module-upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+</style>

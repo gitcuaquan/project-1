@@ -1,12 +1,10 @@
 <template>
-  <LayoutHeader />
-  <slot />
-  <LayoutFooter />
+  <div>
+    
+  </div>
 </template>
 
 <script lang="ts" setup>
-
-
 
 </script>
 
