@@ -1,17 +1,245 @@
 <template>
-  <div class="container">
+  <div class="container mt-4">
+    <!-- Product Header -->
     <div class="row">
-      <div class="col-6">
-        
+      <div class="col-12">
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge bg-danger me-2 px-3 py-2 rounded-pill">
+            <i class="fas fa-crown me-1"></i>
+            CHÍNH HÃNG
+          </span>
+          <span class="badge bg-warning text-dark px-2 py-1 rounded">Trả cứu</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Product Section -->
+    <div class="row">
+      <!-- Product Images -->
+      <div class="col-lg-5 col-md-6">
+        <div class="position-relative">
+          <div class="main-image-container mb-3">
+            <img 
+              :src="selectedImage" 
+              alt="Ashami Gold" 
+              class="img-fluid rounded shadow-sm main-product-image"
+            />
+            <button 
+              class="btn btn-light position-absolute top-50 end-0 translate-middle-y me-2 rounded-circle"
+              style="width: 40px; height: 40px;"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          
+          <!-- Thumbnail Images -->
+          <div class="row g-2">
+            <div class="col-3" v-for="(image, index) in productImages" :key="index">
+              <img 
+                :src="image" 
+                alt="Product thumbnail"
+                class="img-fluid rounded border thumbnail-image"
+                :class="{ 'border-primary border-2': selectedImage === image }"
+                @click="selectedImage = image"
+                style="cursor: pointer; height: 80px; object-fit: cover;"
+              />
+            </div>
+          </div>
+          
+          <p class="text-muted mt-2 small">Màu mã sản phẩm có thể thay đổi theo lô hàng</p>
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div class="col-lg-7 col-md-6">
+        <div class="product-info">
+          <!-- Brand -->
+          <p class="text-muted mb-2">Thương hiệu: <span class="text-primary fw-bold">VKENKO</span></p>
+          
+          <!-- Product Title -->
+          <h1 class="h3 fw-bold mb-3 text-dark">
+            VIÊN UỐNG HỖ TRỢ CẢI THIỆN TINH TRẠNG LO ÂU, CẢI THIỆN GIẤC NGỦ ASHAMI GOLD VKENKO 60V
+          </h1>
+
+          <!-- Rating and Reviews -->
+          <div class="d-flex align-items-center mb-3">
+            <span class="text-muted me-2">00049150</span>
+            <div class="me-3">
+              <i class="fas fa-star text-warning"></i>
+              <span class="fw-bold">5</span>
+            </div>
+            <span class="text-muted me-3">5 đánh giá</span>
+            <span class="text-muted">21 bình luận</span>
+          </div>
+
+          <!-- Price -->
+          <div class="price-section mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <h2 class="h2 text-primary fw-bold mb-0 me-3">937.500đ</h2>
+              <span class="text-muted">/ Hộp</span>
+            </div>
+            <p class="text-muted text-decoration-line-through mb-3">1.250.000đ</p>
+          </div>
+
+          <!-- Product Details Table -->
+          <div class="table-responsive mb-4">
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td class="text-muted py-2" style="width: 40%;">Chọn đơn vị tính</td>
+                  <td class="py-2">
+                    <button class="btn btn-outline-primary btn-sm rounded-pill">Hộp</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-muted py-2">Tên chính hãng</td>
+                  <td class="py-2">Thực phẩm bảo vệ sức khỏe ASHAMI GOLD</td>
+                </tr>
+                <tr>
+                  <td class="text-muted py-2">Danh mục</td>
+                  <td class="py-2">
+                    <span class="badge bg-light text-primary">Thần kinh não</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-muted py-2">Số đăng ký</td>
+                  <td class="py-2">548/2025/ĐKSP</td>
+                </tr>
+                <tr>
+                  <td class="text-muted py-2">Dạng bào chế</td>
+                  <td class="py-2">Viên nang cứng</td>
+                </tr>
+                <tr>
+                  <td class="text-muted py-2">Quy cách</td>
+                  <td class="py-2">Hộp 60 Viên</td>
+                </tr>
+                <tr>
+                  <td class="text-muted py-2">Xuất xứ thương hiệu</td>
+                  <td class="py-2">Nhật Bản</td>
+                </tr>
+                <tr>
+                  <td class="text-muted py-2">Nhà sản xuất</td>
+                  <td class="py-2">GENSEI CO.,LTD</td>
+                </tr>
+                <tr>
+                  <td class="text-muted py-2">Nước sản xuất</td>
+                  <td class="py-2">Nhật Bản</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Certificate Link -->
+          <div class="mb-4">
+            <a href="#" class="text-primary text-decoration-none">
+              <i class="fas fa-certificate me-1"></i>
+              Xem giấy công bố sản phẩm
+            </a>
+          </div>
+
+          <!-- Ingredients -->
+          <div class="ingredients-section">
+            <h6 class="fw-bold mb-3">Thành phần</h6>
+            <p class="small text-muted">
+              Hoa cúc tím, Y-amino-butyric acid, 
+              <span class="text-primary">Chùm ngây</span>, 
+              <span class="text-primary">L-theanine</span>, 
+              Chiết xuất lá dâu tằm, 
+              <span class="text-primary">Hoa hiên</span>, 
+              <span class="text-primary">Glycine</span>, 
+              <span class="text-primary">L-Tryptophan</span>, 
+              Dầu cá tinh luyện, Dầu cây Ban Âu, 
+              <span class="text-primary">Tầm sen</span>, 
+              Rễ nữ lang, Hoa cúc vàng, Lò hội, Bột chiết xuất từ hạt đậu mèo rừng, Lá la bô ma, 
+              <span class="text-primary">Nhan Sâm</span>, 
+              <span class="text-primary">Đông trùng hạ thảo</span>, 
+              <span class="text-primary">Vitamin B1</span>, 
+              <span class="text-primary">Vitamin B2</span>, 
+              Vitamin B6, Chiết xuất hoa nghệ tây
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
+import { ref } from 'vue'
 
+// Product images
+const productImages = ref([
+  'https://placehold.co/800x800/000000/309272.png', // Main product image
+  'https://placehold.co/800x800/000000/309272.png', // Package front
+  'https://placehold.co/800x800/000000/309272.png', // Package back with details
+  'https://placehold.co/800x800/000000/309272.png'  // Certificate or additional info
+])
+
+const selectedImage = ref(productImages.value[0])
+
+// SEO Meta
+useHead({
+  title: 'Viên uống hỗ trợ cải thiện tinh trạng lo âu ASHAMI GOLD VKENKO 60V',
+  meta: [
+    {
+      name: 'description',
+      content: 'Thực phẩm bảo vệ sức khỏe ASHAMI GOLD giúp cải thiện tinh trạng lo âu và giấc ngủ. Xuất xứ Nhật Bản, hộp 60 viên.'
+    }
+  ]
+})
 </script>
 
-<style>
+<style scoped>
+.main-product-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
+.thumbnail-image {
+  transition: all 0.3s ease;
+}
+
+.thumbnail-image:hover {
+  transform: scale(1.05);
+  border-color: var(--bs-primary) !important;
+}
+
+.price-section .h2 {
+  font-size: 2.5rem;
+}
+
+.badge.bg-danger {
+  background: linear-gradient(45deg, #dc3545, #ff6b7a) !important;
+}
+
+.table td {
+  border: none;
+  padding: 0.75rem 0.5rem;
+}
+
+.table tr:not(:last-child) {
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.ingredients-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--bs-primary);
+}
+
+@media (max-width: 768px) {
+  .main-product-image {
+    height: 300px;
+  }
+  
+  .price-section .h2 {
+    font-size: 2rem;
+  }
+  
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+}
 </style>
