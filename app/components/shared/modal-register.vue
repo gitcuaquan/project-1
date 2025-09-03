@@ -5,8 +5,13 @@
     >
       <div class="modal-content">
         <div class="modal-body">
-          <div class="text-end">
-            <X data-bs-dismiss="modal" role="button" :stroke-width="1" />
+          <div class="position-absolute top-0 end-0 m-3">
+            <button
+              data-bs-dismiss="modal"
+              class="btn btn-light ms-auto btn-sm rounded-circle px-1 shadow-sm"
+            >
+              <X :stroke-width="1" />
+            </button>
           </div>
           <div class="text-center mb-3">
             <!-- <img src="/images/logo-tapmed.png" style="width: 200px" alt="" /> -->
@@ -14,11 +19,13 @@
               Đăng ký thành viên
             </h4>
             <p class="text-muted">
-              Đăng ký làm thành viên để nhận được nhiều khuyến mãi hấp dẫn và
-              theo dõi đơn hàng của bạn.
+              <small
+                >Đăng ký làm thành viên để nhận được nhiều khuyến mãi hấp dẫn và
+                theo dõi đơn hàng của bạn.</small
+              >
             </p>
           </div>
-          <form class="row g-3">
+          <form class="row gy-1 gx-3">
             <div class="col-12 col-md-6">
               <label for="name" class="form-label">Họ và tên</label>
               <input
@@ -61,23 +68,11 @@
             </div>
             <div class="col-12 col-md-6">
               <label for="city" class="form-label">Thành phố</label>
-              <input
-                type="text"
-                class="form-control"
-                required
-                id="city"
-                placeholder="Nhập thành phố"
-              />
+              <SharedAddressCity v-model="citySelect" />
             </div>
             <div class="col-12 col-md-6">
               <label for="ward" class="form-label">Xã phường</label>
-              <input
-                type="text"
-                class="form-control"
-                required
-                id="ward"
-                placeholder="Nhập xã phường"
-              />
+              <SharedAddressWard :city-code="citySelect?.code" />
             </div>
             <div class="col-12">
               <label for="address" class="form-label">Địa chỉ</label>
@@ -122,6 +117,7 @@
 
 <script lang="ts" setup>
 import { Modal } from "bootstrap";
+import type { ProjectConfig } from "~/model";
 const modalInstance = ref<Modal | null>(null);
 
 const emit = defineEmits(["close"]);
@@ -131,6 +127,9 @@ const dataInject = inject<{
     register: boolean;
   };
 }>("data");
+
+const citySelect = ref<ProjectConfig.CitySetting | null>(null);
+
 onMounted(() => {
   initModal();
 });

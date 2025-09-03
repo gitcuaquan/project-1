@@ -40,6 +40,11 @@ function scrollToTop() {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  
+}
+@media screen and (max-width: 768px) {
+  #scroll-to-top {
+    bottom: 20%;
+    right: 10px;
+  }
 }
 </style>

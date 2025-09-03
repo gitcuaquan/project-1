@@ -3,7 +3,7 @@
     <div  class="d-flex align-items-center justify-content-center w-100">
       <label v-if="!data.urlTemp"
         :for="id"
-        class="d-flex flex-column align-items-center justify-content-center text-center mb-0"
+        class="d-flex stretched-link flex-column align-items-center justify-content-center text-center mb-0"
       >
         <FileUp :stroke-width="1" :size="48" />
         <small class="text-muted"> Click để tải lên</small>

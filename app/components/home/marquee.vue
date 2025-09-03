@@ -30,6 +30,9 @@ const props = withDefaults(defineProps<Props>(), {
 <style scoped>
 .logo-marquee {
   background: #fff;
+  & img{
+    object-fit: contain;
+  }
 }
 
 .marquee-track {
