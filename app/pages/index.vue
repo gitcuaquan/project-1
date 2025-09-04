@@ -2,7 +2,7 @@
   <ClientOnly>
     <HomeSlideBanner />
   </ClientOnly>
-  <div>
+  <div class="container my-5">
     <HomeMarquee :speed="25">
       <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
       <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
