@@ -32,7 +32,7 @@
         </td>
         <td style="width: 10px" class="d-none d-md-table-cell">
           <button class="btn btn-sm shadow-sm border border-dark btn-light">
-            <img src="/images/cart-add.svg" style="width: 15px" alt="" />
+           <PackagePlus :stroke-width="1" :size="16"/>
           </button>
         </td>
       </tr>

@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'btn-group bg-white rounded-1  overflow-hidden border border-dark',
+      'btn-group bg-white rounded-2  overflow-hidden border border-dark',
       size === 'sm' ? 'btn-group-sm' : '',
       size === 'lg' ? 'btn-group-lg' : '',
     ]"
