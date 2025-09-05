@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-4">
+  <div class="container mt-md-4">
     <!-- Product Header -->
     <div class="row">
       <div class="col-12">
@@ -7,10 +7,10 @@
       </div>
     </div>
     <!-- Main Product Section -->
-    <div class="row">
+    <div class="row bg-white pt-3 rounded">
       <!-- Product Images -->
       <div class="col-lg-5 col-md-6">
-        <div class="sticky-top" style="top: 80px; z-index: 0">
+        <div class="sticky-top" style="top: 50px; z-index: 0">
           <ProductModuleImg :images="productImages" />
 
           <p class="text-muted mt-2 small">
@@ -137,32 +137,18 @@
             </p>
           </div>
 
-          <div id="action" class="row mt-3  bg-white  align-items-center pb-3 g-3">
+          <div
+            id="action"
+            class="row mt-3 bg-white align-items-center pb-3 g-3"
+          >
             <div class="col-md-5">
               <div class="d-flex align-items-center gap-3">
                 <div>Chọn số lượng</div>
-                <div
-                  class="btn-group rounded-pill overflow-hidden border border-dark btn-group-sm"
-                  role="group"
-                  aria-label="Basic outlined example"
-                >
-                  <button type="button" class="btn btn-outline-dark border-0">
-                    <Minus :stroke-width="2" />
-                  </button>
-                  <input
-                    type="number"
-                    value="1"
-                    min="1"
-                    class="form-control input-number form-control-sm border-0 border-start border-end shadow-none text-center rounded-0"
-                  />
-                  <button type="button" class="btn btn-outline-dark border-0">
-                    <Plus :stroke-width="2" />
-                  </button>
-                </div>
+                <SharedModuleButton />
               </div>
             </div>
             <div class="col-md-6">
-              <button id="add-to-cart" class="btn btn-primary  btn-lg px-5">
+              <button id="add-to-cart" class="btn btn-primary btn-lg px-5">
                 Thêm vào giỏ hàng <ShoppingBag />
               </button>
             </div>
@@ -241,9 +227,9 @@ useHead({
     width: 100%;
   }
   #action {
-   position: sticky;
-   bottom: 0;
-   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   }
 }
 /* Hide number input arrows for Chrome, Safari, Edge, Opera */

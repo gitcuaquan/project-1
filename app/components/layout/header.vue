@@ -1,7 +1,7 @@
 <template>
   <div id="top-header"></div>
-  <div id="main-header">
-    <div class="container-md py-3 py-md-1">
+  <div id="main-header" class="bg-white">
+    <div class="container-md py-3 pb-2 py-md-1">
       <div class="row align-items-center justify-content-between">
         <div class="col-3 d-md-none d-block">
           <button
@@ -143,13 +143,13 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav py-0 py-md-2 gap-1 flex-grow-1 ps-md-3">
-               <li class="nav-item px-3 " >
+            <ul class="navbar-nav py-0 gap-1 flex-grow-1 ">
+               <li class="nav-item py-2 px-3 " >
                 <nuxt-link to="/" class="nav-link py-1" role="button">Trang chủ</nuxt-link>
               </li>
-              <li class="nav-item position-relative px-3 " v-for="value in menu">
+              <li class="nav-item py-2 position-relative px-3 " v-for="value in menu">
                 <nuxt-link :to="value.url" class="nav-link py-1" role="button">{{ value.name }}</nuxt-link>
-                <div v-if="value.hot" class="position-absolute top-0 end-0 translate-middle-y">
+                <div v-if="value.hot" class="position-absolute d-none d-md-block mt-2 top-0 end-0 translate-middle-y">
                   <img src="/images/icon-hot.webp" width="45" alt="">
                 </div>
               </li>
@@ -255,14 +255,11 @@ function checkWindowSize() {
   }
   /* hiệu ứng hover */
   &:hover {
-    background-color: rgba(var(--bs-primary-rgb), 0.075);
     .nav-link{
       color: var(--bs-primary);
     }
   }
-  &:has(.router-link-active){
-    background-color: rgba(var(--bs-primary-rgb), 0.1);
-  }
+  /* hiệu ứng active */
   .router-link-active{
     color: var(--bs-primary);
   }

@@ -52,15 +52,15 @@
         </div>
 
         <!-- Contact Information -->
-        <div class="col-lg-4 order-last order-md-2 col-md-6">
+        <div class="col-lg-4 ms-0 ms-md-auto order-last order-md-2 col-md-6">
           <div class="footer-section">
-            <h5 class="text-success mb-2 d-flex align-items-center">
+            <h5 class="text-success d-flex align-items-center">
               <MapPin :size="20" class="me-2" />
               Thông tin liên hệ
             </h5>
             <div class="contact-info">
               <!-- Headquarters -->
-              <div class="legal-item mb-2 p-3 rounded">
+              <div class="legal-item  p-3 rounded">
                 <div class="d-flex align-items-center mb-2">
                   <Building :size="16" class="text-success me-2" />
                   <h6 class="mb-0">Trụ sở chính</h6>
@@ -72,7 +72,7 @@
               </div>
 
               <!-- Showroom -->
-              <div class="legal-item mb-2 p-3 rounded">
+              <div class="legal-item  p-3 rounded">
                 <div class="d-flex align-items-center mb-2">
                   <Store :size="16" class="text-success me-2" />
                   <h6 class="mb-0">Showroom</h6>
@@ -109,7 +109,7 @@
         </div>
 
         <!-- Legal Information -->
-        <div class="col-lg-4 order-2 order-md-last col-md-12">
+        <div class="col-lg-3 order-2 order-md-last col-md-12">
           <div class="footer-section">
             <h5 class="text-success mb-2 d-flex align-items-center">
               <FileText :size="20" class="me-2" />
@@ -117,7 +117,7 @@
             </h5>
 
             <!-- Representative -->
-            <div class="legal-item mb-2 p-3 rounded">
+            <div class="legal-item p-3 rounded">
               <div class="d-flex align-items-center mb-2">
                 <User :size="16" class="text-success me-2" />
                 <h6 class="mb-0">Người đại diện</h6>
@@ -126,7 +126,7 @@
             </div>
 
             <!-- Business License -->
-            <div class="legal-item mb-2 p-3 rounded">
+            <div class="legal-item p-3 rounded">
               <div class="d-flex align-items-center mb-2">
                 <Award :size="16" class="text-success me-2" />
                 <h6 class="mb-0">Giấy CN ĐKDN</h6>
@@ -139,7 +139,7 @@
             </div>
 
             <!-- Business Permit -->
-            <div class="legal-item mb-2 p-3 rounded">
+            <div class="legal-item  p-3 rounded">
               <div class="d-flex align-items-center mb-2">
                 <Shield :size="16" class="text-success me-2" />
                 <h6 class="mb-0">Giấy phép kinh doanh</h6>
@@ -226,26 +226,7 @@ function scrollToTop() {
     right: 10px;
   }
 }
-/* .footer {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  position: relative;
-  overflow: hidden;
-} */
 
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--bs-success),
-    transparent
-  );
-}
 
 .footer-section {
   height: 100%;
@@ -275,18 +256,6 @@ function scrollToTop() {
   box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
 }
 
-.contact-item,
-.legal-item {
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-
-.contact-item:hover,
-.legal-item:hover {
-  border-color: var(--bs-success);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
 
 .contact-link {
   transition: all 0.3s ease;
