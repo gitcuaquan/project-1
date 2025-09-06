@@ -144,7 +144,7 @@
             <div class="col-md-5">
               <div class="d-flex align-items-center gap-3">
                 <div>Chọn số lượng</div>
-                <SharedModuleButton />
+                <UiBtnGroup />
               </div>
             </div>
             <div class="col-md-6">

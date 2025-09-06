@@ -11,43 +11,26 @@ interface Category {
 const props = defineProps<{
   categories: Category[];
 }>();
-
-// Quản lý trạng thái expand/collapse
-const expanded = ref<Set<number>>(new Set());
-
-const toggle = (id: number) => {
-  if (expanded.value.has(id)) {
-    expanded.value.delete(id);
-  } else {
-    expanded.value.add(id);
-  }
-};
 </script>
 
 <template>
-  <ul class="list-unstyled p-0">
-    <li v-for="cat in props.categories" :key="cat.id" class="mb-1">
+  <ul class="list-unstyled m-0 p-0">
+    <li v-for="cat in props.categories" :key="cat.id" class="mb-1 p-0">
       <div
-        :class="['d-flex align-items-center gap-1', { 'ps-4': !cat.children || cat.children?.length == 0 }]"
+        :class="[
+          'd-flex align-items-center gap-1',
+          { 'ps-4': !cat.children || cat.children?.length == 0 },
+        ]"
         role="button"
-        @click="toggle(cat.id)"
       >
-        <component
-          v-if="cat.children && cat.children.length"
-          :is="expanded.has(cat.id) ? ChevronDown : ChevronRight"
-          :size="16"
-        />
-        <Folder :size="16" class="text-primary" />
-        <span>{{ cat.name }}</span>
+        <small>{{ cat.name }}</small>
       </div>
 
       <!-- render children -->
-      <div :class="`ms-${cat.children && cat.children.length ? 3 : 0}`">
-        <CategoryTree
-          v-if="cat.children && cat.children.length && expanded.has(cat.id)"
-          :categories="cat.children"
-        />
-      </div>
+      <CategoryTree
+        v-if="cat.children && cat.children.length"
+        :categories="cat.children"
+      />
     </li>
   </ul>
 </template>
@@ -57,6 +40,7 @@ const toggle = (id: number) => {
   list-style: none;
   padding-left: 0;
 }
+
 .category-item {
   margin-bottom: 4px;
 }

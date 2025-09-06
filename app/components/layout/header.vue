@@ -265,4 +265,7 @@ function checkWindowSize() {
   }
 
 }
+.sticky-top{
+  z-index: 99999999999;
+}
 </style>

@@ -1,9 +1,9 @@
 <template>
   <table class="table align-middle mb-0 table-sm table-borderless">
     <tbody>
-      <tr v-for="value in 10" class="border-bottom" :key="value">
+      <tr v-for="value in 20" class="border-bottom" :key="value">
         <td>
-          <div class="ratio bg-light rounded ratio-1x1" style="width: 100px">
+          <div class="ratio z-low bg-light rounded ratio-1x1" style="width: 100px">
             <img src="/images/image-error.svg" alt="" />
           </div>
         </td>
@@ -24,7 +24,7 @@
             </small>
           </div>
           <div class="d-flex align-items-center mt-1 gap-2">
-            <SharedModuleButton  size="sm" />
+            <UiBtnGroup  size="sm" />
             <button class="btn btn-sm d-lg-none border border-dark  shadow-sm btn-light">
               <img src="/images/cart-add.svg" style="width: 15px" alt="" />
             </button>
@@ -56,5 +56,8 @@ small {
 .link-product:hover {
   color: var(--bs-primary) !important;
   text-decoration: underline !important;
+}
+.z-low{
+  z-index: 0 !important;
 }
 </style>
