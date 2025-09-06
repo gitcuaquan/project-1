@@ -1,11 +1,6 @@
 <template>
-  <div class="container mt-md-4">
-    <!-- Product Header -->
-    <div class="row">
-      <div class="col-12">
-        <SharedModuleBreadcrumb :data="breadcrumb" />
-      </div>
-    </div>
+  <SharedModuleBreadcrumb :data="breadcrumb" />
+  <div class="container mt-3">
     <!-- Main Product Section -->
     <div class="row bg-white pt-3 rounded">
       <!-- Product Images -->

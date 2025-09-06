@@ -29,6 +29,7 @@
   align-items: center;
   border-radius: 5px;
   overflow: hidden;
+  background: var(--bs-white);
   border: 1px solid #dee2e6;
 }
 .page-item:hover {

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row mt-4">
       <div class="col-3">
         <div class="product-category-tree">
           <h4 class="mb-3">Danh mục sản phẩm</h4>
@@ -10,6 +10,9 @@
             <ui-input-search v-model="test" loading />
           </div>
         </div>
+      </div>
+      <div class="col-4">
+        <news-item />
       </div>
     </div>
   </div>

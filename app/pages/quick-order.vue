@@ -1,9 +1,8 @@
 <template>
-  <div class="container mt-4">
+  <SharedModuleBreadcrumb :data="breadcrumb" />
+  <div class="container mt-3">
     <div class="row">
-      <div class="col-12">
-        <SharedModuleBreadcrumb :data="breadcrumb" />
-      </div>
+      <div class="col-12"></div>
     </div>
     <div class="row gy-2 gx-3">
       <div class="col-lg-3">
@@ -21,16 +20,19 @@
           <div class="card-header px-1 px-md-2 bg-white border-0">
             <div class="d-flex mt-2 gap-2 w-100">
               <UiInputSearch />
-              <div class="dropdown w-100">
+              <div class="dropdown-center ">
                 <button
-                  class="btn w-100 btn-secondary"
+                  class="btn w-100 text-nowrap btn-light border d-flex align-items-center justify-content-between"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown button
+                  Danh mục sản phẩm
                 </button>
-                <div class="dropdown-menu dropdown-menu-custom px-2 " style="width: 350px">
+                <div
+                  class="dropdown-menu ps-2 border-0 shadow dropdown-menu-custom px-2"
+                  style="width: 350px"
+                >
                   <OrderModuleFilter />
                 </div>
               </div>
@@ -161,14 +163,14 @@ const categories = [
 .z-height {
   z-index: 999999999;
 }
-.dropdown-menu-custom{
-  width: 400px !important;
+.dropdown-menu-custom {
+  width: 450px !important;
+  max-height: 400px;
   overflow-y: auto;
 }
 @media screen and (min-width: 768px) {
-  .dropdown-menu-custom{
-    width: 100% ;
+  .dropdown-menu-custom {
+    width: 100%;
   }
-  
 }
 </style>

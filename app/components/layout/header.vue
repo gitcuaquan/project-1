@@ -122,7 +122,7 @@
   </div>
   <div id="bottom-header" class="sticky-top">
     <nav class="navbar py-0 bg-light shadow-sm navbar-expand-md">
-      <div class="container">
+      <div class="container ps-1">
         <div
           class="offcanvas offcanvas-start"
           tabindex="-1"
@@ -142,9 +142,9 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
+          <div class="offcanvas-body ">
             <ul class="navbar-nav py-0 gap-1 flex-grow-1 ">
-               <li class="nav-item py-2 px-3 " >
+               <li class="nav-item py-2 px-3 ps-lg-0" >
                 <nuxt-link to="/" class="nav-link py-1" role="button">Trang chủ</nuxt-link>
               </li>
               <li class="nav-item py-2 position-relative px-3 " v-for="value in menu">
