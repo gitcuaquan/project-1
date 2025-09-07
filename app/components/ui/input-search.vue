@@ -5,7 +5,7 @@
       class="form-control border-0 pe-4 shadow-none w-100"
       :disabled="loading"
       v-model="keyword"
-      placeholder="Tìm kiếm sản phẩm"
+      :placeholder="placeholder"
     />
     <div
       role="button"
@@ -38,6 +38,10 @@ const props = defineProps({
   loading: {
     type: Boolean,
     default: false,
+  },
+  placeholder: {
+    type: String,
+    default: "Tìm kiếm sản phẩm",
   },
 });
 const emit = defineEmits(["submit"]);

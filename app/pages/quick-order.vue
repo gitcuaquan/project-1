@@ -11,29 +11,37 @@
           style="top: 60px"
         >
           <div class="card-body p-2 p-2">
-            <OrderModuleFilter />
+            <!-- <OrderModuleFilter /> -->
           </div>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="card bg-white border-0 shadow-sm">
-          <div class="card-header px-1 px-md-2 bg-white border-0">
+          <div class="card-header px-1 py-1 px-md-2 bg-white border-0">
             <div class="d-flex mt-2 gap-2 w-100">
               <UiInputSearch />
-              <div class="dropdown-center ">
+              <div class="dropdown">
                 <button
-                  class="btn w-100 text-nowrap btn-light border d-flex align-items-center justify-content-between"
+                  class="btn w-100 text-nowrap d-flex gap-1 align-items-center btn-outline-dark border"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Danh mục sản phẩm
+                  <BookOpenText :stroke-width="1" />
+                  <span class="d-none d-md-block"> Danh mục</span>
                 </button>
                 <div
-                  class="dropdown-menu ps-2 border-0 shadow dropdown-menu-custom px-2"
-                  style="width: 350px"
+                  class="dropdown-menu ps-2 border-0 shadow dropdown-menu-custom "
                 >
-                  <OrderModuleFilter />
+                  <div class="p-2 px-1 ">
+                    <UiInputSearch
+                      placeholder="Tìm kiếm danh mục"
+                      v-model="categoriesKeyword"
+                    />
+                  </div>
+                  <div class="dropdown-list p-3 py-0">
+                    <UiTreeView :categories="categoriesFilter" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -67,6 +75,33 @@ import type { ProjectConfig } from "~/model";
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh" },
 ]);
+
+const categoriesKeyword = ref("");
+const categoriesFilter = computed(() => {
+  if (!categoriesKeyword.value) return categories;
+  const filterCategories = (cats: typeof categories): typeof categories => {
+    return cats
+      .map((cat) => {
+        const matchedChildren = cat.children
+          ? filterCategories(cat.children)
+          : [];
+        if (
+          cat.name
+            .toLowerCase()
+            .includes(categoriesKeyword.value.toLowerCase()) ||
+          matchedChildren.length
+        ) {
+          return {
+            ...cat,
+            children: matchedChildren,
+          };
+        }
+        return null;
+      })
+      .filter((cat) => cat !== null) as typeof categories;
+  };
+  return filterCategories(categories);
+});
 
 const categories = [
   {
@@ -163,14 +198,18 @@ const categories = [
 .z-height {
   z-index: 999999999;
 }
-.dropdown-menu-custom {
-  width: 450px !important;
+.dropdown-list {
   max-height: 400px;
   overflow-y: auto;
 }
-@media screen and (min-width: 768px) {
+.dropdown-menu-custom {
+  width: 500px;
+  overflow-y: auto;
+}
+@media screen and (max-width: 768px) {
   .dropdown-menu-custom {
-    width: 100%;
+    width: 400px !important;
+    margin: auto;
   }
 }
 </style>
