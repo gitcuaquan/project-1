@@ -1,0 +1,7734 @@
+[
+  {
+    "id": 2,
+    "label": "Công Ty Cổ Phần Dược Hậu Giang"
+  },
+  {
+    "id": 4,
+    "label": "Công Ty Cổ Phần Dược Phẩm Đồng Nai"
+  },
+  {
+    "id": 5,
+    "label": "Công Ty Cổ Phần Dược Phẩm Imexpharm"
+  },
+  {
+    "id": 6,
+    "label": "Công Ty Cổ Phần Dược Phẩm Thành Nam (Khánh Hội)"
+  },
+  {
+    "id": 7,
+    "label": "Công Ty Cổ Phần Dược Phẩm Trung Ương Vidipha"
+  },
+  {
+    "id": 8,
+    "label": "Công Ty Cổ Phần Hoá - Dược Phẩm Mekophar"
+  },
+  {
+    "id": 11,
+    "label": "Công Ty TNHH Dược Phẩm USA - N.I.C"
+  },
+  {
+    "id": 12,
+    "label": "Công Ty TNHH Liên Doanh Hasan - Dermapharm"
+  },
+  {
+    "id": 13,
+    "label": "Công Ty TNHH Liên Doanh Stellapharm"
+  },
+  {
+    "id": 14,
+    "label": "Công Ty TNHH Mediphar USA"
+  },
+  {
+    "id": 15,
+    "label": "Công Ty TNHH Dược Phẩm Đại Y"
+  },
+  {
+    "id": 16,
+    "label": "Công Ty Cổ Phần Dược Phẩm  Đại Uy"
+  },
+  {
+    "id": 17,
+    "label": "Công Ty Cổ Phần Dược Phẩm Phúc Vinh"
+  },
+  {
+    "id": 18,
+    "label": "Công ty TNHH Dược Phẩm Hoa Linh"
+  },
+  {
+    "id": 19,
+    "label": "Công Ty Cổ Phần Dược Phẩm Nam Hà"
+  },
+  {
+    "id": 20,
+    "label": "Công ty Cổ Phần Dược Phẩm OPC"
+  },
+  {
+    "id": 23,
+    "label": "Công Ty Cổ Phần Dược Phẩm Trường Thọ"
+  },
+  {
+    "id": 25,
+    "label": "Công Ty Cổ Phần Quốc Tế Abipha"
+  },
+  {
+    "id": 27,
+    "label": "CTCP Dược Thiết Bị Y Tế Đà Nẵng"
+  },
+  {
+    "id": 28,
+    "label": "Công Ty Cổ Phần Dược Phẩm BR Việt Nam"
+  },
+  {
+    "id": 29,
+    "label": "Công Ty TNHH Dược Phẩm An Thiên"
+  },
+  {
+    "id": 31,
+    "label": "Công Ty Cổ Phần Dược Phẩm Bến Tre"
+  },
+  {
+    "id": 32,
+    "label": "Công Ty Cổ Phần Dược Phẩm  Yên Bái"
+  },
+  {
+    "id": 34,
+    "label": "Công ty cổ phần dược phẩm Hải Dương"
+  },
+  {
+    "id": 35,
+    "label": "Công Ty Cổ Phần Armephaco"
+  },
+  {
+    "id": 37,
+    "label": "Công Ty Cổ Phần Dược Phẩm Trung Ương 1- Pharbaco"
+  },
+  {
+    "id": 39,
+    "label": "Công Ty Cổ Phần Dược Phẩm Vĩnh Phúc"
+  },
+  {
+    "id": 41,
+    "label": "CT TNHH TM và DP Gia Phát"
+  },
+  {
+    "id": 42,
+    "label": "Công ty cổ phần Dược Minh Hải"
+  },
+  {
+    "id": 43,
+    "label": "Công Ty Cổ Phần Dược Phẩm Việt Đức"
+  },
+  {
+    "id": 44,
+    "label": "Tổng Công ty Dược Việt Nam"
+  },
+  {
+    "id": 45,
+    "label": "Công ty TNHH Tuệ Linh"
+  },
+  {
+    "id": 46,
+    "label": "Công ty TNHH Zuellig"
+  },
+  {
+    "id": 47,
+    "label": "CT Dược Thiên Thành"
+  },
+  {
+    "id": 48,
+    "label": "Công Ty cổ phần  Dược Pha Nam (Merap)"
+  },
+  {
+    "id": 49,
+    "label": "Công Ty TNHH SX & TM Dược Phẩm Tâm Bình"
+  },
+  {
+    "id": 50,
+    "label": "Công ty cổ phần dược phẩm Phú Tín Hà Nội"
+  },
+  {
+    "id": 51,
+    "label": "Công ty cổ phần Pymepharco"
+  },
+  {
+    "id": 52,
+    "label": "Công Ty Cổ Phần Dược Phẩm Eco"
+  },
+  {
+    "id": 53,
+    "label": "CT TNHH DP Và TTBYT Hoàng Đức"
+  },
+  {
+    "id": 54,
+    "label": "CT CP Y Dược Phẩm VIMEDIMEX"
+  },
+  {
+    "id": 55,
+    "label": "Công Ty Cổ Phần Dược Phẩm Tân Á"
+  },
+  {
+    "id": 57,
+    "label": "Công ty Hoffmann - La Roche"
+  },
+  {
+    "id": 61,
+    "label": "Công ty Pfizer Việt Nam"
+  },
+  {
+    "id": 62,
+    "label": "Công ty TNHH Bayer Việt Nam"
+  },
+  {
+    "id": 63,
+    "label": "Công ty TNHH Raptakos Brett & Co"
+  },
+  {
+    "id": 65,
+    "label": "aa"
+  },
+  {
+    "id": 67,
+    "label": "CT Galderma Laboratories"
+  },
+  {
+    "id": 73,
+    "label": "Công Ty TNHH Ecolife"
+  },
+  {
+    "id": 74,
+    "label": "Công Ty Cổ Phần Dược Phẩm PQA"
+  },
+  {
+    "id": 75,
+    "label": "Công Ty TNHH Dược Phẩm  Đô Thành"
+  },
+  {
+    "id": 76,
+    "label": "CT CP DP Và TM Thành Công"
+  },
+  {
+    "id": 79,
+    "label": "Công Ty Cổ Phần Xuất Nhập Khẩu Y Tế Domesco"
+  },
+  {
+    "id": 81,
+    "label": "Công ty cổ phần dược phẩm TW2"
+  },
+  {
+    "id": 83,
+    "label": "Công ty TNHH Lava"
+  },
+  {
+    "id": 84,
+    "label": "Công Ty Cổ Phần LIPA PHARMACEUTICALSLTD"
+  },
+  {
+    "id": 85,
+    "label": "Học viện quân y"
+  },
+  {
+    "id": 87,
+    "label": "Công Ty TNHH VẠN XUÂN"
+  },
+  {
+    "id": 88,
+    "label": "Công  Ty Cổ Phần  Gamma Việt Nam"
+  },
+  {
+    "id": 90,
+    "label": "Công ty cổ phần dược phẩm AGIMEXPHARM"
+  },
+  {
+    "id": 91,
+    "label": "Công ty CP Dược Phẩm Ninh Bình - Việt Nam"
+  },
+  {
+    "id": 93,
+    "label": "Công ty TNHH Đông Nam Dược Bảo Long"
+  },
+  {
+    "id": 94,
+    "label": "Viet Phap Pharma"
+  },
+  {
+    "id": 97,
+    "label": "Công Ty Cổ Phần Santen Pharmaceutical Co., Ltd"
+  },
+  {
+    "id": 98,
+    "label": "Dược Thái Hưng"
+  },
+  {
+    "id": 99,
+    "label": "Công Ty TNHH Dược Phẩm Nhất Nhất"
+  },
+  {
+    "id": 100,
+    "label": "Trung Tâm Nghiên Cứu Ứng Dụng Sản Xuất Tpcn Học Viện Quân Y"
+  },
+  {
+    "id": 101,
+    "label": "Công ty dược phẩm MSD"
+  },
+  {
+    "id": 102,
+    "label": "Công Ty Cổ Phần Gedeon Richter"
+  },
+  {
+    "id": 103,
+    "label": "Công ty  cổ phần Kata việt nam"
+  },
+  {
+    "id": 104,
+    "label": "Công Ty Cổ Phần Traphaco"
+  },
+  {
+    "id": 105,
+    "label": "Dược Tâm Lan"
+  },
+  {
+    "id": 107,
+    "label": "UCB PHARMA SA"
+  },
+  {
+    "id": 108,
+    "label": "Công ty Hùng Phát"
+  },
+  {
+    "id": 109,
+    "label": "Công Ty Cổ Phần Dược Phẩm 3/2 - F.T Pharma"
+  },
+  {
+    "id": 110,
+    "label": "Công Ty TNHH A. Menarini Singapore"
+  },
+  {
+    "id": 113,
+    "label": "Công ty TNHH MTV sản xuất tinh dầu bé thơ"
+  },
+  {
+    "id": 114,
+    "label": "Công Ty Cổ Phần Dược Phẩm Khánh Hòa -Khapharco"
+  },
+  {
+    "id": 115,
+    "label": "Công ty TNHH tinh dầu xứ Huế"
+  },
+  {
+    "id": 116,
+    "label": "Công Ty TNHH Tư Vấn Y dược Quốc Tế IMC"
+  },
+  {
+    "id": 117,
+    "label": "Công Ty United Laboratories"
+  },
+  {
+    "id": 119,
+    "label": "Công Ty Cổ Phần Sản Xuất Trà Hùng Phát"
+  },
+  {
+    "id": 120,
+    "label": "Công ty tnhh mtv sản phẩm chăm sóc mẹ và bé"
+  },
+  {
+    "id": 121,
+    "label": "Probiotec Pharma Pty Ltd"
+  },
+  {
+    "id": 122,
+    "label": "Công Ty TNHH MTV Trà Tâm Lan"
+  },
+  {
+    "id": 123,
+    "label": "Công Ty Dược Phẩm ShinPoong Daewoo"
+  },
+  {
+    "id": 125,
+    "label": "Công ty tnhh mtv tinh dầu hoàng lịch"
+  },
+  {
+    "id": 126,
+    "label": "Công Ty Cổ Phần Dược Phẩm TW25"
+  },
+  {
+    "id": 127,
+    "label": "Công ty TNHH công nghệ dược phẩm Alaka"
+  },
+  {
+    "id": 129,
+    "label": "Công ty Cổ phần Dược phẩm Boston Việt Nam"
+  },
+  {
+    "id": 132,
+    "label": "Nam Anh Pharmapro"
+  },
+  {
+    "id": 134,
+    "label": "Công Ty Cổ Phần Dược Phẩm Trà Vinh"
+  },
+  {
+    "id": 135,
+    "label": "Sản xuất tại cơ sở Ngân Anh, Hậu Giang"
+  },
+  {
+    "id": 136,
+    "label": "Công ty TNHH TM DP Quốc Tế Minh Việt"
+  },
+  {
+    "id": 137,
+    "label": "Công ty TNHH SX - TM quốc tế Newtoday"
+  },
+  {
+    "id": 138,
+    "label": "Etex Pharm Inc. (Nước ngoài"
+  },
+  {
+    "id": 139,
+    "label": "Công ty CP Diana Unicharm"
+  },
+  {
+    "id": 140,
+    "label": "Công Ty TNHH Akum Drugs & Pharmaceuticals"
+  },
+  {
+    "id": 143,
+    "label": "Công ty CP Dược khoa – VIỆT NAM"
+  },
+  {
+    "id": 144,
+    "label": "Cachet Pharm Pvt"
+  },
+  {
+    "id": 145,
+    "label": "West-Ward Pharmaceuticals (Mỹ)"
+  },
+  {
+    "id": 146,
+    "label": "Công ty Redman quốc tế"
+  },
+  {
+    "id": 147,
+    "label": "Palmy Pharma"
+  },
+  {
+    "id": 148,
+    "label": "Công Ty Cổ Phần Dược Phẩm Thái Minh"
+  },
+  {
+    "id": 149,
+    "label": "Công Ty TNHH Thương Mại Dược Phẩm Đông Á"
+  },
+  {
+    "id": 151,
+    "label": "Công Ty Cổ Phần Dược Phẩm Và Thiết Bị Y Tế Đông Nam Á"
+  },
+  {
+    "id": 153,
+    "label": "Daiichi Sankyo Co., Ltd"
+  },
+  {
+    "id": 154,
+    "label": "Công ty Dược & trang thiết bị Y tế Bình Định (BIDIPHAR) - VIỆT NAM"
+  },
+  {
+    "id": 155,
+    "label": "Aristopharma., Ltd - BĂNG LA ĐÉT"
+  },
+  {
+    "id": 156,
+    "label": "CETECO"
+  },
+  {
+    "id": 157,
+    "label": "Micro Labs., Ltd - ẤN ĐỘ"
+  },
+  {
+    "id": 160,
+    "label": "Sophartex - PHÁP"
+  },
+  {
+    "id": 161,
+    "label": "Công ty TNHH sản xuất và phát triển thương mại Hướng Dương"
+  },
+  {
+    "id": 162,
+    "label": "CÔNG TY CP NGHIÊN CỨU VÀ ỨNG DỤNG THUỐC DÂN TỘC"
+  },
+  {
+    "id": 163,
+    "label": "Công ty cổ phần thương mại dược phẩm Quốc tế Á Châu"
+  },
+  {
+    "id": 165,
+    "label": "Công ty Raptakos Brett & Co., Ltd - Ấn Độ."
+  },
+  {
+    "id": 167,
+    "label": "Genome Pharmaceutical (Pvt) Ltd."
+  },
+  {
+    "id": 168,
+    "label": "Xí nghiệp dược phẩm 150"
+  },
+  {
+    "id": 169,
+    "label": "Công ty Cổ phần Dược Phẩm Hà Nam"
+  },
+  {
+    "id": 170,
+    "label": "Công ty cổ phần Dược phẩm Dược liệu Pharmedic - Việt Nam."
+  },
+  {
+    "id": 171,
+    "label": "Bouchara Recordati (Pháp)"
+  },
+  {
+    "id": 172,
+    "label": "Công ty cổ phần sinh học dược phẩm Ba Đình"
+  },
+  {
+    "id": 173,
+    "label": "Công  Ty TNHH  Dược Phẩm Phú Hải"
+  },
+  {
+    "id": 174,
+    "label": "Công ty tnhh dược mỹ phẩm Thanh mộc hương"
+  },
+  {
+    "id": 176,
+    "label": "Embil Fharmaco"
+  },
+  {
+    "id": 177,
+    "label": "Công ty cổ phần dược Medico"
+  },
+  {
+    "id": 178,
+    "label": "Công ty TNHH Đông Dược Phúc Hưng"
+  },
+  {
+    "id": 179,
+    "label": "Công Ty Cổ Phần Dược Hà Tĩnh - Hadiphar"
+  },
+  {
+    "id": 183,
+    "label": "Bệnh viện da liễu TP Hồ Chí Mnh"
+  },
+  {
+    "id": 184,
+    "label": "Công ty tnhh dược phẩm hà thành"
+  },
+  {
+    "id": 185,
+    "label": "Jomi - Nhật Bản"
+  },
+  {
+    "id": 187,
+    "label": "Công ty TNHH một thành viên Dược khoa-Trường Đại học Dược HN"
+  },
+  {
+    "id": 188,
+    "label": "Công ty TNHH MTV Dược phẩm DHG - VIỆT NAM"
+  },
+  {
+    "id": 190,
+    "label": "Novartis farma S.P.A Italy"
+  },
+  {
+    "id": 192,
+    "label": "Công ty TNHH thiết bị y tế Trường Mạnh BN"
+  },
+  {
+    "id": 193,
+    "label": "Công ty cổ phần Dược TW Huế Medipharco - VIỆT NAM"
+  },
+  {
+    "id": 194,
+    "label": "Công Ty TNHH Alcon Pharmaceuticals"
+  },
+  {
+    "id": 195,
+    "label": "Daewoong Hàn Quốc"
+  },
+  {
+    "id": 196,
+    "label": "Berlin Chemie AG - ĐỨC"
+  },
+  {
+    "id": 197,
+    "label": "Ý"
+  },
+  {
+    "id": 198,
+    "label": "Công Ty LLC Grotex Ltd – Solopharm – Nga."
+  },
+  {
+    "id": 200,
+    "label": "Công ty Dược phẩm Menarini"
+  },
+  {
+    "id": 202,
+    "label": "Công ty cp liên doanh dược phẩm Éloge France Việt Nam"
+  },
+  {
+    "id": 203,
+    "label": "Y học cổ truyền Đại Hồng Phúc"
+  },
+  {
+    "id": 204,
+    "label": "Cơ sở sản xuất thuốc YHCT Bà Giằng"
+  },
+  {
+    "id": 205,
+    "label": "Công Ty TNHH Dược Phẩm Hoa Sen"
+  },
+  {
+    "id": 206,
+    "label": "Công Ty TNHH Dược Phẩm Á Âu"
+  },
+  {
+    "id": 207,
+    "label": "Công Ty TNHH dược mỹ phẩm Nam Dương"
+  },
+  {
+    "id": 208,
+    "label": "Công ty Thiên Thanh"
+  },
+  {
+    "id": 209,
+    "label": "Nhà máy Nội Bài- Công ty TNHH Công nghệ Herbitech"
+  },
+  {
+    "id": 210,
+    "label": "Công ty tnhh Thai Nakorn Patana Việt Nam"
+  },
+  {
+    "id": 214,
+    "label": "Gedeon Richter Plc. Hungary"
+  },
+  {
+    "id": 216,
+    "label": "Công ty Tigi"
+  },
+  {
+    "id": 218,
+    "label": "Đức"
+  },
+  {
+    "id": 220,
+    "label": "Siu Guan Chem. Ind. Co., Ltd."
+  },
+  {
+    "id": 221,
+    "label": "Công ty dược phẩm Gia Nguyên"
+  },
+  {
+    "id": 223,
+    "label": "Janssen Korea"
+  },
+  {
+    "id": 225,
+    "label": "Công ty CP thiết bị y tế Vinahankook"
+  },
+  {
+    "id": 226,
+    "label": "New Life Farma Co., Ltd Thailand"
+  },
+  {
+    "id": 227,
+    "label": "Công ty cổ phần Dược DANAPHA"
+  },
+  {
+    "id": 228,
+    "label": "Công Ty  Wockhardt Limited"
+  },
+  {
+    "id": 229,
+    "label": "Công ty tnhh dầu tràm miền trung"
+  },
+  {
+    "id": 230,
+    "label": "Công ty Cổ phần Dược Vacopharm, Việt Nam"
+  },
+  {
+    "id": 231,
+    "label": "Công Ty Cadila Pharm"
+  },
+  {
+    "id": 235,
+    "label": "Công ty tnhh ICA Pharm"
+  },
+  {
+    "id": 236,
+    "label": "công ty cổ phần sinh học dược phẩm Biopro."
+  },
+  {
+    "id": 237,
+    "label": "Schering-Plough Labo N.V - BỈ"
+  },
+  {
+    "id": 238,
+    "label": "Pfizer(Mỹ)"
+  },
+  {
+    "id": 240,
+    "label": "Laboratoire Urgo Thái Lan"
+  },
+  {
+    "id": 241,
+    "label": "Trung Quốc"
+  },
+  {
+    "id": 243,
+    "label": "Delta Pharma Ltd"
+  },
+  {
+    "id": 244,
+    "label": "Công ty TNHH Quốc tế Doctor Care Việt Nam"
+  },
+  {
+    "id": 245,
+    "label": "S.C. Arena Group S.A. - RU MA NI"
+  },
+  {
+    "id": 247,
+    "label": "Dược 2/9"
+  },
+  {
+    "id": 249,
+    "label": "công ty CP Dược phẩm MeDiSun"
+  },
+  {
+    "id": 250,
+    "label": "Công ty dược phẩm Minh Dân"
+  },
+  {
+    "id": 251,
+    "label": "Công ty Pfizer Pharmaceuticals LLC - PUERTO RICO"
+  },
+  {
+    "id": 252,
+    "label": "Công Ty Cổ Phần SPM"
+  },
+  {
+    "id": 253,
+    "label": "Công Ty Ever Neuro Pharma GmbH"
+  },
+  {
+    "id": 255,
+    "label": "Công Ty Dược becamex"
+  },
+  {
+    "id": 256,
+    "label": "Công Ty MSN Laboratories Limited"
+  },
+  {
+    "id": 257,
+    "label": "Công Ty Dược Phẩm GlaxoSmithKline"
+  },
+  {
+    "id": 258,
+    "label": "Công Ty Cổ Phần Dược Phẩm Tipharco"
+  },
+  {
+    "id": 259,
+    "label": "Công Ty S.R.S Pharma Pvt., Ltd - ẤN ĐỘ"
+  },
+  {
+    "id": 260,
+    "label": "Công Ty Hoe Pharmaceuticals Sdn. Bhd"
+  },
+  {
+    "id": 261,
+    "label": "Công Ty Casco Bay Molding"
+  },
+  {
+    "id": 262,
+    "label": "Công Ty TNHH ADC - Việt Nam"
+  },
+  {
+    "id": 263,
+    "label": "Công Ty Ferron Par Pharmaceuticals"
+  },
+  {
+    "id": 264,
+    "label": "Công Ty NeoCell Corporation, Ltd, USA"
+  },
+  {
+    "id": 266,
+    "label": "Công Ty Kruger GmbH&Co.KG."
+  },
+  {
+    "id": 267,
+    "label": "Công Ty TNHH Dược Phẩm Mê Linh - Meliphar"
+  },
+  {
+    "id": 268,
+    "label": "Công Ty TNHH Good Healthy Việt Nam"
+  },
+  {
+    "id": 269,
+    "label": "Công Ty TNHH TM Asia Pharmacy - Apco"
+  },
+  {
+    "id": 270,
+    "label": "Công Ty TNHH MTV Vắc Xin Paster Đà Lạt - Davac"
+  },
+  {
+    "id": 271,
+    "label": "Công Ty TNHH Đông Dược An Triệu"
+  },
+  {
+    "id": 272,
+    "label": "Công Ty Merz Co. GmbH & Co"
+  },
+  {
+    "id": 273,
+    "label": "Công Ty Cổ Phần Liworldco"
+  },
+  {
+    "id": 274,
+    "label": "Công ty cổ phần Dược S. Pharm."
+  },
+  {
+    "id": 276,
+    "label": "Công Ty TNHH Thiên Dược"
+  },
+  {
+    "id": 277,
+    "label": "Công Ty Cổ Phần Dược Phẩm Hà Tây"
+  },
+  {
+    "id": 279,
+    "label": "Công ty UNITED PHARMA – Việt Nam – VIỆT NAM"
+  },
+  {
+    "id": 280,
+    "label": "Công Ty TNHH Công Nghệ Dược Phẩm Lotus"
+  },
+  {
+    "id": 281,
+    "label": "Công ty Dược phẩm Sandoz GmbH"
+  },
+  {
+    "id": 282,
+    "label": "Công Ty TNHH Actavis International"
+  },
+  {
+    "id": 283,
+    "label": "Công ty TNHH Chế biến dầu thực vật và thực phẩm Việt Nam"
+  },
+  {
+    "id": 285,
+    "label": "Nhật Bản"
+  },
+  {
+    "id": 286,
+    "label": "Công ty TNHH Dược phẩm Tradiphar."
+  },
+  {
+    "id": 287,
+    "label": "T.Man pharma limited partnership - thái lan"
+  },
+  {
+    "id": 288,
+    "label": "Continental – Pharm Co., Ltd ThaiLand"
+  },
+  {
+    "id": 289,
+    "label": "Saga Laboratories Ấn Độ"
+  },
+  {
+    "id": 290,
+    "label": "Mjudola_pharma"
+  },
+  {
+    "id": 291,
+    "label": "MEDICE Arzneimittel Putter GmbH & Co. KG"
+  },
+  {
+    "id": 292,
+    "label": "contract-manufacturing-packaging-services-pty-ltd"
+  },
+  {
+    "id": 293,
+    "label": "Công Ty TNHH Dae Hwa Pharmaceutical"
+  },
+  {
+    "id": 294,
+    "label": "Công ty tnhh dược phẩm Detapham Việt Nam"
+  },
+  {
+    "id": 295,
+    "label": "Công Ty TNHH Servier"
+  },
+  {
+    "id": 296,
+    "label": "Công Ty Leo Laboratories Limited"
+  },
+  {
+    "id": 297,
+    "label": "Thụy Sĩ"
+  },
+  {
+    "id": 298,
+    "label": "Công Ty Cổ Phần Dược Phẩm Janssen Việt Nam"
+  },
+  {
+    "id": 299,
+    "label": "Công Ty TNHH Dược Phẩm Hải Linh"
+  },
+  {
+    "id": 300,
+    "label": "Công Ty TNHH Raptakos Brett & Co"
+  },
+  {
+    "id": 301,
+    "label": "Dược phẩm Janssen Bỉ"
+  },
+  {
+    "id": 302,
+    "label": "Mỹ (USA)"
+  },
+  {
+    "id": 303,
+    "label": "Công ty Cổ phần Vật tư Y tế Hà Nội"
+  },
+  {
+    "id": 304,
+    "label": "Công ty cổ phần dược phẩm Sao Kim"
+  },
+  {
+    "id": 305,
+    "label": "ZHMIF GMBH - Germany."
+  },
+  {
+    "id": 306,
+    "label": "Bal Pharma ltd Ấn Độ"
+  },
+  {
+    "id": 307,
+    "label": "Bayer Schering Pharma"
+  },
+  {
+    "id": 309,
+    "label": "Bệnh VIện Bạch Mai"
+  },
+  {
+    "id": 311,
+    "label": "Hàn Quốc"
+  },
+  {
+    "id": 312,
+    "label": "Dược phẩm CPC1 Hà Nội"
+  },
+  {
+    "id": 315,
+    "label": "Công Ty TNHH Ðông Nam Dược Trường Sơn"
+  },
+  {
+    "id": 316,
+    "label": "Công Ty KOVIS PHARMA Co., Ltd"
+  },
+  {
+    "id": 317,
+    "label": "Công ty dược phẩm Thành Phát"
+  },
+  {
+    "id": 318,
+    "label": "Công ty cổ phần dược Ladophar - Lâm Đồng"
+  },
+  {
+    "id": 319,
+    "label": "Đại Học Y Thái Bình"
+  },
+  {
+    "id": 320,
+    "label": "ViVa PharmaCeutical"
+  },
+  {
+    "id": 322,
+    "label": "Zhejiang Hongyu Medical"
+  },
+  {
+    "id": 323,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUỐC TẾ DOLEXPHAR"
+  },
+  {
+    "id": 324,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC PHẨM – DƯỢC LIỆU HÀ NỘI"
+  },
+  {
+    "id": 325,
+    "label": "Công ty TNHH thương mại dược phẩm Khánh Minh"
+  },
+  {
+    "id": 326,
+    "label": "Công Ty Orkla Health AS"
+  },
+  {
+    "id": 327,
+    "label": "Công Ty TNHH Macleods Pharmaceutical"
+  },
+  {
+    "id": 328,
+    "label": "Công  Ty TNHH Daewoong  Pharmaceutical"
+  },
+  {
+    "id": 329,
+    "label": "Egis Pharmaceuticals Public Ltd., Co – Hungary"
+  },
+  {
+    "id": 330,
+    "label": "Công ty tnhh sản xuất DP công nghệ cao Nanofrance"
+  },
+  {
+    "id": 332,
+    "label": "Công ty tnhh Tân Hà Lan - Halaco"
+  },
+  {
+    "id": 333,
+    "label": "Công ty CP dược phẩm Vinapha"
+  },
+  {
+    "id": 334,
+    "label": "Farmak JSC - U CRAI NA"
+  },
+  {
+    "id": 335,
+    "label": "Genome pharmaceuticals"
+  },
+  {
+    "id": 336,
+    "label": "FAES FARMA, S.A - Tây Ban Nha"
+  },
+  {
+    "id": 337,
+    "label": "Troikaa Pharm., Ltd"
+  },
+  {
+    "id": 338,
+    "label": "Zorro Pharma"
+  },
+  {
+    "id": 339,
+    "label": "Unison Laboratories Co., Ltd"
+  },
+  {
+    "id": 340,
+    "label": "Công Ty Cổ Phần Dược Phẩm Phong Phú - PP Pharco"
+  },
+  {
+    "id": 341,
+    "label": "Công Ty Dược Phẩm Botania"
+  },
+  {
+    "id": 342,
+    "label": "Tatra - Sheng Chun Tang (Đài Loan)"
+  },
+  {
+    "id": 345,
+    "label": "BV Pharmar"
+  },
+  {
+    "id": 346,
+    "label": "Công Ty Cổ Phần Korea United Pharm"
+  },
+  {
+    "id": 347,
+    "label": "Công Ty TNHH Bayer Pharma AG"
+  },
+  {
+    "id": 348,
+    "label": "Bristol Myers Squibb – PHÁP"
+  },
+  {
+    "id": 349,
+    "label": "Italia"
+  },
+  {
+    "id": 350,
+    "label": "Công ty CP dược phẩm Quốc Tế Thăng Long – Việt Nam"
+  },
+  {
+    "id": 351,
+    "label": "Cty TNHH Medistar Việt Nam"
+  },
+  {
+    "id": 352,
+    "label": "Dongkwang Pharmac Co. ltd – Hàn Quốc"
+  },
+  {
+    "id": 353,
+    "label": "Bluepharma- Indústria Farmacêutical, S.A. - BỒ ĐÀO NHA"
+  },
+  {
+    "id": 354,
+    "label": "Trường Thọ pharma"
+  },
+  {
+    "id": 355,
+    "label": "Xí nghiệp Dược phẩm & Sinh học Y tế (MEBIPHAR) TP Hồ Chí Minh - VIỆT NAM"
+  },
+  {
+    "id": 356,
+    "label": "công ty Macleods Pharmaceuticals Ltd."
+  },
+  {
+    "id": 357,
+    "label": "Gracure Pharmaceuticals Ltd - ẤN ĐỘ"
+  },
+  {
+    "id": 359,
+    "label": "Công Ty TNHH Besins Healthcare (Thailan)"
+  },
+  {
+    "id": 360,
+    "label": "Công Ty TNHH Quốc Tế Unilever Việt Nam"
+  },
+  {
+    "id": 361,
+    "label": "Công Ty TNHH Sản Xuất Và Thương Mại Phương Liên"
+  },
+  {
+    "id": 362,
+    "label": "Ban Mê Thuột"
+  },
+  {
+    "id": 363,
+    "label": "Công Ty TNHH Dược Phẩm Tâm Việt"
+  },
+  {
+    "id": 364,
+    "label": "mỹ phẩm Hân Vy"
+  },
+  {
+    "id": 365,
+    "label": "Công Ty TNHH Thương Mại Hoàng Tuấn"
+  },
+  {
+    "id": 368,
+    "label": "P.T Tempo Scan Pacific - Indonesia"
+  },
+  {
+    "id": 370,
+    "label": "Unique Pharma Laboratories - ẤN ĐỘ"
+  },
+  {
+    "id": 375,
+    "label": "KRKA, D.D, Novo Mesto, Slovenia"
+  },
+  {
+    "id": 376,
+    "label": "Công ty TNHH Mỹ Phẩm Hảo Sâm"
+  },
+  {
+    "id": 377,
+    "label": "Hoa Kỳ"
+  },
+  {
+    "id": 378,
+    "label": "CÔNG TY CP DƯỢC PHẨM UNITECHPHARM VIỆT NAM"
+  },
+  {
+    "id": 379,
+    "label": "Baxter Oncology GmbH"
+  },
+  {
+    "id": 380,
+    "label": "Pháp"
+  },
+  {
+    "id": 381,
+    "label": "Công ty Novartis Pharm UK., Ltd - Anh"
+  },
+  {
+    "id": 382,
+    "label": "Boni"
+  },
+  {
+    "id": 385,
+    "label": "Robinson Pharma - Việt Nam"
+  },
+  {
+    "id": 386,
+    "label": "Công Ty TNHH YuHan"
+  },
+  {
+    "id": 387,
+    "label": "Dược Minh Phú"
+  },
+  {
+    "id": 388,
+    "label": "Công Ty Cổ Phần Dược Khoa"
+  },
+  {
+    "id": 389,
+    "label": "Công ty TNHH Hoffmann-La Roche"
+  },
+  {
+    "id": 391,
+    "label": "Công ty TNHH TM và SX Bạch Dương Organic"
+  },
+  {
+    "id": 392,
+    "label": "BNP"
+  },
+  {
+    "id": 393,
+    "label": "Công Ty Dược Phẩm GlaxoSmithKline (GSK)"
+  },
+  {
+    "id": 395,
+    "label": "Công Ty TNHH Dược Phẩm Thiên Ân"
+  },
+  {
+    "id": 397,
+    "label": "Bilim ilac Sanayii Ve Ticaret AS - Thổ Nhĩ Kỳ"
+  },
+  {
+    "id": 398,
+    "label": "ĐÀI LOAN"
+  },
+  {
+    "id": 399,
+    "label": "Samchundang Pharm Co., Ltd -  Hàn Quốc"
+  },
+  {
+    "id": 400,
+    "label": "Công Ty HUNAN LUZHOU HUIKANG DEVELOPMENT Co.,Ltd"
+  },
+  {
+    "id": 401,
+    "label": "Hutecs Korea Pharmaceutical"
+  },
+  {
+    "id": 402,
+    "label": "Công Ty Gedeon Richter"
+  },
+  {
+    "id": 404,
+    "label": "Công ty mỹ phẩm Đăng Dương"
+  },
+  {
+    "id": 405,
+    "label": "Công Ty Synmosa Biopharma Corp"
+  },
+  {
+    "id": 407,
+    "label": "Unique Pharmaceuticals Laboratories"
+  },
+  {
+    "id": 408,
+    "label": "Công Ty TNHH Dược Phẩm Việt Phú"
+  },
+  {
+    "id": 409,
+    "label": "CHI NHÁNH CÔNG TY TNHH DƯỢC PHẨM NAM SƠN"
+  },
+  {
+    "id": 410,
+    "label": "Gelnova Laboratories (I) Pvt., Ltd. - ẤN ĐỘ"
+  },
+  {
+    "id": 411,
+    "label": "Công Ty TNHH Dược Phẩm Sài Gòn"
+  },
+  {
+    "id": 412,
+    "label": "Công ty Medochemie., Ltd"
+  },
+  {
+    "id": 413,
+    "label": "Xuất xứ Malaysia"
+  },
+  {
+    "id": 414,
+    "label": "Aegis., Ltd"
+  },
+  {
+    "id": 415,
+    "label": "Đông Nam Dược Ngọc Liên"
+  },
+  {
+    "id": 416,
+    "label": "Công ty TNHH Dược phẩm Glomed – VIỆT NAM."
+  },
+  {
+    "id": 417,
+    "label": "SLOVENIA"
+  },
+  {
+    "id": 418,
+    "label": "Niche Generics Ltd. - ANH"
+  },
+  {
+    "id": 419,
+    "label": "Rottapharm"
+  },
+  {
+    "id": 420,
+    "label": "M/S Kusum Healthcare Private Limited - ẤN ĐỘ"
+  },
+  {
+    "id": 422,
+    "label": "Công Ty Hanson Medical Inc"
+  },
+  {
+    "id": 423,
+    "label": "Công Ty cổ phẩm dược S.Pharma"
+  },
+  {
+    "id": 424,
+    "label": "Công Ty Cổ Phần Dược Phẩm OPV"
+  },
+  {
+    "id": 425,
+    "label": "Công ty CP dược VTYT Nghệ An"
+  },
+  {
+    "id": 426,
+    "label": "Bolinger"
+  },
+  {
+    "id": 427,
+    "label": "Eric Favre Pharma"
+  },
+  {
+    "id": 428,
+    "label": "Pierre Fabre - Pháp"
+  },
+  {
+    "id": 431,
+    "label": "Công Ty Remedica Ltd."
+  },
+  {
+    "id": 433,
+    "label": "Công Ty TNHH Thảo Dược Việt"
+  },
+  {
+    "id": 434,
+    "label": "Công ty TNHH dược phẩm Hồng Phước"
+  },
+  {
+    "id": 435,
+    "label": "Aesica Pharmaceuticals S.r.l."
+  },
+  {
+    "id": 436,
+    "label": "CT CP DP Vinh Gia"
+  },
+  {
+    "id": 437,
+    "label": "Laboratorios Francisco Durban, S.A - Tây Ban Nha"
+  },
+  {
+    "id": 438,
+    "label": "ÚC"
+  },
+  {
+    "id": 439,
+    "label": "Công ty Janssen-Cilag."
+  },
+  {
+    "id": 440,
+    "label": "Janssen"
+  },
+  {
+    "id": 441,
+    "label": "Công Ty TNHH B. Braun Việt Nam"
+  },
+  {
+    "id": 442,
+    "label": "Công ty Dược phẩm Kỳ Tinh"
+  },
+  {
+    "id": 443,
+    "label": "Công ty CP KD dịch vụ và TM Nam Phương – VIỆT NAM"
+  },
+  {
+    "id": 444,
+    "label": "Beaufour lpsen - Pháp"
+  },
+  {
+    "id": 445,
+    "label": "Công Ty Cổ Phần Dược phẩm Trung Ương 3"
+  },
+  {
+    "id": 447,
+    "label": "Canada"
+  },
+  {
+    "id": 449,
+    "label": "Sopharma PLC, Bulgaria"
+  },
+  {
+    "id": 450,
+    "label": "Công ty NUTRA MANUFACTURING INC – INDONESIA"
+  },
+  {
+    "id": 451,
+    "label": "Egis Pharma., Ltd - HUNG GA RY"
+  },
+  {
+    "id": 452,
+    "label": "Công Ty Cổ Phần Apharma"
+  },
+  {
+    "id": 453,
+    "label": "Dược phẩm  120"
+  },
+  {
+    "id": 454,
+    "label": "Công Ty Glenmark Pharmaceuticals"
+  },
+  {
+    "id": 456,
+    "label": "Bushu Pharma"
+  },
+  {
+    "id": 458,
+    "label": "Công ty Unimed Pharm Inc - Hàn Quốc."
+  },
+  {
+    "id": 461,
+    "label": "Công Ty Cổ Phần Dược Thái Bình"
+  },
+  {
+    "id": 463,
+    "label": "Việt Nam"
+  },
+  {
+    "id": 464,
+    "label": "Công Ty Dược Phẩm Morishita Jintan"
+  },
+  {
+    "id": 465,
+    "label": "Công Ty TNHH Meyer Healthcare"
+  },
+  {
+    "id": 466,
+    "label": "Allergan"
+  },
+  {
+    "id": 468,
+    "label": "Công ty TNHH Việt Nam Create Medic"
+  },
+  {
+    "id": 469,
+    "label": "Công Ty TNHH Dược Phẩm Flamingo Việt Nam"
+  },
+  {
+    "id": 470,
+    "label": "Boehringer Ingelheim Pharma GmbH & Co. KG."
+  },
+  {
+    "id": 471,
+    "label": "ZETA Pharmaceuticals, L.L.C."
+  },
+  {
+    "id": 472,
+    "label": "Chile"
+  },
+  {
+    "id": 473,
+    "label": "Alantic pharma"
+  },
+  {
+    "id": 475,
+    "label": "Công Ty TNHH Thương Mại & Dược Phẩm Tân Cương"
+  },
+  {
+    "id": 476,
+    "label": "TT pharma"
+  },
+  {
+    "id": 477,
+    "label": "Switzeland"
+  },
+  {
+    "id": 478,
+    "label": "SCAR HEALTH INC"
+  },
+  {
+    "id": 480,
+    "label": "Bỉ"
+  },
+  {
+    "id": 481,
+    "label": "BRV HEALTH"
+  },
+  {
+    "id": 482,
+    "label": "Indonesia"
+  },
+  {
+    "id": 483,
+    "label": "Công Ty  CP Liên Doanh Dược G&P"
+  },
+  {
+    "id": 485,
+    "label": "công ty cổ phần Đầu tư Kim Long"
+  },
+  {
+    "id": 487,
+    "label": "Công Ty Urgo Healthcare  Products"
+  },
+  {
+    "id": 488,
+    "label": "Công Ty TNHH Tigon"
+  },
+  {
+    "id": 489,
+    "label": "Công Ty Cổ Phần Novo Nordisk Pharma"
+  },
+  {
+    "id": 490,
+    "label": "Công Ty CP TRà Thảo Dược Đức Thịnh"
+  },
+  {
+    "id": 491,
+    "label": "Công Ty Áo"
+  },
+  {
+    "id": 492,
+    "label": "Viện y học cổ truyền quân đội"
+  },
+  {
+    "id": 493,
+    "label": "Công Ty TNHH Dược Phẩm Chân Tâm"
+  },
+  {
+    "id": 495,
+    "label": "Công Ty Cổ Phần Dược Phẩm Santex"
+  },
+  {
+    "id": 496,
+    "label": "Công Ty TNHH Getz Pharma"
+  },
+  {
+    "id": 497,
+    "label": "Công Ty OOO NPF Materia Medica Holding"
+  },
+  {
+    "id": 498,
+    "label": "Công Ty Cổ Phần St. Paul Brands"
+  },
+  {
+    "id": 499,
+    "label": "Công Ty Cổ Phần PT Kalbe Farma Tbk"
+  },
+  {
+    "id": 500,
+    "label": "Công ty CP Thiết bị y tế Bảo Thạch"
+  },
+  {
+    "id": 501,
+    "label": "Công ty TNHH thương mại AKOPHA Pháp"
+  },
+  {
+    "id": 502,
+    "label": "Công ty cổ phần thiết bị y tế Hải Nam"
+  },
+  {
+    "id": 503,
+    "label": "Công Ty Cổ Phần Medana Pharma Spolka Akcyjna"
+  },
+  {
+    "id": 504,
+    "label": "Xí nghiệp Dược phẩm 120 – VIỆT NAM"
+  },
+  {
+    "id": 506,
+    "label": "Công ty TNHH XNK Y tế Delta"
+  },
+  {
+    "id": 508,
+    "label": "Công ty Replek Farm Ltd. Skopje"
+  },
+  {
+    "id": 509,
+    "label": "AUSVIT HEALTH"
+  },
+  {
+    "id": 510,
+    "label": "The acme"
+  },
+  {
+    "id": 511,
+    "label": "Bình dương pharma"
+  },
+  {
+    "id": 513,
+    "label": "Uruguay"
+  },
+  {
+    "id": 514,
+    "label": "Moldova"
+  },
+  {
+    "id": 515,
+    "label": "Aforex - Việt Nam"
+  },
+  {
+    "id": 516,
+    "label": "Lào"
+  },
+  {
+    "id": 517,
+    "label": "Stiefel a GSK company, UK"
+  },
+  {
+    "id": 518,
+    "label": "Công ty TNHH dược phẩm Cát Linh"
+  },
+  {
+    "id": 519,
+    "label": "Thổ nhĩ kì"
+  },
+  {
+    "id": 520,
+    "label": "Leo Pharm Products – ĐAN MẠCH"
+  },
+  {
+    "id": 521,
+    "label": "Hitamisu"
+  },
+  {
+    "id": 522,
+    "label": "Công Ty THHH Dược Phẩm Fobic"
+  },
+  {
+    "id": 523,
+    "label": "Australia"
+  },
+  {
+    "id": 524,
+    "label": "Công Ty Cổ Phần Dược Phẩm Đông Tây"
+  },
+  {
+    "id": 525,
+    "label": "Công ty tnhh Heiwa Medic Việt Nam"
+  },
+  {
+    "id": 526,
+    "label": "TRB Pharma S.A"
+  },
+  {
+    "id": 527,
+    "label": "Roussel Việt nam"
+  },
+  {
+    "id": 528,
+    "label": "Công ty Cổ Phần Dược & Thiết Bị Vật Tư Y Tế Thanh Hóa"
+  },
+  {
+    "id": 529,
+    "label": "Anh"
+  },
+  {
+    "id": 530,
+    "label": "Công ty Hanlim Pharm Co., Ltd – Hàn Quốc"
+  },
+  {
+    "id": 532,
+    "label": "Công ty cổ phần tập đoàn Merap"
+  },
+  {
+    "id": 533,
+    "label": "NETHERLANDS"
+  },
+  {
+    "id": 534,
+    "label": "Aeropharm GmbH - Đức"
+  },
+  {
+    "id": 535,
+    "label": "Công ty CP dược phẩm và TBYT An Phú"
+  },
+  {
+    "id": 537,
+    "label": "Enema"
+  },
+  {
+    "id": 538,
+    "label": "Công Ty Glaxo Operations UK., Ltd - ANH"
+  },
+  {
+    "id": 539,
+    "label": "Công ty tnhh Sapon Việt Nam"
+  },
+  {
+    "id": 540,
+    "label": "Công Ty TNHH Aristo Pharmaceuticals"
+  },
+  {
+    "id": 541,
+    "label": "Công ty American Biological & Technology HK."
+  },
+  {
+    "id": 542,
+    "label": "Công Ty Yash Medicare Pvt. Ltd.,"
+  },
+  {
+    "id": 543,
+    "label": "Công ty Cố phần Dược phẩm Delap"
+  },
+  {
+    "id": 544,
+    "label": "Công ty Flamingo Pharmaceuticals Ltd. - ẤN ĐỘ."
+  },
+  {
+    "id": 545,
+    "label": "Ziaja Group LLP"
+  },
+  {
+    "id": 546,
+    "label": "Công Ty R.X Manufacturing Co., Ltd"
+  },
+  {
+    "id": 547,
+    "label": "Công Ty TNHH Eisai Nhật Bản"
+  },
+  {
+    "id": 548,
+    "label": "Công Ty Cổ Phần Công Nghệ New Tech Pharm"
+  },
+  {
+    "id": 550,
+    "label": "Công Ty Sản Xuất S.C. Arena Group S.A"
+  },
+  {
+    "id": 551,
+    "label": "Công Ty Wockhardt Life Sciences., Ltd"
+  },
+  {
+    "id": 552,
+    "label": "Công ty Cổ phần Tanaphar"
+  },
+  {
+    "id": 553,
+    "label": "Công ty mỹ phẩm thorakao"
+  },
+  {
+    "id": 554,
+    "label": "Công Ty Atra Pharmaceuticals Limited"
+  },
+  {
+    "id": 555,
+    "label": "Rottendorf Pharma GmbH - ĐỨC"
+  },
+  {
+    "id": 557,
+    "label": "Công ty sản xuất dược phẩm medlac pharm"
+  },
+  {
+    "id": 558,
+    "label": "Novartis Thụy Sĩ"
+  },
+  {
+    "id": 559,
+    "label": "CÔNG TY TNHH ĐÔNG NAM DƯỢC BẢO LINH"
+  },
+  {
+    "id": 560,
+    "label": "Catalysis- Tây ban nha"
+  },
+  {
+    "id": 561,
+    "label": "Guadian Việt nam"
+  },
+  {
+    "id": 562,
+    "label": "Mỹ phẩm one today"
+  },
+  {
+    "id": 563,
+    "label": "Công ty medicraft Phrama"
+  },
+  {
+    "id": 564,
+    "label": "Công ty TNHH Agio Pharmaceuticals"
+  },
+  {
+    "id": 565,
+    "label": "Công Ty ARM & HAMMER"
+  },
+  {
+    "id": 567,
+    "label": "Công ty Fulton Medicinali S.P.A - Ý."
+  },
+  {
+    "id": 568,
+    "label": "Ipsen Pharma - Pháp"
+  },
+  {
+    "id": 569,
+    "label": "Công ty TNHH Siberian Health Việt Nam"
+  },
+  {
+    "id": 571,
+    "label": "Thái Lan"
+  },
+  {
+    "id": 572,
+    "label": "pt.herlina indah. Indonesia"
+  },
+  {
+    "id": 573,
+    "label": "Công Ty TNHH Thiết Bị Y Tế Sơn Hương"
+  },
+  {
+    "id": 575,
+    "label": "NP pharma SP Z.O.O Ba Lan"
+  },
+  {
+    "id": 576,
+    "label": "Công ty TNHH MTV ALIFCO"
+  },
+  {
+    "id": 577,
+    "label": "Mỹ phẩm Bạch Liên"
+  },
+  {
+    "id": 579,
+    "label": "Opodis Pharma"
+  },
+  {
+    "id": 581,
+    "label": "Gifrer Barbezat (Pháp)"
+  },
+  {
+    "id": 582,
+    "label": "Pierre fabre medication production"
+  },
+  {
+    "id": 583,
+    "label": "TPHARCO"
+  },
+  {
+    "id": 584,
+    "label": "Pharmatis (Pháp)"
+  },
+  {
+    "id": 590,
+    "label": "Công Ty Sanofi-Synthelabo Việt Nam"
+  },
+  {
+    "id": 592,
+    "label": "IAP, Hà Nội"
+  },
+  {
+    "id": 593,
+    "label": "Công ty TNHH Đại Hoàn"
+  },
+  {
+    "id": 594,
+    "label": "Công ty TNHH  Phil inter pharma"
+  },
+  {
+    "id": 595,
+    "label": "Công Ty M/S Bio-Labs (Pvt) Ltd. - Pakistan"
+  },
+  {
+    "id": 596,
+    "label": "Công Ty TNHH Johnson & Johnson Việt Nam"
+  },
+  {
+    "id": 597,
+    "label": "Công ty Maxim Pharmaceuticals Pvt. Ltd. - ẤN ĐỘ"
+  },
+  {
+    "id": 598,
+    "label": "Hóa mỹ phẩm Linh Chi"
+  },
+  {
+    "id": 599,
+    "label": "Nhất Long Pharma"
+  },
+  {
+    "id": 600,
+    "label": "Công Ty TNHH Egis Pharmaceuticals"
+  },
+  {
+    "id": 601,
+    "label": "Bà bé"
+  },
+  {
+    "id": 603,
+    "label": "Công ty tnhh dược phẩm AuVina phrama VN"
+  },
+  {
+    "id": 604,
+    "label": "Lek Pharmaceuticals d.d,"
+  },
+  {
+    "id": 605,
+    "label": "Công ty Inventia Healthcare Pvt. Ltd. - ẤN ĐỘ"
+  },
+  {
+    "id": 606,
+    "label": "Công Ty TNHH Mega Lifesciences Vietnam"
+  },
+  {
+    "id": 608,
+    "label": "Công Ty Cổ Phần Laboratoires Rosa Phytopharma"
+  },
+  {
+    "id": 609,
+    "label": "Tinh dầu La Champa"
+  },
+  {
+    "id": 610,
+    "label": "CÔNG TY TNHH DƯỢC MỸ PHẨM HADOPHAR"
+  },
+  {
+    "id": 611,
+    "label": "CÔNG TY TNHH TRANG THIẾT BỊ Y TẾ ĐÔNG PHA"
+  },
+  {
+    "id": 612,
+    "label": "Harbin Pharmaceutical Group Co., Ltd. General pharm factory - TRUNG QUỐC"
+  },
+  {
+    "id": 613,
+    "label": "Cow King Health Troduct Co.LTD"
+  },
+  {
+    "id": 614,
+    "label": "Blackmores australia"
+  },
+  {
+    "id": 616,
+    "label": "Công ty TNHH thực phẩm chức năng LOHHA"
+  },
+  {
+    "id": 617,
+    "label": "Microlife AG"
+  },
+  {
+    "id": 618,
+    "label": "Công Ty TNHH BCWorld Pharma"
+  },
+  {
+    "id": 619,
+    "label": "Alere - Mỹ"
+  },
+  {
+    "id": 620,
+    "label": "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI AN LÀNH"
+  },
+  {
+    "id": 621,
+    "label": "Công Ty Cổ Phần Dược Và VTYT Long An - Vacopharm"
+  },
+  {
+    "id": 622,
+    "label": "xuất xứ hồng kông"
+  },
+  {
+    "id": 623,
+    "label": "Công ty TNHH Saomon"
+  },
+  {
+    "id": 624,
+    "label": "CÔNG TY BÔNG BẠCH TUYẾT"
+  },
+  {
+    "id": 625,
+    "label": "S.I.I.T SRL, Italy"
+  },
+  {
+    "id": 626,
+    "label": "Công Ty Searle Pakistan., Ltd"
+  },
+  {
+    "id": 627,
+    "label": "Pediakid , Pháp"
+  },
+  {
+    "id": 629,
+    "label": "Công  Ty TNHH Đại Bắc"
+  },
+  {
+    "id": 631,
+    "label": "Công Ty Michio nhật bản"
+  },
+  {
+    "id": 632,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC MỸ PHẨM CVI"
+  },
+  {
+    "id": 633,
+    "label": "TA ANG PHARMACEUTICAL"
+  },
+  {
+    "id": 634,
+    "label": "Công Ty Tnhh Dongkuk Việt Nam"
+  },
+  {
+    "id": 635,
+    "label": "Đông dược Vĩnh Quang"
+  },
+  {
+    "id": 636,
+    "label": "Việt Nam"
+  },
+  {
+    "id": 637,
+    "label": "Công Ty TNHH Pro Kingtex Việt Nam"
+  },
+  {
+    "id": 638,
+    "label": "Công ty Recordati Industria Chimica Farmaceutica S.P.A"
+  },
+  {
+    "id": 639,
+    "label": "Công ty TNHH Cipla"
+  },
+  {
+    "id": 640,
+    "label": "Dược Thảo tiên"
+  },
+  {
+    "id": 641,
+    "label": "Reckitt Benckiser Anh"
+  },
+  {
+    "id": 642,
+    "label": "Wipro Unza Holdings Ltd"
+  },
+  {
+    "id": 643,
+    "label": "Công Ty TNHH Thương Mại Vega Pharma"
+  },
+  {
+    "id": 644,
+    "label": "Công ty TNHH US Pharma USA - Việt Nam ( USP)"
+  },
+  {
+    "id": 645,
+    "label": "Công ty dược phẩm UAB Aconitum"
+  },
+  {
+    "id": 646,
+    "label": "Công Ty Dr Theiss Natuwaren GmbH"
+  },
+  {
+    "id": 647,
+    "label": "Công ty Korea E-Pharm,Hàn Quốc"
+  },
+  {
+    "id": 648,
+    "label": "Công ty cổ phần Dược phẩm Cửu Long (PHARIMEXCO) - VIỆT NAM"
+  },
+  {
+    "id": 649,
+    "label": "Công Ty Cổ Phần Dược - VTYT Hải Dương"
+  },
+  {
+    "id": 652,
+    "label": "Adare Pharmaceuticals S.A.S"
+  },
+  {
+    "id": 653,
+    "label": "Công Ty TNHH TM Dược Phẩm Úc Châu"
+  },
+  {
+    "id": 654,
+    "label": "Công Ty TNHH Dược Phẩm Datapham"
+  },
+  {
+    "id": 655,
+    "label": "NOVAREX Co,, Ltd."
+  },
+  {
+    "id": 657,
+    "label": "Công ty Abbott Laboratories S.A"
+  },
+  {
+    "id": 658,
+    "label": "The Madras Pharm - ẤN ĐỘ"
+  },
+  {
+    "id": 659,
+    "label": "Công Ty Dược Phẩm Takeda"
+  },
+  {
+    "id": 660,
+    "label": "Công Ty TNHH Dược Phẩm Hisamitsu Việt Nam"
+  },
+  {
+    "id": 661,
+    "label": "Công Ty Advance Pharma GmbH"
+  },
+  {
+    "id": 664,
+    "label": "Công Ty Cổ Phần Dược Phẩm Ceteco USA"
+  },
+  {
+    "id": 665,
+    "label": "Thergen Etex Co.,LTD Hàn Quốc"
+  },
+  {
+    "id": 666,
+    "label": "Công ty  Power Men Hàn Quốc"
+  },
+  {
+    "id": 668,
+    "label": "xuất xứ Brazin"
+  },
+  {
+    "id": 669,
+    "label": "Công Ty Cổ Phần Công Nghệ Sinh Phẩm Nam Việt"
+  },
+  {
+    "id": 670,
+    "label": "Myungmoon Pharm. Co., Ltd."
+  },
+  {
+    "id": 671,
+    "label": "Korea Prime Pharma Co"
+  },
+  {
+    "id": 673,
+    "label": "Laboratoire Innotech International S.A.S."
+  },
+  {
+    "id": 674,
+    "label": "Công Ty TNHH Bridge Healthcare"
+  },
+  {
+    "id": 677,
+    "label": "Công Ty TNHH Pfizer Pharmaceuticals"
+  },
+  {
+    "id": 679,
+    "label": "Medana Pharma (Ba Lan)"
+  },
+  {
+    "id": 680,
+    "label": "Hwail Pharmaceitical Co., Ltd."
+  },
+  {
+    "id": 681,
+    "label": "Công Ty Cổ Phần Dược Phẩm Nature Pharma"
+  },
+  {
+    "id": 682,
+    "label": "Công Ty Okamoto Condom Company"
+  },
+  {
+    "id": 683,
+    "label": "Công ty Sun Pharmaceutical Industries Ltd."
+  },
+  {
+    "id": 684,
+    "label": "Doppel Farmaceutici S.R.L"
+  },
+  {
+    "id": 685,
+    "label": "công ty HLL Lifecare Limitted, tại Ấn Độ"
+  },
+  {
+    "id": 686,
+    "label": "Meiji Seika Pharma Co., Ltd."
+  },
+  {
+    "id": 687,
+    "label": "Myung - In Phar.Co.Ltd"
+  },
+  {
+    "id": 688,
+    "label": "Bao bì Minh Long plastic"
+  },
+  {
+    "id": 689,
+    "label": "Công ty TNHH Thiết bị y tế Huỳnh Ngọc"
+  },
+  {
+    "id": 690,
+    "label": "Polfarmex S.A ba lan"
+  },
+  {
+    "id": 691,
+    "label": "Pharmatex Italia S.R.L -Ý"
+  },
+  {
+    "id": 692,
+    "label": "Laboratorios Recalcine S.A. - CHI LÊ"
+  },
+  {
+    "id": 693,
+    "label": "Công Ty Produits roche"
+  },
+  {
+    "id": 694,
+    "label": "Công Ty Chunggei Pharm co.., Ltd"
+  },
+  {
+    "id": 695,
+    "label": "Armpharco USA"
+  },
+  {
+    "id": 696,
+    "label": "Atabay Kismya Sanayi Ve Tiscaret A.S – Thổ Nhĩ Kì."
+  },
+  {
+    "id": 699,
+    "label": "Công Ty Cổ Phần Thiên Nhiên Việt"
+  },
+  {
+    "id": 700,
+    "label": "Konimex (Indonesia)"
+  },
+  {
+    "id": 702,
+    "label": "Công ty Cổ phần liên doanh Dược Phẩm Essen"
+  },
+  {
+    "id": 703,
+    "label": "Công ty TNHH Mỹ phẩm và Hóa chất Quang Xanh."
+  },
+  {
+    "id": 704,
+    "label": "Công ty Mundipharma Pharmaceuticals Pte. Ltd."
+  },
+  {
+    "id": 705,
+    "label": "Công ty Sinil Pharm, Hàn Quốc"
+  },
+  {
+    "id": 706,
+    "label": "Công Ty Laboratoires Medix - PHÁP"
+  },
+  {
+    "id": 707,
+    "label": "Công ty cổ phần dược phẩm Bidiphar 1 - Việt Nam"
+  },
+  {
+    "id": 708,
+    "label": "Công Ty Probiotical S.p.A Italy"
+  },
+  {
+    "id": 709,
+    "label": "Sinil Pharm, Hàn Quốc"
+  },
+  {
+    "id": 710,
+    "label": "Podstoczysko street Poland"
+  },
+  {
+    "id": 711,
+    "label": "Xuất xứ Nga"
+  },
+  {
+    "id": 712,
+    "label": "Công ty TNHH thương mại Nhất Linh Hà Nội"
+  },
+  {
+    "id": 713,
+    "label": "Viện bỏng Quốc gia Lê Hữu Trác"
+  },
+  {
+    "id": 714,
+    "label": "Công Ty TNHH Beiersdorf Việt Nam"
+  },
+  {
+    "id": 715,
+    "label": "Công ty Cổ phần BV Pharma - VIỆT NAM"
+  },
+  {
+    "id": 716,
+    "label": "Laboratoires Expanscience"
+  },
+  {
+    "id": 717,
+    "label": "Công ty Dược Vương"
+  },
+  {
+    "id": 718,
+    "label": "Les Laboratoires Servier Industrie - PHÁP"
+  },
+  {
+    "id": 719,
+    "label": "Max Biocare Pty. Ltd"
+  },
+  {
+    "id": 720,
+    "label": "Công Ty Cổ Phần Biocodex"
+  },
+  {
+    "id": 721,
+    "label": "Công Ty TNHH Dược Nhân Hưng."
+  },
+  {
+    "id": 722,
+    "label": "Xuất xứ Thụy Điển"
+  },
+  {
+    "id": 723,
+    "label": "Công Ty TNHH Windlas Biotech"
+  },
+  {
+    "id": 724,
+    "label": "Công Ty bio Island - Úc"
+  },
+  {
+    "id": 725,
+    "label": "Il-Yang Pharm. Co., LTD"
+  },
+  {
+    "id": 726,
+    "label": "Engelhard Arzneimittel GmbH & Co..KG"
+  },
+  {
+    "id": 727,
+    "label": "Công Ty TNHH Bros Việt Nam"
+  },
+  {
+    "id": 728,
+    "label": "Công Ty Cổ Phần Dược Phẩm 2/9 - Nadyphar"
+  },
+  {
+    "id": 729,
+    "label": "Besins Manufacturing Belgium."
+  },
+  {
+    "id": 730,
+    "label": "Công ty TNHH Pfizer Pharmaceuticals"
+  },
+  {
+    "id": 731,
+    "label": "Rotexmedica GmbH Arzneimittelwerk"
+  },
+  {
+    "id": 732,
+    "label": "Pfizer - PHÁP"
+  },
+  {
+    "id": 733,
+    "label": "Công Ty TNHH Dược Phẩm BIMEX"
+  },
+  {
+    "id": 734,
+    "label": "Công ty TNHH LOTTE VIỆT NAM"
+  },
+  {
+    "id": 735,
+    "label": "Công Ty TNHH Catalent Australia"
+  },
+  {
+    "id": 736,
+    "label": "Công Ty CP Dược Phẩm Vĩnh Gia"
+  },
+  {
+    "id": 737,
+    "label": "CÔNG TY TNHH DP HOÀNG KHANG HEALTHCARE"
+  },
+  {
+    "id": 738,
+    "label": "Vianex S.A- Hy Lạp"
+  },
+  {
+    "id": 739,
+    "label": "Công Ty Cổ Phần CJ HealthCare"
+  },
+  {
+    "id": 740,
+    "label": "Công Ty Cổ Phần Dược Phẩm Trung Ương 2 (Dopharma)"
+  },
+  {
+    "id": 743,
+    "label": "Công Ty Cổ Phần Dược Phẩm Hoa Thiên Phú"
+  },
+  {
+    "id": 744,
+    "label": "Công Ty Ltd Farmaprim - MOLDOVA"
+  },
+  {
+    "id": 745,
+    "label": "Laboratoires IPRAD SANTE"
+  },
+  {
+    "id": 747,
+    "label": "M/S Samrudh Pharmaceuticals Pvt., Ltd - Ấn Độ. Ấn Độ."
+  },
+  {
+    "id": 749,
+    "label": "CBF Pharmaceutical Factory"
+  },
+  {
+    "id": 750,
+    "label": "Công Ty TNHH Medley Pharmaceuticals"
+  },
+  {
+    "id": 751,
+    "label": "Công  ty Cổ phần Dược Mỹ Phẩm Oribe"
+  },
+  {
+    "id": 752,
+    "label": "Servier international -Pháp"
+  },
+  {
+    "id": 754,
+    "label": "Công Ty TNHH Hoffmann-La Roche"
+  },
+  {
+    "id": 755,
+    "label": "Công Ty TNHH Công Nghệ Qcmax Sinofrance"
+  },
+  {
+    "id": 756,
+    "label": "Công ty dược phẩm glaxosmithkline-gsk"
+  },
+  {
+    "id": 757,
+    "label": "J&E International Corp"
+  },
+  {
+    "id": 758,
+    "label": "Công Ty TNHH jin yang pharm"
+  },
+  {
+    "id": 759,
+    "label": "Công Ty Medevice 3S Joint Venture Co.,Ltd"
+  },
+  {
+    "id": 761,
+    "label": "Công Ty Cổ Phần Sao Thái Dương"
+  },
+  {
+    "id": 762,
+    "label": "Balance active fomular- Anh Quốc"
+  },
+  {
+    "id": 763,
+    "label": "Công ty dược phẩm phảmekal -Mỹ"
+  },
+  {
+    "id": 765,
+    "label": "Ranbaxy Laboratories , Ltd"
+  },
+  {
+    "id": 766,
+    "label": "Ipca Laboratories., Ltd - ẤN ĐỘ"
+  },
+  {
+    "id": 767,
+    "label": "Công ty CP Tadaphaco"
+  },
+  {
+    "id": 768,
+    "label": "Sao Phương Nam (Việt Nam)"
+  },
+  {
+    "id": 769,
+    "label": "Công ty TNHH Dược phẩm Amepro- Việt Nam"
+  },
+  {
+    "id": 770,
+    "label": "Công Ty TNHH Sản Xuất Và Thương Mại Đại Việt Hương (VIETCOS)"
+  },
+  {
+    "id": 771,
+    "label": "Allergan Pharmaceuticals Ireland"
+  },
+  {
+    "id": 772,
+    "label": "Công ty TNHH MTV SX- MP Sắc Tiên Today"
+  },
+  {
+    "id": 773,
+    "label": "Công Ty Gedeon Richter"
+  },
+  {
+    "id": 774,
+    "label": "Công Ty TNHH Probiotec"
+  },
+  {
+    "id": 775,
+    "label": "Taewoong Food Co.,Ltd"
+  },
+  {
+    "id": 777,
+    "label": "Omrion healthycare- Nhật Bản"
+  },
+  {
+    "id": 778,
+    "label": "The acme laboratories Ltd- Băng La Đét"
+  },
+  {
+    "id": 779,
+    "label": "Rowa pharmceuticals limited - Ireland"
+  },
+  {
+    "id": 780,
+    "label": "Công Ty TNHH Astrazeneca Pharmaceutical"
+  },
+  {
+    "id": 781,
+    "label": "Công ty TNHH SX & TM MỸ phẩm Đăng Dương"
+  },
+  {
+    "id": 782,
+    "label": "Rowa Pharmaceuticals Ltd."
+  },
+  {
+    "id": 783,
+    "label": "Stiefel a GSK company Thái Lan"
+  },
+  {
+    "id": 786,
+    "label": "Công ty aron -Thái Lan"
+  },
+  {
+    "id": 787,
+    "label": "Công Ty TNHH TM Dược Phẩm Hà Minh"
+  },
+  {
+    "id": 788,
+    "label": "FINE Việt Nam"
+  },
+  {
+    "id": 789,
+    "label": "Công Ty Lotus Global Co.,Ltd"
+  },
+  {
+    "id": 790,
+    "label": "Servier Ireland industries Ltd"
+  },
+  {
+    "id": 791,
+    "label": "Công Ty Cổ Phần Thương Mại Dịch Vụ Sản Xuất Hương Thủy"
+  },
+  {
+    "id": 792,
+    "label": "ACME Formulation Ấn Độ"
+  },
+  {
+    "id": 793,
+    "label": "JSC Realcosmetic Russia"
+  },
+  {
+    "id": 794,
+    "label": "Kwality Pharmaceuticals Limited"
+  },
+  {
+    "id": 795,
+    "label": "Ðông Y Dược gia truyền Kim Đan – VIỆT NAM"
+  },
+  {
+    "id": 797,
+    "label": "Sofibel Laboratories fumouze"
+  },
+  {
+    "id": 798,
+    "label": "N.V. Organon"
+  },
+  {
+    "id": 799,
+    "label": "Công Ty TNHH L'oreal Việt Nam"
+  },
+  {
+    "id": 800,
+    "label": "Công Ty TNHH Chongqing Peidu Pharmaceutical"
+  },
+  {
+    "id": 801,
+    "label": "Công ty Caleb Pharmaceutical Inc - Hsinchu Taiwan."
+  },
+  {
+    "id": 802,
+    "label": "zzz"
+  },
+  {
+    "id": 803,
+    "label": "Công Ty TNHH Baroque Pharmaceuticals"
+  },
+  {
+    "id": 804,
+    "label": "Công ty cổ phần dược phẩm Phương Đông."
+  },
+  {
+    "id": 805,
+    "label": "Laboratoire Ipsen Pharma SAS"
+  },
+  {
+    "id": 806,
+    "label": "BEAUFOUR IPSEN INDUSTRIE Rue Ethe Virton"
+  },
+  {
+    "id": 807,
+    "label": "FARMACEUTICI PROCEMSA S.P.A."
+  },
+  {
+    "id": 808,
+    "label": "Công ty TNHH Dược Phẩm Hoàng Liên"
+  },
+  {
+    "id": 809,
+    "label": "Công ty cổ phần Nam Đô"
+  },
+  {
+    "id": 810,
+    "label": "Công ty cổ phẩm hoá mỹ phẩm Xuân Thịnh"
+  },
+  {
+    "id": 811,
+    "label": "Công Ty Chathana phrmaceuticals - Ấn Độ"
+  },
+  {
+    "id": 813,
+    "label": "Công ty Bayer Consumer Care"
+  },
+  {
+    "id": 814,
+    "label": "Công ty TNHH MTV BOHA Pharm"
+  },
+  {
+    "id": 815,
+    "label": "Công Ty TNHH Brawn Laboratories"
+  },
+  {
+    "id": 816,
+    "label": "Korea gingseng bio science Hàn Quốc"
+  },
+  {
+    "id": 817,
+    "label": "Công Ty TNHH Propharm Việt Nam"
+  },
+  {
+    "id": 818,
+    "label": "Minskinterrcaps U.V - Belarus"
+  },
+  {
+    "id": 819,
+    "label": "Laboratoire Ineldea"
+  },
+  {
+    "id": 820,
+    "label": "Công Ty Cổ Phần Khoa Học CNC Việt Đức"
+  },
+  {
+    "id": 822,
+    "label": "SS PHARM CO.,Ltd"
+  },
+  {
+    "id": 823,
+    "label": "Pharmaceutical works adamed pharma jointstock company - Ba Lan"
+  },
+  {
+    "id": 824,
+    "label": "Công Ty TNHH Đầu Tư Thương Mại Tâm Phúc"
+  },
+  {
+    "id": 825,
+    "label": "Medinova Pharmaceutical Inc"
+  },
+  {
+    "id": 827,
+    "label": "Công ty Hetero Drugs., Ltd - ẤN ĐỘ"
+  },
+  {
+    "id": 829,
+    "label": "Công ty cổ phần sinh dược học Biopro, Bắc Ninh"
+  },
+  {
+    "id": 830,
+    "label": "Healthycare care- úc"
+  },
+  {
+    "id": 831,
+    "label": "Tập đoàn mỹ phẩm amorepacific"
+  },
+  {
+    "id": 832,
+    "label": "EassyTouch"
+  },
+  {
+    "id": 833,
+    "label": "Cơ Sở băng gạc Đại Minh"
+  },
+  {
+    "id": 835,
+    "label": "Sinocare"
+  },
+  {
+    "id": 836,
+    "label": "Công Ty TNHH Omron Healthcare Manufacturing Việt Nam"
+  },
+  {
+    "id": 837,
+    "label": "ROSSMAX INTERNATIONAL LTD"
+  },
+  {
+    "id": 838,
+    "label": "Công Ty TNHH Acon Biotech"
+  },
+  {
+    "id": 839,
+    "label": "Công ty cổ phần dược phẩm MEDIUSA"
+  },
+  {
+    "id": 840,
+    "label": "Công ty dược phẩm ziaja - ba lan"
+  },
+  {
+    "id": 841,
+    "label": "Maxell Nhật"
+  },
+  {
+    "id": 842,
+    "label": "Maxell – Indonesia"
+  },
+  {
+    "id": 843,
+    "label": "Công Ty Stallion Laboratories Pvt., Ltd"
+  },
+  {
+    "id": 845,
+    "label": "Công Ty Makcur Laboratories Ltd. – Ấn Độ"
+  },
+  {
+    "id": 846,
+    "label": "Công ty Cổ Phần Hóa Dược Việt Nam"
+  },
+  {
+    "id": 847,
+    "label": "Công ty TNHH Dược phẩm Công Tâm - VIỆT NAM"
+  },
+  {
+    "id": 848,
+    "label": "3W Clinic Hàn Quốc."
+  },
+  {
+    "id": 849,
+    "label": "Công ty Baniphar"
+  },
+  {
+    "id": 850,
+    "label": "Công ty TNHH Dược phẩm Health and Automatic"
+  },
+  {
+    "id": 851,
+    "label": "Công Ty TNHH Mỹ Phẩm Spaphar"
+  },
+  {
+    "id": 852,
+    "label": "Ergo pharm d.o.o Slovenia"
+  },
+  {
+    "id": 853,
+    "label": "Laurent"
+  },
+  {
+    "id": 854,
+    "label": "Công Ty TNHH Quốc Tế Xuân Vinh"
+  },
+  {
+    "id": 855,
+    "label": "bharat parenteral., Ltd-Ấn Độ"
+  },
+  {
+    "id": 857,
+    "label": "Hungary"
+  },
+  {
+    "id": 858,
+    "label": "Công Ty TNHH Tâm Nhất Pharma"
+  },
+  {
+    "id": 859,
+    "label": "Công Ty TNHH SX Duy Hàng"
+  },
+  {
+    "id": 860,
+    "label": "Công Ty CP Trang Thiết Bị Kỹ Thuật Y Tế Tp. HCM"
+  },
+  {
+    "id": 861,
+    "label": "Công Ty Cổ Phần công nghệ thảo dược green ASIA"
+  },
+  {
+    "id": 862,
+    "label": "xuất xứ Pakistan"
+  },
+  {
+    "id": 863,
+    "label": "International organization for standazdization - Hàn Quốc"
+  },
+  {
+    "id": 864,
+    "label": "Công Ty Chong Kun Dang Pharmaceutical Corp – HÀN QUỐC"
+  },
+  {
+    "id": 865,
+    "label": "Shisedo- Nhật Bản"
+  },
+  {
+    "id": 866,
+    "label": "Nexxen- Hàn Quốc"
+  },
+  {
+    "id": 867,
+    "label": "Dược Phẩm Mộc Hoa Tràm"
+  },
+  {
+    "id": 868,
+    "label": "Beiersdorf AG hamburg Germany"
+  },
+  {
+    "id": 869,
+    "label": "Rebirth - australia"
+  },
+  {
+    "id": 870,
+    "label": "Aventa - Nga"
+  },
+  {
+    "id": 872,
+    "label": "Công ty F. Prochazka"
+  },
+  {
+    "id": 873,
+    "label": "Công ty cổ phần thương mại và sản xuất Bảo Phương"
+  },
+  {
+    "id": 874,
+    "label": "Công ty Arochem pharmaceutical Pvt.Ltd., Ấn Độ"
+  },
+  {
+    "id": 876,
+    "label": "Công ty cổ phần dịch vụ và thiết bị y tế An Minh"
+  },
+  {
+    "id": 878,
+    "label": "Liên doanh Đức- Mỹ- Việt Nam"
+  },
+  {
+    "id": 879,
+    "label": "Công ty pleasure Latex product SB"
+  },
+  {
+    "id": 881,
+    "label": "Việt Nam"
+  },
+  {
+    "id": 882,
+    "label": "Cosmax-nbt-inc"
+  },
+  {
+    "id": 883,
+    "label": "Công ty cổ phần dược phẩm S Pharm"
+  },
+  {
+    "id": 884,
+    "label": "Công Ty Cổ Phần Dược Phẩm Vioba Việt Nam"
+  },
+  {
+    "id": 885,
+    "label": "Công ty Hoa Việt"
+  },
+  {
+    "id": 886,
+    "label": "Công ty cổ phần dược quốc tế  navico"
+  },
+  {
+    "id": 888,
+    "label": "worwag pharma"
+  },
+  {
+    "id": 889,
+    "label": "Kyung Dong Pharm Co., Ltd - Hàn Quốc."
+  },
+  {
+    "id": 890,
+    "label": "Zim Laboratories Ltd."
+  },
+  {
+    "id": 891,
+    "label": "Công ty Sai Mirra Innopharm Pvt. Ltd - Ấn Độ."
+  },
+  {
+    "id": 892,
+    "label": "Santa Farma Ilac Sanayii A.S"
+  },
+  {
+    "id": 893,
+    "label": "Công ty TNHH dược phẩm quốc tế Amm Germany"
+  },
+  {
+    "id": 894,
+    "label": "Liên doanh Ai -Len"
+  },
+  {
+    "id": 896,
+    "label": "Sterling Drug"
+  },
+  {
+    "id": 898,
+    "label": "Công ty cổ phần Dược phẩm Sa Vi - VIỆT NAM"
+  },
+  {
+    "id": 900,
+    "label": "Công ty CP Enlie"
+  },
+  {
+    "id": 901,
+    "label": "Minnesota mining and manufacturing company"
+  },
+  {
+    "id": 902,
+    "label": "Công Ty Cổ Phần DECOTRA"
+  },
+  {
+    "id": 904,
+    "label": "Công Ty CP Astellas Pharma"
+  },
+  {
+    "id": 906,
+    "label": "Grace"
+  },
+  {
+    "id": 907,
+    "label": "Novell Pharmaceutical Laboratories"
+  },
+  {
+    "id": 908,
+    "label": "Công Ty TNHH Rohto-Mentholatum (Việt Nam)"
+  },
+  {
+    "id": 909,
+    "label": "Công Ty Schnell Biopharmaceuticals, In"
+  },
+  {
+    "id": 910,
+    "label": "Wonmom"
+  },
+  {
+    "id": 911,
+    "label": "Hovid Berhad Ltd"
+  },
+  {
+    "id": 912,
+    "label": "Henan kangdi medical devices co-ltd Trung Quốc"
+  },
+  {
+    "id": 913,
+    "label": "Công Ty Denk Pharma GmbH & Co.KG"
+  },
+  {
+    "id": 914,
+    "label": "Công ty cổ phần Iris-pharma"
+  },
+  {
+    "id": 915,
+    "label": "Taiwan Biotech Co., Ltd"
+  },
+  {
+    "id": 916,
+    "label": "Công ty CP Dược Mỹ phẩm Mypharma"
+  },
+  {
+    "id": 917,
+    "label": "Cơ sở Linh Trung"
+  },
+  {
+    "id": 918,
+    "label": "Công Ty Cổ Phần Dược Trung Ương Mediplantex"
+  },
+  {
+    "id": 919,
+    "label": "Công ty TNHH Mỹ Phẩm Lana"
+  },
+  {
+    "id": 920,
+    "label": "KMS Pharm Co"
+  },
+  {
+    "id": 921,
+    "label": "Công Ty CP Dược Phẩm Hải Phòng - Haipharco"
+  },
+  {
+    "id": 922,
+    "label": "z"
+  },
+  {
+    "id": 923,
+    "label": "Incepta Pharmaceuticals Ltd"
+  },
+  {
+    "id": 924,
+    "label": "Công Ty TNHH Biolab"
+  },
+  {
+    "id": 925,
+    "label": "Công Ty Cổ Phần Dược Pymepharco - Phú Yên"
+  },
+  {
+    "id": 926,
+    "label": "Giai Cảnh GPharm"
+  },
+  {
+    "id": 928,
+    "label": "YOO YOUNG PHARMACEUTICAL CO., LTD. - Hàn Quốc."
+  },
+  {
+    "id": 929,
+    "label": "Dược phẩm OTC"
+  },
+  {
+    "id": 931,
+    "label": "Công Ty TNHH THƯƠNG MẠI ĐẦU TƯ NAM GIANG"
+  },
+  {
+    "id": 932,
+    "label": "Công ty TNHH Liên Doanh VHOP"
+  },
+  {
+    "id": 933,
+    "label": "Công Ty Cổ Phần American Pharmaceutical & Health Product"
+  },
+  {
+    "id": 934,
+    "label": "Công Ty TNHH DP Quốc Tế Pháp Eiffel"
+  },
+  {
+    "id": 935,
+    "label": "Laboratoire Elerte SA"
+  },
+  {
+    "id": 937,
+    "label": "Guju Pharma Co., Ltd - HÀN QUỐC"
+  },
+  {
+    "id": 938,
+    "label": "Công Ty TNHH Chăm Sóc Sức Khoẻ và Đẹp Việt Nam"
+  },
+  {
+    "id": 939,
+    "label": "Rhydburg Pharmaceuticals Limited - ẤN ĐỘ"
+  },
+  {
+    "id": 940,
+    "label": "Earths Creation USA , Inc."
+  },
+  {
+    "id": 941,
+    "label": "Đai Han Pharm. Co., Ltd"
+  },
+  {
+    "id": 942,
+    "label": "Theon Pharmaceuticals Limited"
+  },
+  {
+    "id": 943,
+    "label": "Công Ty Dongkoo Pharm Co., Ltd"
+  },
+  {
+    "id": 944,
+    "label": "Công Ty Cổ Phần Dược Phẩm Đạt Vi Phú - Davipharm"
+  },
+  {
+    "id": 945,
+    "label": "Công ty liên doanh meyer-bpc"
+  },
+  {
+    "id": 946,
+    "label": "Công ty CP DP VIOBA Việt Nam"
+  },
+  {
+    "id": 947,
+    "label": "Natco Pharma Limited"
+  },
+  {
+    "id": 948,
+    "label": "Công ty CP Dược Liệu VMJ Pharma"
+  },
+  {
+    "id": 949,
+    "label": "Công Ty Cophavina"
+  },
+  {
+    "id": 950,
+    "label": "Hankook, Korea Republic Of"
+  },
+  {
+    "id": 952,
+    "label": "June Laboratories Co.,LTD"
+  },
+  {
+    "id": 953,
+    "label": "Tanabe Seiyaku Co., Ltd"
+  },
+  {
+    "id": 954,
+    "label": "Beauty Community"
+  },
+  {
+    "id": 955,
+    "label": "Công Ty TNHH ĐT DP VINAFA"
+  },
+  {
+    "id": 957,
+    "label": "Ethicon Inc."
+  },
+  {
+    "id": 958,
+    "label": "Công Ty TNHH Chỉ Phẫu Thuật CPT"
+  },
+  {
+    "id": 959,
+    "label": "Công Ty TNHH THIẾT BỊ Y TẾ HUÊ LỢI"
+  },
+  {
+    "id": 960,
+    "label": "Công Ty TNHH Dược Phẩm Polipharm Việt Nam"
+  },
+  {
+    "id": 961,
+    "label": "Siro Pharma Co"
+  },
+  {
+    "id": 962,
+    "label": "Công Ty Cổ Phần Baxco Pharmaceutical"
+  },
+  {
+    "id": 963,
+    "label": "Công Ty TNHH Cali Usa"
+  },
+  {
+    "id": 964,
+    "label": "Công Ty TNHH Dược Mỹ Phẩm Đắk Tín"
+  },
+  {
+    "id": 965,
+    "label": "Usarichpharm"
+  },
+  {
+    "id": 966,
+    "label": "Công ty TNHH Fusin Việt Nam"
+  },
+  {
+    "id": 967,
+    "label": "Unicell Pharm , Hàn Quốc"
+  },
+  {
+    "id": 968,
+    "label": "Vita Singnature"
+  },
+  {
+    "id": 969,
+    "label": "Công ty CP DP Quốc Gia"
+  },
+  {
+    "id": 970,
+    "label": "Công ty TNHH Beauty care us"
+  },
+  {
+    "id": 971,
+    "label": "Công Ty TNHH Robinson Pharma Usa"
+  },
+  {
+    "id": 972,
+    "label": "Công Ty TNHH Dược & Trang Thiết Bị Y Tế Viên An"
+  },
+  {
+    "id": 973,
+    "label": "Nugale pharmaceuticol .Inc"
+  },
+  {
+    "id": 974,
+    "label": "Thiên Hòa Đường"
+  },
+  {
+    "id": 976,
+    "label": "Dae han new pharm co-ltd"
+  },
+  {
+    "id": 977,
+    "label": "Aprogen Pharmaceuticals"
+  },
+  {
+    "id": 978,
+    "label": "Tianjin Tasly Pharmaceuticals Co. Ltd"
+  },
+  {
+    "id": 979,
+    "label": "CÔNG TY TNHH DƯỢC PHẨM HOÀNG PHÁT"
+  },
+  {
+    "id": 980,
+    "label": "Dragenopharm Apotheke Puschl GmbH & Co. KG - ĐỨ"
+  },
+  {
+    "id": 981,
+    "label": "Công Ty TNHH Tanida Pharma"
+  },
+  {
+    "id": 982,
+    "label": "Pharmekal Health Ltd. Usa"
+  },
+  {
+    "id": 984,
+    "label": "Công ty cổ phần trung ưng VIHCO"
+  },
+  {
+    "id": 985,
+    "label": "Công ty TNHH Yahon"
+  },
+  {
+    "id": 986,
+    "label": "Công Ty TNHH Bertram Chemical"
+  },
+  {
+    "id": 987,
+    "label": "Công ty TNHH United International Pharma - VIỆT NAM"
+  },
+  {
+    "id": 988,
+    "label": "Công Ty TNHH Hetero Labs"
+  },
+  {
+    "id": 989,
+    "label": "Công Ty TNHH Dược Phẩm Fito Pharma"
+  },
+  {
+    "id": 990,
+    "label": "Beihe Tang Medical Works"
+  },
+  {
+    "id": 991,
+    "label": "Công Ty TNHH Cadila Pharmaceuticals"
+  },
+  {
+    "id": 992,
+    "label": "Công ty TNHH Thế Giới ViTa"
+  },
+  {
+    "id": 993,
+    "label": "Công Ty Cổ Phần Dược Và VTYT Bình Thuận - Phapharco"
+  },
+  {
+    "id": 994,
+    "label": "Công Ty Cổ Phần Dược Phẩm Ampharco U.S.A"
+  },
+  {
+    "id": 995,
+    "label": "Otsuka Pharmaceutical Co., Ltd."
+  },
+  {
+    "id": 996,
+    "label": "Công Ty TNHH Lạc Việt"
+  },
+  {
+    "id": 997,
+    "label": "Shijiazhuang Yiling Pharmaceutical Co., Ltd"
+  },
+  {
+    "id": 998,
+    "label": "EA Pharma Co., Ltd"
+  },
+  {
+    "id": 999,
+    "label": "Novartis Farmaceutica S.A."
+  },
+  {
+    "id": 1000,
+    "label": "Công Ty RPG LIFE SCIENCES"
+  },
+  {
+    "id": 1001,
+    "label": "Công Ty Cổ Phần Dược Phẩm Oshii"
+  },
+  {
+    "id": 1002,
+    "label": "Công Ty Cổ Phần Dược Phẩm Mediphar"
+  },
+  {
+    "id": 1003,
+    "label": "Woerwag Pharma GmbH & Co. KG"
+  },
+  {
+    "id": 1004,
+    "label": "Công Ty TNHH Cho-A Pharm"
+  },
+  {
+    "id": 1005,
+    "label": "Laboratoires mayoly spindler S.A.S"
+  },
+  {
+    "id": 1006,
+    "label": "Công Ty TNHH Dược Phẩm Welip Malaysia"
+  },
+  {
+    "id": 1007,
+    "label": "Công Ty Cổ Phần Sản Xuất và Thương Mại Trung Mỹ"
+  },
+  {
+    "id": 1008,
+    "label": "Công try TNHH Đông Nam"
+  },
+  {
+    "id": 1009,
+    "label": "Công Ty CP Truepharmco"
+  },
+  {
+    "id": 1010,
+    "label": "Công Ty TNHH TM Hoàng Thăng Long"
+  },
+  {
+    "id": 1011,
+    "label": "Cơ Sở Bào Chế Đông Dược Song Long"
+  },
+  {
+    "id": 1012,
+    "label": "Công Ty TNHH Mộc Hoa Đường"
+  },
+  {
+    "id": 1013,
+    "label": "Công Ty CP Kingphar Việt Nam"
+  },
+  {
+    "id": 1014,
+    "label": "Công ty cổ phần mật ong tiền giang"
+  },
+  {
+    "id": 1015,
+    "label": "Công Ty TNHH Dược Khang Phú"
+  },
+  {
+    "id": 1016,
+    "label": "Công Ty Ferrer Internacional"
+  },
+  {
+    "id": 1017,
+    "label": "Công Ty TNHH Thương Mại Dịch Vụ Khang Minh"
+  },
+  {
+    "id": 1018,
+    "label": "Bprotected Việt Nam"
+  },
+  {
+    "id": 1019,
+    "label": "Công Ty TNHH Daewoo Pharm"
+  },
+  {
+    "id": 1020,
+    "label": "CÔNG TY TNHH DƯỢC PHẨM EXALAB"
+  },
+  {
+    "id": 1021,
+    "label": "Công Ty Cổ Phần Dược Phẩm Hương Hoàng"
+  },
+  {
+    "id": 1022,
+    "label": "Bausch & Lomb"
+  },
+  {
+    "id": 1023,
+    "label": "Công Ty TNHH Green Cross Việt Nam"
+  },
+  {
+    "id": 1024,
+    "label": "Công Ty Cổ Phần Fobelife"
+  },
+  {
+    "id": 1025,
+    "label": "Công Ty TNHH Dược Phẩm Quốc Tế T&T Pharma"
+  },
+  {
+    "id": 1026,
+    "label": "Công Ty TNHH TRANG THIẾT BỊ Y TẾ HOÀNG KIM"
+  },
+  {
+    "id": 1027,
+    "label": "Công Ty Cổ Phần Apotex"
+  },
+  {
+    "id": 1028,
+    "label": "Công ty cổ phần Quốc Tế STP"
+  },
+  {
+    "id": 1029,
+    "label": "Công Ty TNHH Dược Phẩm An Sinh"
+  },
+  {
+    "id": 1030,
+    "label": "Công ty santa farma ilac sanayii a.s"
+  },
+  {
+    "id": 1031,
+    "label": "Laboratorio Reig Jofre, S.A"
+  },
+  {
+    "id": 1032,
+    "label": "Công Ty Cổ Phần Dược Phẩm Hà Nội"
+  },
+  {
+    "id": 1033,
+    "label": "Công Ty Cổ Phần Nam Dược"
+  },
+  {
+    "id": 1034,
+    "label": "Công Ty TNHH MTV Sức Sống Mới"
+  },
+  {
+    "id": 1035,
+    "label": "Công Ty Lark Laboratories., Ltd"
+  },
+  {
+    "id": 1036,
+    "label": "Công Ty TNHH TMDP Minh Quân"
+  },
+  {
+    "id": 1037,
+    "label": "Y.S.P Industries (M) Sdn. Bhd"
+  },
+  {
+    "id": 1041,
+    "label": "Công ty cổ phần Fresh life"
+  },
+  {
+    "id": 1042,
+    "label": "TABLETS INDIA LTD"
+  },
+  {
+    "id": 1043,
+    "label": "Trang Ly Pharma"
+  },
+  {
+    "id": 1044,
+    "label": "Công Ty Ajinomoto Pharma"
+  },
+  {
+    "id": 1045,
+    "label": "natrol LLC USA"
+  },
+  {
+    "id": 1047,
+    "label": "Công Ty TNHH Dược Phẩm Thiên Khánh"
+  },
+  {
+    "id": 1049,
+    "label": "Công Ty TNHH Dược Phẩm Fusi"
+  },
+  {
+    "id": 1050,
+    "label": "Công Ty Cổ Phần Thuốc Sát Trùng Việt Nam - Vipesco"
+  },
+  {
+    "id": 1051,
+    "label": "Công Ty TNHH Dược Phẩm Hoàng Hải"
+  },
+  {
+    "id": 1052,
+    "label": "Công Ty TNHH Thương Mại Isopharco"
+  },
+  {
+    "id": 1053,
+    "label": "Công Ty Cổ Phần Ong Xuân Nguyên"
+  },
+  {
+    "id": 1054,
+    "label": "Công ty cổ phần Elepharm"
+  },
+  {
+    "id": 1055,
+    "label": "L.B.S. Laboratories., Ltd. Part"
+  },
+  {
+    "id": 1056,
+    "label": "FARMONA – IDEEPHARM CO.LTD"
+  },
+  {
+    "id": 1057,
+    "label": "CÔNG TY CỔ PHẦN THƯƠNG MẠI QUỐC TẾ PHÁP MỸ/ USA FRANCE INTRADE., JSC"
+  },
+  {
+    "id": 1058,
+    "label": "Công Ty TNHH Dược Phẩm Việt Phúc"
+  },
+  {
+    "id": 1059,
+    "label": "Công Ty TNHH MTV Mỹ Phẩm Minh Phước"
+  },
+  {
+    "id": 1060,
+    "label": "Kotra Pharma (M) Sdn Bhd"
+  },
+  {
+    "id": 1061,
+    "label": "Công Ty TNHH Axon Drugs Private"
+  },
+  {
+    "id": 1062,
+    "label": "Công Ty TNHH Tinh Dầu Thiên Nhiên Vina Oils"
+  },
+  {
+    "id": 1063,
+    "label": "Công Ty Korea Arlico Phảm Co., Ltd"
+  },
+  {
+    "id": 1064,
+    "label": "Công Ty Dược EU pharco"
+  },
+  {
+    "id": 1065,
+    "label": "nanogen pharmaceutical biotechnology JSC"
+  },
+  {
+    "id": 1066,
+    "label": "Zhangjiakou Taikang Pharm Factory"
+  },
+  {
+    "id": 1067,
+    "label": "Công Ty Cổ Phần Atlantic Pharmaceuticals"
+  },
+  {
+    "id": 1068,
+    "label": "Huons Co., Ltd -Hàn Quốc"
+  },
+  {
+    "id": 1069,
+    "label": "Công Ty Cổ Phần Liên Doanh Dược G&P FRANCE"
+  },
+  {
+    "id": 1070,
+    "label": "Công Ty Cổ Phần Titafa"
+  },
+  {
+    "id": 1071,
+    "label": "JRP Pharmaceutical Private Limitd"
+  },
+  {
+    "id": 1072,
+    "label": "Công Ty TNHH Một Thành Viên Dược Mỹ Phẩm Denna Việt Nam"
+  },
+  {
+    "id": 1073,
+    "label": "Umedica laboratories pvt ltd"
+  },
+  {
+    "id": 1074,
+    "label": "Công Ty TNHH Batex Healthcare"
+  },
+  {
+    "id": 1075,
+    "label": "Cơ sở sản xuất mật ong Long khánh"
+  },
+  {
+    "id": 1076,
+    "label": "HERBAPOL"
+  },
+  {
+    "id": 1078,
+    "label": "Công ty Eli Lilly & Company"
+  },
+  {
+    "id": 1079,
+    "label": "Moryathai 101 Co.,Ltd"
+  },
+  {
+    "id": 1080,
+    "label": "Công Ty Suree's Thai Kitchen"
+  },
+  {
+    "id": 1081,
+    "label": "Cty Abc"
+  },
+  {
+    "id": 1082,
+    "label": "JS Pharm . Co., Ltd - HÀN QUỐC"
+  },
+  {
+    "id": 1083,
+    "label": "Công Ty TNHH Golden Health USA"
+  },
+  {
+    "id": 1085,
+    "label": "Công Ty TNHH DƯỢC PHẨM TẤT THÀNH"
+  },
+  {
+    "id": 1086,
+    "label": "PHARMASCIENCE"
+  },
+  {
+    "id": 1087,
+    "label": "Công Ty Pharmatex Italia"
+  },
+  {
+    "id": 1088,
+    "label": "Công Ty TNHH Medisol"
+  },
+  {
+    "id": 1089,
+    "label": "Pharma Developpment - France"
+  },
+  {
+    "id": 1090,
+    "label": "Meditop pharmaceutical ltd hungary"
+  },
+  {
+    "id": 1091,
+    "label": "Công Ty TNHH ADC - Việt Nam"
+  },
+  {
+    "id": 1092,
+    "label": "Công Ty Cổ Phần Dược Phẩm Amtex Pharma"
+  },
+  {
+    "id": 1093,
+    "label": "Công Ty Lợi Thành"
+  },
+  {
+    "id": 1094,
+    "label": "Công Ty Cổ Phần Tập Đoàn-Mỹ Phẩm Vinpharma"
+  },
+  {
+    "id": 1095,
+    "label": "Cssx Tinh Dầu Nhị Long"
+  },
+  {
+    "id": 1096,
+    "label": "CT TNHH Thảo Dược Thanh Hằng"
+  },
+  {
+    "id": 1097,
+    "label": "Cơ Sở Liên Kết"
+  },
+  {
+    "id": 1098,
+    "label": "Công Ty TNHH Sản Xuất Thương Mại Dịch Vụ Hải Sơn Pha"
+  },
+  {
+    "id": 1099,
+    "label": "Công Ty Pharmathen S.A"
+  },
+  {
+    "id": 1100,
+    "label": "Công Ty TNHH Đông Dược Xuân Quang"
+  },
+  {
+    "id": 1101,
+    "label": "Công Ty Cổ Phần Dược Và Thiết Bị Y Tế Phúc Hà"
+  },
+  {
+    "id": 1102,
+    "label": "Công Ty TNHH Thảo Dược Việt"
+  },
+  {
+    "id": 1104,
+    "label": "Công Ty TNHH Ascent Pharmahealth"
+  },
+  {
+    "id": 1105,
+    "label": "Công Ty TNHH Lito"
+  },
+  {
+    "id": 1106,
+    "label": "Công Ty Cổ Phần Dược Phẩm Cần Giờ"
+  },
+  {
+    "id": 1107,
+    "label": "Công Ty Premier Outlook-Malaysia"
+  },
+  {
+    "id": 1108,
+    "label": "Suretex Ltd"
+  },
+  {
+    "id": 1109,
+    "label": "Masculan - Đức"
+  },
+  {
+    "id": 1110,
+    "label": "Sakatachi Co., Ltd"
+  },
+  {
+    "id": 1111,
+    "label": "Công ty Aventis"
+  },
+  {
+    "id": 1112,
+    "label": "Công Ty TNHH Thương Mại Dịch Vụ Dopha"
+  },
+  {
+    "id": 1113,
+    "label": "Công Ty TNHH Torrent Pharm"
+  },
+  {
+    "id": 1114,
+    "label": "Công Ty TNHH Bao Cao Su Y Tế Tân Cuộc Sống"
+  },
+  {
+    "id": 1115,
+    "label": "Công Ty TNHH Dược Phẩm Hoàng Phúc"
+  },
+  {
+    "id": 1116,
+    "label": "Công Ty Tai Guk Pharm. Ind Co., Ltd"
+  },
+  {
+    "id": 1117,
+    "label": "Công Ty TNHH Aspen Pharmacare Australia"
+  },
+  {
+    "id": 1118,
+    "label": "Công Ty TNHH FRANCE PHARMA"
+  },
+  {
+    "id": 1119,
+    "label": "Công Ty AVA Pharmaceutical"
+  },
+  {
+    "id": 1120,
+    "label": "Công Ty TNHH Dược Phẩm Tân Thịnh"
+  },
+  {
+    "id": 1121,
+    "label": "Công Ty Cổ Phần Dược Bắc Ninh"
+  },
+  {
+    "id": 1123,
+    "label": "Công ty dược phẩm Zydus Cadila"
+  },
+  {
+    "id": 1124,
+    "label": "Công Ty TNHH Ahn-Gook Pharmaceutical"
+  },
+  {
+    "id": 1125,
+    "label": "Công Ty Sinil Pharm Co"
+  },
+  {
+    "id": 1126,
+    "label": "FAVOREX"
+  },
+  {
+    "id": 1127,
+    "label": "Công Ty Kovic Kate International Thái Lan"
+  },
+  {
+    "id": 1128,
+    "label": "Ming Yan"
+  },
+  {
+    "id": 1129,
+    "label": "Công Ty TNHH Sản Xuất Thương Mại Siêu Thành"
+  },
+  {
+    "id": 1130,
+    "label": "Công Ty TNHH Nhựa Vinson"
+  },
+  {
+    "id": 1132,
+    "label": "Công Ty TNHH BioCo Hungary"
+  },
+  {
+    "id": 1133,
+    "label": "Công Ty TNHH MTV Vắc Xin Và Sinh Phẩm Nha Trang - Biopharco"
+  },
+  {
+    "id": 1134,
+    "label": "Công Ty TNHH Hồng Huệ"
+  },
+  {
+    "id": 1135,
+    "label": "SAVA MEDICA LIMITED"
+  },
+  {
+    "id": 1136,
+    "label": "Bioton Co., Ltd - BA LAN"
+  },
+  {
+    "id": 1137,
+    "label": "Công Ty Wonmom"
+  },
+  {
+    "id": 1138,
+    "label": "Công Ty TNHH Dược Phẩm Medive"
+  },
+  {
+    "id": 1139,
+    "label": "Rusan Pharma Ltd"
+  },
+  {
+    "id": 1140,
+    "label": "XL Laboratories Pvt. Ltd"
+  },
+  {
+    "id": 1141,
+    "label": "Công Ty TNHH Anh Phát"
+  },
+  {
+    "id": 1142,
+    "label": "Thương Mại Hóa Sản Phẩm"
+  },
+  {
+    "id": 1143,
+    "label": "Beauty & Eva"
+  },
+  {
+    "id": 1144,
+    "label": "Công Ty TNHH Liên Trinh"
+  },
+  {
+    "id": 1145,
+    "label": "Công Ty TNHH TM Và SX Dược Phẩm Bình Minh"
+  },
+  {
+    "id": 1146,
+    "label": "Công ty TNHH Sản Xuất Và Thương Mại Hiệp Hưng"
+  },
+  {
+    "id": 1147,
+    "label": "Công Ty Tnhh Dụng Cụ Thiết Bị Y Tế Trung Tín"
+  },
+  {
+    "id": 1148,
+    "label": "Công Ty TNHH Trang Thiết Bị Y Tế Việt Tiến"
+  },
+  {
+    "id": 1149,
+    "label": "Công Ty TNHH Celogen Pharma"
+  },
+  {
+    "id": 1150,
+    "label": "ORBE"
+  },
+  {
+    "id": 1151,
+    "label": "Công Ty Cổ Phần Khoa Học Công Nghệ & Thương Mại Lạc Lê"
+  },
+  {
+    "id": 1152,
+    "label": "OM Pharma SA"
+  },
+  {
+    "id": 1153,
+    "label": "Công Ty TNHH Senju Pharmaceutical"
+  },
+  {
+    "id": 1154,
+    "label": "Biocheck"
+  },
+  {
+    "id": 1155,
+    "label": "Granions Laboratories"
+  },
+  {
+    "id": 1156,
+    "label": "Haw Par Healthcare Limited"
+  },
+  {
+    "id": 1157,
+    "label": "Công Ty TNHH MTV Đức Thọ Sanh"
+  },
+  {
+    "id": 1158,
+    "label": "Công Ty Cp Dược Và Trang Thiết Bị Y Tế Sơn Hà"
+  },
+  {
+    "id": 1159,
+    "label": "Ind-Swift Laboratories Ltd"
+  },
+  {
+    "id": 1160,
+    "label": "Công Ty Cổ Phần Công Nghệ Sinh Học - Dược Phẩm ICA"
+  },
+  {
+    "id": 1161,
+    "label": "Công Ty Cổ Phần Dược Phẩm Amvi"
+  },
+  {
+    "id": 1162,
+    "label": "Gerda Inc"
+  },
+  {
+    "id": 1163,
+    "label": "Stallion Pharmaceuticals PVT LTD"
+  },
+  {
+    "id": 1164,
+    "label": "Công Ty TNHH Dược Phẩm Quốc Tế Celia - France"
+  },
+  {
+    "id": 1165,
+    "label": "Công Ty CP TM Và DP Hưng Việt"
+  },
+  {
+    "id": 1166,
+    "label": "Công Ty Earth's Creation"
+  },
+  {
+    "id": 1167,
+    "label": "Công Ty TNHH Brown & Burk Pharm"
+  },
+  {
+    "id": 1168,
+    "label": "Công Ty TNHH Hyphens Pharma"
+  },
+  {
+    "id": 1169,
+    "label": "Công Ty Cổ Phần Ammed Pharmco USA"
+  },
+  {
+    "id": 1170,
+    "label": "Hongwei Biological Technology Co., Ltd."
+  },
+  {
+    "id": 1171,
+    "label": "Công Ty Cổ Phần Dược Tâm Dược"
+  },
+  {
+    "id": 1172,
+    "label": "Cơ Sở Sản Xuất Đông Dược Hòa Thuận Đường"
+  },
+  {
+    "id": 1173,
+    "label": "Geliga Slipway Sdn Bhd"
+  },
+  {
+    "id": 1174,
+    "label": "PT. Eagle Indo Pharma"
+  },
+  {
+    "id": 1175,
+    "label": "Công Ty TNHH Borden"
+  },
+  {
+    "id": 1176,
+    "label": "Công Ty TNHH Dược Phẩm Leung Kai Fook"
+  },
+  {
+    "id": 1177,
+    "label": "Công Ty TNHH Dược Phẩm Indico"
+  },
+  {
+    "id": 1178,
+    "label": "No Rinse Laboratories, LLC"
+  },
+  {
+    "id": 1179,
+    "label": "Công Ty Sino – American Dihon Kunming"
+  },
+  {
+    "id": 1180,
+    "label": "Công Ty TNHH SXTM Vicogreen"
+  },
+  {
+    "id": 1181,
+    "label": "Công Ty Cơ Sở Chánh Đại"
+  },
+  {
+    "id": 1182,
+    "label": "Green Herb Oil"
+  },
+  {
+    "id": 1183,
+    "label": "COSMOPROJECT S.P.A."
+  },
+  {
+    "id": 1184,
+    "label": "Sirio Pharma Co.,Ltd"
+  },
+  {
+    "id": 1185,
+    "label": "Công Ty TNHH Camelion Battery"
+  },
+  {
+    "id": 1186,
+    "label": "Prime Pharmaceuticals Pvt. Ltd.,"
+  },
+  {
+    "id": 1187,
+    "label": "Công Ty TNHH Mỹ Phẩm Ánh Phương"
+  },
+  {
+    "id": 1188,
+    "label": "Công Ty TNHH Alina Combine Pharmaceuticals"
+  },
+  {
+    "id": 1189,
+    "label": "Square Lifescience Pvt Ltd"
+  },
+  {
+    "id": 1190,
+    "label": "Công Ty CP Tập Đoàn Dược Phẩm & Thương Mại SOHAC"
+  },
+  {
+    "id": 1191,
+    "label": "Teofarma S.R.L"
+  },
+  {
+    "id": 1192,
+    "label": "Công Ty Dược Phẩm Reliv Healthcare"
+  },
+  {
+    "id": 1193,
+    "label": "Emcure Pharmaceuticals Limited"
+  },
+  {
+    "id": 1194,
+    "label": "Công Ty CP TM Dược Phẩm Tiến Thịnh"
+  },
+  {
+    "id": 1195,
+    "label": "Laboratoires Pharmaceutiques Trenker NV/SA - Bỉ"
+  },
+  {
+    "id": 1196,
+    "label": "Công Ty TNHH Lofthouse Of Fleetwood"
+  },
+  {
+    "id": 1197,
+    "label": "Công Ty Cổ Phần C.B Fleet"
+  },
+  {
+    "id": 1198,
+    "label": "Công Ty TNHH Life Pharma"
+  },
+  {
+    "id": 1199,
+    "label": "Công Ty TNHH FU Yuan VN"
+  },
+  {
+    "id": 1201,
+    "label": "Sumitomo Dainippon Pharma Co., Ltd"
+  },
+  {
+    "id": 1202,
+    "label": "Công Ty Cổ Phần Dược Phẩm Euvipharm"
+  },
+  {
+    "id": 1203,
+    "label": "Viking Lab Oy"
+  },
+  {
+    "id": 1204,
+    "label": "Natureplex Pharmaceuticals Company"
+  },
+  {
+    "id": 1205,
+    "label": "Công Ty Cổ Phần Thiết Bị Vật Tư Y Tế H Và X"
+  },
+  {
+    "id": 1206,
+    "label": "USQUARE LIFESCIENCE PVT. LTD - ẤN ĐỘ"
+  },
+  {
+    "id": 1207,
+    "label": "Dược Phẩm Cysina"
+  },
+  {
+    "id": 1208,
+    "label": "Công Ty Cổ Phần TM TBYT Phú Cường"
+  },
+  {
+    "id": 1209,
+    "label": "Công Ty Italfarmaco S.A"
+  },
+  {
+    "id": 1210,
+    "label": "Công Ty The IBN Sina Pharmaceutical Industry Ltd - BĂNG LA ĐÉT"
+  },
+  {
+    "id": 1211,
+    "label": "Rose Chem International Corp., USA"
+  },
+  {
+    "id": 1212,
+    "label": "Công Ty Tnhh Linh Lee Cosmetics"
+  },
+  {
+    "id": 1213,
+    "label": "Công Ty TNHH Phân Phối Quốc Tế T&H"
+  },
+  {
+    "id": 1214,
+    "label": "Henan Furen Huaiqingtang Pharmaceutical Co., Ltd"
+  },
+  {
+    "id": 1215,
+    "label": "Công Ty Công Ty TNHH Dược Phẩm Gia Phú"
+  },
+  {
+    "id": 1216,
+    "label": "Công Ty Cổ Phần Dược Hadico"
+  },
+  {
+    "id": 1217,
+    "label": "BRUSCHETTINI S.R.LGenoa, Italy"
+  },
+  {
+    "id": 1218,
+    "label": "ISIS Pharma Việt Nam - ERBE Pharma"
+  },
+  {
+    "id": 1219,
+    "label": "Công Ty TNHH Dược Phẩm Medvie"
+  },
+  {
+    "id": 1220,
+    "label": "Công Ty TNHH Dược Phẩm Tú Uyên"
+  },
+  {
+    "id": 1221,
+    "label": "Công Ty Ajanta Pharma., Ltd"
+  },
+  {
+    "id": 1222,
+    "label": "Jeil Pharmaceutical Co., Ltd"
+  },
+  {
+    "id": 1223,
+    "label": "Công Ty LISAPHARMA S.P.A"
+  },
+  {
+    "id": 1224,
+    "label": "Skinicer"
+  },
+  {
+    "id": 1225,
+    "label": "Songjuk Cosmetic; Hàn Quốc"
+  },
+  {
+    "id": 1226,
+    "label": "Stiefel Laboratories"
+  },
+  {
+    "id": 1227,
+    "label": "Laboratorios Kin S.A"
+  },
+  {
+    "id": 1228,
+    "label": "SkinMD"
+  },
+  {
+    "id": 1229,
+    "label": "Công Ty TNHH Santafa"
+  },
+  {
+    "id": 1230,
+    "label": "Công Ty TNHH MTV TM Top Queen Collagen VN"
+  },
+  {
+    "id": 1231,
+    "label": "Công Ty Cổ Phần Cleo Việt Nam"
+  },
+  {
+    "id": 1232,
+    "label": "Spirularin"
+  },
+  {
+    "id": 1233,
+    "label": "Công Ty Laboratoires Fumouze"
+  },
+  {
+    "id": 1234,
+    "label": "Công Ty Cổ Phần Dược Phẩm Quảng Bình - Quapharco"
+  },
+  {
+    "id": 1235,
+    "label": "Công Ty Liên Doanh Sản Xuất Kẹo Perfetti Việt Nam"
+  },
+  {
+    "id": 1236,
+    "label": "Công Ty Cổ Phần Phú Tường Quốc Tế"
+  },
+  {
+    "id": 1237,
+    "label": "Công Ty Cổ Phần Dược Phẩm Nutifine"
+  },
+  {
+    "id": 1238,
+    "label": "Công Ty Pocheon Ginseng Association"
+  },
+  {
+    "id": 1239,
+    "label": "Ricola"
+  },
+  {
+    "id": 1240,
+    "label": "Công Ty TNHH HYPERION"
+  },
+  {
+    "id": 1241,
+    "label": "Công Ty TNHH New Toyo Pulppy (Việt Nam)"
+  },
+  {
+    "id": 1242,
+    "label": "Công Ty TNHH Gold Baby Care Việt Nam"
+  },
+  {
+    "id": 1243,
+    "label": "Công Ty Cổ Phần Wonder Care Việt Nam"
+  },
+  {
+    "id": 1244,
+    "label": "Công Ty TNHH Sản Xuất Thương Mại Dịch Vụ Minh Đạt."
+  },
+  {
+    "id": 1246,
+    "label": "Công Ty Cổ Phần Thời Trang Việt"
+  },
+  {
+    "id": 1247,
+    "label": "Công Ty Cổ Phần Y DƯỢC 3T"
+  },
+  {
+    "id": 1248,
+    "label": "Công Ty TNHH Sản Xuất Và Thương Mại Trương Vui"
+  },
+  {
+    "id": 1249,
+    "label": "Welip (M) Sdn Bhd"
+  },
+  {
+    "id": 1250,
+    "label": "Công Ty TNHH Công Nghệ Nhân Sinh - Hulipha"
+  },
+  {
+    "id": 1251,
+    "label": "Công Ty CP Liên Doanh TPP-France"
+  },
+  {
+    "id": 1252,
+    "label": "Công Ty Cổ Phần GLOBAL PHARMACEUTICAL"
+  },
+  {
+    "id": 1253,
+    "label": "Công Ty TNHH MEGAVITA VIỆT NAM."
+  },
+  {
+    "id": 1254,
+    "label": "Công Ty TNHH Dược Phẩm Thiên Khang"
+  },
+  {
+    "id": 1255,
+    "label": "Shulton Inc."
+  },
+  {
+    "id": 1256,
+    "label": "Công Ty TNHH Centaur Pharmaceuticals"
+  },
+  {
+    "id": 1257,
+    "label": "Madaus GmbH"
+  },
+  {
+    "id": 1258,
+    "label": "Tada Pharmaceuticals"
+  },
+  {
+    "id": 1259,
+    "label": "Công Ty TNHH Matrix Việt Nam"
+  },
+  {
+    "id": 1260,
+    "label": "Nu–Health Products Co"
+  },
+  {
+    "id": 1261,
+    "label": "Taidoc Technology Corporation"
+  },
+  {
+    "id": 1262,
+    "label": "Công Ty Medica Korea Co., Ltd"
+  },
+  {
+    "id": 1263,
+    "label": "Công Ty MARTINEZ NIESTO S.A"
+  },
+  {
+    "id": 1264,
+    "label": "Công Ty Cổ Phần Dược Phẩm Việt (Đông Dược Việt)"
+  },
+  {
+    "id": 1265,
+    "label": "CELL BIOTECH"
+  },
+  {
+    "id": 1267,
+    "label": "Panacea Medical Technologies Pvt Ltd"
+  },
+  {
+    "id": 1268,
+    "label": "Aju Pharm CO., LTD"
+  },
+  {
+    "id": 1269,
+    "label": "Công Ty Cổ Phẩn Dược Đồng Tân"
+  },
+  {
+    "id": 1270,
+    "label": "Công Ty Cổ Phần Sản Xuất Và Thương Mại Hồng Bàng"
+  },
+  {
+    "id": 1271,
+    "label": "LABORATOIRE DE LA MER"
+  },
+  {
+    "id": 1272,
+    "label": "Công Ty TNHH Dược Phẩm Bình Đông - BidoPhar"
+  },
+  {
+    "id": 1273,
+    "label": "Công Ty Cổ Phần Đầu Tư Và Sản Xuất Âu Cơ"
+  },
+  {
+    "id": 1274,
+    "label": "Ying Yuan Chemical Pharmaceuticals Co., Ltd"
+  },
+  {
+    "id": 1275,
+    "label": "Nutralab Canada Ltd."
+  },
+  {
+    "id": 1276,
+    "label": "Rising Pharmaceuticals"
+  },
+  {
+    "id": 1277,
+    "label": "Kolmar Pharma Co., Ltd."
+  },
+  {
+    "id": 1278,
+    "label": "Công Ty Everbest Co. Ltd"
+  },
+  {
+    "id": 1279,
+    "label": "Young Il Pharm. Co. Ltd"
+  },
+  {
+    "id": 1280,
+    "label": "Myung-In Pharm. Co., Ltd."
+  },
+  {
+    "id": 1281,
+    "label": "Công Ty CP Dược Phẩm Quốc Tế Việt Nam Anh Quốc Trường Đại Hưng"
+  },
+  {
+    "id": 1282,
+    "label": "Kalfany Suesse Werbung GmbH & Co.KG"
+  },
+  {
+    "id": 1284,
+    "label": "Eurolife Healthcare Pvt., Ltd"
+  },
+  {
+    "id": 1285,
+    "label": "Infopia Co., Ltd"
+  },
+  {
+    "id": 1286,
+    "label": "MedNet GmbH"
+  },
+  {
+    "id": 1287,
+    "label": "Phamatech, Inc."
+  },
+  {
+    "id": 1288,
+    "label": "Công Ty Kora Healthcare"
+  },
+  {
+    "id": 1289,
+    "label": "Công Ty Dr. Reddys Laboratories Ltd."
+  },
+  {
+    "id": 1290,
+    "label": "Shandong Reyoung Pharmaceutical Co., Ltd. - China"
+  },
+  {
+    "id": 1291,
+    "label": "Công Ty TNHH Dược Phẩm Gia Phúc"
+  },
+  {
+    "id": 1293,
+    "label": "Công Ty TNHH Maxlife"
+  },
+  {
+    "id": 1294,
+    "label": "Công Ty Cổ Phần Tập Đoàn Dược Mỹ Phẩm Vipharma"
+  },
+  {
+    "id": 1295,
+    "label": "CTY TNHH DƯỢC PHẨM VME"
+  },
+  {
+    "id": 1296,
+    "label": "T.O. Chemicals (1979) LTD."
+  },
+  {
+    "id": 1297,
+    "label": "Công Ty Cổ Phần Thương Mại Dược Phẩm Euromed"
+  },
+  {
+    "id": 1298,
+    "label": "Viện Dược Liệu"
+  },
+  {
+    "id": 1299,
+    "label": "Công Ty Bristol Myers Squibb Việt Nam"
+  },
+  {
+    "id": 1300,
+    "label": "Công Ty TNHH Chea Pharma"
+  },
+  {
+    "id": 1301,
+    "label": "DESMA PHARMA Group"
+  },
+  {
+    "id": 1302,
+    "label": "Công Ty TNHH Binex"
+  },
+  {
+    "id": 1303,
+    "label": "Công Ty TNHH Kao Việt Nam"
+  },
+  {
+    "id": 1304,
+    "label": "Universal Pharmaceuticals Pty Ltd"
+  },
+  {
+    "id": 1305,
+    "label": "Y-Nature; Hàn Quốc"
+  },
+  {
+    "id": 1306,
+    "label": "Công Ty TNHH Daniel Keith Việt Nam"
+  },
+  {
+    "id": 1307,
+    "label": "Công Ty Cổ Phần Dược Phẩm Quận 3 - ThreePharco"
+  },
+  {
+    "id": 1308,
+    "label": "Công Ty TNHH MTV Trường Việt"
+  },
+  {
+    "id": 1309,
+    "label": "Công Ty TNHH Trường Anh Pharm"
+  },
+  {
+    "id": 1310,
+    "label": "Cure Medicines (I) Pvt Ltd"
+  },
+  {
+    "id": 1311,
+    "label": "Công Ty Cổ Phần Dược Phẩm Minh Kỳ"
+  },
+  {
+    "id": 1312,
+    "label": "Shering Plough"
+  },
+  {
+    "id": 1313,
+    "label": "Synmedic Laboratories, SA"
+  },
+  {
+    "id": 1314,
+    "label": "Cơ Sở Sản Xuất Thuốc YHCT Kim Nguyên Đường"
+  },
+  {
+    "id": 1315,
+    "label": "Mitsubishi Tanabe Pharma Corporation"
+  },
+  {
+    "id": 1316,
+    "label": "Công Ty TNHH Bharat Parenterals"
+  },
+  {
+    "id": 1317,
+    "label": "Công Ty Cổ Phần Dược Phẩm Tenamyd"
+  },
+  {
+    "id": 1318,
+    "label": "Kirkland & Ellis Advised Lincolnshire Management Inc."
+  },
+  {
+    "id": 1319,
+    "label": "Công Ty TNHH Tonkin Việt Nam"
+  },
+  {
+    "id": 1320,
+    "label": "Công Ty TNHH Vĩnh Tiến"
+  },
+  {
+    "id": 1321,
+    "label": "Công Ty TNHH Nuôi Trồng, Sản Xuất Và Chế Biến Dược Liệu Đông Bắc"
+  },
+  {
+    "id": 1322,
+    "label": "Công Ty TNHH Dược Phẩm Hải Phát"
+  },
+  {
+    "id": 1323,
+    "label": "Dntn Trà Hoàn Ngọc 7 Nga Tây Ninh"
+  },
+  {
+    "id": 1324,
+    "label": "Samik Pharmaceutical Co., Ltd"
+  },
+  {
+    "id": 1325,
+    "label": "Dae Han New Pharm Co., Ltd"
+  },
+  {
+    "id": 1326,
+    "label": "LAB Pharmacy, Bangkok, Thailand."
+  },
+  {
+    "id": 1327,
+    "label": "Công Ty POND'S CHEMICAL THAILAN R.O.P"
+  },
+  {
+    "id": 1328,
+    "label": "Daewoo Pharm Co., Ltd"
+  },
+  {
+    "id": 1329,
+    "label": "Công Ty TNHH TM Dược Phẩm Minh Sang"
+  },
+  {
+    "id": 1330,
+    "label": "Alpex Pharma SA."
+  },
+  {
+    "id": 1331,
+    "label": "Công Ty TNHH Troikaa Pharmaceuticals"
+  },
+  {
+    "id": 1332,
+    "label": "Công Ty TNHH Sinh Học Quốc Tế Lotus 5"
+  },
+  {
+    "id": 1333,
+    "label": "Cơ Sở Đặng Nguyên Đường - VIỆT NAM"
+  },
+  {
+    "id": 1334,
+    "label": "Viện Nghiên Cứu Y Dược Cổ Truyền Tuệ Tĩnh"
+  },
+  {
+    "id": 1335,
+    "label": "Công Ty Cổ Phần Dược Phẩm Hoa Việt"
+  },
+  {
+    "id": 1336,
+    "label": "Laboratorios Casasco S.A.I.C"
+  },
+  {
+    "id": 1337,
+    "label": "Công Ty Cổ Phần Dược Phẩm Vinacare"
+  },
+  {
+    "id": 1338,
+    "label": "Công Ty CP Công Nghệ Sinh Học Kim Hòa"
+  },
+  {
+    "id": 1339,
+    "label": "Công Ty Cổ Phần Thương Mại-Dược-Sâm Ngọc Linh Quảng Nam"
+  },
+  {
+    "id": 1340,
+    "label": "Công Ty Cổ Phần Phát Triển Dược Vesta"
+  },
+  {
+    "id": 1341,
+    "label": "Công Ty Inter Techno"
+  },
+  {
+    "id": 1342,
+    "label": "Haupt Pharma Amareg GmbH"
+  },
+  {
+    "id": 1343,
+    "label": "Công Ty TNHH Thương Mại Và Dịch Vụ Tuệ Đức"
+  },
+  {
+    "id": 1344,
+    "label": "Ketoski"
+  },
+  {
+    "id": 1345,
+    "label": "Bihaku"
+  },
+  {
+    "id": 1346,
+    "label": "Cty TNHH Tinh Dầu - Thảo Dược Dalosa Việt Nam"
+  },
+  {
+    "id": 1347,
+    "label": "Nutrimed International"
+  },
+  {
+    "id": 1348,
+    "label": "Kendy Ltd Bankya, Bulgaria"
+  },
+  {
+    "id": 1349,
+    "label": "Công Ty TNHH Công Nghệ Vĩnh Tân"
+  },
+  {
+    "id": 1350,
+    "label": "Công Ty CP MDH Pharma"
+  },
+  {
+    "id": 1351,
+    "label": "Công Ty TNHH MTV VĨNH XUÂN"
+  },
+  {
+    "id": 1352,
+    "label": "Yunnan Baian Medical Selence & TechnologyCo.,LTD"
+  },
+  {
+    "id": 1353,
+    "label": "Tai Yu Chemical & Pharmaceutical Co., Ltd."
+  },
+  {
+    "id": 1354,
+    "label": "Công Ty Dược Phẩm Thiên Ngân"
+  },
+  {
+    "id": 1355,
+    "label": "TILMAN S.A – Bỉ (Belgium)"
+  },
+  {
+    "id": 1356,
+    "label": "DR.WILLMAR SCHWABE GMBH&CO.KG"
+  },
+  {
+    "id": 1357,
+    "label": "NEW ZEALAND NUTRITIONALS LIMITED"
+  },
+  {
+    "id": 1358,
+    "label": "Cơ Sở Y Dược Học Cổ Truyền Dân Tộc Nguyễn Minh Trí"
+  },
+  {
+    "id": 1359,
+    "label": "Rottapharm Ltd."
+  },
+  {
+    "id": 1360,
+    "label": "DeRoyal Industries Inc."
+  },
+  {
+    "id": 1361,
+    "label": "Hameln Pharmaceuticals GmbH"
+  },
+  {
+    "id": 1362,
+    "label": "New Gene Pharm Co. Inc - HÀN QUỐC"
+  },
+  {
+    "id": 1363,
+    "label": "Yee Hong Pharmacy Sdn. Bhd"
+  },
+  {
+    "id": 1364,
+    "label": "Nitto Medic Co.Ltd."
+  },
+  {
+    "id": 1365,
+    "label": "Laboratoires Chauvin - PHÁP"
+  },
+  {
+    "id": 1366,
+    "label": "Standard Chem & Pharm Co., Ltd"
+  },
+  {
+    "id": 1367,
+    "label": "Nin JiomMedicine Manufactory ( HK) Ltd."
+  },
+  {
+    "id": 1368,
+    "label": "Akriti Pharmaceuticals Pvt. LTD"
+  },
+  {
+    "id": 1369,
+    "label": "Procter & Gamble Company (P&G)"
+  },
+  {
+    "id": 1370,
+    "label": "Kusum Healthcare Pvt. Ltd"
+  },
+  {
+    "id": 1371,
+    "label": "Laboratorio Elea S.A.C.I.F.YA"
+  },
+  {
+    "id": 1372,
+    "label": "Penmix"
+  },
+  {
+    "id": 1373,
+    "label": "Công Ty Lipa Pharm Pty., Ltd"
+  },
+  {
+    "id": 1374,
+    "label": "Bosch Pharmaceutical (PVT) Ltd. - Pakistan"
+  },
+  {
+    "id": 1375,
+    "label": "UMEDICA Laboratories Pvt Ltd."
+  },
+  {
+    "id": 1376,
+    "label": "Công Ty TNHH Dược Phẩm Hồng Phong"
+  },
+  {
+    "id": 1377,
+    "label": "Công Ty TNHH Thế Giới Vi Ta Min"
+  },
+  {
+    "id": 1378,
+    "label": "Công Ty Samil Pharma Co., Ltd"
+  },
+  {
+    "id": 1379,
+    "label": "Công Ty Merck Sante S.A.S"
+  },
+  {
+    "id": 1380,
+    "label": "Gyoungju Herbal Medicine"
+  },
+  {
+    "id": 1381,
+    "label": "Mỹ Phẩm Ipek"
+  },
+  {
+    "id": 1382,
+    "label": "Công Ty CP SX và Kinh Doanh Thiết Bị Y Tế Minh Đức"
+  },
+  {
+    "id": 1383,
+    "label": "Pharmalife Research s.r.l"
+  },
+  {
+    "id": 1384,
+    "label": "Laboratoires Galeniques Vernin - PHÁP"
+  },
+  {
+    "id": 1385,
+    "label": "Công Ty TNHH XD Sản xuất và XNK An Đại Phát"
+  },
+  {
+    "id": 1386,
+    "label": "JRP Co., Ltd. - Hàn Quốc."
+  },
+  {
+    "id": 1387,
+    "label": "EKUBERG PHARMA S.U.R.L"
+  },
+  {
+    "id": 1388,
+    "label": "Precise Chemipharma Pvt. Ltd. - ẤN ĐỘ"
+  },
+  {
+    "id": 1389,
+    "label": "HEALTHAID - THE UK'S LEADING NUTRITION SUPPLIER"
+  },
+  {
+    "id": 1390,
+    "label": "Puritan Pride-Mỹ"
+  },
+  {
+    "id": 1391,
+    "label": "Công Ty Dược Phẩm Medibest"
+  },
+  {
+    "id": 1392,
+    "label": "Solepharm Pharmaceuticals"
+  },
+  {
+    "id": 1393,
+    "label": "Công ty Gamma Chemicals PTE"
+  },
+  {
+    "id": 1394,
+    "label": "CÔNG TY TNHH DƯỢC PHẨM SMARD"
+  },
+  {
+    "id": 1395,
+    "label": "Puritan's Pride"
+  },
+  {
+    "id": 1396,
+    "label": "AVIZOR, S.A. LA Canada"
+  },
+  {
+    "id": 1397,
+    "label": "VINATEA"
+  },
+  {
+    "id": 1398,
+    "label": "Terumo (Nhật)"
+  },
+  {
+    "id": 1399,
+    "label": "Delpharm Lille SAS. France"
+  },
+  {
+    "id": 1400,
+    "label": "Eagle USA Pharma Company."
+  },
+  {
+    "id": 1401,
+    "label": "V-Biotech"
+  },
+  {
+    "id": 1402,
+    "label": "Kinezika – Slovenia"
+  },
+  {
+    "id": 1403,
+    "label": "Herbacoy USA"
+  },
+  {
+    "id": 1404,
+    "label": "S.C Antibiotice S.A"
+  },
+  {
+    "id": 1405,
+    "label": "Ht pharma"
+  },
+  {
+    "id": 1406,
+    "label": "Công Ty Cổ Phần DP Megapharco"
+  },
+  {
+    "id": 1407,
+    "label": "Công Ty CP DP An pha"
+  },
+  {
+    "id": 1408,
+    "label": "Nu-Health Products Company – USA"
+  },
+  {
+    "id": 1409,
+    "label": "Công ty cổ phần xuất nhập khẩu M&B Việt Nam"
+  },
+  {
+    "id": 1410,
+    "label": "Công Ty Cổ Phần Dược Thanh Liêm Medipharma"
+  },
+  {
+    "id": 1411,
+    "label": "Công Ty Cổ Phần Sản Xuất Dược Liệu Trung Ương 28"
+  },
+  {
+    "id": 1412,
+    "label": "Công Ty Cổ Phần Dược Phẩm VCP"
+  },
+  {
+    "id": 1413,
+    "label": "Công ty Kwangdong Pharma"
+  },
+  {
+    "id": 1414,
+    "label": "Công Ty Cổ Phần Thương Mại Dược Vật Tư Khải Hoàn"
+  },
+  {
+    "id": 1415,
+    "label": "Laboratorio Italiano Biochimico Farmaceutico Lisapharma S.p.A"
+  },
+  {
+    "id": 1416,
+    "label": "Công ty Liên doanh Dược Phẩm Pháp – ELOGE"
+  },
+  {
+    "id": 1417,
+    "label": "Công Ty TNHH SX TM Nam Tín"
+  },
+  {
+    "id": 1418,
+    "label": "Công Ty Cổ Phần Merufa"
+  },
+  {
+    "id": 1419,
+    "label": "Yu Luen Biotech Scientific Co., Ltđ."
+  },
+  {
+    "id": 1420,
+    "label": "Công Ty Cổ Phần Dược Apimed"
+  },
+  {
+    "id": 1422,
+    "label": "Mylan Pharmaceuticals Pvt. Ltd. - ẤN ĐỘ"
+  },
+  {
+    "id": 1423,
+    "label": "Viện Vắc Xin Và Sinh Phẩm Y Tế Nha Trang IVAC"
+  },
+  {
+    "id": 1424,
+    "label": "Ind Swift-Ấn Độ"
+  },
+  {
+    "id": 1425,
+    "label": "Sebamed GMBH & CO.KG"
+  },
+  {
+    "id": 1427,
+    "label": "Thailinphar"
+  },
+  {
+    "id": 1428,
+    "label": "Đan Mạch"
+  },
+  {
+    "id": 1429,
+    "label": "Ba Lan"
+  },
+  {
+    "id": 1430,
+    "label": "Công ty Rohto Pharmaceutical Japan"
+  },
+  {
+    "id": 1431,
+    "label": "Cơ sở sản xuất Tế Sinh"
+  },
+  {
+    "id": 1432,
+    "label": "Biona Việt Nam"
+  },
+  {
+    "id": 1433,
+    "label": "Dược Vilas"
+  },
+  {
+    "id": 1434,
+    "label": "Công Ty TNHH Công Nghệ Sinh Học Dược Mỹ Phẩm SJK"
+  },
+  {
+    "id": 1435,
+    "label": "Công Ty Tâm An"
+  },
+  {
+    "id": 1436,
+    "label": "Công Ty Bảo Lâm"
+  },
+  {
+    "id": 1437,
+    "label": "Công Ty Dr Kool"
+  },
+  {
+    "id": 1438,
+    "label": "Công ty Aloe Vera of America Hoa Kỳ"
+  },
+  {
+    "id": 1439,
+    "label": "Tây Ban Nha"
+  },
+  {
+    "id": 1440,
+    "label": "Ancare"
+  },
+  {
+    "id": 1441,
+    "label": "Công Ty TNHH VPC Việt Nam"
+  },
+  {
+    "id": 1442,
+    "label": "Công Ty TNHH Sản Thương Mại Vật Tư Y Tế Mai Sơn"
+  },
+  {
+    "id": 1443,
+    "label": "Công ty Wakamono"
+  },
+  {
+    "id": 1444,
+    "label": "Công Ty TNHH Medisafe Việt Nam"
+  },
+  {
+    "id": 1445,
+    "label": "The Zone Hàn Quốc"
+  },
+  {
+    "id": 1446,
+    "label": "Công Ty CP Khoa Học Và Công Nghệ Techland"
+  },
+  {
+    "id": 1447,
+    "label": "Aekyung Industrial Co., Ltd"
+  },
+  {
+    "id": 1448,
+    "label": "Cadila Pharmaceuticals Ltd"
+  },
+  {
+    "id": 1449,
+    "label": "Herbalife Manufacturing LLC"
+  },
+  {
+    "id": 1450,
+    "label": "Công Ty Cổ Phần Mật Ong Ban Mê Thuật"
+  },
+  {
+    "id": 1451,
+    "label": "Công ty Cổ Phần Xuất Nhập Khẩu Eufood Việt Nam"
+  },
+  {
+    "id": 1452,
+    "label": "Tanaka Sangyo"
+  },
+  {
+    "id": 1453,
+    "label": "ACON Laboratories Inc USA"
+  },
+  {
+    "id": 1454,
+    "label": "Laboratories SVM"
+  },
+  {
+    "id": 1455,
+    "label": "Viện dinh dưỡng Việt Nam"
+  },
+  {
+    "id": 1456,
+    "label": "Công Ty TNHH Công Nghệ Xanh Thành Châu"
+  },
+  {
+    "id": 1458,
+    "label": "Công Ty Merind Ltd"
+  },
+  {
+    "id": 1459,
+    "label": "Nhà Máy Công Nghệ Cao IMC Quang Minh"
+  },
+  {
+    "id": 1460,
+    "label": "Natures Aid"
+  },
+  {
+    "id": 1461,
+    "label": "S.A Alcon Couvreur N.V"
+  },
+  {
+    "id": 1462,
+    "label": "Công Ty Cổ Phần Dược Kim Bảng"
+  },
+  {
+    "id": 1463,
+    "label": "Công Ty Greetmed"
+  },
+  {
+    "id": 1464,
+    "label": "Công Ty Tp Pharm"
+  },
+  {
+    "id": 1465,
+    "label": "Natures Bounty"
+  },
+  {
+    "id": 1466,
+    "label": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM CHUCK"
+  },
+  {
+    "id": 1467,
+    "label": "CÔNG TY TNHH VẬT TƯ Y TẾ LỘC LUYẾN"
+  },
+  {
+    "id": 1468,
+    "label": "Little bees"
+  },
+  {
+    "id": 1469,
+    "label": "Valens Int , D.O.O- slovenia"
+  },
+  {
+    "id": 1470,
+    "label": "HKD CƠ SỞ AN PHÁT"
+  },
+  {
+    "id": 1471,
+    "label": "Green Light Pharma"
+  },
+  {
+    "id": 1472,
+    "label": "Power Nutritional Co. USA"
+  },
+  {
+    "id": 1473,
+    "label": "Teva Thổ Nhĩ Kỳ"
+  },
+  {
+    "id": 1474,
+    "label": "Olive Healthcare"
+  },
+  {
+    "id": 1475,
+    "label": "Oromi"
+  },
+  {
+    "id": 1476,
+    "label": "Lifescan"
+  },
+  {
+    "id": 1477,
+    "label": "HBM Pharma s.r.o - Slovakia"
+  },
+  {
+    "id": 1478,
+    "label": "JCS Scientific Technological Pharm Firm 'Polysan' - NGA"
+  },
+  {
+    "id": 1480,
+    "label": "Everyday Health"
+  },
+  {
+    "id": 1481,
+    "label": "Sagami Rubber Industries Co., Ltd- Nhật Bản"
+  },
+  {
+    "id": 1482,
+    "label": "Viện PASTEUR"
+  },
+  {
+    "id": 1483,
+    "label": "Bayer Healthcare Pharmaceuticals"
+  },
+  {
+    "id": 1484,
+    "label": "HITA PHARMACY"
+  },
+  {
+    "id": 1485,
+    "label": "Công ty TNHH Dược phẩm Teva"
+  },
+  {
+    "id": 1486,
+    "label": "Medicpharma"
+  },
+  {
+    "id": 1487,
+    "label": "Bharat Serums and Vaccines Ltd Ấn Độ"
+  },
+  {
+    "id": 1488,
+    "label": "Đồng Nhân Đường"
+  },
+  {
+    "id": 1489,
+    "label": "Công Ty TNHH Dược phẩm Nhất Tâm"
+  },
+  {
+    "id": 1490,
+    "label": "Công Ty Dược phẩm và TM  Phương Đông"
+  },
+  {
+    "id": 1491,
+    "label": "Sky New Pharm"
+  },
+  {
+    "id": 1492,
+    "label": "Công Ty TNHH kinh doanh tổng hợp Hoàng Dũng"
+  },
+  {
+    "id": 1493,
+    "label": "ErgoPharm d.o.o"
+  },
+  {
+    "id": 1495,
+    "label": "Nmtech Italia Srl"
+  },
+  {
+    "id": 1496,
+    "label": "NTC Pharma Via dei Gracchi - Italy"
+  },
+  {
+    "id": 1497,
+    "label": "Công Ty CP DP Quốc Tế Việt Nam Quốc Trường Đại Hưng"
+  },
+  {
+    "id": 1498,
+    "label": "Công Ty CP Dược Phẩm Rosix"
+  },
+  {
+    "id": 1499,
+    "label": "Công ty Life Science Investment Limited"
+  },
+  {
+    "id": 1500,
+    "label": "Công Ty Dược Atrimed  Ấn Độ"
+  },
+  {
+    "id": 1501,
+    "label": "Eric Favre Wellness"
+  },
+  {
+    "id": 1502,
+    "label": "BDF AG, Hamburg"
+  },
+  {
+    "id": 1503,
+    "label": "Sebapharma GmbH & Co. KG"
+  },
+  {
+    "id": 1504,
+    "label": "Ziaja Balan"
+  },
+  {
+    "id": 1505,
+    "label": "Công ty TNHH Thương mại Dược phẩm Trang Ly"
+  },
+  {
+    "id": 1506,
+    "label": "Công ty cổ phần tinh dầu và hương liệu Family"
+  },
+  {
+    "id": 1507,
+    "label": "Công ty TNHH Thương mại Golden Life Australia"
+  },
+  {
+    "id": 1508,
+    "label": "Công ty cổ phần tập đoàn vật tư y tế Việt Nam"
+  },
+  {
+    "id": 1509,
+    "label": "Công ty TNHH Thương Mại Dược phẩm Nhật Quang Việt Nam"
+  },
+  {
+    "id": 1510,
+    "label": "Công Ty Cổ Phần Dược Phẩm Quốc Tế USA"
+  },
+  {
+    "id": 1511,
+    "label": "laboratioire dermatologique ACM"
+  },
+  {
+    "id": 1512,
+    "label": "Công Ty TNHH Đầu Tư Thương Mại Và Vật Tư Y Tế LH"
+  },
+  {
+    "id": 1513,
+    "label": "Công Ty Cổ Phần Quốc Tế Dược Phẩm Hadu"
+  },
+  {
+    "id": 1514,
+    "label": "Công Ty TNHH DP TM Quốc Tế New Today"
+  },
+  {
+    "id": 1515,
+    "label": "Công ty PT Tempo Scan Pacific- Indonesia"
+  },
+  {
+    "id": 1516,
+    "label": "Ocean Pharma"
+  },
+  {
+    "id": 1517,
+    "label": "Công ty cổ phần dược phẩm trung ương Viheco"
+  },
+  {
+    "id": 1518,
+    "label": "Công ty TNHH xuất nhập khẩu dược mỹ phẩm Thanh Trang"
+  },
+  {
+    "id": 1519,
+    "label": "Công ty TNHH Home Health Vina"
+  },
+  {
+    "id": 1520,
+    "label": "Macleods Pharm., Ltd Ấn Độ"
+  },
+  {
+    "id": 1521,
+    "label": "công ty TNHH Heiwa Hygiene hà nội"
+  },
+  {
+    "id": 1522,
+    "label": "Dược 3 - 2"
+  },
+  {
+    "id": 1523,
+    "label": "công ty cổ phần đầu tư dược phẩm gia linh"
+  },
+  {
+    "id": 1524,
+    "label": "nhà SX Meliatrade"
+  },
+  {
+    "id": 1525,
+    "label": "LKIMEXCO., LTD Hàn Quốc"
+  },
+  {
+    "id": 1526,
+    "label": "công ty TNHH DP và y tế tiện lợi"
+  },
+  {
+    "id": 1527,
+    "label": "công ty TNHH hoàng minh châu"
+  },
+  {
+    "id": 1528,
+    "label": "Daitotsusho Co., Ltd"
+  },
+  {
+    "id": 1529,
+    "label": "công ty TNHH thương mại dịc vụ alphabet"
+  },
+  {
+    "id": 1530,
+    "label": "Durex"
+  },
+  {
+    "id": 1531,
+    "label": "Rafam S.A"
+  },
+  {
+    "id": 1532,
+    "label": "Golden Time"
+  },
+  {
+    "id": 1533,
+    "label": "công ty TNHH đầu tư và công nghệ hùng hy"
+  },
+  {
+    "id": 1534,
+    "label": "INNOVA"
+  },
+  {
+    "id": 1535,
+    "label": "công ty TNHH united interational pharma"
+  },
+  {
+    "id": 1536,
+    "label": "Công Ty TNHH Công nghệ Biovagen Việt Nam"
+  },
+  {
+    "id": 1538,
+    "label": "Công Ty Cổ Phần Kinmac"
+  },
+  {
+    "id": 1539,
+    "label": "công ty cổ phần quốc tế tân sơn anh"
+  },
+  {
+    "id": 1540,
+    "label": "công ty TNHH dược tùng lộc"
+  },
+  {
+    "id": 1541,
+    "label": "Công Ty Dược Phẩm Và Dịch Vụ Y Tế DrQueen Bioderma France"
+  },
+  {
+    "id": 1542,
+    "label": "Menarini - Ấn Độ"
+  },
+  {
+    "id": 1543,
+    "label": "Công Ty Cổ Phần Dược Phẩm Cpc1 Hà Nội"
+  },
+  {
+    "id": 1544,
+    "label": "Laboratoire Urgo"
+  },
+  {
+    "id": 1545,
+    "label": "TK. Pharco., Ltd"
+  },
+  {
+    "id": 1546,
+    "label": "Công ty cổ phần dược phẩm HIGH TECH USA"
+  },
+  {
+    "id": 1547,
+    "label": "ASTRIM, INC"
+  },
+  {
+    "id": 1548,
+    "label": "Manufacturing & Packaging Service Pty Ltd (Úc)"
+  },
+  {
+    "id": 1549,
+    "label": "Công Ty TNHH Dược Mỹ Phẩm Delavy"
+  },
+  {
+    "id": 1550,
+    "label": "B.Braun Medical AG"
+  },
+  {
+    "id": 1551,
+    "label": "Công ty TNHH Dược phẩm ECO Việt Nam"
+  },
+  {
+    "id": 1552,
+    "label": "Biocare Baby"
+  },
+  {
+    "id": 1553,
+    "label": "Công ty cổ phần dược phẩm Savi Việt Nam"
+  },
+  {
+    "id": 1554,
+    "label": "Teawoong food Korea"
+  },
+  {
+    "id": 1555,
+    "label": "Herbcure Co., Ltd"
+  },
+  {
+    "id": 1556,
+    "label": "Genbody Hàn Quốc"
+  },
+  {
+    "id": 1557,
+    "label": "Công ty TNHH Medicon"
+  },
+  {
+    "id": 1558,
+    "label": "Công ty TNHH sản xuất dịch vụ và thương mại Bình An"
+  },
+  {
+    "id": 1559,
+    "label": "Công ty cổ phấn dược Miền Đông"
+  },
+  {
+    "id": 1560,
+    "label": "Công ty TNHH dược phẩm Nam Việt"
+  },
+  {
+    "id": 1561,
+    "label": "Cho-A Pharm.Co., Ltd - Hàn Quốc"
+  },
+  {
+    "id": 1562,
+    "label": "Công ty dược phẩm Quế Lâm"
+  },
+  {
+    "id": 1563,
+    "label": "Công ty cổ phần dược phẩm Ecolife"
+  },
+  {
+    "id": 1564,
+    "label": "Công ty TNHH Sức Khỏe Tốt"
+  },
+  {
+    "id": 1565,
+    "label": "Công Ty Cổ Phần Quốc Tế Đại Lợi"
+  },
+  {
+    "id": 1566,
+    "label": "Merck Sharp & Dohme Ltd."
+  },
+  {
+    "id": 1567,
+    "label": "Navana Pharm ., Ltd - Băng- La - Đet"
+  },
+  {
+    "id": 1568,
+    "label": "yungjin Pharm, Co.; Ltd"
+  },
+  {
+    "id": 1571,
+    "label": "Công Ty Cổ Phần Bibica"
+  },
+  {
+    "id": 1572,
+    "label": "Dược mỹ phẩm Đức"
+  },
+  {
+    "id": 1573,
+    "label": "Batiste"
+  },
+  {
+    "id": 1574,
+    "label": "Công ty TNHH MTV Tinh dầu Bé Thơ."
+  },
+  {
+    "id": 1575,
+    "label": "Quốc tế việt pháp"
+  },
+  {
+    "id": 1576,
+    "label": "Aurobindo Pharma . , Ltd - Ấn Độ"
+  },
+  {
+    "id": 1577,
+    "label": "Tae Young Trading Company, Korea"
+  },
+  {
+    "id": 1578,
+    "label": "Jinhua jingdi"
+  },
+  {
+    "id": 1579,
+    "label": "Công ty cổ phần vắc xin và sinh phẩm nha trang - Biopharco"
+  },
+  {
+    "id": 1580,
+    "label": "Stearling Healthcare Pvt. Ltd - Ấn Độ"
+  },
+  {
+    "id": 1581,
+    "label": "Công Ty Cổ Phần Đầu Tư Thương Mại và Dược Phẩm Thăng Long"
+  },
+  {
+    "id": 1582,
+    "label": "Novartis Pharm Produktions GmbH - Đức"
+  },
+  {
+    "id": 1584,
+    "label": "Dược phẩm Nhật Rohto- Mentholatum"
+  },
+  {
+    "id": 1585,
+    "label": "Jw Life Science"
+  },
+  {
+    "id": 1586,
+    "label": "Cty TNHH Dược Phẩm Phương Nam"
+  },
+  {
+    "id": 1587,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC PHẨM LIÊN DOANH FOXS-USA"
+  },
+  {
+    "id": 1588,
+    "label": "Wales Korea Pharm Co., Ltd"
+  },
+  {
+    "id": 1589,
+    "label": "Long Time"
+  },
+  {
+    "id": 1590,
+    "label": "Đảo JeJu Hàn Quốc"
+  },
+  {
+    "id": 1591,
+    "label": "Mason Natrural"
+  },
+  {
+    "id": 1592,
+    "label": "Công Ty TNHH DƯỢC - Mỹ Phẩm ĐĂK TÍN"
+  },
+  {
+    "id": 1593,
+    "label": "Eveline"
+  },
+  {
+    "id": 1595,
+    "label": "Cien"
+  },
+  {
+    "id": 1596,
+    "label": "Silky Veil"
+  },
+  {
+    "id": 1597,
+    "label": "L'ore'al"
+  },
+  {
+    "id": 1598,
+    "label": "Hada Labo"
+  },
+  {
+    "id": 1599,
+    "label": "Euro-Med Laboratoires"
+  },
+  {
+    "id": 1600,
+    "label": "Cruset"
+  },
+  {
+    "id": 1601,
+    "label": "Công ty TNHH 1TV SX TM XNK Mỹ Phẩm Tùng Ân"
+  },
+  {
+    "id": 1602,
+    "label": "Công ty TNHH vật tư y tế omiga"
+  },
+  {
+    "id": 1603,
+    "label": "Công Ty dược phẩm Tiền Giang"
+  },
+  {
+    "id": 1604,
+    "label": "VinaHankook"
+  },
+  {
+    "id": 1605,
+    "label": "supplement"
+  },
+  {
+    "id": 1606,
+    "label": "Công ty Cổ phần Thương mại Dược Phẩm Quang Minh"
+  },
+  {
+    "id": 1607,
+    "label": "Lion"
+  },
+  {
+    "id": 1608,
+    "label": "Galpha Laboratoires., Ltd"
+  },
+  {
+    "id": 1610,
+    "label": "New Zealand Health"
+  },
+  {
+    "id": 1612,
+    "label": "Korean Ginseng Research Co., Ltd. – JECSCO"
+  },
+  {
+    "id": 1613,
+    "label": "Balm"
+  },
+  {
+    "id": 1614,
+    "label": "Công ty TNHH SX-TM Dược phẩm NIC (NIC Pharma) – Việt Nam"
+  },
+  {
+    "id": 1615,
+    "label": "Công Ty TNHH Nam Dược"
+  },
+  {
+    "id": 1616,
+    "label": "Mayinglong Pharma"
+  },
+  {
+    "id": 1617,
+    "label": "Công ty cổ phần dược phẩm TW3"
+  },
+  {
+    "id": 1618,
+    "label": "Công ty TNHH TM Egopharm Việt Nam"
+  },
+  {
+    "id": 1619,
+    "label": "Công ty cổ phần tập đoàn dược phẩm và thiết bị y tế Đại Nam"
+  },
+  {
+    "id": 1620,
+    "label": "công ty TNHH Tuệ linh"
+  },
+  {
+    "id": 1621,
+    "label": "Pt Agel Langgeng"
+  },
+  {
+    "id": 1622,
+    "label": "Công Ty dược phẩm FRANCE GROUP"
+  },
+  {
+    "id": 1623,
+    "label": "Công ty cổ phần Asem Vina"
+  },
+  {
+    "id": 1624,
+    "label": "Công ty dược phẩm BIBITA"
+  },
+  {
+    "id": 1625,
+    "label": "Laboratorios lesvi, S.L"
+  },
+  {
+    "id": 1626,
+    "label": "Công Ty cổ phần dược khoa Pacific"
+  },
+  {
+    "id": 1628,
+    "label": "Công ty cổ phần dược phẩm An Giang"
+  },
+  {
+    "id": 1629,
+    "label": "Poli pharm Thái Lan"
+  },
+  {
+    "id": 1630,
+    "label": "Công ty TNHH dược phẩm MEDI  USPHARMA"
+  },
+  {
+    "id": 1631,
+    "label": "Công ty CP khoa học sản xuất công nghệ sinh học và môi trường"
+  },
+  {
+    "id": 1632,
+    "label": "Công ty TNHH Novartis"
+  },
+  {
+    "id": 1633,
+    "label": "Công ty cổ phần thương mại và thiết bị y tế Sacophar"
+  },
+  {
+    "id": 1634,
+    "label": "MLM Health Care Co,.Ltd Thailand"
+  },
+  {
+    "id": 1635,
+    "label": "ZHEJIANG RUIXIN PHARMACEUTICAL CO., LTD"
+  },
+  {
+    "id": 1636,
+    "label": "New Fadem S.r.L - Italia"
+  },
+  {
+    "id": 1637,
+    "label": "Fourrts ( India ) Laboratories Pvt., Ltd"
+  },
+  {
+    "id": 1639,
+    "label": "Sava Healthcare Limited"
+  },
+  {
+    "id": 1640,
+    "label": "Korea Arlico Pharm"
+  },
+  {
+    "id": 1641,
+    "label": "ISIS"
+  },
+  {
+    "id": 1642,
+    "label": "Provix Việt Nam"
+  },
+  {
+    "id": 1643,
+    "label": "Công ty TNHH thương mại dược Hải Minh"
+  },
+  {
+    "id": 1644,
+    "label": "Công ty Cổ phần Fresenius Kabi Bidiphar - Việt Nam."
+  },
+  {
+    "id": 1645,
+    "label": "Công ty TNHH Wild Land"
+  },
+  {
+    "id": 1646,
+    "label": "M/S Health Biotech (P)., Ltd"
+  },
+  {
+    "id": 1647,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRƯỜNG THỌ BÌNH DƯƠNG"
+  },
+  {
+    "id": 1648,
+    "label": "Công ty Korea drug co.,ltd."
+  },
+  {
+    "id": 1649,
+    "label": "Laboratoires Ineldea - Pháp"
+  },
+  {
+    "id": 1650,
+    "label": "Holista Health (Canada) Inc"
+  },
+  {
+    "id": 1651,
+    "label": "Accu Check"
+  },
+  {
+    "id": 1652,
+    "label": "Công ty TNHH Johnson & Johnson Mỹ"
+  },
+  {
+    "id": 1653,
+    "label": "Công ty cổ phần dược phẩm Gia Nguyễn"
+  },
+  {
+    "id": 1654,
+    "label": "Công ty Cổ phần Thảo Dược O.K.B"
+  },
+  {
+    "id": 1655,
+    "label": "T.P. Drug Laboratory Co., Ltd"
+  },
+  {
+    "id": 1657,
+    "label": "CÔNG TY TNHH DƯỢC PHẨM QUỐC TẾ AN HÒA PHÁT TAKEDA TOKYO JAPAN"
+  },
+  {
+    "id": 1658,
+    "label": "Besins Healthcare"
+  },
+  {
+    "id": 1659,
+    "label": "Công ty cố phần công nghệ Zorro"
+  },
+  {
+    "id": 1660,
+    "label": "Công ty dược phẩm  Galderma Laboratories"
+  },
+  {
+    "id": 1661,
+    "label": "Công ty TNHH Dược phẩm olimpia"
+  },
+  {
+    "id": 1662,
+    "label": "Công ty cổ phần dược thảo Thiên Phúc"
+  },
+  {
+    "id": 1663,
+    "label": "Công ty dược phẩm Ấn Độ"
+  },
+  {
+    "id": 1664,
+    "label": "Smb Technology, Bỉ"
+  },
+  {
+    "id": 1665,
+    "label": "Viện Da Liễu Hà Nội"
+  },
+  {
+    "id": 1666,
+    "label": "Công ty TNHH Sản xuất và Dịch vụ thương mại Thành Vinh."
+  },
+  {
+    "id": 1667,
+    "label": "Công Ty TNHH SX & MP Hân Vy"
+  },
+  {
+    "id": 1668,
+    "label": "Beauty Star Hàn Quốc"
+  },
+  {
+    "id": 1669,
+    "label": "Benew Hàn Quốc"
+  },
+  {
+    "id": 1670,
+    "label": "AEKYUNG Industry Co., Ltd"
+  },
+  {
+    "id": 1671,
+    "label": "BIOZEN PHARMACEUTICAL- Malaysia"
+  },
+  {
+    "id": 1672,
+    "label": "Huyndai pharm- Hàn Quốc"
+  },
+  {
+    "id": 1673,
+    "label": "Công ty dược KOKANDO- Nhật Bản"
+  },
+  {
+    "id": 1675,
+    "label": "Paula’s choice- Mỹ"
+  },
+  {
+    "id": 1676,
+    "label": "Ấn Độ"
+  },
+  {
+    "id": 1677,
+    "label": "Genepharm S.A, Pallini, Hy Lạp"
+  },
+  {
+    "id": 1678,
+    "label": "Nature’s Made, Mỹ"
+  },
+  {
+    "id": 1679,
+    "label": "Germany"
+  },
+  {
+    "id": 1680,
+    "label": "Gilbert, Pháp"
+  },
+  {
+    "id": 1684,
+    "label": "Densmore, Laboratorie,Pháp"
+  },
+  {
+    "id": 1685,
+    "label": "Merk, France"
+  },
+  {
+    "id": 1686,
+    "label": "Farmona- Ba Lan- poland"
+  },
+  {
+    "id": 1687,
+    "label": "Novartis Singapore Pharmaceutical Manufacturing Pte. Ltd"
+  },
+  {
+    "id": 1688,
+    "label": "Macedonia"
+  },
+  {
+    "id": 1689,
+    "label": "Starpharma Pty. Ltd- belgium"
+  },
+  {
+    "id": 1690,
+    "label": "Công Ty Cổ Phần Dược Phẩm Dadison Hoa Kì"
+  },
+  {
+    "id": 1691,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC TH PHARMA"
+  },
+  {
+    "id": 1692,
+    "label": "Công ty Kunming Pharmaceutical Corp"
+  },
+  {
+    "id": 1693,
+    "label": "Công ty TNHH Ong Hòa Bình, Vĩnh Phúc"
+  },
+  {
+    "id": 1694,
+    "label": "Công ty dược vật tư y tế Hà Nam"
+  },
+  {
+    "id": 1695,
+    "label": "công ty cổ phần mỹ phẩm bảo xinh"
+  },
+  {
+    "id": 1696,
+    "label": "Công ty TNHH Nam Phát"
+  },
+  {
+    "id": 1697,
+    "label": "Công ty TNHH Nam Phát"
+  },
+  {
+    "id": 1698,
+    "label": "Công ty cổ phần Y tế Rex"
+  },
+  {
+    "id": 1699,
+    "label": "Công ty cổ phần Dịch vụ và Thiết bị Y tế An Sinh"
+  },
+  {
+    "id": 1700,
+    "label": "Santen Pharmaceutical Co., Ltd"
+  },
+  {
+    "id": 1701,
+    "label": "công ty  Santen Pharmaceutical Co., Ltd"
+  },
+  {
+    "id": 1702,
+    "label": "Quatrefolic Mỹ"
+  },
+  {
+    "id": 1703,
+    "label": "mặc định"
+  },
+  {
+    "id": 1704,
+    "label": "TV.Pharm"
+  },
+  {
+    "id": 1705,
+    "label": "DP Hà Thanh"
+  },
+  {
+    "id": 1706,
+    "label": "công ty  TV.Pharm"
+  },
+  {
+    "id": 1707,
+    "label": "Vitath"
+  },
+  {
+    "id": 1708,
+    "label": "Kern Pharma S.L - TÂY BAN NHA"
+  },
+  {
+    "id": 1709,
+    "label": "Sanofi"
+  },
+  {
+    "id": 1710,
+    "label": "Laboratoires Pierre Fabre - Pháp"
+  },
+  {
+    "id": 1711,
+    "label": "Rivopharm - Thụy sĩ"
+  },
+  {
+    "id": 1712,
+    "label": "Anfarm Hellas S.A"
+  },
+  {
+    "id": 1713,
+    "label": "Laboractorios Normon (Tây Ban Nha)"
+  },
+  {
+    "id": 1714,
+    "label": "STADA"
+  },
+  {
+    "id": 1715,
+    "label": "BCWorld Pharm. Co.,Ltd"
+  },
+  {
+    "id": 1716,
+    "label": "BCWorld Pharm. Co.,Ltd"
+  },
+  {
+    "id": 1717,
+    "label": "Sanofi Aventis"
+  },
+  {
+    "id": 1719,
+    "label": "Nature's Way"
+  },
+  {
+    "id": 1721,
+    "label": "Swiss Parentals Pvt. Ltd"
+  },
+  {
+    "id": 1722,
+    "label": "MYLAN LABORATORIES"
+  },
+  {
+    "id": 1723,
+    "label": "Mộc Khang Pharma"
+  },
+  {
+    "id": 1724,
+    "label": "Donaipharm"
+  },
+  {
+    "id": 1725,
+    "label": "LABORATOIRES GRIMBERG S.A"
+  },
+  {
+    "id": 1726,
+    "label": "USA-NIC Pharma"
+  },
+  {
+    "id": 1727,
+    "label": "Krka Slovenia"
+  },
+  {
+    "id": 1728,
+    "label": "Happy Vitamin"
+  },
+  {
+    "id": 1730,
+    "label": "Gilead -Mỹ"
+  },
+  {
+    "id": 1731,
+    "label": "Akums Drugs and Pharmaceuticals Ltd"
+  },
+  {
+    "id": 1732,
+    "label": "HAPU"
+  },
+  {
+    "id": 1733,
+    "label": "công nghệ bibita"
+  },
+  {
+    "id": 1734,
+    "label": "dp olympia"
+  },
+  {
+    "id": 1735,
+    "label": "orion pharma"
+  },
+  {
+    "id": 1736,
+    "label": "medpharco"
+  },
+  {
+    "id": 1737,
+    "label": "công ty cổ phần tw1"
+  },
+  {
+    "id": 1738,
+    "label": "Công ty stella"
+  },
+  {
+    "id": 1739,
+    "label": "công ty saviphar"
+  },
+  {
+    "id": 1740,
+    "label": "Công ty kichilachi"
+  },
+  {
+    "id": 1741,
+    "label": "herabiopharma"
+  },
+  {
+    "id": 1742,
+    "label": "cty tbyt nguyệt thanh"
+  },
+  {
+    "id": 1743,
+    "label": "đông y lợi an"
+  },
+  {
+    "id": 1744,
+    "label": "minh tuyết pharma"
+  },
+  {
+    "id": 1745,
+    "label": "queen group"
+  },
+  {
+    "id": 1746,
+    "label": "dp phúc an"
+  },
+  {
+    "id": 1747,
+    "label": "công ty tbyt nam sông hương"
+  },
+  {
+    "id": 1748,
+    "label": "hamedi"
+  },
+  {
+    "id": 1749,
+    "label": "công ty bank food"
+  },
+  {
+    "id": 1750,
+    "label": "sparm"
+  },
+  {
+    "id": 1751,
+    "label": "công ty cổ phần thiết bị y tế vinahankook"
+  },
+  {
+    "id": 1752,
+    "label": "công ty cổ phần dược phẩm htp"
+  },
+  {
+    "id": 1753,
+    "label": "đại học y hà nội"
+  },
+  {
+    "id": 1754,
+    "label": "hp pharma"
+  },
+  {
+    "id": 1755,
+    "label": "504"
+  },
+  {
+    "id": 1756,
+    "label": "316"
+  },
+  {
+    "id": 1757,
+    "label": "q431 hapu"
+  },
+  {
+    "id": 1758,
+    "label": "thiên bình"
+  },
+  {
+    "id": 1759,
+    "label": "Fidia Farmaceutici S.p.A"
+  },
+  {
+    "id": 1760,
+    "label": "công ty thiệt bị y tế khánh linh"
+  },
+  {
+    "id": 1761,
+    "label": "Abbot"
+  },
+  {
+    "id": 1762,
+    "label": "CTCP Dược Phẩm Quốc Tế Alpha"
+  },
+  {
+    "id": 1763,
+    "label": "Công ty CP LD DP Quốc Tế Berlin Đức"
+  },
+  {
+    "id": 1764,
+    "label": "Công ty CP LD DP Quốc Tế Berlin Đức"
+  },
+  {
+    "id": 1765,
+    "label": "Công ty TNHH Liên Doanh Stella - Việt Nam"
+  },
+  {
+    "id": 1766,
+    "label": "công ty URSAPHARM Arzneimittel GmbH- ĐỨC"
+  },
+  {
+    "id": 1767,
+    "label": "EKUBERG Pharma S.U.R.L. – Italia"
+  },
+  {
+    "id": 1768,
+    "label": "Simply You Pharmaceutical a.s"
+  },
+  {
+    "id": 1769,
+    "label": "Công ty cổ phần dược phẩm PULIPHA"
+  },
+  {
+    "id": 1770,
+    "label": "QUEISSER PHARMA GMBH & CO. KG"
+  },
+  {
+    "id": 1771,
+    "label": "CÔNG TY TNHH DƯỢC PHẨM USHT HÀ NỘI"
+  },
+  {
+    "id": 1772,
+    "label": "CÔNG TY LIVESPO PHARMA"
+  },
+  {
+    "id": 1774,
+    "label": "CÔNG TY CP XNK DP HÀ THANH"
+  },
+  {
+    "id": 1775,
+    "label": "Gaesung - Hàn Quốc"
+  },
+  {
+    "id": 1776,
+    "label": "Unicity - Mỹ"
+  },
+  {
+    "id": 1777,
+    "label": "BioAmicus - Canada"
+  },
+  {
+    "id": 1778,
+    "label": "BioAmicus - Canada"
+  },
+  {
+    "id": 1779,
+    "label": "BioAmicus - Canada"
+  },
+  {
+    "id": 1780,
+    "label": "Steripharm Exprort GmbH, CHLB Đức"
+  },
+  {
+    "id": 1781,
+    "label": "IRATI INTERNATIONAL - Pháp"
+  },
+  {
+    "id": 1782,
+    "label": "công ty Diophaco"
+  },
+  {
+    "id": 1783,
+    "label": "nhập khẩu Hà Lan"
+  },
+  {
+    "id": 1784,
+    "label": "Valuemed Pharma Srl – Italy"
+  },
+  {
+    "id": 1785,
+    "label": "công ty Khải Hà"
+  },
+  {
+    "id": 1786,
+    "label": "Haruko - Nhật"
+  },
+  {
+    "id": 1787,
+    "label": "Glenmark Pharm., Ltd - ẤN ĐỘ"
+  },
+  {
+    "id": 1788,
+    "label": "Wondfo -biotech Thụy Sỹ"
+  },
+  {
+    "id": 1789,
+    "label": "Wondfo -biotech Thụy Sỹ"
+  },
+  {
+    "id": 1790,
+    "label": "Wondfo biotech Thụy Sỹ"
+  },
+  {
+    "id": 1791,
+    "label": "Cty Cổ Phần Liên Doanh Dược Mỹ Phẩm Diamond Pháp"
+  },
+  {
+    "id": 1792,
+    "label": "S.C. ANTIBIOTICE S.A - Romania"
+  },
+  {
+    "id": 1793,
+    "label": "Laboratoieres Ineldea - Pháp"
+  },
+  {
+    "id": 1794,
+    "label": "Remedica (Cộng hòa Síp)"
+  },
+  {
+    "id": 1795,
+    "label": "Công ty Eloge France - Việt Nam"
+  },
+  {
+    "id": 1796,
+    "label": "Lustrel Laboratories S.A"
+  },
+  {
+    "id": 1797,
+    "label": "Gricar Chemical SRL - Ý"
+  },
+  {
+    "id": 1798,
+    "label": "Lucius"
+  },
+  {
+    "id": 1799,
+    "label": "E&S VIỆT NAM"
+  },
+  {
+    "id": 1800,
+    "label": "MS- ẤN ĐỘ"
+  },
+  {
+    "id": 1801,
+    "label": "Acne Thái Lan"
+  },
+  {
+    "id": 1802,
+    "label": "Horiuchi Shokuhin Kogyo Co.,Ltd"
+  },
+  {
+    "id": 1803,
+    "label": "Anjou Developpement Nutrition – Pháp."
+  },
+  {
+    "id": 1804,
+    "label": "Pharmekal Health Products, LLC."
+  },
+  {
+    "id": 1805,
+    "label": "Latvija."
+  },
+  {
+    "id": 1806,
+    "label": "Berko Pharmaceuticals"
+  },
+  {
+    "id": 1807,
+    "label": "Công ty TNHH MT PHACO"
+  },
+  {
+    "id": 1808,
+    "label": "Le-Cosmetic VN"
+  },
+  {
+    "id": 1809,
+    "label": "PharmEvo Private Limited  Pakistan"
+  },
+  {
+    "id": 1810,
+    "label": "Công ty Micro Labs., Ltd - ẤN ĐỘ."
+  },
+  {
+    "id": 1811,
+    "label": "Laboratorium Kosmetyczne Flosleck furmaneck"
+  },
+  {
+    "id": 1812,
+    "label": "CÔNG TY TNHH THƯƠNG MẠI QUỐC TẾ PHÁP ÂU"
+  },
+  {
+    "id": 1813,
+    "label": "Korea Ginseng Bio – Science Co. LTD"
+  },
+  {
+    "id": 1814,
+    "label": "Actidem VN"
+  },
+  {
+    "id": 1815,
+    "label": "Sante Fx Neo - Nhật"
+  },
+  {
+    "id": 1816,
+    "label": "Kern Pharma, S.L"
+  },
+  {
+    "id": 1817,
+    "label": "Shefco Nhật Bản"
+  },
+  {
+    "id": 1818,
+    "label": "Aupa Biopharm Co., Ltd"
+  },
+  {
+    "id": 1819,
+    "label": "Berko Ilac ve Kimya San. A.S."
+  },
+  {
+    "id": 1820,
+    "label": "Công ty cổ phần dược phẩm Vian"
+  },
+  {
+    "id": 1821,
+    "label": "Aicao Jingzhuitie"
+  },
+  {
+    "id": 1822,
+    "label": "Uriage - Pháp"
+  },
+  {
+    "id": 1823,
+    "label": "Biholon Nhật Bản"
+  },
+  {
+    "id": 1824,
+    "label": "cơ sở  Phước An"
+  },
+  {
+    "id": 1825,
+    "label": "Hanuchem Laboratories - Ấn"
+  },
+  {
+    "id": 1826,
+    "label": "Farcoderma S.r.l Italia"
+  },
+  {
+    "id": 1827,
+    "label": "LabLaboratoires Galderma - Ấn Độ"
+  },
+  {
+    "id": 1828,
+    "label": "công ty Đức Phúc Pharma"
+  },
+  {
+    "id": 1829,
+    "label": "Natco – Ấn Độ"
+  },
+  {
+    "id": 1830,
+    "label": "công ty mỹ phẩm Huyền Phi"
+  },
+  {
+    "id": 1831,
+    "label": "Công ty TNHH TM Dược phẩm Nguyễn Vy"
+  },
+  {
+    "id": 1832,
+    "label": "Dae Hwa Pharm Co., Ltd – Hàn Quốc"
+  },
+  {
+    "id": 1833,
+    "label": "Dear, Klairs  - Hàn Quốc"
+  },
+  {
+    "id": 1834,
+    "label": "Nu Skin"
+  },
+  {
+    "id": 1835,
+    "label": "Lecifarma laboratorio Farmaceutico LDA -Bồ Đào Nha"
+  },
+  {
+    "id": 1836,
+    "label": "PROCARE - TBN"
+  },
+  {
+    "id": 1837,
+    "label": "medium -malaysia"
+  },
+  {
+    "id": 1838,
+    "label": "FARMALABOR BỒ ĐÀO NHA"
+  },
+  {
+    "id": 1839,
+    "label": "Winlas Biotech Private Limited - ẤN ĐỘ"
+  },
+  {
+    "id": 1840,
+    "label": "Công ty CP công nghệ cao Thái Minh"
+  },
+  {
+    "id": 1841,
+    "label": "Enchanteur VN"
+  },
+  {
+    "id": 1842,
+    "label": "công ty TNHH Nhựa Hồng Phát"
+  },
+  {
+    "id": 1843,
+    "label": "Công ty TNHH Bách Thảo Dược"
+  },
+  {
+    "id": 1844,
+    "label": "FYNK Pharmaceuticals - ẤN ĐỘ"
+  },
+  {
+    "id": 1845,
+    "label": "BIOIBERICAR S.A  Tây Ban Nha"
+  },
+  {
+    "id": 1846,
+    "label": "Crown Vitamins - Mỹ"
+  },
+  {
+    "id": 1847,
+    "label": "Ostelin - ÚC"
+  },
+  {
+    "id": 1848,
+    "label": "DELORBIS PHARMACEUTICALS LT - Ý"
+  },
+  {
+    "id": 1849,
+    "label": "Floslek BA LAN"
+  },
+  {
+    "id": 1850,
+    "label": "S.I.I.T Srl - Italy"
+  },
+  {
+    "id": 1851,
+    "label": "Thương hiệu Yuwell"
+  },
+  {
+    "id": 1852,
+    "label": "CTCP Nghiên Cứu Và Sản Xuất Dược Phẩm Meracine"
+  },
+  {
+    "id": 1853,
+    "label": "novaphyt Pháp"
+  },
+  {
+    "id": 1854,
+    "label": "Alkato Nhật"
+  },
+  {
+    "id": 1855,
+    "label": "Công ty Thai Herbal Products Co, Ltd – Thái Lan"
+  },
+  {
+    "id": 1856,
+    "label": "Societa Italo Britannica L.Manetti-H.Roberts & C. Per Azioni"
+  },
+  {
+    "id": 1857,
+    "label": "DPR Inter"
+  },
+  {
+    "id": 1858,
+    "label": "Dược phẩm Quốc tế Moneykey Green Cross Daewoong Korea"
+  },
+  {
+    "id": 1859,
+    "label": "HV Pharma"
+  },
+  {
+    "id": 1860,
+    "label": "Softgel Healthcare Pvt., Ltd"
+  },
+  {
+    "id": 1861,
+    "label": "Facta Farmaceutici S.p.A. - Ý"
+  },
+  {
+    "id": 1862,
+    "label": "Laboratoire Aguettant PHÁP"
+  },
+  {
+    "id": 1863,
+    "label": "Công ty Aconitum Joint Stock Company-Litva"
+  },
+  {
+    "id": 1864,
+    "label": "HealthyPlex  Italia"
+  },
+  {
+    "id": 1865,
+    "label": "Les Laboratoires Servier Ireland"
+  },
+  {
+    "id": 1866,
+    "label": "Choroid Laboratories Pvt. Ltd ẤN ĐỘ"
+  },
+  {
+    "id": 1867,
+    "label": "LG CHEM  - HÀN QUỐC"
+  },
+  {
+    "id": 1868,
+    "label": "Earth’s Creation"
+  },
+  {
+    "id": 1869,
+    "label": "Aspen Đức"
+  },
+  {
+    "id": 1870,
+    "label": "xuất xứ Romania"
+  },
+  {
+    "id": 1871,
+    "label": "Egis Pharmaceuticals PLC"
+  },
+  {
+    "id": 1872,
+    "label": "Công ty TNHH BRV Healthcare"
+  },
+  {
+    "id": 1873,
+    "label": "Công ty Cổ phần Dược vật tư y tế Quảng Ninh"
+  },
+  {
+    "id": 1874,
+    "label": "Công ty Fresenius Kabi Austria GmbH"
+  },
+  {
+    "id": 1875,
+    "label": "Tín Phong Pharma"
+  },
+  {
+    "id": 1876,
+    "label": "XUẤT XỨ ẤN ĐỘ"
+  },
+  {
+    "id": 1877,
+    "label": "Công ty TNHH MTV Mộc Trang Viên"
+  },
+  {
+    "id": 1878,
+    "label": "Greenlife"
+  },
+  {
+    "id": 1879,
+    "label": "alleviare"
+  },
+  {
+    "id": 1880,
+    "label": "Intend Pharma"
+  },
+  {
+    "id": 1881,
+    "label": "Maxcare Home"
+  },
+  {
+    "id": 1882,
+    "label": "Th Pharma"
+  },
+  {
+    "id": 1883,
+    "label": "Environtment"
+  },
+  {
+    "id": 1884,
+    "label": "BN mask"
+  },
+  {
+    "id": 1885,
+    "label": "Usarichpharm VN"
+  },
+  {
+    "id": 1886,
+    "label": "Xuất Xứ Anh"
+  },
+  {
+    "id": 1887,
+    "label": "Queen Diamond Diophaco"
+  },
+  {
+    "id": 1888,
+    "label": "Xuất xứ ĐỨC"
+  },
+  {
+    "id": 1889,
+    "label": "Công ty TNHH Sản xuất và Xuất nhập khẩu Thực phẩm chức năng ASEAN"
+  },
+  {
+    "id": 1890,
+    "label": "CÔNG TY TNHH DP VELLPHARM VIỆT NAM"
+  },
+  {
+    "id": 1891,
+    "label": "Mediusa"
+  },
+  {
+    "id": 1892,
+    "label": "SANVINEST"
+  },
+  {
+    "id": 1893,
+    "label": "Lipice VN"
+  },
+  {
+    "id": 1894,
+    "label": "E100 Việt Nam"
+  },
+  {
+    "id": 1895,
+    "label": "Như Ý Honey"
+  },
+  {
+    "id": 1896,
+    "label": "Công Ty Cp Dược S.Pharm"
+  },
+  {
+    "id": 1897,
+    "label": "Romano VN"
+  },
+  {
+    "id": 1898,
+    "label": "PHÚC NHÃN KHANG"
+  },
+  {
+    "id": 1899,
+    "label": "Xuất xứ Áo"
+  },
+  {
+    "id": 1900,
+    "label": "UNI PHARMA -Ai Cập"
+  },
+  {
+    "id": 1901,
+    "label": "Fresenius Kabi Đức"
+  },
+  {
+    "id": 1902,
+    "label": "Merufa - Việt Nam"
+  },
+  {
+    "id": 1903,
+    "label": "VH PHARMA -  SEC"
+  },
+  {
+    "id": 1904,
+    "label": "Cộng hòa Séc"
+  },
+  {
+    "id": 1905,
+    "label": "Evoluderm"
+  },
+  {
+    "id": 1906,
+    "label": "Canada"
+  },
+  {
+    "id": 1907,
+    "label": "Ferrolip  Ý"
+  },
+  {
+    "id": 1908,
+    "label": "Bushu Pharmaceuticals Ltd"
+  },
+  {
+    "id": 1909,
+    "label": "Otosan"
+  },
+  {
+    "id": 1910,
+    "label": "Công ty TNHH Y Tế GoMed"
+  },
+  {
+    "id": 1911,
+    "label": "Mivolis  Đức"
+  },
+  {
+    "id": 1912,
+    "label": "Công ty TNHH sinh dược phẩm Hera"
+  },
+  {
+    "id": 1913,
+    "label": "dược phẩm bách lộc"
+  },
+  {
+    "id": 1914,
+    "label": "Xuất Xứ Phần Lan"
+  },
+  {
+    "id": 1915,
+    "label": "Nuskin Việt Nam"
+  },
+  {
+    "id": 1916,
+    "label": "DP Bát Phúc"
+  },
+  {
+    "id": 1917,
+    "label": "Akums Drugs & Pharmaceuticals LTD"
+  },
+  {
+    "id": 1918,
+    "label": "Công Ty Tnhh Đầu Tư Thương Mại Và Dịch Vụ Ngp Max"
+  },
+  {
+    "id": 1919,
+    "label": "STARMED"
+  },
+  {
+    "id": 1920,
+    "label": "CÔNG TY CỔ PHẦN CÔNG NGHỆ NHÂN SINH"
+  },
+  {
+    "id": 1921,
+    "label": "Thảo Nguyên Xanh Group"
+  },
+  {
+    "id": 1922,
+    "label": "Krka VIỆT NAM"
+  },
+  {
+    "id": 1923,
+    "label": "Bioisland"
+  },
+  {
+    "id": 1924,
+    "label": "XUẤT XỬ HY LẠP"
+  },
+  {
+    "id": 1925,
+    "label": "CTY TNHH SẢN XUẤT CÔNG NGHỆ CAO NANO FRANCE"
+  },
+  {
+    "id": 1926,
+    "label": "SENKA - NHẬT BẢN"
+  },
+  {
+    "id": 1927,
+    "label": "Lucass"
+  },
+  {
+    "id": 1928,
+    "label": "xuất xứ Ireland"
+  },
+  {
+    "id": 1929,
+    "label": "công ty  Kichy"
+  },
+  {
+    "id": 1930,
+    "label": "công ty  Kichy"
+  },
+  {
+    "id": 1931,
+    "label": "Dược Phẩm Halipharco"
+  },
+  {
+    "id": 1932,
+    "label": "CT THIẾT BỊ Y TẾ HOÀNG SƠN"
+  },
+  {
+    "id": 1933,
+    "label": "WAND HEALTH, USA"
+  },
+  {
+    "id": 1934,
+    "label": "Công ty TNHH SX và ĐTPT Thuận Phát"
+  },
+  {
+    "id": 1935,
+    "label": "ADERMA PHÁP"
+  },
+  {
+    "id": 1936,
+    "label": "công ty phân phối Trí Khang"
+  },
+  {
+    "id": 1937,
+    "label": "Everest Pharmaceuticals Bangladesh"
+  },
+  {
+    "id": 1938,
+    "label": "CT GSV VIỆT NAM"
+  },
+  {
+    "id": 1939,
+    "label": "Apipharma"
+  },
+  {
+    "id": 1940,
+    "label": "Wingroup"
+  },
+  {
+    "id": 1941,
+    "label": "Aristopharma Ltd Bangladesh"
+  },
+  {
+    "id": 1942,
+    "label": "Newtech Pharm"
+  },
+  {
+    "id": 1943,
+    "label": "NARITA"
+  },
+  {
+    "id": 1944,
+    "label": "Covidien THÁI LAN"
+  },
+  {
+    "id": 1945,
+    "label": "Novocare Việt Nam"
+  },
+  {
+    "id": 1946,
+    "label": "BẢO AN"
+  },
+  {
+    "id": 1947,
+    "label": "STRATPHARMA AG  Pháp"
+  },
+  {
+    "id": 1948,
+    "label": "Uright Đức"
+  },
+  {
+    "id": 1949,
+    "label": "CT CỔ PHẦN KIÊN NAM"
+  },
+  {
+    "id": 1950,
+    "label": "CT TNHH HAPAPOLO VN"
+  },
+  {
+    "id": 1951,
+    "label": "DK PHARMA VN"
+  },
+  {
+    "id": 1952,
+    "label": "Holista Inc canada"
+  },
+  {
+    "id": 1953,
+    "label": "Công ty Pharmaxx Inc"
+  },
+  {
+    "id": 1954,
+    "label": "S.C. Slavia"
+  },
+  {
+    "id": 1955,
+    "label": "Herbal Việt Nam"
+  },
+  {
+    "id": 1956,
+    "label": "Thổ Nhĩ Kỳ"
+  },
+  {
+    "id": 1957,
+    "label": "Xuất Xứ Bangladesh"
+  },
+  {
+    "id": 1958,
+    "label": "công ty EISAI  Anh"
+  },
+  {
+    "id": 1959,
+    "label": "Công ty cổ phần Dược phẩm và thiết bị y tế Vân Tiên"
+  },
+  {
+    "id": 1960,
+    "label": "Berrcom - China"
+  },
+  {
+    "id": 1961,
+    "label": "Công ty TNHH công nghệ cao su Việt Nam"
+  },
+  {
+    "id": 1962,
+    "label": "Công ty CP Thương Mại và Dược Phẩm Tâm Đức"
+  },
+  {
+    "id": 1963,
+    "label": "công ty đầu tư và phát triển Ngôi Sao Việt"
+  },
+  {
+    "id": 1964,
+    "label": "công ty  Vglove Việt Nam"
+  },
+  {
+    "id": 1965,
+    "label": "công ty TNHH  BJC cellox Việt Nam"
+  },
+  {
+    "id": 1966,
+    "label": "BNC Medipharm MỸ"
+  },
+  {
+    "id": 1967,
+    "label": "Bayer (Đức)"
+  },
+  {
+    "id": 1968,
+    "label": "công ty  Duy Thành"
+  },
+  {
+    "id": 1969,
+    "label": "công ty cổ phần nhựa y tế Việt Nam"
+  },
+  {
+    "id": 1970,
+    "label": "CÔNG TY TNHH LIKIMA"
+  },
+  {
+    "id": 1971,
+    "label": "công ty TNHH phát triển và đầu thư thương mại ĐÔ GIA HÀ NỘI"
+  },
+  {
+    "id": 1972,
+    "label": "NuBest (Mỹ)"
+  },
+  {
+    "id": 1973,
+    "label": "Reckitt Benckiser (Anh)"
+  },
+  {
+    "id": 1974,
+    "label": "công ty LB BEAUTY Thái Lan"
+  },
+  {
+    "id": 1975,
+    "label": "Pharma Food Manufacturing Italia S.r.l"
+  },
+  {
+    "id": 1976,
+    "label": "Elitech Trung Quốc"
+  },
+  {
+    "id": 1977,
+    "label": "Công ty Pediatrica."
+  },
+  {
+    "id": 1978,
+    "label": "Pharmaceutical Works Polpharma S.A BA LAN"
+  },
+  {
+    "id": 1979,
+    "label": "Alpex Pharma S.A Cộng hòa Sip"
+  },
+  {
+    "id": 1980,
+    "label": "AVENE PHÁP"
+  },
+  {
+    "id": 1981,
+    "label": "Công ty cổ phần dược Nam Thiên Phúc"
+  },
+  {
+    "id": 1982,
+    "label": "Exeltis Ilac San Ve Tic A.S THỔ NHĨ KỲ"
+  },
+  {
+    "id": 1983,
+    "label": "Suheung Co.,Ltd HÀN QUỐC"
+  },
+  {
+    "id": 1984,
+    "label": "Bioderma PHÁP"
+  },
+  {
+    "id": 1985,
+    "label": "NIVEA ĐỨC"
+  },
+  {
+    "id": 1986,
+    "label": "Delorbis (Cộng hòa Síp)"
+  },
+  {
+    "id": 1987,
+    "label": "NEOPHARM Hàn Quốc"
+  },
+  {
+    "id": 1988,
+    "label": "CT TNHH dược quốc tế ZENA CANADA"
+  },
+  {
+    "id": 1989,
+    "label": "Denk Pharma GmbH & Co. KG Đức"
+  },
+  {
+    "id": 1990,
+    "label": "DP MINH HƯNG"
+  },
+  {
+    "id": 1991,
+    "label": "Mega Lifesciences  Tây Ban Nha"
+  },
+  {
+    "id": 1992,
+    "label": "TDCare  Việt Nam"
+  },
+  {
+    "id": 1993,
+    "label": "NaTip Việt Nam"
+  },
+  {
+    "id": 1994,
+    "label": "Cơ sở sản xuất công nghệ cáo TIỆN LỢI"
+  },
+  {
+    "id": 1995,
+    "label": "Bebe confort PHÁP"
+  },
+  {
+    "id": 1996,
+    "label": "CÔNG TY DƯỢC PHẨM VÀ THƯƠNG MẠI THÀNH CÔNG"
+  },
+  {
+    "id": 1997,
+    "label": "Xưởng chưng cất tinh dầu nguyên chất Bà Bé"
+  },
+  {
+    "id": 1998,
+    "label": "Công ty TNHH Việt Hàn"
+  },
+  {
+    "id": 1999,
+    "label": "Công ty TNHH HG Phúc An"
+  },
+  {
+    "id": 2000,
+    "label": "Công ty cổ phần dược liệu và VTYT Hải Phòng"
+  },
+  {
+    "id": 2001,
+    "label": "Hợp tác xã dược liệu Yên Sơn"
+  },
+  {
+    "id": 2002,
+    "label": "Công ty TNHH Sanyo Việt Nam"
+  },
+  {
+    "id": 2003,
+    "label": "Công ty cổ phần nước giả khát  Sanest Khánh Hòa"
+  },
+  {
+    "id": 2004,
+    "label": "CÔNG TY TNHH DƯỢC PHẨM DELAP"
+  },
+  {
+    "id": 2005,
+    "label": "Hazeline Việt Nam"
+  },
+  {
+    "id": 2006,
+    "label": "Công ty TNHH thực phẩm dinh dưỡng quốc gia GOLDENT FOOD AUSTRALIA"
+  },
+  {
+    "id": 2007,
+    "label": "ALPK2 Nhật Bản"
+  },
+  {
+    "id": 2008,
+    "label": "Công ty Cổ phần Dược phẩm Phương Nam"
+  },
+  {
+    "id": 2009,
+    "label": "Reckitt Benckiser Healthcare Manufacturing (Thailand) Ltd"
+  },
+  {
+    "id": 2010,
+    "label": "ShabiGroup Việt Nam"
+  },
+  {
+    "id": 2011,
+    "label": "HÀN QUỐC"
+  },
+  {
+    "id": 2012,
+    "label": "X-Men Việt Nam"
+  },
+  {
+    "id": 2013,
+    "label": "REMEDINA S.A. - HY LẠP"
+  },
+  {
+    "id": 2014,
+    "label": "Rottendorf Pharma Gmbh Đức"
+  },
+  {
+    "id": 2015,
+    "label": "FT DIGITAL TECHNOLOGY CO.,LTD Trung Quốc"
+  },
+  {
+    "id": 2016,
+    "label": "DABO HÀN QUỐC"
+  },
+  {
+    "id": 2017,
+    "label": "Bebemarks Hàn Quốc"
+  },
+  {
+    "id": 2018,
+    "label": "Vitabiotics ANH"
+  },
+  {
+    "id": 2019,
+    "label": "Công ty TNHH thương mại sản xuất Thanh Nga"
+  },
+  {
+    "id": 2020,
+    "label": "Easy Touch Đài Loan"
+  },
+  {
+    "id": 2021,
+    "label": "Công ty mỹ phẩm BIGOO"
+  },
+  {
+    "id": 2022,
+    "label": "LICONSA Ba Lan"
+  },
+  {
+    "id": 2023,
+    "label": "Panpharma PHÁP"
+  },
+  {
+    "id": 2024,
+    "label": "L.B.S Laboratory Thái Lan"
+  },
+  {
+    "id": 2025,
+    "label": "Germany Pharma Việt Nam"
+  },
+  {
+    "id": 2026,
+    "label": "Avizor Tây Ban Nha"
+  },
+  {
+    "id": 2027,
+    "label": "Công ty TNHH đầu tư thương mại và DV Thương Tín"
+  },
+  {
+    "id": 2028,
+    "label": "FERRING PHARMACEUTICALS Thụy Sĩ"
+  },
+  {
+    "id": 2029,
+    "label": "PT. Novell Pharmaceutical Laboratories Indonesia"
+  },
+  {
+    "id": 2030,
+    "label": "Matxi Corp  Việt Nam"
+  },
+  {
+    "id": 2031,
+    "label": "Lion Nhật Bản"
+  },
+  {
+    "id": 2032,
+    "label": "ST.PAUL BRANDS MỸ"
+  },
+  {
+    "id": 2033,
+    "label": "Ipek Thổ Nhĩ Kỳ"
+  },
+  {
+    "id": 2034,
+    "label": "Linh Sâm Việt Nam"
+  },
+  {
+    "id": 2035,
+    "label": "Taiwan Nuomeixiu"
+  },
+  {
+    "id": 2036,
+    "label": "Multisafe - Malaysia"
+  },
+  {
+    "id": 2037,
+    "label": "Công ty TNHH và TBYT ĐẠI VIỆT"
+  },
+  {
+    "id": 2038,
+    "label": "Eagle Brand  Singapore"
+  },
+  {
+    "id": 2039,
+    "label": "Orkla Health AS Na Uy"
+  },
+  {
+    "id": 2040,
+    "label": "Laboratorios Lesvi S.L Tây Ban Nha"
+  },
+  {
+    "id": 2041,
+    "label": "Công ty TNHH Đầu tư SX TM DV SHP Việt Nam"
+  },
+  {
+    "id": 2042,
+    "label": "FINE JAPAN"
+  },
+  {
+    "id": 2043,
+    "label": "MG CO., LTD Hàn Quốc"
+  },
+  {
+    "id": 2044,
+    "label": "công ty cổ phần TBYT Thanh Bình"
+  },
+  {
+    "id": 2045,
+    "label": "Promisemed Hangzhou Meditech-TQ"
+  },
+  {
+    "id": 2046,
+    "label": "công ty TNHH Hoàng Hương"
+  },
+  {
+    "id": 2047,
+    "label": "LA TERRE FRANC Việt Nam"
+  },
+  {
+    "id": 2048,
+    "label": "MTV VietNat  Việt Nam"
+  },
+  {
+    "id": 2049,
+    "label": "công ty cổ phần XNK dược quốc tế PALMY"
+  },
+  {
+    "id": 2050,
+    "label": "Công ty Cổ phần Liên doanh Dược phẩm TPP-France"
+  },
+  {
+    "id": 2051,
+    "label": "Vichy  Pháp"
+  },
+  {
+    "id": 2052,
+    "label": "Sri Trang Gloves Public Company Limited  Thailand"
+  },
+  {
+    "id": 2053,
+    "label": "Công ty cổ phần dược liên doanh EU Việt Nam"
+  },
+  {
+    "id": 2054,
+    "label": "công ty TNHH MTV hóa mỹ phẩm HỒNG HUỆ"
+  },
+  {
+    "id": 2055,
+    "label": "DUOMED Đức"
+  },
+  {
+    "id": 2056,
+    "label": "UNI MASK Việt Nam"
+  },
+  {
+    "id": 2057,
+    "label": "Sanford Pharma USA - VIỆT NAM"
+  },
+  {
+    "id": 2058,
+    "label": "Công ty cổ phần dược mỹ phẩm BUTTER -C"
+  },
+  {
+    "id": 2059,
+    "label": "GOLDENCGOICE.,LTD"
+  },
+  {
+    "id": 2060,
+    "label": "GOLDENCHOICE.,LTD  VIỆT NAM"
+  },
+  {
+    "id": 2061,
+    "label": "công ty cổ phần Đồng Hành Việt"
+  },
+  {
+    "id": 2062,
+    "label": "công ty cổ phần dược phẩm MERACINE"
+  },
+  {
+    "id": 2063,
+    "label": "Công ty cổ phần đầu tư  & thương mại Hưng Việt"
+  },
+  {
+    "id": 2064,
+    "label": "CSDND HẢI THƯỢNG"
+  },
+  {
+    "id": 2065,
+    "label": "công ty TNHH KI-WORKS VIỆT NAM"
+  },
+  {
+    "id": 2066,
+    "label": "công ty TNHH Medistar VN"
+  },
+  {
+    "id": 2067,
+    "label": "Oral-B ÚC"
+  },
+  {
+    "id": 2068,
+    "label": "công ty TNHH một thành viên kẹo Bảy Ba Bảy"
+  },
+  {
+    "id": 2069,
+    "label": "công ty TNHH XNK Phú Mỹ Hưng"
+  },
+  {
+    "id": 2070,
+    "label": "công ty cổ phần bánh kẹo Hải Hà"
+  },
+  {
+    "id": 2071,
+    "label": "công ty TNHH sản xuất và thương mại Trung Hiếu GB"
+  },
+  {
+    "id": 2072,
+    "label": "công ty LÂM KHANG"
+  },
+  {
+    "id": 2073,
+    "label": "công ty  TNHH healthcare Việt Nam"
+  },
+  {
+    "id": 2074,
+    "label": "công ty TNHH Trịnh Gia"
+  },
+  {
+    "id": 2075,
+    "label": "công ty cổ phần dược mỹ phẩm Ngọc Chung"
+  },
+  {
+    "id": 2076,
+    "label": "công ty TNHH thương mại TRANG NHI"
+  },
+  {
+    "id": 2077,
+    "label": "công ty DP HẢI ĐĂNG"
+  },
+  {
+    "id": 2078,
+    "label": "TNE Việt Nam"
+  },
+  {
+    "id": 2079,
+    "label": "GOLDEN FOOD AUSTRALIA"
+  },
+  {
+    "id": 2080,
+    "label": "công ty ATZ"
+  },
+  {
+    "id": 2081,
+    "label": "công ty cổ phần mỹ phẩm Long Phụng Khánh"
+  },
+  {
+    "id": 2082,
+    "label": "BioActive Nutriceuticals, Mỹ"
+  },
+  {
+    "id": 2083,
+    "label": "Golden food Khánh Hòa"
+  },
+  {
+    "id": 2084,
+    "label": "Now Mỹ"
+  },
+  {
+    "id": 2085,
+    "label": "Atco Laboratories Ltd. PAKISTAN"
+  },
+  {
+    "id": 2086,
+    "label": "KPC Pharmaceuticals, Inc - Trung quốc"
+  },
+  {
+    "id": 2087,
+    "label": "East Midlands Pharma"
+  },
+  {
+    "id": 2088,
+    "label": "Công ty TNHH Lingroup Global"
+  },
+  {
+    "id": 2089,
+    "label": "Allomed"
+  },
+  {
+    "id": 2090,
+    "label": "công ty cổ phần sản xuất  dược phẩm TAKARAI"
+  },
+  {
+    "id": 2091,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC PHẨM AZ PHARMA"
+  },
+  {
+    "id": 2092,
+    "label": "Công Ty TNHH Dược Vĩnh Khang"
+  },
+  {
+    "id": 2093,
+    "label": "Công ty TNHH Đầu tư và Thương mại Quốc tế Việt Pháp"
+  },
+  {
+    "id": 2094,
+    "label": "công ty Duy ngọc"
+  },
+  {
+    "id": 2095,
+    "label": "Cell Fusion"
+  },
+  {
+    "id": 2096,
+    "label": "Medana Pharma S.A"
+  },
+  {
+    "id": 2097,
+    "label": "công ty TNHH quốc tế Unilever Vn"
+  },
+  {
+    "id": 2098,
+    "label": "Laboratoire Densmore"
+  },
+  {
+    "id": 2099,
+    "label": "Nu-Health Products Co. (Mỹ)"
+  },
+  {
+    "id": 2100,
+    "label": "công ty cổ phần dược mỹ phẩm quốc tế biosantis"
+  },
+  {
+    "id": 2101,
+    "label": "Lilly (Mỹ)"
+  },
+  {
+    "id": 2102,
+    "label": "CÔNG TY TNHH SONAPHARM VIỆT NAM"
+  },
+  {
+    "id": 2103,
+    "label": "Công ty Cổ phần PSC Hà Nội"
+  },
+  {
+    "id": 2104,
+    "label": "Công ty Cổ phần Dược Mỹ phẩm Lillie"
+  },
+  {
+    "id": 2105,
+    "label": "Công ty cp công nghệ sinh học Thành Hưng"
+  },
+  {
+    "id": 2106,
+    "label": "cz pharma"
+  },
+  {
+    "id": 2107,
+    "label": "dược phẩm viatris"
+  },
+  {
+    "id": 2108,
+    "label": "Zydus Cadila (Ấn Độ)"
+  },
+  {
+    "id": 2109,
+    "label": "Dược phẩm Bảo Nguyên"
+  },
+  {
+    "id": 2110,
+    "label": "Dược phẩm Bảo Nguyên"
+  },
+  {
+    "id": 2111,
+    "label": "công ty tnhh dược phẩm xanh đt"
+  },
+  {
+    "id": 2112,
+    "label": "Công ty cổ phần liên doanh dược phẩm Eloge France Việt Nam"
+  },
+  {
+    "id": 2113,
+    "label": "vitasmile"
+  },
+  {
+    "id": 2114,
+    "label": "resantis việt nam"
+  },
+  {
+    "id": 2115,
+    "label": "Công ty Đông Y Tiến Hạnh"
+  },
+  {
+    "id": 2116,
+    "label": "Công ty Cổ phần 23 tháng 9 - Việt Nam"
+  },
+  {
+    "id": 2117,
+    "label": "Công ty TNHH Dược Phẩm Đức Phúc"
+  },
+  {
+    "id": 2118,
+    "label": "Công ty CP Liên Doanh Dược Phẩm Esloge France Việt Nam"
+  },
+  {
+    "id": 2119,
+    "label": "Công ty TNHH Khoẻ Việt Nam"
+  },
+  {
+    "id": 2120,
+    "label": "AVA PHARMACEUTICAL COMPANY"
+  },
+  {
+    "id": 2121,
+    "label": "AVA PHARMACEUTICAL COMPANY"
+  },
+  {
+    "id": 2122,
+    "label": "ATRA PHARMACEUTICALS. LTD"
+  },
+  {
+    "id": 2123,
+    "label": "Reckitt Benckiser"
+  },
+  {
+    "id": 2124,
+    "label": "Lindopharm GmbH (Đức)"
+  },
+  {
+    "id": 2125,
+    "label": "dongbang B&H"
+  },
+  {
+    "id": 2126,
+    "label": "byphasse"
+  },
+  {
+    "id": 2127,
+    "label": "orbe"
+  },
+  {
+    "id": 2128,
+    "label": "Kolmar Korea, Kolmar Korea Co., Ltd"
+  },
+  {
+    "id": 2129,
+    "label": "Công Ty TNHH Stherb việt nam"
+  },
+  {
+    "id": 2130,
+    "label": "okamura"
+  },
+  {
+    "id": 2131,
+    "label": "cty cổ phần công nghệ cao goldcare"
+  },
+  {
+    "id": 2132,
+    "label": "l oreal"
+  },
+  {
+    "id": 2133,
+    "label": "cotecphar"
+  },
+  {
+    "id": 2134,
+    "label": "GMP"
+  },
+  {
+    "id": 2135,
+    "label": "cty tnhh hunmed"
+  },
+  {
+    "id": 2136,
+    "label": "cty lavifa"
+  },
+  {
+    "id": 2137,
+    "label": "dược phẩm 24h MC"
+  },
+  {
+    "id": 2138,
+    "label": "Cơ sở sản xuất thuốc đông dược Bảo Tín Đường"
+  },
+  {
+    "id": 2139,
+    "label": "CÔNG TY CỔ PHẦN PHÁT TRIỂN DƯỢC FANMEC"
+  },
+  {
+    "id": 2140,
+    "label": "CÔNG TY CỔ PHẦN SỨC KHOẺ XANH OPTIZ VIỆT NAM"
+  },
+  {
+    "id": 2141,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG QUEEN DIAMOND DIOPHACO"
+  },
+  {
+    "id": 2142,
+    "label": "CÔNG TY TNHH DƯỢC PHẨM PHÚC AN KHANG PHÂN PHỐI"
+  },
+  {
+    "id": 2143,
+    "label": "CÔNG TY TNHH ĐẦU TƯ VÀ THƯƠNG MẠI MINH THÔNG"
+  },
+  {
+    "id": 2144,
+    "label": "FIXDERMA INDIA (P) LTD"
+  },
+  {
+    "id": 2145,
+    "label": "Công ty TNHH XNK và đầu tư Đức Mạnh"
+  },
+  {
+    "id": 2146,
+    "label": "Công ty cp dược phẩm và sinh học Y Tế"
+  },
+  {
+    "id": 2147,
+    "label": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TV.PHARM"
+  },
+  {
+    "id": 2148,
+    "label": "ALFASEPT"
+  },
+  {
+    "id": 2149,
+    "label": "dược phẩm An Nhiên"
+  },
+  {
+    "id": 2150,
+    "label": "cty cổ phần BVP"
+  },
+  {
+    "id": 2151,
+    "label": "T.V Pharm"
+  },
+  {
+    "id": 2152,
+    "label": "Công ty TNHH Nam Dược Trường Sinh"
+  },
+  {
+    "id": 2153,
+    "label": "Cty TNHH Dược phẩm Napharco"
+  },
+  {
+    "id": 2154,
+    "label": "Boston Pharma"
+  },
+  {
+    "id": 2155,
+    "label": "Công ty Aurobindo Pharma Limited"
+  },
+  {
+    "id": 2156,
+    "label": "CTY TNHH MB"
+  },
+  {
+    "id": 2157,
+    "label": "Công ty CPDP Công nghệ cao Beatexpharm"
+  },
+  {
+    "id": 2158,
+    "label": "ALIMENT INDUSTRY CO.,LTD"
+  },
+  {
+    "id": 2159,
+    "label": "Cty cp dp western pharma"
+  },
+  {
+    "id": 2160,
+    "label": "Transparent assorted bandages"
+  },
+  {
+    "id": 2161,
+    "label": "OLIMP LABORATORIES SP. Z.O.O"
+  }
+]

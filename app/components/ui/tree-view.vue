@@ -14,6 +14,9 @@ const props = withDefaults(
     level: 0,
   }
 );
+const emit = defineEmits<{
+  (e: "select", category: Category): void;
+}>();
 const level = ref(props.level);
 </script>
 
@@ -22,7 +25,7 @@ const level = ref(props.level);
     :class="['list-unstyled m-0', `level-${level}`]"
     v-if="props.categories && props.categories.length"
   >
-    <li v-for="cat in props.categories" :key="cat.id" class="mb-2">
+    <li  v-for="cat in props.categories" :key="cat.id" class="mb-2">
       <div :class="['d-flex align-items-center gap-1 item']" role="button">
         <PackageOpen v-if="props.level == 0" :size="16" :stroke-width="1" />
         <BookMarked :size="16" :stroke-width="1" v-if="props.level == 1" />

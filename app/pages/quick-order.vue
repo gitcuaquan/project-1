@@ -6,13 +6,8 @@
     </div>
     <div class="row gy-2 gx-3">
       <div class="col-lg-3">
-        <div
-          class="card sticky-top bg-white border-0 shadow-sm"
-          style="top: 60px"
-        >
-          <div class="card-body p-2 p-2">
-            <!-- <OrderModuleFilter /> -->
-          </div>
+        <div class="card p-2 bg-white border-0 shadow-sm">
+          <OrderModuleProvider class="mt-1" />
         </div>
       </div>
       <div class="col-lg-6">
@@ -31,9 +26,9 @@
                   <span class="d-none d-md-block"> Danh mục</span>
                 </button>
                 <div
-                  class="dropdown-menu ps-2 border-0 shadow dropdown-menu-custom "
+                  class="dropdown-menu ps-2 border-0 shadow dropdown-menu-custom"
                 >
-                  <div class="p-2 px-1 ">
+                  <div class="p-2 px-1">
                     <UiInputSearch
                       placeholder="Tìm kiếm danh mục"
                       v-model="categoriesKeyword"
@@ -47,6 +42,8 @@
             </div>
           </div>
           <div class="card-body px-1 px-md-2">
+            <h3 >Tất cả sản phẩm</h3>
+            {{ catSelect }}
             <OrderModuleList />
             <SharedModulePagination class="mt-3" />
           </div>
@@ -76,6 +73,7 @@ const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh" },
 ]);
 
+const catSelect = ref<any>(null);
 const categoriesKeyword = ref("");
 const categoriesFilter = computed(() => {
   if (!categoriesKeyword.value) return categories;
@@ -208,7 +206,7 @@ const categories = [
 }
 @media screen and (max-width: 768px) {
   .dropdown-menu-custom {
-    width: 400px !important;
+    width: 350px !important;
     margin: auto;
   }
 }

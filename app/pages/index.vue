@@ -1,53 +1,59 @@
 <template>
-  <ClientOnly>
-    <HomeSlideBanner />
-  </ClientOnly>
-  <div class="container my-5">
-    <HomeMarquee :speed="25">
-      <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/19.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/20.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/21.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/22.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/23.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/25.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
-    </HomeMarquee>
-    <HomeMarquee :speed="15" direction="right">
-      <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/19.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/20.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/21.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/22.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/23.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/25.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
-    </HomeMarquee>
-    <HomeMarquee :speed="40">
-      <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/19.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/20.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/21.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/22.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/23.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/25.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
-      <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
-    </HomeMarquee>
+  <div class="bg-white pt-2">
+    <ClientOnly>
+      <HomeSlideBanner />
+    </ClientOnly>
+    <div class="container my-5">
+      <HomeMarquee :speed="25">
+        <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/19.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/20.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/21.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/22.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/23.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/25.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
+      </HomeMarquee>
+      <HomeMarquee :speed="15" direction="right">
+        <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/19.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/20.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/21.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/22.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/23.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/25.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
+      </HomeMarquee>
+      <HomeMarquee :speed="40">
+        <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/19.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/20.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/21.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/22.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/23.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/25.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
+        <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
+      </HomeMarquee>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup></script>
 
-<style></style>
+<style scoped>
+img {
+  mix-blend-mode: multiply !important; /* Hòa trộn điểm ảnh trắng với nền bên dưới */
+}
+</style>
