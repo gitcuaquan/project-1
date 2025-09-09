@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Tap Med Pharmacy',
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1,maximum-scale=1' },
         { name: 'description', content: 'Tap Med Pharmacy - Your trusted pharmacy' },
       ],
     },

@@ -1,12 +1,12 @@
 <template>
   <SharedModuleBreadcrumb :data="breadcrumb" />
-  <div class="container mt-3">
+  <div class="container px-2 mt-3">
     <div class="row">
       <div class="col-12"></div>
     </div>
     <div class="row gy-2 gx-3">
-      <div class="col-lg-3">
-        <div class="card p-2 bg-white border-0 shadow-sm">
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="card sticky-custom p-2 bg-white border-0 shadow-sm">
           <OrderModuleProvider class="mt-1" />
         </div>
       </div>
@@ -17,7 +17,7 @@
               <UiInputSearch />
               <div class="dropdown">
                 <button
-                  class="btn w-100 text-nowrap d-flex gap-1 align-items-center btn-outline-dark border"
+                  class="btn w-100 px-2 text-nowrap d-flex gap-1 align-items-center btn-outline-dark border"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -40,25 +40,61 @@
                 </div>
               </div>
             </div>
+            <div class="d-flex tag-scroll mt-2 flex-nowrap gap-2">
+              <div
+                class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
+              >
+                SẢN PHẨM AIKYA<Tags :size="16" :stroke-width="1.5" />
+              </div>
+              <div
+                class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
+              >
+                Sản Phẩm TAPMED<Tags :size="16" :stroke-width="1.5" />
+              </div>
+              <div
+                class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
+              >
+                GIÁ TỐT TRONG TUẦN<Tags :size="14" :stroke-width="1.5" />
+              </div>
+              <div
+                class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
+              >
+                GIÁ TỐT TRONG THÁNG<Tags :size="14" :stroke-width="1.5" />
+              </div>
+            </div>
+            <div class="dropdown d-block d-md-none ">
+              <div
+                data-bs-toggle="dropdown"
+                class="mt-2 form-control d-flex align-items-center gap-2 d-md-block"
+              >
+                <House :stroke-width="1.5" class="text-muted" :size="16" />
+                <span class="text-muted user-select-none">Tìm nhà cung cấp</span>
+                <!-- <span class="text-nowrap text-truncate">Công ty TNHH MTV Dược phẩm DHG - VIỆT NAM</span> -->
+              </div>
+              <div class="dropdown-menu w-100 dropdown-menu-end p-2">
+                <OrderModuleProvider class="mt-1" />
+              </div>
+            </div>
           </div>
           <div class="card-body px-1 px-md-2">
-            <h3 >Tất cả sản phẩm</h3>
-            {{ catSelect }}
+            <h3>Tất cả sản phẩm</h3>
             <OrderModuleList />
             <SharedModulePagination class="mt-3" />
           </div>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="card bg-white border-0 shadow-sm mb-3">
-          <div class="card-body">
-            <SharedModuleCart />
+        <div class="sticky-custom">
+          <div class="card bg-white border-0 shadow-sm mb-3">
+            <div class="card-body">
+              <SharedModuleCart />
+            </div>
           </div>
-        </div>
-        <h6>Mã giảm giá</h6>
-        <div class="d-flex flex-column gap-3">
-          <div v-for="value in 4" :key="value">
-            <SharedModuleCoupon />
+          <h6>Mã giảm giá</h6>
+          <div class="d-flex flex-column gap-3">
+            <div v-for="value in 4" :key="value">
+              <SharedModuleCoupon />
+            </div>
           </div>
         </div>
       </div>
@@ -209,5 +245,23 @@ const categories = [
     width: 350px !important;
     margin: auto;
   }
+}
+.sticky-custom {
+  position: sticky;
+  top: 60px;
+  z-index: 0;
+}
+.badge {
+  font-size: 0.6rem;
+  padding: 0.3rem 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.tag-scroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 </style>

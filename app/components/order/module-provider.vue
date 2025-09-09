@@ -1,12 +1,24 @@
 <template>
   <div>
-    <UiInputSearch v-model="providerSearch" :placeholder="'Tìm kiếm nhà cung cấp'" />
+    <UiInputSearch
+      v-model="providerSearch"
+      :placeholder="'Tìm kiếm nhà cung cấp'"
+    />
     <div class="view-list mt-3">
       <ul class="list-group list-group-flush m-0">
-        <li role="button" v-for="item in providerFilter" :key="item.id" class="px-0 list-group-item list-group-item-action">
-          <div class="flex items-center gap-2">
-            <span class="text-sm font-medium">{{ item.label }}</span>
-          </div>
+        <li
+          role="button"
+          v-for="item in providerFilter"
+          :key="item.id"
+          class="px-0 list-group-item list-group-item-action"
+        >
+          <label class="d-flex items-center gap-2">
+            <input
+              type="radio"
+              name="provider"
+              :id="'provider-' + item.id"
+            /><span class="text-sm font-medium">{{ item.label }}</span>
+          </label>
         </li>
       </ul>
     </div>
@@ -33,9 +45,8 @@ const providerFilter = computed(() => {
 </script>
 
 <style scoped>
-  .view-list {
-    max-height: 400px;
-    overflow-y: auto;
-    font-size: 14px;
-  }
+.view-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
 </style>

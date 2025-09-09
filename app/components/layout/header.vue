@@ -104,7 +104,7 @@
             </div>
             <!-- Giỏ hàng -->
             <div class="d-flex h-100 align-items-center">
-              <button
+              <NuxtLink to="/cart"
                 class="position-relative me-2 px-0 px-md-2 btn text-dark border-0"
               >
                 <ShoppingCart :size="sizeIcon" :stroke-width="1" />
@@ -113,7 +113,7 @@
                 >
                   0
                 </span>
-              </button>
+              </NuxtLink>
             </div>
           </div>
         </div>

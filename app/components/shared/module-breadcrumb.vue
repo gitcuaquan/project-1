@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts" setup>
-import { NuxtLink } from "#components";
+
 import type { ProjectConfig } from "~/model";
 const props = defineProps({
   data: Array as () => ProjectConfig.BreadcrumbItem[],
