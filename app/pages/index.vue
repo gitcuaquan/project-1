@@ -3,7 +3,28 @@
     <ClientOnly>
       <HomeSlideBanner />
     </ClientOnly>
-    <div class="container my-5">
+    <section class="my-5">
+      <div class="container text-center mb-4">
+        <h2 class="text-center">
+          Với <b class="text-primary">TapMed</b>, chúng tôi cam kết !
+        </h2>
+        <p>
+          Mang đến trải nghiệm mua sắm trực tuyến tốt nhất với sản phẩm chất
+          lượng, dịch vụ tận tâm và giá cả hợp lý.
+        </p>
+      </div>
+      <HomeModuleFeature />
+    </section>
+    <section class="container-fluid my-5">
+      <div class="container text-center mb-4">
+        <h2 class="text-center">
+          Đối tác của <b class="text-primary">TapMed</b>
+        </h2>
+        <p>
+          Chúng tôi hợp tác với các thương hiệu và nhà cung cấp uy tín để mang
+          đến cho bạn những sản phẩm tốt nhất.
+        </p>
+      </div>
       <HomeMarquee :speed="25">
         <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
@@ -46,7 +67,12 @@
         <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
       </HomeMarquee>
-    </div>
+    </section>
+    <section class="container my-5">
+      <h2 class="mt-5 text-center text-capitalize mb-3">Tin tức nổi bật</h2>
+      <p class="text-center">Cập nhật những tin tức mới nhất và nổi bật nhất từ TapMed.</p>
+      <NewsList :limit="6" />
+    </section>
   </div>
 </template>
 

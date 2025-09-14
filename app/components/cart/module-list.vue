@@ -23,7 +23,7 @@
                   style="width: 70px"
                 >
                   <img src="/images/image-error.svg" alt="" />
-                </div>
+                </div>``
                 <div class="d-flex flex-column">
                   <NuxtLink
                     to="/product/3b-lysine"
