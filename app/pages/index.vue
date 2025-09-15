@@ -8,21 +8,25 @@
         <h2 class="text-center">
           Với <b class="text-primary">TapMed</b>, chúng tôi cam kết !
         </h2>
-        <p>
-          Mang đến trải nghiệm mua sắm trực tuyến tốt nhất với sản phẩm chất
-          lượng, dịch vụ tận tâm và giá cả hợp lý.
+        <p class="text-muted">
+          <small>
+            Mang đến trải nghiệm mua sắm trực tuyến tốt nhất với sản phẩm chất
+            lượng, dịch vụ tận tâm và giá cả hợp lý.
+          </small>
         </p>
       </div>
       <HomeModuleFeature />
     </section>
-    <section class="container-fluid my-5">
+    <section class="container my-5">
       <div class="container text-center mb-4">
         <h2 class="text-center">
           Đối tác của <b class="text-primary">TapMed</b>
         </h2>
-        <p>
-          Chúng tôi hợp tác với các thương hiệu và nhà cung cấp uy tín để mang
-          đến cho bạn những sản phẩm tốt nhất.
+        <p class="text-muted">
+          <small
+            >Chúng tôi hợp tác với các thương hiệu và nhà cung cấp uy tín để
+            mang đến cho bạn những sản phẩm tốt nhất.</small
+          >
         </p>
       </div>
       <HomeMarquee :speed="25">
@@ -69,9 +73,25 @@
       </HomeMarquee>
     </section>
     <section class="container my-5">
-      <h2 class="mt-5 text-center text-capitalize mb-3">Tin tức nổi bật</h2>
-      <p class="text-center">Cập nhật những tin tức mới nhất và nổi bật nhất từ TapMed.</p>
+      <h2 class="mt-5 text-center text-capitalize">Tin tức nổi bật</h2>
+      <p class="text-center text-muted mb-3">
+        <small
+          >Cập nhật những tin tức mới nhất và nổi bật nhất từ TapMed.</small
+        >
+      </p>
       <NewsList :limit="6" />
+    </section>
+    <section class="container my-5">
+      <h2 class="mt-5 text-center text-capitalize">
+        Khách hàng nói về chúng tôi
+      </h2>
+      <p class="text-center text-muted mb-3">
+        <small
+          >Đọc những đánh giá và phản hồi từ khách hàng đã trải nghiệm dịch vụ
+          của TapMed.</small
+        >
+      </p>
+      <HomeModuleTestimonial />
     </section>
   </div>
 </template>
