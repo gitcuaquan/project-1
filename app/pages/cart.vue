@@ -2,11 +2,19 @@
   <SharedModuleBreadcrumb :data="breadcrumb" />
   <div class="container my-4">
     <div class="row">
-      <div class="col-8">
+      <div class="col-lg-8">
         <CartModuleList />
       </div>
+      <div class="col-lg-4">
+        <CartModuleSummary />
+        <div class="d-flex mt-3 flex-column gap-3">
+          <div v-for="value in 4" :key="value">
+            <SharedModuleCoupon />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row justify-content-center" >
+    <div class="row justify-content-center">
       <div class="col-4">
         <div class="d-flex flex-column align-items-center">
           <img src="/images/cart-empty.svg" class="w-75" alt="" />
