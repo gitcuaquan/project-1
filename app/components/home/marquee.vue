@@ -66,4 +66,36 @@ const props = withDefaults(defineProps<Props>(), {
     transform: translateX(0%);
   }
 }
+.logo-marquee::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0) 90%,
+    #ffffff 100%
+  );
+}
+.logo-marquee::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    to left,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0) 90%,
+    #ffffff 100%
+  );
+}
 </style>
