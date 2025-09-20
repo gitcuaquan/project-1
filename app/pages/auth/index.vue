@@ -1,7 +1,7 @@
 <template>
   <SharedModuleBreadcrumb :data="breadcrumb" />
   <div class="container mt-3">
-    <div class="row">
+    <div class="row py-3">
       <div class="col-4">
         <div class="account-sidebar bg-white rounded-3 shadow-sm p-4">
           <div class="mb-3">
@@ -16,10 +16,6 @@
             <li class="account-item mb-1 d-flex align-items-center p-2 rounded">
               <MapPin class="me-2 text-primary" size="20" />
               <span>Địa chỉ của bạn</span>
-            </li>
-            <li class="account-item mb-1 d-flex align-items-center p-2 rounded">
-              <Lock class="me-2 text-primary" size="20" />
-              <span>Đăng nhập & bảo mật</span>
             </li>
             <li class="account-item mb-1 d-flex align-items-center p-2 rounded">
               <CreditCard class="me-2 text-primary" size="20" />

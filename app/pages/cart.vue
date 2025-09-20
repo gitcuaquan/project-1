@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div v-if="false" class="row justify-content-center">
       <div class="col-4">
         <div class="d-flex flex-column align-items-center">
           <img src="/images/cart-empty.svg" class="w-75" alt="" />

@@ -1,9 +1,9 @@
 <template>
   <div class="card border-0 shadow-sm">
-    <div class="card-body">
+    <div class="card-body p-2">
       <div class="ratio ratio-1x1 overflow-hidden rounded mb-3">
         <img
-          src="https://picsum.photos/200/300"
+          src="https://placehold.co/800x800/000000/5682B1.png"
           alt="Product Image"
           class="card-img-top"
         />
