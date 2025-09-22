@@ -1,3 +1,4 @@
+
 <template>
   <div id="top-header"></div>
   <div id="main-header" class="bg-white">
@@ -104,7 +105,8 @@
             </div>
             <!-- Giỏ hàng -->
             <div class="d-flex h-100 align-items-center">
-              <NuxtLink to="/cart"
+              <NuxtLink
+                to="/cart"
                 class="position-relative me-2 px-0 px-md-2 btn text-dark border-0"
               >
                 <ShoppingCart :size="sizeIcon" :stroke-width="1" />
@@ -142,15 +144,28 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body ">
-            <ul class="navbar-nav py-0 gap-1 flex-grow-1 ">
-               <li class="nav-item py-2 px-3 ps-lg-0" >
-                <nuxt-link to="/" class="nav-link py-1" role="button">Trang chủ</nuxt-link>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav py-0 gap-1 flex-grow-1">
+              <li class="nav-item py-2 px-3 ps-lg-0">
+                <nuxt-link to="/" class="nav-link py-1" role="button"
+                  >Trang chủ</nuxt-link
+                >
               </li>
-              <li class="nav-item py-2 position-relative px-3 " v-for="value in menu">
-                <nuxt-link :to="value.url" class="nav-link py-1" role="button">{{ value.name }}</nuxt-link>
-                <div v-if="value.hot" class="position-absolute d-none d-md-block mt-2 top-0 end-0 translate-middle-y">
-                  <img src="/images/icon-hot.webp" width="45" alt="">
+              <li
+                class="nav-item py-2 position-relative px-3"
+                v-for="value in menu"
+              >
+                <nuxt-link
+                  :to="value.url"
+                  class="nav-link py-1"
+                  role="button"
+                  >{{ value.name }}</nuxt-link
+                >
+                <div
+                  v-if="value.hot"
+                  class="position-absolute d-none d-md-block mt-2 top-0 end-0 translate-middle-y"
+                >
+                  <img src="/images/icon-hot.webp" width="45" alt="" />
                 </div>
               </li>
             </ul>
@@ -159,23 +174,31 @@
       </div>
     </nav>
   </div>
- <ClientOnly>
-   <SharedModalLogin v-if="data.showModal.login" @close="data.showModal.login = false"/>
-   <SharedModalRegister v-if="data.showModal.register" @close="data.showModal.register = false" />
- </ClientOnly>
+  <ClientOnly>
+    <SharedModalLogin
+      v-if="data.showModal.login"
+      @close="data.showModal.login = false"
+    />
+    <SharedModalRegister
+      v-if="data.showModal.register"
+      @close="data.showModal.register = false"
+    />
+  </ClientOnly>
 </template>
 
 <script lang="ts" setup>
+const { $bootstrap } = useNuxtApp();
 const sizeIcon = ref(35);
 
 const data = reactive({
-  showModal:{
+  showModal: {
     login: false,
-    register: false
-  }
-})
+    register: false,
+  },
+});
 
 provide("data", data);
+const route = useRoute();
 
 const categories = [
   "Thuốc",
@@ -185,35 +208,48 @@ const categories = [
   "Cá nhân",
 ];
 
-
 const menu = [
   {
-    name:"Đặt hàng nhanh",
-    url:"/quick-order"
+    name: "Đặt hàng nhanh",
+    url: "/quick-order",
   },
   {
-    name:"Khuyến mãi",
-    url:"/promotion",
-    hot:true
+    name: "Khuyến mãi",
+    url: "/promotion",
+    hot: true,
   },
   {
-    name:"Tin tức",
-    url:"/news"
+    name: "Tin tức",
+    url: "/news",
   },
   {
-    name:"Chính sách",
-    url:"/policies"
+    name: "Chính sách",
+    url: "/policies",
   },
-  {
-    name:"Liên hệ",
-    url:"/contact"
-  }
-]
+];
+
+const offCanvasInstance = ref<any>(null);
+
 onMounted(() => {
   checkWindowSize();
   window.addEventListener("resize", checkWindowSize);
+  initOffcanvas();
 });
-
+watch (
+  () => route.fullPath,
+  () => {
+    if (offCanvasInstance.value) {
+      offCanvasInstance.value.hide();
+    }
+  }
+);
+function initOffcanvas() {
+  const offcanvasElement = document.getElementById("offcanvasNavbar");
+  if (offcanvasElement) {
+    // @ts-ignore
+    offCanvasInstance.value = new $bootstrap.Offcanvas(offcanvasElement);
+  }
+}
 function checkWindowSize() {
   const width = window.innerWidth;
   if (width < 768) {
@@ -225,7 +261,7 @@ function checkWindowSize() {
 </script>
 
 <style scoped>
-#bottom-header{
+#bottom-header {
   z-index: 1;
 }
 #category-list {
@@ -245,27 +281,26 @@ function checkWindowSize() {
 .dropdown-menu {
   min-width: 250px;
 }
-.nav-item{
+.nav-item {
   border-radius: 5px;
   transition: all 0.2s;
   /* màu chữ */
-  .nav-link{
+  .nav-link {
     color: #000;
     font-weight: 400;
   }
   /* hiệu ứng hover */
   &:hover {
-    .nav-link{
+    .nav-link {
       color: var(--bs-primary);
     }
   }
   /* hiệu ứng active */
-  .router-link-active{
+  .router-link-active {
     color: var(--bs-primary);
   }
-
 }
-.sticky-top{
+.sticky-top {
   z-index: 99999999999;
 }
 </style>

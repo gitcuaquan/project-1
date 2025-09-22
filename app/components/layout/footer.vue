@@ -60,7 +60,7 @@
             </h5>
             <div class="contact-info">
               <!-- Headquarters -->
-              <div class="legal-item  p-3 rounded">
+              <div class="legal-item p-3 rounded">
                 <div class="d-flex align-items-center mb-2">
                   <Building :size="16" class="text-success me-2" />
                   <h6 class="mb-0">Trụ sở chính</h6>
@@ -72,7 +72,7 @@
               </div>
 
               <!-- Showroom -->
-              <div class="legal-item  p-3 rounded">
+              <div class="legal-item p-3 rounded">
                 <div class="d-flex align-items-center mb-2">
                   <Store :size="16" class="text-success me-2" />
                   <h6 class="mb-0">Showroom</h6>
@@ -139,7 +139,7 @@
             </div>
 
             <!-- Business Permit -->
-            <div class="legal-item  p-3 rounded">
+            <div class="legal-item p-3 rounded">
               <div class="d-flex align-items-center mb-2">
                 <Shield :size="16" class="text-success me-2" />
                 <h6 class="mb-0">Giấy phép kinh doanh</h6>
@@ -177,15 +177,30 @@
       </div>
     </div>
   </footer>
+  <!-- float button -->
+  <div id="float-button">
+    <div class="d-flex flex-column gap-2">
+      <a
+        href="https://zalo.me/202686777393056736"
+        target="_blank"
+        class="btn border-0 shadow-none p-0"
+      >
+        <img src="/images/follow/zalo.png" alt="Zalo" style="width: 40px" />
+      </a>
+      <a href="tel:0963744567" target="_blank" class="btn border-0 shadow-none p-0">
+        <img src="/images/follow/phone.png" alt="Phone" style="width: 40px" />
+      </a>
+      <a href="https://www.messenger.com/t/2047877302189560" target="_blank" class="btn border-0 shadow-none p-0">
+        <img src="/images/follow/messenger.png" alt="Messenger" style="width: 35px" />
+      </a>
+    </div>
+  </div>
   <!-- Scroll to Top Button -->
-  <button
-    v-if="showButton"
-    @click="scrollToTop"
-    class="btn rounded-circle"
-    id="scroll-to-top"
-  >
-    <ArrowBigUpDash :size="24" color="#189847" />
-  </button>
+  <div id="scroll-to-top" v-if="showButton">
+    <button @click="scrollToTop" class="btn border-0 shadow-none">
+      <ArrowBigUpDash :size="24" color="#189847" />
+    </button>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -213,20 +228,31 @@ function scrollToTop() {
 <style scoped>
 #scroll-to-top {
   background: rgba(var(--bs-primary-rgb), 0.2);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5%;
+  right: 10px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+#float-button {
+  position: fixed;
+  bottom: 15%;
+  right: 10px;
   z-index: 1000;
 }
 @media screen and (max-width: 768px) {
-  #scroll-to-top {
-    bottom: 20%;
-    right: 10px;
+  #float-button {
+    bottom: 50%;
+    transform: translateY(50%);
   }
+  
 }
-
 
 .footer-section {
   height: 100%;
@@ -255,7 +281,6 @@ function scrollToTop() {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
 }
-
 
 .contact-link {
   transition: all 0.3s ease;

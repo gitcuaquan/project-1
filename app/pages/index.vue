@@ -1,24 +1,23 @@
 <template>
   <div class="bg-white pt-2">
-    <ClientOnly>
-      <HomeSlideBanner />
-    </ClientOnly>
-    <section class="my-5">
-      <div class="container text-center mb-4">
-        <h2 class="text-center">
-          Với <b class="text-primary">TapMed</b>, chúng tôi cam kết !
-        </h2>
-        <p class="text-muted">
-          <small>
-            Mang đến trải nghiệm mua sắm trực tuyến tốt nhất với sản phẩm chất
-            lượng, dịch vụ tận tâm và giá cả hợp lý.
-          </small>
-        </p>
-      </div>
+    <section>
+      <ClientOnly>
+        <HomeSlideBanner />
+      </ClientOnly>
+    </section>
+    <section class="my-5 container">
+      <h2 class="text-center text-capitalize">Ưu đãi mới nhất</h2>
+      <p class="text-muted text-center mb-3">
+        <small>
+          Cập nhật những ưu đãi và khuyến mãi mới nhất từ TapMed dành cho khách hàng.
+        </small>
+      </p>
+      <HomeModulePromotion />
+    </section>
+    <section class="my-3">
       <HomeModuleFeature />
     </section>
-
-    <section class="container my-5">
+    <section class="container my-3">
       <h2 class="text-center">Sản phẩm nổi bật</h2>
       <p class="text-muted text-center mb-3">
         <small>
@@ -26,7 +25,7 @@
           cung cấp uy tín.
         </small>
       </p>
-      <ProductModuleList />
+      <ProductModuleSliderItem />
     </section>
     <section class="container my-5">
       <h2 class="mt-5 text-center text-capitalize">Tin tức nổi bật</h2>
@@ -49,7 +48,7 @@
           >
         </p>
       </div>
-      <HomeMarquee :speed="25" class="my-3">
+      <HomeModuleMarquee :speed="70" class="my-2">
         <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
@@ -62,8 +61,8 @@
         <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
-      </HomeMarquee>
-      <HomeMarquee :speed="15" direction="right" class="my-3">
+      </HomeModuleMarquee>
+      <HomeModuleMarquee :speed="50" direction="right" class="my-2">
         <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
@@ -76,8 +75,8 @@
         <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
-      </HomeMarquee>
-      <HomeMarquee :speed="40" class="my-3">
+      </HomeModuleMarquee>
+      <HomeModuleMarquee :speed="90" class="my-2">
         <img src="https://tapmed.vn/TapMedVn/images/partner/16.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/17.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/18.png" alt="" />
@@ -90,7 +89,7 @@
         <img src="https://tapmed.vn/TapMedVn/images/partner/26.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
         <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
-      </HomeMarquee>
+      </HomeModuleMarquee>
     </section>
     <section class="container my-5">
       <h2 class="mt-5 text-center text-capitalize">
@@ -104,7 +103,7 @@
       </p>
       <HomeModuleTestimonial />
     </section>
-    <section class="my-5 container">
+    <section class="my-3 container">
       <HomeModuleStory />
     </section>
   </div>

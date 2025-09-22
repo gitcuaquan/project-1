@@ -33,7 +33,7 @@ type SizeType = 'sm' | 'md' | 'lg';
 const props = defineProps({
   modelValue: {
     type: Number,
-    default: 1,
+    default: 0,
   },
   size: {
     type: String as PropType<SizeType>,

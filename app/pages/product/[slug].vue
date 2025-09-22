@@ -151,6 +151,9 @@
         </div>
       </div>
     </div>
+    <!-- End Main Product Section -->
+     <h5 class="mt-5 text-capitalize">Có thể bạn cũng thích</h5>
+     <ProductModuleSliderItem  />
   </div>
 </template>
 

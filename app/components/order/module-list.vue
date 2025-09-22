@@ -1,19 +1,22 @@
 <template>
   <table class="table align-middle mb-0 table-sm table-borderless">
     <tbody>
-      <tr v-for="value in 20" class="border-bottom" :key="value">
-        <td>
-          <div class="ratio z-low bg-light rounded ratio-1x1" style="width: 100px">
-            <img src="/images/image-error.svg" alt="" />
+      <tr v-for="value in Products.slice(0, 10)" class="border-bottom" :key="value.name">
+        <td style="width: 100px;">
+          <div
+            class="ratio z-low overflow-hidden bg-light rounded ratio-1x1"
+            style="width: 100px"
+          >
+            <img :src="value.image" alt="" />
           </div>
         </td>
         <td>
           <NuxtLink
             to="/product/3b-lysine"
             class="text-decoration-none link-dark link-product"
-            >3B Lysine, Linh Chi Đông Trùng Hộp 100 Viên (B1,B6,B12) Nang Mềm ,
-            Akofa - 3B Lysine Đông Trùng Trắng</NuxtLink
-          >
+            >
+            {{ value.name }}
+          </NuxtLink>
           <div class="d-flex mt-1 gap-2">
             <small>
               Giá: <strong class="text-danger fw-normal">Liên hệ</strong>
@@ -23,24 +26,22 @@
               Đơn vị : <strong class="text-danger fw-normal">Hộp</strong>
             </small>
           </div>
-          <div class="d-flex align-items-center mt-1 gap-2">
-            <UiBtnGroup  size="sm" />
-            <button class="btn btn-sm d-lg-none border border-dark  shadow-sm btn-light">
-              <img src="/images/cart-add.svg" style="width: 15px" alt="" />
-            </button>
+          <div class="d-lg-none mt-2">
+            <UiBtnGroup size="sm" />
           </div>
         </td>
         <td style="width: 10px" class="d-none d-md-table-cell">
-          <button class="btn btn-sm shadow-sm border border-dark btn-light">
-           <PackagePlus :stroke-width="1" :size="16"/>
-          </button>
+          <UiBtnGroup size="sm" />
         </td>
       </tr>
     </tbody>
   </table>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+import Products from "~/data/fake_product.json";
+</script>
 
 <style scoped>
 .ratio img {
@@ -57,7 +58,7 @@ small {
   color: var(--bs-primary) !important;
   text-decoration: underline !important;
 }
-.z-low{
+.z-low {
   z-index: 0 !important;
 }
 </style>

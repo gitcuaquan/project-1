@@ -41,7 +41,7 @@
           </form>
         </div>
         <div class="modal-footer justify-content-center border-0">
-          <button type="button" class="btn btn-primary w-50">Đăng nhập</button>
+          <NuxtLink to="/auth" class="btn btn-primary w-50">Đăng nhập</NuxtLink>
         </div>
         <p class="text-center mb-3">
           Bạn chưa có tài khoản?
@@ -55,6 +55,8 @@
 </template>
 
 <script lang="ts" setup>
+const route = useRoute();
+
 import { Modal } from "bootstrap";
 const modalInstance = ref<Modal | null>(null);
 
@@ -69,7 +71,14 @@ const emit = defineEmits(["close"]);
 onMounted(() => {
   initModal();
 });
-
+watch(
+  () => route.fullPath,
+  (newVal) => {
+    if (newVal.includes("auth")) {
+      modalInstance.value?.hide();
+    }
+  }
+);
 function initModal() {
   const modal = document.getElementById("modal-login");
   modalInstance.value = new Modal(modal!);

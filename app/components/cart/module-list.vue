@@ -16,14 +16,18 @@
       <div
         class="cart-product mb-lg-0 mb-3 d-flex align-items-center gap-3 d-lg-table-cell p-lg-3"
       >
-        <img
-          src="https://placehold.co/400"
-          width="60"
-          height="60"
-          class="rounded border"
-          alt="Sản phẩm"
-        />
-        <span class="fw-medium ms-2">Áo Thun GenZ</span>
+        <div class="d-flex">
+          <img
+            src="https://placehold.co/400"
+            width="60"
+            height="60"
+            class="rounded border"
+            alt="Sản phẩm"
+          />
+          <span class="fw-medium ms-2"
+            >Aki Maxdusen Dưỡng Tâm An Hộp 3 Vỉ X 10 Viên - Tapmed</span
+          >
+        </div>
       </div>
 
       <!-- Price -->

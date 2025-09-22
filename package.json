@@ -11,13 +11,12 @@
   },
   "dependencies": {
     "nuxt-lucide-icons": "^1.0.5",
-    "vue-router": "^4.5.1",
-    "vue-virtual-scroller": "^2.0.0-beta.8"
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
     "bootstrap": "^5.3.8",
-    "nuxt": "^4.1.0",
+    "nuxt": "^4.1.2",
     "nuxt-swiper": "^2.0.1",
     "sass": "^1.91.0",
     "sass-embedded": "^1.91.0",

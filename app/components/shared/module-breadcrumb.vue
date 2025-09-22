@@ -1,31 +1,30 @@
 <template>
   <div class="bg-custom">
-    <div class="container py-2">
-      <nav
-        aria-label="breadcrumb"
-      >
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item">
-            <NuxtLink class="text-decoration-none" to="/">Trang chủ</NuxtLink>
-          </li>
-          <li class="breadcrumb-item" v-for="value in data" :key="value.label">
-            <template v-if="value.to">
-              <NuxtLink class="text-decoration-none" :to="value.to">{{
-                value.label
-              }}</NuxtLink>
-            </template>
-            <template v-else>
-              <span class="text-muted">{{ value.label }}</span>
-            </template>
-          </li>
-        </ol>
-      </nav>
+    <div class="container py-3">
+      <div class="d-flex flex-nowrap gap-2 align-items-center">
+        <NuxtLink class="text-decoration-none text-small" to="/">
+          <div class="d-flex align-items-center gap-1">
+            <Home :size="16" /> Trang Chủ
+          </div>
+        </NuxtLink>
+        <span class="text-muted">
+          <ChevronRight :size="16" :stroke-width="1.5" />
+        </span>
+        <template v-for="(value,index) in data" :key="value.label">
+          <span v-if="value.to">
+            <NuxtLink class="text-decoration-none text-capitalize text-small " :to="value.to">
+              {{ value.label }}
+            </NuxtLink>
+          </span>
+          <span v-else class="text-muted text-capitalize text-small ">{{ value.label }}</span>
+          <ChevronRight :size="16" :stroke-width="1.5" v-if="index < (data?.length || 0) - 1" />
+        </template>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-
 import type { ProjectConfig } from "~/model";
 const props = defineProps({
   data: Array as () => ProjectConfig.BreadcrumbItem[],
@@ -37,5 +36,8 @@ const props = defineProps({
 }
 .bg-custom {
   background-color: #e9f0ec;
+}
+.text-small {
+  font-size: 0.875rem;
 }
 </style>
