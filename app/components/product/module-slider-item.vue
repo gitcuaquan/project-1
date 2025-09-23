@@ -14,15 +14,16 @@
             alt="..."
           />
           <div class="card-body">
+            <small class="text-primary fst-italic">Đã bán : 1000 +</small>
             <NuxtLink
               to="/product/12312"
               class="text-decoration-none text-dark"
             >
               <small class="text-truncate-2"> {{ Products[index % Products.length]?.name }}</small>
-              <button class="btn btn-sm mt-2 w-100 rounded-pill btn-primary">
-                Chọn mua ngay
-              </button>
             </NuxtLink>
+          </div>
+          <div class="card-footer border-0 fw-normal gap-2 bg-primary py-1 text-white d-flex justify-content-center align-items-center">
+            <ShoppingBag :size="16"/> Mua ngay
           </div>
         </div>
       </swiper-slide>
