@@ -1,11 +1,7 @@
 <template>
   <HomeModuleHero />
-  <section>
-    <ClientOnly>
-      <HomeSlideBanner />
-    </ClientOnly>
-  </section>
-  <section class="my-5 container">
+
+  <section class="container">
     <h2 class="text-center text-capitalize">Ưu đãi mới nhất</h2>
     <p class="text-muted text-center mb-3">
       <small>
@@ -13,6 +9,7 @@
         hàng.
       </small>
     </p>
+    <HomeModuleBanner class="mb-2" />
     <HomeModulePromotion />
   </section>
   <section class="my-3">
@@ -34,6 +31,21 @@
       <small>Cập nhật những tin tức mới nhất và nổi bật nhất từ TapMed.</small>
     </p>
     <NewsList :limit="6" />
+  </section>
+  <section class="container my-5">
+    <h2 class="mt-5 text-center text-capitalize">
+      Khách hàng nói về chúng tôi
+    </h2>
+    <p class="text-center text-muted mb-3">
+      <small
+        >Đọc những đánh giá và phản hồi từ khách hàng đã trải nghiệm dịch vụ của
+        TapMed.</small
+      >
+    </p>
+    <HomeModuleTestimonial />
+  </section>
+  <section class="my-3">
+    <HomeModuleStory />
   </section>
   <section class="container my-5">
     <div class="container text-center mb-4">
@@ -75,21 +87,6 @@
       <img src="https://tapmed.vn/TapMedVn/images/partner/27.png" alt="" />
       <img src="https://tapmed.vn/TapMedVn/images/partner/28.png" alt="" />
     </HomeModuleMarquee>
-  </section>
-  <section class="container my-5">
-    <h2 class="mt-5 text-center text-capitalize">
-      Khách hàng nói về chúng tôi
-    </h2>
-    <p class="text-center text-muted mb-3">
-      <small
-        >Đọc những đánh giá và phản hồi từ khách hàng đã trải nghiệm dịch vụ của
-        TapMed.</small
-      >
-    </p>
-    <HomeModuleTestimonial />
-  </section>
-  <section class="my-3">
-    <HomeModuleStory />
   </section>
 </template>
 

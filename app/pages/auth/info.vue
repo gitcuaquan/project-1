@@ -91,8 +91,9 @@ import type { ProjectConfig } from "~/model";
 
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Tài khoản", to: "/auth" },
-  { label: "Thông tin chung" },
+  { label: "Hồ sơ khách hàng" },
 ]);
+const citySelect = ref<ProjectConfig.CitySetting | null>(null);
 </script>
 
 <style scoped>

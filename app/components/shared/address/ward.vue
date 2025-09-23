@@ -53,7 +53,7 @@
 import City from "@/data/ward.json"; // Adjust the import path as necessary
 import type { ProjectConfig } from "~/model";
 const props = defineProps<{
-  cityCode: string | number;
+  cityCode?: string | number;
   modelValue: ProjectConfig.DistrictSetting | null;
 }>();
 

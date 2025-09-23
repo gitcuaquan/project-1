@@ -20,18 +20,19 @@
     >
       <template v-for="(item, idx) in sidebarItems" :key="idx">
         <li
-          v-if="!item.divider"
           :class="[
             'account-item mb-1 d-flex align-items-center position-relative p-2 rounded',
             route.path === item.to ? 'active' : '',
           ]"
         >
-          <nuxt-link :to="item.to " class="text-decoration-none stretched-link text-dark d-flex align-items-center w-100">
+          <nuxt-link
+            :to="item.to"
+            class="text-decoration-none stretched-link text-dark d-flex align-items-center w-100"
+          >
             <component :is="item.icon" class="me-2 text-primary" :size="20" />
             <span>{{ item.label }}</span>
           </nuxt-link>
         </li>
-        <li v-else class="border-top my-2"></li>
       </template>
     </ul>
   </div>
@@ -48,12 +49,9 @@ import {
 } from "lucide-vue-next";
 const sidebarItems = [
   { icon: Truck, label: "Đơn hàng của tôi", to: "/auth" },
-  { icon: User, label: "Thông tin chung", to: "/auth/info" },
-  { icon: CreditCard, label: "Thanh toán" },
-  { icon: Archive, label: "Đơn hàng đã lưu" },
-  { divider: true },
-  { icon: MessageCircle, label: "Hỗ trợ khách hàng" },
-  { icon: LogOut, label: "Đăng xuất" },
+  { icon: User, label: "Hồ sơ khách hàng", to: "/auth/info" },
+  { icon: MessageCircle, label: "Hỗ trợ khách hàng", to: "/auth/ticket" },
+  { icon: LogOut, label: "Đăng xuất", to: "/" },
 ];
 const route = useRoute();
 </script>

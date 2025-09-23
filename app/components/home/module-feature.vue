@@ -1,6 +1,11 @@
 <template>
-  <div class="py-5 pb-3 bg-primary-custom ">
+  <div class="py-5 pb-3 bg-primary-custom">
     <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="text-center">
+          Tại sao chọn <b class="text-primary">TapMed</b>
+        </h2>
+      </div>
       <div class="row g-2">
         <div class="col-lg-3 col-md-6 col-6">
           <div class="d-flex flex-column align-items-center text-center p-3">
@@ -75,6 +80,6 @@
   color: #6c757d;
 }
 .bg-primary-custom {
-  background: rgba(var(--bs-primary-rgb), 0.1);
+  background: rgba(var(--bs-primary-rgb), 0.2);
 }
 </style>

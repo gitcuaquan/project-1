@@ -11,6 +11,9 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1,maximum-scale=1' },
         { name: 'description', content: 'Tap Med Pharmacy - Your trusted pharmacy' },
       ],
+      // script: [
+      //   { src: '/lib/bootstrap-5.3.8.min.js'},
+      // ],
     },
   },
   lucide: {
@@ -23,5 +26,6 @@ export default defineNuxtConfig({
         },
       }
     }
-  }
+  },
+  plugins: ['~/plugins/bootstrap.client.ts'],  
 })
