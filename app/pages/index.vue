@@ -30,17 +30,15 @@
     <p class="text-center text-muted mb-3">
       <small>Cập nhật những tin tức mới nhất và nổi bật nhất từ TapMed.</small>
     </p>
-    <NewsList :limit="6" />
+    <NewsList :limit="3" />
   </section>
   <section class="container my-5">
     <h2 class="mt-5 text-center text-capitalize">
       Khách hàng nói về chúng tôi
     </h2>
     <p class="text-center text-muted mb-3">
-      <small
-        >Đọc những đánh giá và phản hồi từ khách hàng đã trải nghiệm dịch vụ của
-        TapMed.</small
-      >
+      <small>Đọc những đánh giá và phản hồi từ khách hàng đã trải nghiệm dịch vụ của
+        TapMed.</small>
     </p>
     <HomeModuleTestimonial />
   </section>
@@ -53,10 +51,8 @@
         Đối tác của <b class="text-primary">TapMed</b>
       </h2>
       <p class="text-muted">
-        <small
-          >Chúng tôi hợp tác với các thương hiệu và nhà cung cấp uy tín để mang
-          đến cho bạn những sản phẩm tốt nhất.</small
-        >
+        <small>Chúng tôi hợp tác với các thương hiệu và nhà cung cấp uy tín để mang
+          đến cho bạn những sản phẩm tốt nhất.</small>
       </p>
     </div>
     <HomeModuleMarquee :speed="70" class="my-2">
@@ -93,7 +89,8 @@
 <script lang="ts" setup></script>
 
 <style scoped>
-img {
-  mix-blend-mode: multiply !important; /* Hòa trộn điểm ảnh trắng với nền bên dưới */
-}
+  img {
+    mix-blend-mode: multiply !important;
+    /* Hòa trộn điểm ảnh trắng với nền bên dưới */
+  }
 </style>
