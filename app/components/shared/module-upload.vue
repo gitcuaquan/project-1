@@ -1,19 +1,25 @@
 <template>
   <div class="rounded-3 p-3 shared-module-upload ratio ratio-1x1">
-    <div  class="d-flex align-items-center justify-content-center w-100">
-      <label v-if="!data.urlTemp"
+    <div class="d-flex align-items-center justify-content-center w-100">
+      <label
+        v-if="!data.urlTemp"
         :for="id"
         class="d-flex stretched-link flex-column align-items-center justify-content-center text-center mb-0"
       >
         <FileUp :stroke-width="1" :size="48" />
-        <small class="text-muted"> Click để tải lên</small>
+        <small class="text-muted mt-3 w-75">
+          {{ placeholder || " Click để tải lên" }}
+        </small>
       </label>
       <div v-else>
         <img :src="data.urlTemp" class="img-fluid rounded-3" />
         <button
           type="button"
-          class="btn btn-link link-danger p-0 position-absolute  top-0 end-0"
-          @click="data.urlTemp = ''; data.file = null"
+          class="btn btn-link link-danger p-0 position-absolute top-0 end-0"
+          @click="
+            data.urlTemp = '';
+            data.file = null;
+          "
         >
           <X :stroke-width="1" />
         </button>
@@ -31,10 +37,12 @@
 
 <script lang="ts" setup>
 const id = useId();
-
+const props = defineProps<{
+  placeholder?: string;
+}>();
 const data = reactive({
   file: null as File | null,
-  urlTemp: ""
+  urlTemp: "",
 });
 
 function handleFileInput(event: Event) {

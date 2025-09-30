@@ -25,7 +25,7 @@
               >
             </p>
           </div>
-          <form class="row gy-1 gx-3">
+          <form class="row gy-2 gx-3">
             <div class="col-12 col-md-6">
               <label for="name" class="form-label">Họ và tên</label>
               <input
@@ -34,6 +34,16 @@
                 required
                 id="name"
                 placeholder="Nhập họ và tên đầy đủ của bạn"
+              />
+            </div>
+            <div class="col-md-6 col-12">
+              <label for="address" class="form-label">Số căn cước công dân</label>
+              <input
+                type="text"
+                class="form-control"
+                required
+                id="address"
+                placeholder="Nhập số căn cước công dân"
               />
             </div>
             <div class="col-12 col-md-6">
@@ -74,7 +84,7 @@
               <label for="ward" class="form-label">Xã phường</label>
               <SharedAddressWard :city-code="citySelect?.code" />
             </div>
-            <div class="col-12">
+            <div class="col-md-6 col-12">
               <label for="address" class="form-label">Địa chỉ</label>
               <input
                 type="text"
@@ -88,16 +98,19 @@
           <!-- Giấy tờ liên quan -->
           <div class="row justify-content-center mt-2 g-3">
             <div class="col-6 col-md-4">
-              <label for="file1" class="form-label">Giấy tờ 1</label>
-              <SharedModuleUpload />
+              <SharedModuleUpload
+                placeholder="Tải lên chứng chỉ hành nghề dược"
+              />
             </div>
             <div class="col-6 col-md-4">
-              <label for="file2" class="form-label">Giấy tờ 2</label>
-              <SharedModuleUpload />
+              <SharedModuleUpload
+                placeholder="Tải lên giấy chứng nhận đăng ký kinh doanh"
+              />
             </div>
             <div class="col-6 col-md-4">
-              <label for="file3" class="form-label">Giấy tờ 3</label>
-              <SharedModuleUpload />
+              <SharedModuleUpload
+                placeholder="Tải lên giấy chứng nhận đủ điều kiện kinh doanh dược"
+              />
             </div>
           </div>
         </div>

@@ -66,7 +66,7 @@
                   <h6 class="mb-0">Trụ sở chính</h6>
                 </div>
                 <p class="mb-0 small text-muted">
-                  CT1-CT2, khu nhà ở CBNV viên bóng Lê Hữu Trác,<br />
+                  CT1-CT2, khu nhà ở CBNV viện bỏng Lê Hữu Trác,<br />
                   Tân Triều, Thanh Trì, Hà Nội
                 </p>
               </div>

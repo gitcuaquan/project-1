@@ -9,7 +9,6 @@
         hàng.
       </small>
     </p>
-    <HomeModuleBanner class="mb-2" />
     <HomeModulePromotion />
   </section>
   <section class="my-3">
