@@ -77,10 +77,10 @@
                 <Eye :size="16" />
               </button>
               <button
-                @click="showModalDetail = true"
-                class="btn-sm text-nowrap me-lg-2 btn btn-primary"
+                @click="showModalCreateTicket = true"
+                class="btn-sm text-nowrap me-lg-2 btn btn-danger"
               >
-                <Eye :size="16" />
+               <MessageCircleWarning :size="16" />
               </button>
             </div>
           </div>

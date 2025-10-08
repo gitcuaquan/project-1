@@ -85,6 +85,7 @@
               </span>
             </div>
           </div>
+
           <div
             class="cart-item d-block d-lg-table-row align-middle border rounded-3 p-3 mb-3 bg-white"
           >
@@ -143,10 +144,6 @@
               </span>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" @click="createTicket" class="btn btn-sm btn-outline-danger border-0 me-3">Tạo khiếu nại</button>
-          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</button>
         </div>
       </div>
     </div>
