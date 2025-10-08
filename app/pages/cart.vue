@@ -6,7 +6,7 @@
         <CartModuleList />
       </div>
       <div class="col-lg-4">
-        <CartModuleSummary />
+        <CartModuleSummary class="border rounded shadow-sm" />
         <div class="d-flex mt-3 flex-column gap-3">
           <div v-for="value in 4" :key="value">
             <SharedModuleCoupon />

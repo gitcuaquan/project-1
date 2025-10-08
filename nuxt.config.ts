@@ -6,10 +6,10 @@ export default defineNuxtConfig({
   modules: ['nuxt-lucide-icons', 'nuxt-swiper'],
   app: {
     head: {
-      title: 'Tap Med Pharmacy',
+      title: 'Sỉ Dược',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1,maximum-scale=1' },
-        { name: 'description', content: 'Tap Med Pharmacy - Your trusted pharmacy' },
+        { name: 'description', content: 'Sỉ Dược - nhà cung cấp dược phẩm uy tín' },
       ],
       // script: [
       //   { src: '/lib/bootstrap-5.3.8.min.js'},

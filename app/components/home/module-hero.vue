@@ -4,10 +4,6 @@
       <div class="row align-items-center pt-3 pt-lg-0">
         <!-- Left content -->
         <div class="col-lg-6 mb-5 position-relative mb-lg-0 text-lg-start text-center">
-          <div
-            class="position-absolute d-none d-lg-flex justify-content-end align-items-center top-0 start-0 w-100 h-100 bg-ovelay">
-            <img src="/images/bg-hero.png" alt="" />
-          </div>
           <h6 class="text-primary fw-bold mb-lg-5">Công Ty TapMed</h6>
           <h1 class="hero-title text-capitalize text-primary">
             Nhà Phân Phối Thuốc, Dược <br />

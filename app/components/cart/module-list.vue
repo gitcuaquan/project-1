@@ -16,17 +16,27 @@
       <div
         class="cart-product mb-lg-0 mb-3 d-flex align-items-center gap-3 d-lg-table-cell p-lg-3"
       >
-        <div class="d-flex">
+        <div class="d-flex gap-2">
           <img
             src="https://placehold.co/400"
-            width="60"
-            height="60"
+            width="70"
+            height="70"
             class="rounded border"
             alt="Sản phẩm"
           />
-          <span class="fw-medium ms-2"
-            >Aki Maxdusen Dưỡng Tâm An Hộp 3 Vỉ X 10 Viên - Tapmed</span
-          >
+          <div class="d-flex flex-column">
+            <small class="fw-medium ms-2">
+              Aki Maxdusen Dưỡng Tâm An Hộp 3 Vỉ X 10 Viên - Tapmed
+            </small>
+            <div>
+              <div
+                class="badge fw-normal bg-info border border-info text-dark bg-opacity-10 rounded-pill d-inline-block mt-2"
+              >
+                <Gift :size="16" />
+                <span class="ms-1 lh-sm">Quà tặng 1 bộ dụng cụ nhà bếp SunHouse</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
