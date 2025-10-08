@@ -29,12 +29,12 @@
           <div
             class="cart-product w-custom mb-lg-0 mb-3 d-flex justify-content-between align-items-start gap-3 d-lg-table-cell p-lg-3"
           >
-            <span class="d-lg-none  fw-semibold">Mã Đơn Hàng:</span>
+            <span class="d-lg-none fw-semibold">Mã Đơn Hàng:</span>
             <div class="d-flex flex-column align-items-lg-start">
               <span class="fw-medium ms-2 text-end">#DH00123</span>
-              <small class="text-muted ms-2 fst-italic"
-                >Ngày tạo: 22/12/2024</small
-              >
+              <small class="text-muted ms-2 fst-italic">
+                Ngày tạo: 22/12/2024
+              </small>
             </div>
           </div>
 
@@ -69,12 +69,18 @@
           <div
             class="cart-total gap-2 align-middle d-flex mb-2 text-lg-end mb-lg-0 justify-content-center d-lg-table-cell p-lg-3"
           >
-            <div class="d-flex">
+            <div class="d-flex gap-1">
               <button
                 @click="showModalDetail = true"
                 class="btn-sm text-nowrap me-lg-2 btn btn-primary"
               >
-                Xem chi tiết
+                <Eye :size="16" />
+              </button>
+              <button
+                @click="showModalDetail = true"
+                class="btn-sm text-nowrap me-lg-2 btn btn-primary"
+              >
+                <Eye :size="16" />
               </button>
             </div>
           </div>
@@ -90,7 +96,10 @@
     <AuthModalOrderDetail
       v-if="showModalDetail"
       @close="showModalDetail = false"
-      @ticket="showModalCreateTicket = true; showModalDetail = false"
+      @ticket="
+        showModalCreateTicket = true;
+        showModalDetail = false;
+      "
     />
     <AuthModalCreateTicket
       v-if="showModalCreateTicket"
