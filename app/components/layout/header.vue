@@ -1,4 +1,3 @@
-
 <template>
   <div id="top-header"></div>
   <div id="main-header" class="bg-white">
@@ -190,6 +189,7 @@
 const { $bootstrap } = useNuxtApp();
 const sizeIcon = ref(35);
 
+
 const data = reactive({
   showModal: {
     login: false,
@@ -235,7 +235,7 @@ onMounted(() => {
   window.addEventListener("resize", checkWindowSize);
   initOffcanvas();
 });
-watch (
+watch(
   () => route.fullPath,
   () => {
     if (offCanvasInstance.value) {

@@ -1,23 +1,19 @@
 <template>
-  <div class="container">
-    <div class="row mt-4">
-      <div class="col-3">
-        <div class="product-category-tree">
-          <h4 class="mb-3">Danh mục sản phẩm</h4>
-          <div class="tree-container">
-            {{ test }}
-            <ui-input-search v-model="test" />
-            <ui-input-search v-model="test" loading />
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <news-item />
-      </div>
-    </div>
+  <div>
+    <button @click="toasts.success('Thêm sản phẩm thành công!')">
+      Show Success Toast
+    </button>
+    <button @click="toasts.error('Thêm sản phẩm thất bại!')">
+      Show Error Toast
+    </button>
+    <button @click="toasts.loading('Đang tải...')">
+      Show Loading Toast
+    </button>
   </div>
 </template>
 
-<script setup lang="ts">
-const test = ref('')
+<script lang="ts" setup>
+const toasts = useToast();
 </script>
+
+<style></style>

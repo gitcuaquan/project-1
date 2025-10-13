@@ -3,6 +3,7 @@
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+  <UiToastContainer />
 </template>
 
 <script setup lang="ts">
