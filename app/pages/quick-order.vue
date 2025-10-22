@@ -119,12 +119,11 @@
 
 <script lang="ts" setup>
 import type { ProjectConfig } from "~/model";
-
+const { $appServices } = useNuxtApp();
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh" },
 ]);
 
-const catSelect = ref<any>(null);
 const categoriesKeyword = ref("");
 const categoriesFilter = computed(() => {
   if (!categoriesKeyword.value) return categories;
@@ -241,6 +240,12 @@ const categories = [
   { id: 8000, name: "Mỹ phẩm" },
   { id: 9000, name: "Chăm sóc cá nhân" },
 ];
+getListProducts();
+function getListProducts() {
+  $appServices.items.getItems().then((response) => {
+    console.log("Products:", response.data.items);
+  });
+}
 </script>
 
 <style scoped>

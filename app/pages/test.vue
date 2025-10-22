@@ -1,19 +1,21 @@
 <template>
-  <div>
-    <button @click="toasts.success('Thêm sản phẩm thành công!')">
-      Show Success Toast
-    </button>
-    <button @click="toasts.error('Thêm sản phẩm thất bại!')">
-      Show Error Toast
-    </button>
-    <button @click="toasts.loading('Đang tải...')">
-      Show Loading Toast
-    </button>
-  </div>
+  <div>test page</div>
 </template>
 
 <script lang="ts" setup>
-const toasts = useToast();
+const { $appServices } = useNuxtApp();
+async function test() {
+  try {
+    const items = await $appServices.items.getItems();
+    console.log("Fetched items:", items.pagination);
+  } catch (error) {
+    console.error("Error fetching items:", error);
+  }
+}
+
+onMounted(() => {
+  test();
+});
 </script>
 
 <style></style>
