@@ -1,56 +1,85 @@
 <template>
-  <table class="table align-middle mb-0 table-sm table-borderless">
-    <tbody>
-      <tr
-        v-for="value in Products.slice(0, 10)"
-        class="border-bottom"
-        :key="value.name"
-      >
-        <td style="width: 100px">
-          <div
-            class="ratio z-low overflow-hidden bg-light rounded ratio-1x1"
-            style="width: 100px"
-          >
-            <img :src="value.image" alt="" />
-          </div>
-        </td>
-        <td>
-          <NuxtLink
-            to="/product/3b-lysine"
-            class="text-decoration-none link-dark link-product"
-          >
-            {{ value.name }}
-          </NuxtLink>
-          <div class="d-flex mt-1 gap-2">
-            <small>
-              Giá: <strong class="text-danger text-opacity-75 fw-normal">Liên hệ</strong>
-            </small>
-            <div class="vr"></div>
-            <small>
-              Đơn vị : <strong class="text-danger text-opacity-75 fw-normal">Hộp</strong>
-            </small>
-            <div class="vr"></div>
-            <small>
-              HSD : <strong class="text-danger text-opacity-75 fw-normal">03/12/2026</strong>
-            </small>
-          </div>
-          <div class="d-lg-none mt-2">
+  <div class="position-relative">
+    <table v-if="list?.length" class="table align-middle mb-0 table-sm table-borderless">
+      <tbody>
+        <tr
+          v-for="product in props.list"
+          class="border-bottom"
+          :key="product.ma_vt"
+        >
+          <td style="width: 100px">
+            <div
+              class="ratio z-low overflow-hidden bg-light rounded ratio-1x1"
+              style="width: 100px"
+            >
+              <img
+                :src="product.image_urls?.[0]?.url || '/images/image-error.svg'"
+                alt=""
+              />
+            </div>
+          </td>
+          <td>
+            <NuxtLink
+              :to="`/product/${product.ma_vt}`"
+              class="text-decoration-none link-dark link-product"
+            >
+              {{ product.ten_vt }}
+            </NuxtLink>
+            <div class="d-flex mt-1 gap-2">
+              <small>
+                Giá:
+                <strong class="text-danger text-opacity-75 fw-normal"
+                  >Liên hệ</strong
+                >
+              </small>
+              <div class="vr"></div>
+              <small>
+                Đơn vị :
+                <strong class="text-danger text-opacity-75 fw-normal"
+                  >Hộp</strong
+                >
+              </small>
+              <div class="vr"></div>
+              <small>
+                HSD :
+                <strong class="text-danger text-opacity-75 fw-normal"
+                  >03/12/2026</strong
+                >
+              </small>
+            </div>
+            <div class="d-lg-none mt-2">
+              <UiBtnGroup size="sm" />
+            </div>
+          </td>
+          <td style="width: 10px" class="d-none d-md-table-cell">
             <UiBtnGroup size="sm" />
-          </div>
-        </td>
-        <td style="width: 10px" class="d-none d-md-table-cell">
-          <UiBtnGroup size="sm" />
-        </td>
-      </tr>
-    </tbody>
-  </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div v-else class="text-center bd-blur py-5">
+      <div class="text-muted">Không có dữ liệu phù hợp</div>
+    </div>
+    <div class="d-flex position-absolute bd-blur top-0 start-0 w-100 h-100 bg-white bg-opacity-75 justify-content-center align-items-center" v-if="props.loading">
+      <UiLoading />
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import Products from "~/data/fake_product.json";
+import type { ITemsTapmed } from "~/model/SSE";
+
+const props = defineProps<{
+  list?: ITemsTapmed[];
+  loading?: boolean;
+}>();
 </script>
 
 <style scoped>
+.bd-blur {
+  backdrop-filter: blur(4px);
+  min-height: 500px;
+}
 .ratio img {
   object-fit: contain;
 }

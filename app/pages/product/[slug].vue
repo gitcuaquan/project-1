@@ -152,18 +152,21 @@
       </div>
     </div>
     <!-- End Main Product Section -->
-     <h5 class="mt-5 text-capitalize">Có thể bạn cũng thích</h5>
-     <ProductModuleSliderItem  />
+    <h5 class="mt-5 text-capitalize">Có thể bạn cũng thích</h5>
+    <ProductModuleSliderItem />
   </div>
 </template>
 
 <script setup lang="ts">
 import type { ProjectConfig } from "~/model";
-
+import type { ITemsTapmed } from "~/model/SSE";
+const { $appServices } = useNuxtApp();
+const route = useRoute();
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh", to: "/quick-order" },
   { label: "Thần kinh não" },
 ]);
+
 
 // Product images
 const productImages = ref([
@@ -176,16 +179,23 @@ const productImages = ref([
 ]);
 
 // SEO Meta
-useHead({
-  title: "Viên uống hỗ trợ cải thiện tinh trạng lo âu ASHAMI GOLD VKENKO 60V",
+const { data: detailProduct } = await useAsyncData("product-details", async () => {
+  const slug = route.params.slug as string;
+  return await $appServices.items.getItemById(slug);
+});
+
+// 🧠 Reactive useHead — sẽ tự update khi detailProduct.value đổi
+useHead(() => ({
+  title: detailProduct.value
+    ? `${detailProduct.value.ten_vt} - Mua ngay tại TAPMED`
+    : "Chi tiết sản phẩm - TAPMED",
   meta: [
     {
       name: "description",
-      content:
-        "Thực phẩm bảo vệ sức khỏe ASHAMI GOLD giúp cải thiện tinh trạng lo âu và giấc ngủ. Xuất xứ Nhật Bản, hộp 60 viên.",
+      content: detailProduct.value?.ten_vt || "",
     },
   ],
-});
+}));
 </script>
 
 <style scoped>

@@ -15,11 +15,11 @@ export class BaseResponse<T> {
         this.data = init.data || {};
     }
     // lay danh sach items
-    get getData(){
+    get getData() {
         return this.data.items || [];
     }
 
-    get pagination(){
+    get pagination(): Pagination {
         return {
             totalCount: this.data.totalCount || 0,
             pageIndex: this.data.pageIndex || 0,
@@ -27,6 +27,12 @@ export class BaseResponse<T> {
         }
     }
 };
+
+export type Pagination = {
+    totalCount: number;
+    pageIndex: number;
+    pageSize: number;
+}
 
 export type ITemsTapmed = {
     ma_vt: string;
@@ -37,6 +43,7 @@ export type ITemsTapmed = {
     gia2: number;
     ma_gia?: string;
     ngay_ban?: string;
+    image_urls?: { originalName: string, url: string }[];
 }
 
 export type BaseParameters = {

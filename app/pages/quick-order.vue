@@ -12,10 +12,10 @@
       </div> -->
       <div class="col-lg-8">
         <div class="card bg-white border-0 shadow-sm">
-          <div class="card-header px-1 py-1 px-md-2 bg-white border-0">
+          <div class="card-header shadow-sm sticky-top px-1 py-1 px-md-2 bg-white border-0" style="top: 48px;">
             <div class="row g-2">
               <div class="col-12">
-                <UiInputSearch />
+                <UiInputSearch v-model="keyword" />
               </div>
               <div class="col-6">
                 <div class="dropdown">
@@ -72,29 +72,33 @@
               <div
                 class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
               >
-                SẢN PHẨM AIKYA<Tags :size="16" :stroke-width="1.5" />
+                SẢN PHẨM AIKYA <Tags :size="16" :stroke-width="1.5" />
               </div>
               <div
                 class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
               >
-                Sản Phẩm TAPMED<Tags :size="16" :stroke-width="1.5" />
+                Sản Phẩm TAPMED <Tags :size="16" :stroke-width="1.5" />
               </div>
               <div
                 class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
               >
-                GIÁ TỐT TRONG TUẦN<Tags :size="14" :stroke-width="1.5" />
+                GIÁ TỐT TRONG TUẦN <Tags :size="14" :stroke-width="1.5" />
               </div>
               <div
                 class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
               >
-                GIÁ TỐT TRONG THÁNG<Tags :size="14" :stroke-width="1.5" />
+                GIÁ TỐT TRONG THÁNG <Tags :size="14" :stroke-width="1.5" />
               </div>
             </div>
           </div>
           <div class="card-body px-1 px-md-2">
-            <h3>Tất cả sản phẩm</h3>
-            <OrderModuleList />
-            <SharedModulePagination class="mt-3" />
+            <OrderModuleList :loading="pageState.loading" :list="pageState.listProduct.getData" />
+            <SharedModulePagination
+              v-if="pageState.listProduct.getData?.length"
+              class="mt-3"
+              :pagination="pageState.listProduct.pagination"
+              @page-change="paramsListProduct.PageIndex = $event;getListProduct()"
+            />
           </div>
         </div>
       </div>
@@ -119,10 +123,26 @@
 
 <script lang="ts" setup>
 import type { ProjectConfig } from "~/model";
+import type { BaseParameters, BaseResponse, ITemsTapmed } from "~/model/SSE";
 const { $appServices } = useNuxtApp();
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh" },
 ]);
+
+const keyword = useDebouncedRef("", 500);
+const paramsListProduct = ref<BaseParameters>({
+  PageIndex: 1,
+  PageSize: 10,
+  search: keyword.value,
+});
+const pageState = reactive({
+  loading: true,
+  listProduct: {} as BaseResponse<ITemsTapmed>,
+});
+watch(keyword, (newVal) => {
+  paramsListProduct.value.search = newVal;
+  getListProduct();
+});
 
 const categoriesKeyword = ref("");
 const categoriesFilter = computed(() => {
@@ -240,12 +260,19 @@ const categories = [
   { id: 8000, name: "Mỹ phẩm" },
   { id: 9000, name: "Chăm sóc cá nhân" },
 ];
-getListProducts();
-function getListProducts() {
-  $appServices.items.getItems().then((response) => {
-    console.log("Products:", response.data.items);
-  });
+
+async function getListProduct() {
+  pageState.loading = true;
+  try {
+    const response = await $appServices.items.getItems(paramsListProduct.value);
+    pageState.listProduct = response;
+  } catch (error) {
+    console.error("Error fetching product list:", error);
+  } finally {
+    pageState.loading = false;
+  }
 }
+getListProduct();
 </script>
 
 <style scoped>

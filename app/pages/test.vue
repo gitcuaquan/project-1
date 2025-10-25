@@ -1,21 +1,42 @@
 <template>
-  <div>test page</div>
+  <div>
+    <input type="email" @input="validate" v-model="data.email" />
+    <div class="text-danger">
+      {{ error[LoginField.Email] }}
+    </div>
+    <button @click="login" class="btn btn-dark">Login</button>
+  </div>
 </template>
 
 <script lang="ts" setup>
-const { $appServices } = useNuxtApp();
-async function test() {
-  try {
-    const items = await $appServices.items.getItems();
-    console.log("Fetched items:", items.pagination);
-  } catch (error) {
-    console.error("Error fetching items:", error);
-  }
+enum LoginField {
+  Email = "email",
+  Password = "password",
+  Username = "username",
 }
 
-onMounted(() => {
-  test();
+const data = reactive({
+  email: "",
+  password: "",
+  username: "",
 });
+
+const error = ref<{ [key in LoginField]?: string }>({});
+
+function validate() {
+  error.value = {};
+  if (!data.email) {
+    error.value[LoginField.Email] = "Email is required";
+  } else if (!/\S+@\S+\.\S+/.test(data.email)) {
+    error.value[LoginField.Email] = "Email is invalid";
+  }
+  return Object.keys(error.value).length === 0;
+}
+
+function login() {
+  if (!validate()) return;
+  console.log("login");
+}
 </script>
 
 <style></style>

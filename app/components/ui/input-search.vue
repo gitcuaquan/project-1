@@ -2,7 +2,7 @@
   <form @submit.prevent="onSubmit" class="position-relative w-100 pe-3 border rounded overflow-hidden" style="background: #e9ecef;">
     <input
       type="text"
-      class="form-control border-0 pe-4 shadow-none w-100"
+      class="form-control form-control-sm border-0 pe-4 shadow-none w-100"
       :disabled="loading"
       v-model="keyword"
       :placeholder="placeholder"

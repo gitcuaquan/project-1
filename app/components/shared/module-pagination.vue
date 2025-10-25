@@ -1,22 +1,60 @@
 <template>
   <nav>
     <ul class="pagination gap-1 justify-content-end">
-      <li class="page-item">
-      <ChevronLeft :size="16" />
+      <li class="page-item" @click="$emit('page-change', 1)">
+        <ChevronLeft :size="16" />
       </li>
-      <li class="page-item ">1</li>
-      <li class="page-item">2</li>
-      <li class="page-item">3</li>
-      <li class="page-item active">4</li>
-      <li class="page-item">5</li>
-      <li class="page-item">
-       <ChevronRight :size="16" />
+      <template v-for="page in renderPageItems?.pages" :key="page">
+        <li
+          class="page-item"
+          :class="{ active: page === props.pagination?.pageIndex }"
+          @click="$emit('page-change', page)"
+        >
+          {{ page }}
+        </li>
+      </template>
+      <li
+        class="page-item"
+        @click="$emit('page-change', renderPageItems?.totalPages || 1)"
+      >
+        <ChevronRight :size="16" />
       </li>
     </ul>
   </nav>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import type { Pagination } from "~/model/SSE";
+
+const props = defineProps<{
+  pagination?: Pagination;
+}>();
+const emits = defineEmits<{
+  (e: "page-change", page: number): void;
+}>();
+
+const visiblePages = 5;
+
+const renderPageItems = computed(() => {
+  if (!props.pagination) return null;
+  const { pageIndex, pageSize, totalCount } = props.pagination;
+  const totalPages = Math.ceil(totalCount / pageSize);
+  const pages = [];
+  let startPage = Math.max(1, pageIndex - Math.floor(visiblePages / 2));
+  let endPage = startPage + visiblePages - 1;
+  if (endPage > totalPages) {
+    endPage = totalPages;
+    startPage = Math.max(1, endPage - visiblePages + 1);
+  }
+  for (let i = startPage; i <= endPage; i++) {
+    pages.push(i);
+  }
+  return {
+    pages,
+    totalPages,
+  };
+});
+</script>
 
 <style scoped>
 .page-item {
@@ -34,7 +72,7 @@
 }
 .page-item:hover {
   background-color: #f8f9fa;
-} 
+}
 .page-item.active {
   background-color: var(--bs-primary);
   color: white;
