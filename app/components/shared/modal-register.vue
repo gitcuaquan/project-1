@@ -25,58 +25,73 @@
               >
             </p>
           </div>
-          <form class="row gy-2 gx-3">
+          <!-- {{ custumerInfo }} -->
+          <form class="row gy-2 gx-3" ref="form" novalidate>
             <div class="col-12 col-md-6">
-              <label for="name" class="form-label">Họ và tên</label>
+              <label for="FullName" class="form-label">Họ và tên</label>
               <input
                 type="text"
+                v-model="custumerInfo.FullName"
                 class="form-control"
                 required
-                id="name"
+                id="FullName"
                 placeholder="Nhập họ và tên đầy đủ của bạn"
               />
             </div>
             <div class="col-md-6 col-12">
-              <label for="address" class="form-label"
-                >Số căn cước công dân</label
-              >
+              <label for="Cccd" class="form-label">Số căn cước công dân</label>
               <input
                 type="text"
                 class="form-control"
+                v-model="custumerInfo.Cccd"
                 required
-                id="address"
+                id="Cccd"
                 placeholder="Nhập số căn cước công dân"
               />
             </div>
             <div class="col-12 col-md-6">
-              <label for="businessName" class="form-label">Tên cơ sở</label>
+              <label for="NameCoSo" class="form-label">Tên cơ sở</label>
               <input
                 type="text"
                 class="form-control"
+                v-model="custumerInfo.NameCoSo"
                 required
-                id="businessName"
+                id="NameCoSo"
                 placeholder="Nhập tên cơ sở đang kinh doanh"
               />
             </div>
             <div class="col-12 col-md-6">
-              <label for="phone" class="form-label">Số điện thoại</label>
+              <label for="PhoneNumber" class="form-label">Số điện thoại</label>
               <input
                 type="phone"
                 class="form-control"
+                v-model="custumerInfo.PhoneNumber"
                 required
-                id="phone"
+                id="PhoneNumber"
                 placeholder="Nhập số điện thoại"
               />
             </div>
             <div class="col-12 col-md-6">
-              <label for="password" class="form-label">Mật khẩu</label>
-              <input
-                type="password"
-                class="form-control"
-                required
-                id="password"
-                placeholder="Nhập mật khẩu"
-              />
+              <label for="Password" class="form-label">Mật khẩu</label>
+              <div class="position-relative">
+                <input
+                  :type="showPassword ? 'text' : 'password'"
+                  class="form-control"
+                  required
+                  v-model="custumerInfo.Password"
+                  id="Password"
+                  minlength="6"
+                  placeholder="Nhập mật khẩu"
+                />
+                <button
+                  type="button"
+                  @click="showPassword = !showPassword"
+                  class="btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2 p-0 border-0 bg-transparent"
+                >
+                  <EyeOff v-if="showPassword" :stroke-width="1" />
+                  <Eye v-if="!showPassword" :stroke-width="1" />
+                </button>
+              </div>
             </div>
             <div class="col-12 col-md-6">
               <label for="city" class="form-label">Thành phố</label>
@@ -84,23 +99,29 @@
             </div>
             <div class="col-12 col-md-6">
               <label for="ward" class="form-label">Xã phường</label>
-              <SharedAddressWard :city-code="citySelect?.code" v-model="wardSelect" />
+              <SharedAddressWard
+                :city-code="citySelect?.code"
+                v-model="wardSelect"
+              />
             </div>
             <div class="col-md-6 col-12">
               <label for="address" class="form-label">Địa chỉ</label>
               <input
                 type="text"
                 class="form-control"
+                v-model="custumerInfo.Address"
+                id="Address"
                 required
-                id="address"
                 placeholder="Nhập địa chỉ"
               />
             </div>
           </form>
           <!-- Giấy tờ liên quan -->
           <div class="row justify-content-center mt-2 g-3">
+            {{ custumerInfo.Certificate1 }}
             <div class="col-6 col-md-4">
               <SharedModuleUpload
+                @change="setFileTo($event, 'Certificate1')"
                 placeholder="Tải lên chứng chỉ hành nghề dược"
               />
             </div>
@@ -117,7 +138,13 @@
           </div>
         </div>
         <div class="modal-footer justify-content-center border-0">
-          <button type="button" class="btn btn-primary px-5">Đăng ký</button>
+          <button
+            type="button"
+            @click="submitForm"
+            class="btn btn-primary px-5"
+          >
+            Đăng ký
+          </button>
         </div>
         <p class="text-center mb-3">
           Bạn đã là thành viên?
@@ -137,16 +164,40 @@ import { Customer } from "~/model/SSE";
 const modalInstance = ref<Modal | null>(null);
 
 const emit = defineEmits(["close"]);
+const { getErrorDetail } = useFormValidation();
 const { togglePopupLogin } = useAuth();
 
 // ========================== STATE ==========================
+const errors = ref<Record<string, string>>({});
+const form = ref<HTMLElement | null>(null);
+const showPassword = ref(false);
 const citySelect = ref<ProjectConfig.CitySetting | null>(null);
 const wardSelect = ref<ProjectConfig.DistrictSetting | null>(null);
 
-const custumerInfo = ref<Customer>( new Customer({}) );
-
+const custumerInfo = ref<Customer>(new Customer({}));
 
 // ========================== LIFECYCLE ==========================
+
+watch(
+  () => citySelect.value,
+  (newCity) => {
+    if (newCity) {
+      custumerInfo.value.NameProvince = newCity.name;
+    } else {
+      custumerInfo.value.NameProvince = "";
+    }
+  }
+);
+watch(
+  () => wardSelect.value,
+  (District) => {
+    if (District) {
+      custumerInfo.value.NameDistrict = District.name;
+    } else {
+      custumerInfo.value.NameDistrict = "";
+    }
+  }
+);
 
 onMounted(() => {
   initModal();
@@ -166,7 +217,36 @@ function openLogin() {
 }
 // ========================== FUNCTIONS ==========================
 
+function setFileTo(file: File | null, key: keyof Customer) {
+  // use a type assertion to bypass strict property type mismatch when assigning files
+  (custumerInfo.value as any)[key] = file;
+}
 
+function submitForm(e: Event) {
+  // e.preventDefault();
+  errors.value = {};
+
+  if (!form.value) return;
+  if (!(form.value as HTMLFormElement).checkValidity()) {
+    const inputs = form.value.querySelectorAll("input, select, textarea");
+    inputs.forEach((input) => {
+      const el = input as
+        | HTMLInputElement
+        | HTMLSelectElement
+        | HTMLTextAreaElement;
+      if (!el.checkValidity()) {
+        const err = getErrorDetail(el);
+        errors.value[el.id] = err.message ?? "Lỗi không xác định";
+      }
+    });
+  }
+
+  if (Object.keys(errors.value).length === 0) {
+    console.log("✅ Form hợp lệ!");
+  } else {
+    form.value.classList.add("was-validated");
+  }
+}
 </script>
 
 <style></style>

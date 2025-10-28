@@ -16,10 +16,7 @@
         <button
           type="button"
           class="btn btn-link link-danger p-0 position-absolute top-0 end-0"
-          @click="
-            data.urlTemp = '';
-            data.file = null;
-          "
+          @click="removeFile"
         >
           <X :stroke-width="1" />
         </button>
@@ -27,6 +24,7 @@
     </div>
     <input
       :id="id"
+      ref="fileInput"
       type="file"
       accept="image/*,.pdf"
       @input="handleFileInput"
@@ -37,13 +35,21 @@
 
 <script lang="ts" setup>
 const id = useId();
+
 const props = defineProps<{
   placeholder?: string;
 }>();
+
+const emit = defineEmits<{
+  (e: "change", file: File | null): void;
+}>();
+
 const data = reactive({
   file: null as File | null,
   urlTemp: "",
 });
+
+const fileInput = ref<HTMLInputElement | null>(null);
 
 function handleFileInput(event: Event) {
   const input = event.target as HTMLInputElement;
@@ -52,7 +58,17 @@ function handleFileInput(event: Event) {
     // Handle the selected files
     data.file = files[0];
     data.urlTemp = URL.createObjectURL(data.file);
+    emit("change", data.file);
   }
+}
+
+function removeFile() {
+  data.file = null;
+  data.urlTemp = "";
+  if (fileInput.value) {
+    fileInput.value.value = "";
+  }
+  emit("change", null);
 }
 </script>
 

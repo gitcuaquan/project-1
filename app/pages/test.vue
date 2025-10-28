@@ -1,42 +1,30 @@
 <template>
-  <div>
-    <input type="email" @input="validate" v-model="data.email" />
-    <div class="text-danger">
-      {{ error[LoginField.Email] }}
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="input-group flex-nowrap">
+          <select name="" class="form-select w-auto flex-grow-0" id="">
+            <option value="1">Nhà sản xuất</option>
+            <option value="1">Nguồn gốc</option>
+            <option value="1">Phân loại</option>
+            <option value="1">Phân nhóm</option>
+            <option value="1">Công dụng</option>
+          </select>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
+      </div>
     </div>
-    <button @click="login" class="btn btn-dark">Login</button>
   </div>
 </template>
 
 <script lang="ts" setup>
-enum LoginField {
-  Email = "email",
-  Password = "password",
-  Username = "username",
-}
-
-const data = reactive({
-  email: "",
-  password: "",
-  username: "",
+definePageMeta({
+  layout: "blank",
 });
-
-const error = ref<{ [key in LoginField]?: string }>({});
-
-function validate() {
-  error.value = {};
-  if (!data.email) {
-    error.value[LoginField.Email] = "Email is required";
-  } else if (!/\S+@\S+\.\S+/.test(data.email)) {
-    error.value[LoginField.Email] = "Email is invalid";
-  }
-  return Object.keys(error.value).length === 0;
-}
-
-function login() {
-  if (!validate()) return;
-  console.log("login");
-}
 </script>
-
-<style></style>
