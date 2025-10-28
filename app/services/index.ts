@@ -1,3 +1,4 @@
+import AuthService from "./AuthService";
 import CustomerService from "./CustomerService";
 import { ItemService } from "./ItemService";
 
@@ -5,6 +6,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   const appServices = {
     customer: new CustomerService(),
     items: new ItemService(),
+    auth: new AuthService(),
   };
   nuxtApp.provide('appServices', appServices);
 })
@@ -14,6 +16,7 @@ declare module "#app" {
         $appServices: {
             customer: CustomerService;
             items: ItemService;
+            auth: AuthService;
         };
     }
 }

@@ -16,7 +16,6 @@ export default class BaseService {
     constructor(endpoint: string) {
         this.baseUrl += endpoint;
         this.defaultHeaders = {
-            'Content-Type': 'application/json',
             "api-sse-code": "e0cc6288e60584582eb706fd6c2612e1"
         }
     }

@@ -48,6 +48,8 @@
                 class="form-control"
                 v-model="custumerInfo.Cccd"
                 required
+                minlength="9"
+                maxlength="12"
                 id="Cccd"
                 placeholder="Nhập số căn cước công dân"
               />
@@ -79,9 +81,9 @@
                 id="PhoneNumber"
                 placeholder="Nhập số điện thoại"
               />
-              <small class="text-danger" v-if="errors.PhoneNumber">{{
-                errors.PhoneNumber
-              }}</small>
+              <small class="text-danger" v-if="errors.PhoneNumber">
+                {{ errors.PhoneNumber }}
+              </small>
             </div>
             <div class="col-12 col-md-6">
               <label for="Password" class="form-label">Mật khẩu</label>
@@ -110,24 +112,41 @@
             </div>
             <div class="col-12 col-md-6">
               <label for="city" class="form-label">Thành phố</label>
-              <select class="form-control" id="NameProvince">
-                <option value="" disabled selected>Chọn thành phố</option>
+              <select
+                required
+                v-model="citySelect"
+                class="form-control"
+                id="NameProvince"
+              >
+                <option disabled selected>Chọn thành phố</option>
                 <option
                   v-for="value in City"
-                  :key="value.code"
-                  :value="value.name"
-                  @click="citySelect = value"
+                  :key="`city-${value.code}`"
+                  :value="value"
                 >
                   {{ value.name }}
                 </option>
               </select>
+              <small class="text-danger" v-if="errors.NameProvince">
+                {{ errors.NameProvince }}
+              </small>
             </div>
             <div class="col-12 col-md-6">
-              <label for="ward" class="form-label">Xã phường</label>
-              <SharedAddressWard
-                :city-code="citySelect?.code"
-                v-model="wardSelect"
-              />
+              <label for="NameDistrict" class="form-label">Xã phường</label>
+              <select
+                required
+                v-model="custumerInfo.NameDistrict"
+                class="form-control"
+                id="NameDistrict"
+              >
+                <option value="null" disabled selected>Chọn xã phường</option>
+                <option v-for="value in listCity" :value="value.name">
+                  {{ value.name }}
+                </option>
+              </select>
+              <small class="text-danger" v-if="errors.NameDistrict">{{
+                errors.NameDistrict
+              }}</small>
             </div>
             <div class="col-md-6 col-12">
               <label for="Address" class="form-label">Địa chỉ</label>
@@ -139,7 +158,8 @@
                 required
                 placeholder="Nhập địa chỉ"
               />
-              <small class="text-danger" v-if="errors.Address">{{
+              <small class="text-danger" v-if="errors.Address">
+                {{
                 errors.Address
               }}</small>
             </div>
@@ -154,11 +174,13 @@
             </div>
             <div class="col-6 col-md-4">
               <SharedModuleUpload
+                @change="setFileTo($event, 'Certificate2')"
                 placeholder="Tải lên giấy chứng nhận đăng ký kinh doanh"
               />
             </div>
             <div class="col-6 col-md-4">
               <SharedModuleUpload
+                @change="setFileTo($event, 'Certificate3')"
                 placeholder="Tải lên giấy chứng nhận đủ điều kiện kinh doanh dược"
               />
             </div>
@@ -186,6 +208,7 @@
 
 <script lang="ts" setup>
 import City from "@/data/province.json";
+import Ward from "@/data/ward.json";
 import { Modal } from "bootstrap";
 import type { ProjectConfig } from "~/model";
 import { Customer } from "~/model/SSE";
@@ -194,6 +217,7 @@ const modalInstance = ref<Modal | null>(null);
 const emit = defineEmits(["close"]);
 const { getErrorDetail } = useFormValidation();
 const { togglePopupLogin } = useAuth();
+const { $appServices } = useNuxtApp();
 
 // ========================== STATE ==========================
 const checkValid = ref(false);
@@ -205,9 +229,10 @@ const wardSelect = ref<ProjectConfig.DistrictSetting | null>(null);
 
 const custumerInfo = ref<Customer>(new Customer({}));
 
+const listCity = ref<ProjectConfig.DistrictSetting []>([]);
 // ========================== LIFECYCLE ==========================
 watch(
-  () => custumerInfo,
+  () => custumerInfo.value,
   (newCode) => {
     if (checkValid.value) {
       validateForm();
@@ -217,22 +242,29 @@ watch(
 );
 
 watch(
+  () => custumerInfo.value.NameDistrict,
+  (newWard) => {
+    if (newWard) {
+      custumerInfo.value.CodeDistrict = (listCity.value.find(
+        (item) => item.name == newWard
+      ) as any)?.code;
+    } else {
+      custumerInfo.value.NameDistrict = "";
+    }
+  }
+);
+
+watch(
   () => citySelect.value,
   (newCity) => {
     if (newCity) {
       custumerInfo.value.NameProvince = newCity.name;
+      listCity.value = (Ward as ProjectConfig.DistrictSetting[]).filter(
+        (item) => item.parent == newCity.code
+      );
+      custumerInfo.value.NameDistrict = "";
     } else {
       custumerInfo.value.NameProvince = "";
-    }
-  }
-);
-watch(
-  () => wardSelect.value,
-  (District) => {
-    if (District) {
-      custumerInfo.value.NameDistrict = District.name;
-    } else {
-      custumerInfo.value.NameDistrict = "";
     }
   }
 );
@@ -287,15 +319,40 @@ function validateForm() {
     return false;
   }
 }
+function convertDataToFormData(data: Record<string, any>) {
+  const formData = new FormData();
+  for (const key in data) {
+    formData.append(key, data[key]);
+  }
+  return formData;
+}
 
-function submitForm(e: Event) {
+async function submitForm(e: Event) {
+  // const formData = new FormData();
+  // for (const key in custumerInfo.value) {
+  //   formData.append(key, (custumerInfo.value as any)[key]);
+  // }
   e.preventDefault();
   checkValid.value = true;
   if (validateForm()) {
     checkValid.value = false;
-
+    
     // Submit form logic here
-    console.log("Form is valid:", custumerInfo.value);
+    const formData = convertDataToFormData(custumerInfo.value);
+    try {
+      const response = await $appServices.auth.register(formData);
+      if (response && response.success) {
+        modalInstance.value?.hide();
+        useToast().success("Đăng ký thành công! Vui lòng đăng nhập.");
+        togglePopupLogin();
+      } else {
+        useToast().error(
+          response.message || "Đăng ký thất bại! Vui lòng thử lại."
+        );
+      }
+    } catch (error) {
+      useToast().error("Đăng ký thất bại! Vui lòng thử lại.");
+    }
   }
 }
 </script>

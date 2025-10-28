@@ -24,7 +24,7 @@ const reversedToasts = computed(() => {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 1000;
+  z-index: 999999999999;
   display: flex;
   flex-direction: column;
   gap: 5px;
