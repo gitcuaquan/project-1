@@ -37,6 +37,9 @@
                 id="FullName"
                 placeholder="Nhập họ và tên đầy đủ của bạn"
               />
+              <small class="text-danger" v-if="errors.FullName">{{
+                errors.FullName
+              }}</small>
             </div>
             <div class="col-md-6 col-12">
               <label for="Cccd" class="form-label">Số căn cước công dân</label>
@@ -48,6 +51,9 @@
                 id="Cccd"
                 placeholder="Nhập số căn cước công dân"
               />
+              <small class="text-danger" v-if="errors.Cccd">{{
+                errors.Cccd
+              }}</small>
             </div>
             <div class="col-12 col-md-6">
               <label for="NameCoSo" class="form-label">Tên cơ sở</label>
@@ -59,6 +65,9 @@
                 id="NameCoSo"
                 placeholder="Nhập tên cơ sở đang kinh doanh"
               />
+              <small class="text-danger" v-if="errors.NameCoSo">{{
+                errors.NameCoSo
+              }}</small>
             </div>
             <div class="col-12 col-md-6">
               <label for="PhoneNumber" class="form-label">Số điện thoại</label>
@@ -70,6 +79,9 @@
                 id="PhoneNumber"
                 placeholder="Nhập số điện thoại"
               />
+              <small class="text-danger" v-if="errors.PhoneNumber">{{
+                errors.PhoneNumber
+              }}</small>
             </div>
             <div class="col-12 col-md-6">
               <label for="Password" class="form-label">Mật khẩu</label>
@@ -86,16 +98,29 @@
                 <button
                   type="button"
                   @click="showPassword = !showPassword"
-                  class="btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2 p-0 border-0 bg-transparent"
+                  class="btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2 p-0 border-0 bg-white"
                 >
                   <EyeOff v-if="showPassword" :stroke-width="1" />
                   <Eye v-if="!showPassword" :stroke-width="1" />
                 </button>
               </div>
+              <small class="text-danger" v-if="errors.Password">{{
+                errors.Password
+              }}</small>
             </div>
             <div class="col-12 col-md-6">
               <label for="city" class="form-label">Thành phố</label>
-              <SharedAddressCity v-model="citySelect" />
+              <select class="form-control" id="NameProvince">
+                <option value="" disabled selected>Chọn thành phố</option>
+                <option
+                  v-for="value in City"
+                  :key="value.code"
+                  :value="value.name"
+                  @click="citySelect = value"
+                >
+                  {{ value.name }}
+                </option>
+              </select>
             </div>
             <div class="col-12 col-md-6">
               <label for="ward" class="form-label">Xã phường</label>
@@ -105,7 +130,7 @@
               />
             </div>
             <div class="col-md-6 col-12">
-              <label for="address" class="form-label">Địa chỉ</label>
+              <label for="Address" class="form-label">Địa chỉ</label>
               <input
                 type="text"
                 class="form-control"
@@ -114,11 +139,13 @@
                 required
                 placeholder="Nhập địa chỉ"
               />
+              <small class="text-danger" v-if="errors.Address">{{
+                errors.Address
+              }}</small>
             </div>
           </form>
           <!-- Giấy tờ liên quan -->
           <div class="row justify-content-center mt-2 g-3">
-            {{ custumerInfo.Certificate1 }}
             <div class="col-6 col-md-4">
               <SharedModuleUpload
                 @change="setFileTo($event, 'Certificate1')"
@@ -158,6 +185,7 @@
 </template>
 
 <script lang="ts" setup>
+import City from "@/data/province.json";
 import { Modal } from "bootstrap";
 import type { ProjectConfig } from "~/model";
 import { Customer } from "~/model/SSE";
@@ -168,6 +196,7 @@ const { getErrorDetail } = useFormValidation();
 const { togglePopupLogin } = useAuth();
 
 // ========================== STATE ==========================
+const checkValid = ref(false);
 const errors = ref<Record<string, string>>({});
 const form = ref<HTMLElement | null>(null);
 const showPassword = ref(false);
@@ -177,6 +206,15 @@ const wardSelect = ref<ProjectConfig.DistrictSetting | null>(null);
 const custumerInfo = ref<Customer>(new Customer({}));
 
 // ========================== LIFECYCLE ==========================
+watch(
+  () => custumerInfo,
+  (newCode) => {
+    if (checkValid.value) {
+      validateForm();
+    }
+  },
+  { deep: true }
+);
 
 watch(
   () => citySelect.value,
@@ -222,8 +260,7 @@ function setFileTo(file: File | null, key: keyof Customer) {
   (custumerInfo.value as any)[key] = file;
 }
 
-function submitForm(e: Event) {
-  // e.preventDefault();
+function validateForm() {
   errors.value = {};
 
   if (!form.value) return;
@@ -237,14 +274,28 @@ function submitForm(e: Event) {
       if (!el.checkValidity()) {
         const err = getErrorDetail(el);
         errors.value[el.id] = err.message ?? "Lỗi không xác định";
+      } else {
+        console.log("✅", el.id);
+        delete errors.value[el.id];
       }
     });
   }
-
   if (Object.keys(errors.value).length === 0) {
-    console.log("✅ Form hợp lệ!");
+    return true;
   } else {
     form.value.classList.add("was-validated");
+    return false;
+  }
+}
+
+function submitForm(e: Event) {
+  e.preventDefault();
+  checkValid.value = true;
+  if (validateForm()) {
+    checkValid.value = false;
+
+    // Submit form logic here
+    console.log("Form is valid:", custumerInfo.value);
   }
 }
 </script>
