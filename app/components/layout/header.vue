@@ -19,7 +19,7 @@
             <img src="/images/logo-tapmed.png" class="w-100" alt="" />
           </nuxt-link>
         </div>
-        <div class="col-md-7 col-12 order-3 order-md-2">
+        <div class="col-md-7 col-12 order-3 order-md-2 d-none d-md-block">
           <div class="d-flex mt-3 flex-column w-100">
             <!-- tìm kiếm -->
             <form
@@ -85,7 +85,7 @@
                     class="dropdown-item d-flex align-items-center gap-2"
                     style="font-size: 14px"
                     role="button"
-                    @click="data.showModal.login = true"
+                    @click="togglePopupLogin()"
                   >
                     <LogIn :size="16" />Đăng nhập
                   </a>
@@ -95,7 +95,7 @@
                     class="dropdown-item d-flex align-items-center gap-2"
                     style="font-size: 14px"
                     role="button"
-                    @click="data.showModal.register = true"
+                    @click="togglePopupRegister()"
                     ><UserPlus :size="16" />
                     Đăng ký
                   </a>
@@ -175,29 +175,22 @@
   </div>
   <ClientOnly>
     <SharedModalLogin
-      v-if="data.showModal.login"
-      @close="data.showModal.login = false"
+      v-if="showLogin"
+      @close="togglePopupLogin()"
     />
     <SharedModalRegister
-      v-if="data.showModal.register"
-      @close="data.showModal.register = false"
+      v-if="showRegister"
+      @close="togglePopupRegister()"
     />
   </ClientOnly>
 </template>
 
 <script lang="ts" setup>
 const { $bootstrap } = useNuxtApp();
+const {showLogin, showRegister,togglePopupLogin,togglePopupRegister} = useAuth();
 const sizeIcon = ref(35);
 
 
-const data = reactive({
-  showModal: {
-    login: false,
-    register: false,
-  },
-});
-
-provide("data", data);
 const route = useRoute();
 
 const categories = [

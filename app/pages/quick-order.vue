@@ -12,7 +12,9 @@
       </div> -->
       <div class="col-lg-8">
         <div class="card bg-white border-0 shadow-sm">
-          <div class="card-header shadow-sm sticky-top px-1 py-1 px-md-2 bg-white border-0" style="top: 48px;">
+          <div
+            class="card-header shadow-sm  px-1 py-1 px-md-2 bg-white border-0"
+          >
             <div class="row g-2">
               <div class="col-12">
                 <UiInputSearch v-model="keyword" />
@@ -34,7 +36,7 @@
                       Danh mục sản phẩm
                     </small>
                   </button>
-                  <div class="dropdown-menu ps-2 border-0 shadow w-100">
+                  <div class="dropdown-menu ps-2 border-0 shadow dropdown-menu-custom">
                     <div class="p-2 px-1">
                       <UiInputSearch
                         placeholder="Tìm kiếm danh mục"
@@ -55,12 +57,12 @@
                   >
                     <House :stroke-width="1.5" class="text-muted" :size="16" />
                     <small class="text-dark text-opacity-50 user-select-none">
-                      Chọn nhà cung cấp
+                      Nhà cung cấp
                     </small>
                     <!-- <span class="text-nowrap text-truncate">Công ty TNHH MTV Dược phẩm DHG - VIỆT NAM</span> -->
                   </div>
                   <div
-                    class="dropdown-menu border-0 shadow w-100 dropdown-menu-end p-2"
+                    class="dropdown-menu border-0 shadow  dropdown-menu-custom dropdown-menu-end p-2"
                   >
                     <OrderModuleProvider class="mt-1" />
                   </div>
@@ -92,12 +94,18 @@
             </div>
           </div>
           <div class="card-body px-1 px-md-2">
-            <OrderModuleList :loading="pageState.loading" :list="pageState.listProduct.getData" />
+            <OrderModuleList
+              :loading="pageState.loading"
+              :list="pageState.listProduct.getData"
+            />
             <SharedModulePagination
               v-if="pageState.listProduct.getData?.length"
               class="mt-3"
               :pagination="pageState.listProduct.pagination"
-              @page-change="paramsListProduct.PageIndex = $event;getListProduct()"
+              @page-change="
+                paramsListProduct.PageIndex = $event;
+                getListProduct();
+              "
             />
           </div>
         </div>
@@ -276,6 +284,11 @@ getListProduct();
 </script>
 
 <style scoped>
+.top-custom {
+  top: 48px;
+  z-index: 1 !important;
+}
+
 .z-height {
   z-index: 999999999;
 }
@@ -288,6 +301,10 @@ getListProduct();
   overflow-y: auto;
 }
 @media screen and (max-width: 768px) {
+  .top-custom {
+    top: 0;
+  }
+
   .dropdown-menu-custom {
     width: 350px !important;
     margin: auto;

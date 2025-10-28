@@ -6,7 +6,12 @@ $primary: #189847;
 :root{
         --swiper-theme-color: $primary !important;
 }
-
+body{
+    height: 100% !important;
+}
+.offcanvas {
+  z-index: 2000 !important;
+}
 @import 'bootstrap/scss/bootstrap';
 // Override Bootstrap variables btn primary
 .btn-primary {

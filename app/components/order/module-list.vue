@@ -1,6 +1,9 @@
 <template>
   <div class="position-relative">
-    <table v-if="list?.length" class="table align-middle mb-0 table-sm table-borderless">
+    <table
+      v-if="list?.length"
+      class="table align-middle mb-0 table-sm table-borderless"
+    >
       <tbody>
         <tr
           v-for="product in props.list"
@@ -19,32 +22,31 @@
             </div>
           </td>
           <td>
+     
             <NuxtLink
               :to="`/product/${product.ma_vt}`"
               class="text-decoration-none link-dark link-product"
             >
               {{ product.ten_vt }}
             </NuxtLink>
-            <div class="d-flex mt-1 gap-2">
+            <div class="d-flex flex-wrap mt-1 gap-2">
               <small>
                 Giá:
-                <strong class="text-danger text-opacity-75 fw-normal"
-                  >Liên hệ</strong
-                >
+                <strong class="text-danger text-opacity-75 fw-normal">
+                {{ formatCurrency(product.gia_nt2) || 'Liên hệ' }}
+                </strong>
+                /
+                <strong class="text-danger text-opacity-75 fw-normal">
+                  {{ product.dvt }}
+                </strong>
               </small>
-              <div class="vr"></div>
-              <small>
-                Đơn vị :
-                <strong class="text-danger text-opacity-75 fw-normal"
-                  >Hộp</strong
-                >
-              </small>
-              <div class="vr"></div>
+
+              <div class="vr d-none d-md-block"></div>
               <small>
                 HSD :
-                <strong class="text-danger text-opacity-75 fw-normal"
-                  >03/12/2026</strong
-                >
+                <strong class="text-danger text-opacity-75 fw-normal">
+                  03/12/2026
+                </strong>
               </small>
             </div>
             <div class="d-lg-none mt-2">
@@ -60,7 +62,10 @@
     <div v-else class="text-center bd-blur py-5">
       <div class="text-muted">Không có dữ liệu phù hợp</div>
     </div>
-    <div class="d-flex position-absolute bd-blur top-0 start-0 w-100 h-100 bg-white bg-opacity-75 justify-content-center align-items-center" v-if="props.loading">
+    <div
+      class="d-flex position-absolute bd-blur top-0 start-0 w-100 h-100 bg-white bg-opacity-75 justify-content-center align-items-center"
+      v-if="props.loading"
+    >
       <UiLoading />
     </div>
   </div>

@@ -60,12 +60,7 @@ const route = useRoute();
 import { Modal } from "bootstrap";
 const modalInstance = ref<Modal | null>(null);
 
-const dataInject = inject<{
-  showModal: {
-    login: boolean;
-    register: boolean;
-  };
-}>("data");
+const {togglePopupRegister} = useAuth();
 const emit = defineEmits(["close"]);
 
 onMounted(() => {
@@ -89,7 +84,7 @@ function initModal() {
 }
 
 function openRegister() {
-  dataInject!.showModal.register = true;
+  togglePopupRegister();
   modalInstance.value?.hide();
 }
 </script>

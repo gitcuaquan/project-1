@@ -24,8 +24,7 @@
 
           <!-- Product Title -->
           <h1 class="h3 fw-bold mb-3 text-dark">
-            VIÊN UỐNG HỖ TRỢ CẢI THIỆN TINH TRẠNG LO ÂU, CẢI THIỆN GIẤC NGỦ
-            ASHAMI GOLD VKENKO 60V
+            {{ detailProduct?.ten_vt || "Tên sản phẩm không xác định" }}
           </h1>
 
           <!-- Rating and Reviews -->
@@ -49,7 +48,21 @@
               1.250.000đ
             </p>
           </div>
-
+          <div
+            id="action"
+            class="row  mt-3 bg-white align-items-end pb-3 g-3"
+          >
+            <div class="col-md-3">
+              <label class="form-label fw-bold">Số lượng</label>
+              <br>
+              <UiBtnGroup />
+            </div>
+            <div class="col-md-6">
+              <button id="add-to-cart" class="btn btn-primary  px-5">
+                Thêm vào giỏ hàng <ShoppingBag />
+              </button>
+            </div>
+          </div>
           <!-- Product Details Table -->
           <div class="table-responsive mb-4">
             <table class="table table-borderless">
@@ -131,23 +144,6 @@
               xuất hoa nghệ tây
             </p>
           </div>
-
-          <div
-            id="action"
-            class="row mt-3 bg-white align-items-center pb-3 g-3"
-          >
-            <div class="col-md-5">
-              <div class="d-flex align-items-center gap-3">
-                <div>Chọn số lượng</div>
-                <UiBtnGroup />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <button id="add-to-cart" class="btn btn-primary btn-lg px-5">
-                Thêm vào giỏ hàng <ShoppingBag />
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -167,7 +163,6 @@ const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Thần kinh não" },
 ]);
 
-
 // Product images
 const productImages = ref([
   "https://placehold.co/800x800/000000/5682B1.png", // Main product image
@@ -179,10 +174,13 @@ const productImages = ref([
 ]);
 
 // SEO Meta
-const { data: detailProduct } = await useAsyncData("product-details", async () => {
-  const slug = route.params.slug as string;
-  return await $appServices.items.getItemById(slug);
-});
+const { data: detailProduct } = await useAsyncData(
+  "product-details",
+  async () => {
+    const slug = route.params.slug as string;
+    return await $appServices.items.getItemById(slug);
+  }
+);
 
 // 🧠 Reactive useHead — sẽ tự update khi detailProduct.value đổi
 useHead(() => ({
@@ -233,11 +231,6 @@ useHead(() => ({
   }
   #add-to-cart {
     width: 100%;
-  }
-  #action {
-    position: sticky;
-    bottom: 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   }
 }
 /* Hide number input arrows for Chrome, Safari, Edge, Opera */

@@ -4,6 +4,7 @@
     <NuxtPage />
   </NuxtLayout>
   <UiToastContainer />
+  <UiMenuMobile />
 </template>
 
 <script setup lang="ts">

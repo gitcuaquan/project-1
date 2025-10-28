@@ -33,7 +33,7 @@
                 class="badge fw-normal bg-info border border-info text-dark bg-opacity-10 rounded-pill d-inline-block mt-2"
               >
                 <Gift :size="16" />
-                <span class="ms-1 lh-sm">Quà tặng 1 bộ dụng cụ nhà bếp SunHouse</span>
+                <span class="ms-1 lh-sm">Quà tặng 1 bộ dụng cụ nhà bếp</span>
               </div>
             </div>
           </div>

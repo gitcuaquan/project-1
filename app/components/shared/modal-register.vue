@@ -37,7 +37,9 @@
               />
             </div>
             <div class="col-md-6 col-12">
-              <label for="address" class="form-label">Số căn cước công dân</label>
+              <label for="address" class="form-label"
+                >Số căn cước công dân</label
+              >
               <input
                 type="text"
                 class="form-control"
@@ -82,7 +84,7 @@
             </div>
             <div class="col-12 col-md-6">
               <label for="ward" class="form-label">Xã phường</label>
-              <SharedAddressWard :city-code="citySelect?.code" />
+              <SharedAddressWard :city-code="citySelect?.code" v-model="wardSelect" />
             </div>
             <div class="col-md-6 col-12">
               <label for="address" class="form-label">Địa chỉ</label>
@@ -131,17 +133,20 @@
 <script lang="ts" setup>
 import { Modal } from "bootstrap";
 import type { ProjectConfig } from "~/model";
+import { Customer } from "~/model/SSE";
 const modalInstance = ref<Modal | null>(null);
 
 const emit = defineEmits(["close"]);
-const dataInject = inject<{
-  showModal: {
-    login: boolean;
-    register: boolean;
-  };
-}>("data");
+const { togglePopupLogin } = useAuth();
 
+// ========================== STATE ==========================
 const citySelect = ref<ProjectConfig.CitySetting | null>(null);
+const wardSelect = ref<ProjectConfig.DistrictSetting | null>(null);
+
+const custumerInfo = ref<Customer>( new Customer({}) );
+
+
+// ========================== LIFECYCLE ==========================
 
 onMounted(() => {
   initModal();
@@ -156,9 +161,12 @@ function initModal() {
   });
 }
 function openLogin() {
-  dataInject!.showModal.login = true;
+  togglePopupLogin();
   modalInstance.value?.hide();
 }
+// ========================== FUNCTIONS ==========================
+
+
 </script>
 
 <style></style>

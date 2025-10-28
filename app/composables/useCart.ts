@@ -1,6 +1,12 @@
 export const useCart = () => {
+  const { isAuthenticated } = useAuth()
+  const { error } = useToast()
   const cart = useState<any[]>('cart', () => [])
   const addToCart = (product: any) => {
+    if (!isAuthenticated.value) {
+      error('Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng.')
+      return
+    }
     const existingProduct = cart.value.find((item) => item.id === product.id)
     if (existingProduct) {
       existingProduct.quantity += 1
