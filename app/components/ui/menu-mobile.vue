@@ -72,7 +72,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { BaseParameters, BaseResponse, ITemsTapmed } from "~/model/SSE";
+import type { BaseParameters, BaseResponse, ITemsTapmed } from "~/model";
 
 const { togglePopupLogin } = useAuth();
 const { $appServices } = useNuxtApp();

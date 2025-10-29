@@ -5,21 +5,52 @@
       <div class="col-12"></div>
     </div>
     <div class="row gy-2 gx-3">
-      <!-- <div class="col-lg-3 d-none d-lg-block">
-        <div class="card sticky-custom p-2 bg-white border-0 shadow-sm">
-          <OrderModuleProvider class="mt-1" />
-        </div>
-      </div> -->
       <div class="col-lg-8">
         <div class="card bg-white border-0 shadow-sm">
           <div
-            class="card-header shadow-sm  px-1 py-1 px-md-2 bg-white border-0"
+            class="card-header shadow-sm px-1 py-1 px-md-2 bg-white border-0"
           >
-            <div class="row g-2">
-              <div class="col-12">
-                <UiInputSearch v-model="keyword" />
+            <div class="row g-2 align-items-center">
+              <div class="col-lg-5 order-1 col-10">
+                <UiInputSearch class="h-100" v-model="keyword" />
               </div>
-              <div class="col-6">
+              <div class="col-2 order-2 order-lg-3 text-end col-lg-1">
+                <button
+                  @click="showMoreFilters = true"
+                  class="btn-sm btn btn-light shadow-sm border"
+                >
+                  <Funnel :size="16" />
+                </button>
+              </div>
+              <div class="col-lg-6 order-3 order-lg-2">
+                <select name="" class="form-select form-select-sm" id="">
+                  <option value="">Sắp xếp theo: Mặc định</option>
+                  <option value="">Sắp xếp theo: Tên A-Z</option>
+                  <option value="">Sắp xếp theo: Tên Z-A</option>
+                  <option value="">Sắp xếp theo: Giá thấp đến cao</option>
+                  <option value="">Sắp xếp theo: Giá cao đến thấp</option>
+                </select>
+              </div>
+              <!-- <div class="col-lg-7">
+                <div class="input-group w-100 input-group-sm h-100 flex-nowrap">
+                  <select v-model="filterNhomVt.filters[0]!.valueSearch" class="form-select w-auto flex-grow-0" id="">
+                    <option
+                      v-for="value in loaiNhomVatTuOptions"
+                      :value="value.value.toString()"
+                    >
+                      {{ value.label }}
+                    </option>
+                  </select>
+                  <select class="form-select" >
+                    <option
+                      v-for="value in listNhomVatTu"
+                    >
+                      {{ value.ten_nh }}
+                    </option>
+                  </select>
+                </div>
+              </div> -->
+              <!-- <div class="col-6">
                 <div class="dropdown">
                   <button
                     class="btn w-100 px-2 text-nowrap d-flex gap-1 align-items-center border"
@@ -59,7 +90,6 @@
                     <small class="text-dark text-opacity-50 user-select-none">
                       Nhà cung cấp
                     </small>
-                    <!-- <span class="text-nowrap text-truncate">Công ty TNHH MTV Dược phẩm DHG - VIỆT NAM</span> -->
                   </div>
                   <div
                     class="dropdown-menu border-0 shadow  dropdown-menu-custom dropdown-menu-end p-2"
@@ -67,10 +97,10 @@
                     <OrderModuleProvider class="mt-1" />
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
-            <div class="d-flex tag-scroll mt-2 flex-nowrap gap-2">
+            <!-- <div class="d-flex tag-scroll mt-2 flex-nowrap gap-2">
               <div
                 class="text-uppercase badge d-flex gap-1 align-items-center bg-primary bg-opacity-10 text-primary"
               >
@@ -91,7 +121,7 @@
               >
                 GIÁ TỐT TRONG THÁNG <Tags :size="14" :stroke-width="1.5" />
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="card-body px-1 px-md-2">
             <OrderModuleList
@@ -127,147 +157,107 @@
       </div>
     </div>
   </div>
+  <ClientOnly>
+    <OrderModuleFilter
+      :show="showMoreFilters"
+      @close="showMoreFilters = false"
+    />
+  </ClientOnly>
 </template>
 
 <script lang="ts" setup>
 import type { ProjectConfig } from "~/model";
-import type { BaseParameters, BaseResponse, ITemsTapmed } from "~/model/SSE";
+import { Item } from "~/model/Item";
+import {
+  BodyFilter,
+  FilterItem,
+  OperatorType,
+  type BaseParameters,
+  type BaseResponse,
+  type ITemsTapmed,
+} from "~/model";
 const { $appServices } = useNuxtApp();
+
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh" },
 ]);
 
+const showMoreFilters = ref(false);
 const keyword = useDebouncedRef("", 500);
+
 const paramsListProduct = ref<BaseParameters>({
   PageIndex: 1,
-  PageSize: 10,
+  PageSize: 7,
   search: keyword.value,
 });
 const pageState = reactive({
   loading: true,
   listProduct: {} as BaseResponse<ITemsTapmed>,
 });
+
+const filterNhomVt = ref(
+  new BodyFilter<Item.NhomVatTu>({
+    pageIndex: 1,
+    pageSize: 1000,
+    filters: [
+      new FilterItem<Item.NhomVatTu>({
+        filterValue: "loai_nh",
+        operatorType: OperatorType.Contains,
+        valueSearch: Item.LoaiNhomVatTu.NguonGoc.toString(),
+      }),
+    ],
+  })
+);
+
+const filterNhaSX = ref(
+  new BodyFilter<any>({
+    pageIndex: 1,
+    pageSize: 1000,
+  })
+);
+const listNhomVatTu = ref<Item.NhomVatTu[]>([]);
+
 watch(keyword, (newVal) => {
   paramsListProduct.value.search = newVal;
+  paramsListProduct.value.PageIndex = 1;
   getListProduct();
 });
+watch(
+  () => filterNhomVt.value,
+  (val) => {
+    getNhomVatTu();
+  },
+  { deep: true }
+);
 
-const categoriesKeyword = ref("");
-const categoriesFilter = computed(() => {
-  if (!categoriesKeyword.value) return categories;
-  const filterCategories = (cats: typeof categories): typeof categories => {
-    return cats
-      .map((cat) => {
-        const matchedChildren = cat.children
-          ? filterCategories(cat.children)
-          : [];
-        if (
-          cat.name
-            .toLowerCase()
-            .includes(categoriesKeyword.value.toLowerCase()) ||
-          matchedChildren.length
-        ) {
-          return {
-            ...cat,
-            children: matchedChildren,
-          };
-        }
-        return null;
-      })
-      .filter((cat) => cat !== null) as typeof categories;
-  };
-  return filterCategories(categories);
+// ======================== HOOKS ========================
+onBeforeMount(() => {
+  getListProduct();
+  getNhomVatTu();
+  getNhaSX();
 });
+// ======================== METHODS ========================
 
-const categories = [
-  {
-    id: 1000,
-    name: "Thuốc",
-    children: [
-      {
-        id: 1001,
-        name: "Thuốc kiểm soát đặc biệt",
-        children: [
-          {
-            id: 1002,
-            name: "Thuốc dạng phối hợp có chứa dược chất gây nghiện",
-          },
-          {
-            id: 1003,
-            name: "Thuốc dạng phối hợp có chứa dược chất hướng thần",
-          },
-          { id: 1004, name: "Thuốc dạng phối hợp có chứa tiền chất" },
-          { id: 1005, name: "Thuốc phóng xạ và đồng vị phóng xạ" },
-          { id: 1006, name: "Thuốc cấm sử dụng trong một số ngành , lĩnh vực" },
-          { id: 1007, name: "Thuốc Độc" },
-        ],
-      },
-      { id: 1008, name: "Thuốc bảo quản lạnh (2-8 độ)" },
-      { id: 1009, name: "Vaxcin" },
-      {
-        id: 1010,
-        name: "Sinh phẩm (trừ men visinh)",
-      },
-      {
-        id: 1011,
-        name: "Thuốc kê đơn",
-        children: [
-          { id: 1012, name: "Thuốc thường kê đơn" },
-          { id: 1013, name: "Thuốc thiết yếu kê đơn" },
-        ],
-      },
-      { id: 1014, name: "Thuốc không kê đơn" },
-    ],
-  },
-  {
-    id: 2000,
-    name: "Thực phẩm chức năng",
-    children: [
-      {
-        id: 2100,
-        name: "Hỗ trợ Tiêu hóa",
-        children: [
-          { id: 2101, name: "Hỗ trợ dạ dày" },
-          { id: 2102, name: "Hỗ trợ đại tràng" },
-          { id: 2103, name: "Men vi sinh" },
-        ],
-      },
-      { id: 2200, name: "Vitamin và khoáng chất" },
-      {
-        id: 2300,
-        name: "Bổ não",
-        children: [
-          { id: 2301, name: "An thần" },
-          { id: 2302, name: "Dưỡng não" },
-        ],
-      },
-      { id: 2400, name: "Bổ mắt" },
-      { id: 2500, name: "Hỗ trợ hô hấp" },
-      { id: 2600, name: "Hỗ trợ bệnh mãn tính" },
-      { id: 2700, name: "Thanh nhiệt, giải độc, mát gan" },
-      { id: 2800, name: "Làm đẹp, giảm cân" },
-      { id: 2900, name: "Bổ thận, tăng cường sinh lý nam" },
-      { id: 3000, name: "Hỗ trợ xương khớp" },
-      { id: 3100, name: "Các loại TPCN khác" },
-    ],
-  },
-  {
-    id: 4000,
-    name: "Thiết bị y tế",
-    children: [
-      { id: 4100, name: "Các loại máy đo" },
-      { id: 4200, name: "Khẩu trang" },
-      { id: 4300, name: "Nước muối, xịt mũi" },
-      { id: 4400, name: "Dán hạ sốt" },
-      { id: 4500, name: "Que thử các loại" },
-      { id: 4600, name: "Bông, băng, gạc, dây truyền dịch" },
-      { id: 4700, name: "Vớ y khoa" },
-      { id: 4800, name: "Cân" },
-    ],
-  },
-  { id: 8000, name: "Mỹ phẩm" },
-  { id: 9000, name: "Chăm sóc cá nhân" },
-];
+async function getNhomVatTu() {
+  try {
+    const response = await $appServices.items.getNhomVatTu<Item.NhomVatTu>(
+      filterNhomVt.value
+    );
+    listNhomVatTu.value = response.getData || [];
+  } catch (error) {
+    console.error("Error fetching Nhom Vat Tu:", error);
+  }
+}
+async function getNhaSX() {
+  try {
+    const response = await $appServices.items.getNhaSX<Item.NhaSanXuat>(
+      filterNhaSX.value
+    );
+    console.log("Nha san xuat:", response.getData);
+  } catch (error) {
+    console.error("Error fetching Nha San Xuat:", error);
+  }
+}
 
 async function getListProduct() {
   pageState.loading = true;
@@ -280,7 +270,6 @@ async function getListProduct() {
     pageState.loading = false;
   }
 }
-getListProduct();
 </script>
 
 <style scoped>

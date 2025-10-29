@@ -72,7 +72,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { ITemsTapmed } from "~/model/SSE";
+import type { ITemsTapmed } from "~/model";
 
 const props = defineProps<{
   list?: ITemsTapmed[];

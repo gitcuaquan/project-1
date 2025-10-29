@@ -135,7 +135,9 @@
 
 <script lang="ts" setup>
 import type { ProjectConfig } from "~/model";
-
+definePageMeta({
+  middleware: "auth",
+});
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Tài khoản", to: "/auth" },
   { label: "Hồ sơ khách hàng" },

@@ -155,7 +155,7 @@
 
 <script setup lang="ts">
 import type { ProjectConfig } from "~/model";
-import type { ITemsTapmed } from "~/model/SSE";
+import type { ITemsTapmed } from "~/model";
 const { $appServices } = useNuxtApp();
 const route = useRoute();
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([

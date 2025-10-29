@@ -2,6 +2,13 @@
   <div class="modal fade" id="modal-login" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
+        <div
+          v-if="loading"
+          style="z-index: 999999"
+          class="text-center position-absolute bg-blur w-100 h-100 d-flex justify-content-center align-items-center bg-white bg-opacity-75"
+        >
+          <UiLoading />
+        </div>
         <div class="modal-body">
           <div class="position-absolute top-0 end-0 m-3">
             <button
@@ -23,6 +30,7 @@
               <input
                 type="phone"
                 class="form-control"
+                v-model="data.userName"
                 required
                 id="phone"
                 placeholder="Nhập số điện thoại"
@@ -30,18 +38,30 @@
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Mật khẩu</label>
-              <input
-                type="password"
-                class="form-control"
-                required
-                id="password"
-                placeholder="Nhập mật khẩu"
-              />
+              <div class="position-relative">
+                <input
+                  :type="showPassword ? 'text' : 'password'"
+                  class="form-control"
+                  required
+                  v-model="data.password"
+                  id="Password"
+                  minlength="6"
+                  placeholder="Nhập mật khẩu"
+                />
+                <button
+                  type="button"
+                  @click="showPassword = !showPassword"
+                  class="btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2 p-0 border-0 bg-white"
+                >
+                  <EyeOff v-if="showPassword" :stroke-width="1" />
+                  <Eye v-if="!showPassword" :stroke-width="1" />
+                </button>
+              </div>
             </div>
           </form>
         </div>
         <div class="modal-footer justify-content-center border-0">
-          <NuxtLink to="/auth" class="btn btn-primary w-50">Đăng nhập</NuxtLink>
+          <button @click="login" class="btn btn-primary w-50">Đăng nhập</button>
         </div>
         <p class="text-center mb-3">
           Bạn chưa có tài khoản?
@@ -58,11 +78,26 @@
 const route = useRoute();
 
 import { Modal } from "bootstrap";
+const { $appServices } = useNuxtApp();
 const modalInstance = ref<Modal | null>(null);
 
-const {togglePopupRegister} = useAuth();
+type LoginResponse = {
+  expiration: string;
+  token: string;
+  refreshToken: string;
+};
+
+const { togglePopupRegister } = useAuth();
+const { setToken } = useAuth();
 const emit = defineEmits(["close"]);
 
+const loading = ref(false);
+
+const data = reactive({
+  userName: "",
+  password: "",
+});
+const showPassword = ref(false);
 onMounted(() => {
   initModal();
 });
@@ -86,6 +121,28 @@ function initModal() {
 function openRegister() {
   togglePopupRegister();
   modalInstance.value?.hide();
+}
+
+async function login() {
+  loading.value = true;
+  try {
+    const response = await $appServices.auth.login<LoginResponse>({
+      userName: data.userName,
+      password: data.password,
+    });
+    setToken(response.token);
+    // const user = await $appServices.customer.detail();
+    // console.log("🚀 ~ login ~ user=>", user)
+    useToast().success("Đăng nhập thành công");
+    useRouter().push("/auth");
+    modalInstance.value?.hide();
+  } catch (error) {
+    console.error("Login failed:", error);
+    useToast().error("Đăng nhập thất bại. Vui lòng kiểm tra lại.");
+    // Handle login failure (e.g., show error message)
+  } finally {
+    loading.value = false;
+  }
 }
 </script>
 

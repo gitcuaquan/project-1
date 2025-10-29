@@ -9,6 +9,10 @@ $primary: #189847;
 body{
     height: 100% !important;
 }
+.bg-blur {
+    backdrop-filter: blur(2px);
+}
+
 .offcanvas {
   z-index: 2000 !important;
 }

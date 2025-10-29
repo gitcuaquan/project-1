@@ -12,7 +12,7 @@ export interface FetchOptions {
 export default class BaseService {
     protected baseUrl: string = 'https://api-tapmed.sse.net.vn/api/';
     protected defaultHeaders: Record<string, string>
-    private AUTH_TOKEN_KEY: string = 'auth_token';
+    private NAME_TOKEN_IN_COOKIE: string = 'tapmed_token_access';
     constructor(endpoint: string) {
         this.baseUrl += endpoint;
         this.defaultHeaders = {
@@ -35,7 +35,7 @@ export default class BaseService {
         try {
             const { method = 'GET', params, body, headers, auth } = options
             if(auth){
-               const token = useCookie(this.AUTH_TOKEN_KEY).value;
+               const token = useCookie(this.NAME_TOKEN_IN_COOKIE).value;
                if(token){
                    this.defaultHeaders['Authorization'] = `Bearer ${token}`;
                }

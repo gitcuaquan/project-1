@@ -2,6 +2,7 @@ export const useAuth = () => {
   const NAME_TOKEN_IN_COOKIE = 'tapmed_token_access';
 
   const token = useCookie<string | null>(NAME_TOKEN_IN_COOKIE);
+  const user = useState<any | null>('user', () => null);
   const showLogin = useState<boolean>('showLogin', () => false);
   const showRegister = useState<boolean>('showRegister', () => false);
   /**

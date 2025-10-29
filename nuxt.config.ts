@@ -32,6 +32,6 @@ export default defineNuxtConfig({
       }
     }
   },
-  plugins: ['~/plugins/bootstrap.client.ts', '~/services/index.ts'],
+  plugins: ['~/plugins/bootstrap.client.ts', '~/plugins/appServices.ts'],
 
 })

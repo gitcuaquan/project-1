@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { Pagination } from "~/model/SSE";
+import type { Pagination } from "~/model";
 
 const props = defineProps<{
   pagination?: Pagination;

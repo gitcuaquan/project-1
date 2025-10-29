@@ -4,6 +4,13 @@
       class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
     >
       <div class="modal-content">
+        <div
+          v-if="loading"
+          style="z-index: 999999"
+          class="text-center position-absolute bg-blur w-100 h-100 d-flex justify-content-center align-items-center bg-white bg-opacity-75"
+        >
+          <UiLoading />
+        </div>
         <div class="modal-body">
           <div class="position-absolute top-0 end-0 m-3">
             <button
@@ -19,10 +26,10 @@
               Đăng ký thành viên
             </h4>
             <p class="text-muted">
-              <small
-                >Đăng ký làm thành viên để nhận được nhiều khuyến mãi hấp dẫn và
-                theo dõi đơn hàng của bạn.</small
-              >
+              <small>
+                Đăng ký làm thành viên để nhận được nhiều khuyến mãi hấp dẫn và
+                theo dõi đơn hàng của bạn.
+              </small>
             </p>
           </div>
           <!-- {{ custumerInfo }} -->
@@ -159,9 +166,8 @@
                 placeholder="Nhập địa chỉ"
               />
               <small class="text-danger" v-if="errors.Address">
-                {{
-                errors.Address
-              }}</small>
+                {{ errors.Address }}</small
+              >
             </div>
           </form>
           <!-- Giấy tờ liên quan -->
@@ -211,7 +217,7 @@ import City from "@/data/province.json";
 import Ward from "@/data/ward.json";
 import { Modal } from "bootstrap";
 import type { ProjectConfig } from "~/model";
-import { Customer } from "~/model/SSE";
+import { Customer } from "~/model";
 const modalInstance = ref<Modal | null>(null);
 
 const emit = defineEmits(["close"]);
@@ -229,7 +235,8 @@ const wardSelect = ref<ProjectConfig.DistrictSetting | null>(null);
 
 const custumerInfo = ref<Customer>(new Customer({}));
 
-const listCity = ref<ProjectConfig.DistrictSetting []>([]);
+const listCity = ref<ProjectConfig.DistrictSetting[]>([]);
+const loading = ref(false);
 // ========================== LIFECYCLE ==========================
 watch(
   () => custumerInfo.value,
@@ -245,9 +252,9 @@ watch(
   () => custumerInfo.value.NameDistrict,
   (newWard) => {
     if (newWard) {
-      custumerInfo.value.CodeDistrict = (listCity.value.find(
-        (item) => item.name == newWard
-      ) as any)?.code;
+      custumerInfo.value.CodeDistrict = (
+        listCity.value.find((item) => item.name == newWard) as any
+      )?.code;
     } else {
       custumerInfo.value.NameDistrict = "";
     }
@@ -336,10 +343,11 @@ async function submitForm(e: Event) {
   checkValid.value = true;
   if (validateForm()) {
     checkValid.value = false;
-    
+
     // Submit form logic here
     const formData = convertDataToFormData(custumerInfo.value);
     try {
+      loading.value = true;
       const response = await $appServices.auth.register(formData);
       if (response && response.success) {
         modalInstance.value?.hide();
@@ -352,6 +360,8 @@ async function submitForm(e: Event) {
       }
     } catch (error) {
       useToast().error("Đăng ký thất bại! Vui lòng thử lại.");
+    } finally {
+      loading.value = false;
     }
   }
 }
