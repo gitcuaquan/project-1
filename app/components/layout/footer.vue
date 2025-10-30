@@ -196,7 +196,7 @@
     </div>
   </div>
   <!-- Scroll to Top Button -->
-  <div id="scroll-to-top" v-if="showButton" class="d-none d-md-block">
+  <div id="scroll-to-top" v-if="showButton" class="d-none d-md-flex">
     <button @click="scrollToTop" class="btn border-0 shadow-none">
       <ArrowBigUpDash :size="24" color="#189847" />
     </button>

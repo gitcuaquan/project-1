@@ -35,4 +35,8 @@ export default class ItemService extends BaseService {
         const resp = await this.post('/list-nsx', JSON.stringify(filters));
         return new BaseResponse<T>(resp);
     }
+
+    async getFeatured(){
+        return this.get('/list/feature');
+    }
 }
