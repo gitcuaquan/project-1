@@ -8,4 +8,6 @@ export type ITemsTapmed = {
     ma_gia?: string;
     ngay_ban?: string;
     image_urls?: { originalName: string, url: string }[];
+    // Số lượng tạm thêm vào giỏ hàng [ chỉ ở client ]
+    quantity?: number;
 }

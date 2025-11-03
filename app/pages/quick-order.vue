@@ -1,9 +1,6 @@
 <template>
   <SharedModuleBreadcrumb :data="breadcrumb" />
   <div class="container px-2 mt-3">
-    <div class="row">
-      <div class="col-12"></div>
-    </div>
     <div class="row gy-2 gx-3">
       <div class="col-lg-8">
         <div class="card bg-white border-0 shadow-sm">
@@ -15,18 +12,34 @@
                 <UiInputSearch class="h-100" v-model="keyword" />
               </div>
               <div class="col-lg-6 order-1 order-lg-2">
-                <div class="d-flex gap-2">
-                  <select name="" class="form-select form-select-sm" id="">
-                    <option value="">Sắp xếp theo: Mặc định</option>
-                    <option value="">Sắp xếp theo: Tên A-Z</option>
-                    <option value="">Sắp xếp theo: Tên Z-A</option>
-                    <option value="">Sắp xếp theo: Giá thấp đến cao</option>
-                    <option value="">Sắp xếp theo: Giá cao đến thấp</option>
-                  </select>
+                <div class="d-flex gap-2 h-100">
+                  <div class="dropdown h-100 w-100">
+                    <input
+                      type="search"
+                      readonly
+                      data-bs-toggle="dropdown"
+                      class="form-control h-100 form-control-sm"
+                      placeholder="Nhà sản xuất"
+                    />
+                    <ul class="dropdown-menu w-100" style="max-height: 400px;overflow: auto;">
+                      <li style="top: -10px;" class="px-3 py-2 bg-white sticky-top shadow-sm" >
+                        <input type="search" v-model="ten_nhasx" placeholder="Tìm kiếm nhà sản xuất" class="form-control form-control-sm"/>
+                      </li>
+                      <li v-for="value in listNhaSanXuat">
+                        <a @click="selectNhaSX(value)" role="button" class="dropdown-item" >
+                          {{ value.ten_nhasanxuat }}
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                   <button
                     @click="showMoreFilters = true"
-                    class="btn-sm btn btn-light shadow-sm border"
+                    class="btn-sm btn btn-light position-relative shadow-sm border"
                   >
+                    <span class="position-absolute top-0 start-100 translate-middle lh-sm badge rounded-pill bg-danger">
+                      {{ listFilter.length }}
+                      <span class="visually-hidden">Filter count</span>
+                    </span>
                     <Funnel :size="16" />
                   </button>
                 </div>
@@ -161,7 +174,7 @@
     <OrderModuleFilter
       :show="showMoreFilters"
       @close="showMoreFilters = false"
-      @select="onChangeNhomVt"
+      @apply="applyFilter"
     />
   </ClientOnly>
 </template>
@@ -179,12 +192,16 @@ import {
 } from "~/model";
 const { $appServices } = useNuxtApp();
 
+const { toggleItemInList, listFilter } = useFilter();
+
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh" },
 ]);
 
 const showMoreFilters = ref(false);
 const keyword = useDebouncedRef("", 500);
+const ten_nhasx = useDebouncedRef("", 500);
+
 
 const pageState = reactive({
   loading: true,
@@ -211,6 +228,11 @@ const filterListProduct = ref(
         operatorType: OperatorType.Equal,
         valueSearch: "",
       }),
+      new FilterItem<ITemsTapmed>({
+        filterValue: "ten_nhasanxuat",
+        operatorType: OperatorType.Contains,
+        valueSearch: "",
+      })
     ],
   })
 );
@@ -233,9 +255,17 @@ const filterNhaSX = ref(
   new BodyFilter<any>({
     pageIndex: 1,
     pageSize: 1000,
+    filters: [
+      new FilterItem<any>({
+        filterValue: "ten_nhasanxuat",
+        operatorType: OperatorType.Contains,
+        valueSearch: ten_nhasx.value,
+      }),
+    ],
   })
 );
 const listNhomVatTu = ref<Item.NhomVatTu[]>([]);
+const listNhaSanXuat = ref<Item.NhaSanXuat[]>([]);
 
 watch(keyword, (newVal) => {
   filterListProduct.value.setValue("ten_vt", newVal, OperatorType.Contains);
@@ -243,6 +273,9 @@ watch(keyword, (newVal) => {
   getListProduct();
 });
 
+watch(ten_nhasx, (newVal) => {
+  getNhaSX();
+});
 watch(
   () => filterNhomVt.value,
   (val) => {
@@ -274,7 +307,7 @@ async function getNhaSX() {
     const response = await $appServices.items.getNhaSX<Item.NhaSanXuat>(
       filterNhaSX.value
     );
-    console.log("Nha san xuat:", response.getData);
+    listNhaSanXuat.value = response.getData || [];
   } catch (error) {
     console.error("Error fetching Nha San Xuat:", error);
   }
@@ -291,16 +324,15 @@ async function getListProduct() {
     pageState.loading = false;
   }
 }
-function onChangeNhomVt(nhomVt: Item.NhomVatTu) {
+function applyFilter() {
+  console.log("Applied Filters:", listFilter.value);
+}
+
+function selectNhaSX(nhasx: Item.NhaSanXuat) {
   filterListProduct.value.setValue(
-    "loai_nh",
-    nhomVt.loai_nh.toString(),
-    OperatorType.Equal
-  );
-  filterListProduct.value.setValue(
-    "ma_nh",
-    nhomVt.ma_nh.toString(),
-    OperatorType.Equal
+    "ten_nhasanxuat",
+    nhasx.ten_nhasanxuat,
+    OperatorType.Contains
   );
   filterListProduct.value.pageIndex = 1;
   getListProduct();

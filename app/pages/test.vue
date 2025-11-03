@@ -1,90 +1,18 @@
 <template>
-  <div class="vh-100">
-    <UiPopover placement="auto" :offset="10" trigger="hover">
-      <template #trigger>
-        <button class="btn btn-primary">Hover me</button>
-      </template>
-
-      <template #content>
-        <h6 class="mb-2">Thông tin chi tiết</h6>
-        <p class="mb-0">Đây là nội dung popover với nhiều thông tin hữu ích.</p>
-      </template>
-    </UiPopover>
-    <UiPopover placement="auto" :offset="10" trigger="hover">
-      <template #trigger>
-        <button class="btn btn-primary">Hover me</button>
-      </template>
-
-      <template #content>
-        <h6 class="mb-2">Thông tin chi tiết</h6>
-        <p class="mb-0">Đây là nội dung popover với nhiều thông tin hữu ích.</p>
-      </template>
-    </UiPopover>
-    <UiPopover placement="auto" :offset="10" trigger="hover">
-      <template #trigger>
-        <button class="btn btn-primary">Hover me</button>
-      </template>
-
-      <template #content>
-        <h6 class="mb-2">Thông tin chi tiết</h6>
-        <p class="mb-0">Đây là nội dung popover với nhiều thông tin hữu ích.</p>
-      </template>
-    </UiPopover>
-    <UiPopover placement="auto" :offset="10" trigger="hover">
-      <template #trigger>
-        <button class="btn btn-primary">Hover me</button>
-      </template>
-
-      <template #content>
-        <h6 class="mb-2">Thông tin chi tiết</h6>
-        <p class="mb-0">Đây là nội dung popover với nhiều thông tin hữu ích.</p>
-      </template>
-    </UiPopover>
-    <UiPopover placement="auto" :offset="10" trigger="hover">
-      <template #trigger>
-        <button class="btn btn-primary">Hover me</button>
-      </template>
-
-      <template #content>
-        <h6 class="mb-2">Thông tin chi tiết</h6>
-        <p class="mb-0">Đây là nội dung popover với nhiều thông tin hữu ích.</p>
-      </template>
-    </UiPopover>
-    <UiPopover placement="auto" :offset="10" trigger="hover">
-      <template #trigger>
-        <button class="btn btn-primary">Hover me</button>
-      </template>
-
-      <template #content>
-        <h6 class="mb-2">Thông tin chi tiết</h6>
-        <p class="mb-0">Đây là nội dung popover với nhiều thông tin hữu ích.</p>
-      </template>
-    </UiPopover>
-    <UiPopover placement="auto" :offset="10" trigger="hover">
-      <template #trigger>
-        <button class="btn btn-primary">Hover me</button>
-      </template>
-
-      <template #content>
-        <h6 class="mb-2">Thông tin chi tiết</h6>
-        <p class="mb-0">Đây là nội dung popover với nhiều thông tin hữu ích.</p>
-      </template>
-    </UiPopover>
-    <UiPopover placement="auto" :offset="10" trigger="hover">
-      <template #trigger>
-        <button class="btn btn-primary">Hover me</button>
-      </template>
-
-      <template #content>
-        <h6 class="mb-2">Thông tin chi tiết</h6>
-        <p class="mb-0">Đây là nội dung popover với nhiều thông tin hữu ích.</p>
-      </template>
-    </UiPopover>
+  <div>
+    <div style="width: 100%; height: 600px; position: relative ; overflow: hidden">
+      <UiPlasma
+        color="#189847"
+        :speed="1"
+        direction="forward"
+        :scale="1"
+        :opacity="0.5"
+        :mouseInteractive="false"
+      />
+    </div>
   </div>
 </template>
 
-<script lang="ts" setup>
-definePageMeta({
-  layout: "blank",
-});
-</script>
+<script lang="ts" setup></script>
+
+<style></style>

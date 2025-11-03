@@ -6,7 +6,12 @@
     aria-labelledby="offcanvasLabel"
   >
     <div class="offcanvas-header py-2 shadow-sm">
-      <div class="offcanvas-title text-uppercase text-primary" id="offcanvasLabel">Bộ lọc mở rộng</div>
+      <div
+        class="offcanvas-title text-uppercase text-primary"
+        id="offcanvasLabel"
+      >
+        Bộ lọc mở rộng
+      </div>
       <button
         type="button"
         class="btn-close"
@@ -22,11 +27,14 @@
       >
         <h6 class="text-capitalize fw-bold">{{ name }}</h6>
         <template v-for="nhom in value">
-          <div class="form-check">
+          <div class="form-check w-100 ">
             <input
               class="form-check-input"
-              type="radio"
-              @input="selectNhomVatTu(nhom)"
+              type="checkbox"
+              :checked="listFilter?.some(
+                (item) => item.ma_nh === nhom.ma_nh && item.loai_nh === nhom.loai_nh
+              )"
+              @input="toggleItemInList(nhom)"
               :name="`nhom-vat-tu`"
               :id="`radio-${nhIndex}-${nhom.ma_nh}`"
             />
@@ -44,6 +52,7 @@
       <button
         type="button"
         class="btn btn-primary w-100"
+        @click="$emit('apply')"
         data-bs-dismiss="offcanvas"
       >
         Áp dụng bộ lọc
@@ -58,13 +67,15 @@ import { BodyFilter, Item } from "~/model";
 const { $appServices } = useNuxtApp();
 const offcanvasInstance = ref<Offcanvas | null>(null);
 
+const { toggleItemInList, listFilter } = useFilter();
+
 const props = defineProps<{
   show: boolean;
 }>();
 
 const emits = defineEmits<{
   (e: "close"): void;
-  (e: "select", item: Item.NhomVatTu): void;
+  (e: "apply"): void;
 }>();
 const loaiNhomVatTuOptions = [
   { value: Item.LoaiNhomVatTu.NguonGoc, label: "Lọc theo nguồn gốc" },
@@ -92,6 +103,7 @@ const listNhomVatTuGrouped = computed(() => {
   }
   return grouped;
 });
+
 watch(
   () => props.show,
   (newVal) => {
@@ -106,6 +118,7 @@ onMounted(() => {
   initOffcanvas();
   getNhomVatTu();
 });
+
 function initOffcanvas() {
   const offcanvasElement = document.getElementById("offcanvasFilter");
   if (offcanvasElement) {
@@ -125,11 +138,7 @@ async function getNhomVatTu() {
     console.error("Error fetching Nhom Vat Tu:", error);
   }
 }
-function selectNhomVatTu(item: Item.NhomVatTu) {
-  console.log("Selected Nhom Vat Tu:", item);
-  useToast().success(`Đã áp dụng tìm kiếm nhóm : ${item.ten_nh}`);
-  emits("select", item);
-}
+
 </script>
 
 <style></style>

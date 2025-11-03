@@ -6,7 +6,7 @@
     >
       <tbody>
         <tr
-          v-for="product in props.list"
+          v-for="product in listProduct"
           class="border-bottom"
           :key="product.ma_vt"
         >
@@ -22,7 +22,6 @@
             </div>
           </td>
           <td>
-     
             <NuxtLink
               :to="`/product/${product.ma_vt}`"
               class="text-decoration-none link-dark link-product"
@@ -33,7 +32,7 @@
               <small>
                 Giá:
                 <strong class="text-danger text-opacity-75 fw-normal">
-                {{ formatCurrency(product.gia_nt2) || 'Liên hệ' }}
+                  {{ formatCurrency(product.gia_nt2) || "Liên hệ" }}
                 </strong>
                 /
                 <strong class="text-danger text-opacity-75 fw-normal">
@@ -50,11 +49,19 @@
               </small>
             </div>
             <div class="d-lg-none mt-2">
-              <UiBtnGroup size="sm" />
+              <UiBtnGroup
+                size="sm"
+                v-model="product.quantity"
+                @change="($event) => changeQuantity(product, $event)"
+              />
             </div>
           </td>
           <td style="width: 10px" class="d-none d-md-table-cell">
-            <UiBtnGroup size="sm" />
+            <UiBtnGroup
+              size="sm"
+              v-model="product.quantity"
+              @change="($event) => changeQuantity(product, $event)"
+            />
           </td>
         </tr>
       </tbody>
@@ -74,10 +81,35 @@
 <script lang="ts" setup>
 import type { ITemsTapmed } from "~/model";
 
+const { addToCart, getQtyById } = useCart();
+const { isAuthenticated, togglePopupLogin } = useAuth();
+
 const props = defineProps<{
   list?: ITemsTapmed[];
   loading?: boolean;
 }>();
+
+const listProduct = ref<ITemsTapmed[]>(props.list || []);
+
+watch(
+  () => props.list,
+  (newList) => {
+    listProduct.value = newList?.map((item) => ({
+      ...item,
+      quantity: getQtyById(item.ma_vt),
+    })) || [];
+  }
+);
+
+function changeQuantity(item: ITemsTapmed, quantity: number) {
+  if (isAuthenticated.value) {
+    item.quantity = quantity;
+    addToCart(item);
+  } else {
+    useToast().error("Vui lòng đăng nhập để sử dụng chức năng này");
+    togglePopupLogin();
+  }
+}
 </script>
 
 <style scoped>

@@ -35,7 +35,6 @@
             </div>
           </div>
         </div>
-
         <!-- Right image -->
         <div class="col-lg-6">
           <!-- <div class="hero-img mx-auto mx-lg-0"></div> -->
@@ -47,7 +46,6 @@
 </template>
 
 <script setup lang="ts">
-  import { Share, SharedTest } from "#components";
 
   // Không cần logic phức tạp, chỉ static UI
 </script>

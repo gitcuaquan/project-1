@@ -133,8 +133,6 @@ async function login() {
       password: data.password,
     });
     setToken(response.data?.token!);
-    const user = await $appServices.customer.detail();
-    setUser(user.data);
     useToast().success("Đăng nhập thành công");
     useRouter().push("/auth");
     modalInstance.value?.hide();

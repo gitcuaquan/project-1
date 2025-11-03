@@ -33,4 +33,10 @@ export class BodyFilter<T = any> {
             this.filters.push(new FilterItem<T>({ filterValue, valueSearch, operatorType }));
         }
     }
+    resetFilter(filterValue: keyof T | string) {
+        const existingFilterIndex = this.filters.findIndex(f => f.filterValue === filterValue);
+        if (existingFilterIndex !== -1 && this.filters[existingFilterIndex]) {
+            this.filters[existingFilterIndex].valueSearch = '';
+        }
+    }
 }

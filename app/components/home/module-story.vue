@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-custom">
+  <div >
     <div class="container">
       <div
         class="row border-2 justify-content-center rounded  align-items-center"

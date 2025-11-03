@@ -137,7 +137,6 @@
                     style="font-size: 14px"
                     role="button"
                     @click="logOut()"
-                 
                   >
                     <LogOut :size="16" />Đăng xuất
                   </a>
@@ -154,7 +153,7 @@
                 <span
                   class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
                 >
-                  0
+                  {{ totalItems }}
                 </span>
               </NuxtLink>
             </div>
@@ -222,8 +221,6 @@
 </template>
 
 <script lang="ts" setup>
-
-
 const { $bootstrap } = useNuxtApp();
 const {
   isAuthenticated,
@@ -233,8 +230,10 @@ const {
   togglePopupRegister,
   user,
   clearToken,
-  clearUser
+  clearUser,
 } = useAuth();
+
+const { totalItems,clearCart } = useCart();
 const sizeIcon = ref(35);
 
 const route = useRoute();
@@ -299,6 +298,7 @@ function checkWindowSize() {
 }
 
 function logOut() {
+  clearCart();
   clearToken();
   clearUser();
   togglePopupLogin();

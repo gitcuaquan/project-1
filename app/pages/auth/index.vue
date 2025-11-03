@@ -80,7 +80,7 @@
                 @click="showModalCreateTicket = true"
                 class="btn-sm text-nowrap me-lg-2 btn btn-danger"
               >
-               <MessageCircleWarning :size="16" />
+                <MessageCircleWarning :size="16" />
               </button>
             </div>
           </div>
@@ -110,6 +110,8 @@
 
 <script lang="ts" setup>
 import type { ProjectConfig } from "~/model";
+const { $appServices } = useNuxtApp();
+const { setUser, clearUser } = useAuth();
 
 definePageMeta({
   middleware: "auth",
@@ -122,6 +124,15 @@ const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
 
 const showModalDetail = ref(false);
 const showModalCreateTicket = ref(false);
+async function getUser() {
+  try {
+    const response = await $appServices.customer.detail();
+    setUser(response.data);
+  } catch (error) {
+    clearUser();
+  }
+}
+getUser();
 </script>
 
 <style scoped>

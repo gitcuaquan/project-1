@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5 pb-3 bg-primary-custom">
+  <div class="py-5 pb-3">
     <div class="container">
       <div class="text-center mb-4">
         <h2 class="text-center">

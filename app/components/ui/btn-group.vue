@@ -40,7 +40,9 @@ const props = defineProps({
     default: 'md', // sm, md, lg
   },
 });
-const emit = defineEmits(["update:modelValue"]);
+
+const { isAuthenticated,togglePopupLogin } = useAuth();
+const emit = defineEmits(["update:modelValue", "change"]);
 
 const localValue = ref(props.modelValue);
 
@@ -57,13 +59,25 @@ watch(localValue, (val) => {
 });
 
 const increase = () => {
+  if(!isAuthenticated.value){
+    useToast().error("Vui lòng đăng nhập để đặt hàng");
+    togglePopupLogin();
+    return;
+  }
   if(localValue.value < 100){
     localValue.value++;
+    emit("change", localValue.value);
   }
 };
 const decrease = () => {
+  if(!isAuthenticated.value){
+    useToast().error("Vui lòng đăng nhập để đặt hàng");
+    togglePopupLogin();
+    return;
+  }
   if (localValue.value > 0) {
     localValue.value--;
+    emit("change", localValue.value);
   }
 };
 </script>

@@ -39,7 +39,6 @@ export default class BaseService {
                if(token){
                    this.defaultHeaders['Authorization'] = `Bearer ${token}`;
                 }
-                console.log("🚀 ~ BaseService ~ request ~ token=>", token)
             }
             return await $fetch<T>(`${this.baseUrl}${endpoint}`, {
                 method,
