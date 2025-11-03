@@ -26,12 +26,13 @@
             <input
               class="form-check-input"
               type="radio"
-              :name="`nhom-vat-tu-${nhIndex}`"
-              :id="`radioDefault-${nhIndex}-${nhom.ma_nh}`"
+              @input="selectNhomVatTu(nhom)"
+              :name="`nhom-vat-tu`"
+              :id="`radio-${nhIndex}-${nhom.ma_nh}`"
             />
             <label
               class="form-check-label fw-light"
-              :for="`radioDefault-${nhIndex}-${nhom.ma_nh}`"
+              :for="`radio-${nhIndex}-${nhom.ma_nh}`"
             >
               <small> {{ nhom.ten_nh }}</small>
             </label>
@@ -53,7 +54,7 @@
 
 <script lang="ts" setup>
 import { Offcanvas } from "bootstrap";
-import { BodyFilter, FilterItem, Item, OperatorType } from "~/model";
+import { BodyFilter, Item } from "~/model";
 const { $appServices } = useNuxtApp();
 const offcanvasInstance = ref<Offcanvas | null>(null);
 
@@ -63,6 +64,7 @@ const props = defineProps<{
 
 const emits = defineEmits<{
   (e: "close"): void;
+  (e: "select", item: Item.NhomVatTu): void;
 }>();
 const loaiNhomVatTuOptions = [
   { value: Item.LoaiNhomVatTu.NguonGoc, label: "Lọc theo nguồn gốc" },
@@ -122,6 +124,11 @@ async function getNhomVatTu() {
   } catch (error) {
     console.error("Error fetching Nhom Vat Tu:", error);
   }
+}
+function selectNhomVatTu(item: Item.NhomVatTu) {
+  console.log("Selected Nhom Vat Tu:", item);
+  useToast().success(`Đã áp dụng tìm kiếm nhóm : ${item.ten_nh}`);
+  emits("select", item);
 }
 </script>
 

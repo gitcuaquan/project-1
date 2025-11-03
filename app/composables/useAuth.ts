@@ -5,6 +5,7 @@ export const useAuth = () => {
   const user = useState<any | null>('user', () => null);
   const showLogin = useState<boolean>('showLogin', () => false);
   const showRegister = useState<boolean>('showRegister', () => false);
+
   /**
    * Đã đăng nhập hay chưa
    */
@@ -18,10 +19,18 @@ export const useAuth = () => {
     token.value = null;
   };
 
+  const setUser = (newUser: any) => {
+    user.value = newUser;
+  };
+
+  const clearUser = () => {
+    user.value = null;
+  }
+
   const togglePopupLogin = () => {
     showLogin.value = !showLogin.value;
   };
-  
+
   const togglePopupRegister = () => {
     showRegister.value = !showRegister.value;
   };
@@ -35,5 +44,8 @@ export const useAuth = () => {
     showRegister,
     togglePopupLogin,
     togglePopupRegister,
+    user,
+    setUser,
+    clearUser,
   };
 }

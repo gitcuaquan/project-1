@@ -11,25 +11,25 @@
             class="card-header shadow-sm px-1 py-1 px-md-2 bg-white border-0"
           >
             <div class="row g-2 align-items-center">
-              <div class="col-lg-5 order-1 col-10">
+              <div class="col-lg-6 order-2">
                 <UiInputSearch class="h-100" v-model="keyword" />
               </div>
-              <div class="col-2 order-2 order-lg-3 text-end col-lg-1">
-                <button
-                  @click="showMoreFilters = true"
-                  class="btn-sm btn btn-light shadow-sm border"
-                >
-                  <Funnel :size="16" />
-                </button>
-              </div>
-              <div class="col-lg-6 order-3 order-lg-2">
-                <select name="" class="form-select form-select-sm" id="">
-                  <option value="">Sắp xếp theo: Mặc định</option>
-                  <option value="">Sắp xếp theo: Tên A-Z</option>
-                  <option value="">Sắp xếp theo: Tên Z-A</option>
-                  <option value="">Sắp xếp theo: Giá thấp đến cao</option>
-                  <option value="">Sắp xếp theo: Giá cao đến thấp</option>
-                </select>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="d-flex gap-2">
+                  <select name="" class="form-select form-select-sm" id="">
+                    <option value="">Sắp xếp theo: Mặc định</option>
+                    <option value="">Sắp xếp theo: Tên A-Z</option>
+                    <option value="">Sắp xếp theo: Tên Z-A</option>
+                    <option value="">Sắp xếp theo: Giá thấp đến cao</option>
+                    <option value="">Sắp xếp theo: Giá cao đến thấp</option>
+                  </select>
+                  <button
+                    @click="showMoreFilters = true"
+                    class="btn-sm btn btn-light shadow-sm border"
+                  >
+                    <Funnel :size="16" />
+                  </button>
+                </div>
               </div>
               <!-- <div class="col-lg-7">
                 <div class="input-group w-100 input-group-sm h-100 flex-nowrap">
@@ -133,7 +133,7 @@
               class="mt-3"
               :pagination="pageState.listProduct.pagination"
               @page-change="
-                paramsListProduct.PageIndex = $event;
+                filterListProduct.pageIndex = $event;
                 getListProduct();
               "
             />
@@ -161,6 +161,7 @@
     <OrderModuleFilter
       :show="showMoreFilters"
       @close="showMoreFilters = false"
+      @select="onChangeNhomVt"
     />
   </ClientOnly>
 </template>
@@ -185,15 +186,34 @@ const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
 const showMoreFilters = ref(false);
 const keyword = useDebouncedRef("", 500);
 
-const paramsListProduct = ref<BaseParameters>({
-  PageIndex: 1,
-  PageSize: 7,
-  search: keyword.value,
-});
 const pageState = reactive({
   loading: true,
   listProduct: {} as BaseResponse<ITemsTapmed>,
 });
+
+const filterListProduct = ref(
+  new BodyFilter<ITemsTapmed>({
+    pageIndex: 1,
+    pageSize: 7,
+    filters: [
+      new FilterItem<ITemsTapmed>({
+        filterValue: "ten_vt",
+        operatorType: OperatorType.Contains,
+        valueSearch: keyword.value,
+      }),
+      new FilterItem<ITemsTapmed>({
+        filterValue: "ma_nh",
+        operatorType: OperatorType.Equal,
+        valueSearch: "",
+      }),
+      new FilterItem<ITemsTapmed>({
+        filterValue: "loai_nh",
+        operatorType: OperatorType.Equal,
+        valueSearch: "",
+      }),
+    ],
+  })
+);
 
 const filterNhomVt = ref(
   new BodyFilter<Item.NhomVatTu>({
@@ -218,10 +238,11 @@ const filterNhaSX = ref(
 const listNhomVatTu = ref<Item.NhomVatTu[]>([]);
 
 watch(keyword, (newVal) => {
-  paramsListProduct.value.search = newVal;
-  paramsListProduct.value.PageIndex = 1;
+  filterListProduct.value.setValue("ten_vt", newVal, OperatorType.Contains);
+  filterListProduct.value.pageIndex = 1;
   getListProduct();
 });
+
 watch(
   () => filterNhomVt.value,
   (val) => {
@@ -262,13 +283,27 @@ async function getNhaSX() {
 async function getListProduct() {
   pageState.loading = true;
   try {
-    const response = await $appServices.items.getItems(paramsListProduct.value);
+    const response = await $appServices.items.getItems(filterListProduct.value);
     pageState.listProduct = response;
   } catch (error) {
     console.error("Error fetching product list:", error);
   } finally {
     pageState.loading = false;
   }
+}
+function onChangeNhomVt(nhomVt: Item.NhomVatTu) {
+  filterListProduct.value.setValue(
+    "loai_nh",
+    nhomVt.loai_nh.toString(),
+    OperatorType.Equal
+  );
+  filterListProduct.value.setValue(
+    "ma_nh",
+    nhomVt.ma_nh.toString(),
+    OperatorType.Equal
+  );
+  filterListProduct.value.pageIndex = 1;
+  getListProduct();
 }
 </script>
 

@@ -33,3 +33,16 @@ export class BaseResponse<T> {
         }
     }
 };
+
+export class BaseResponseOne<T> {
+    statusCode: number;
+    isSucceeded: boolean;
+    message: string;
+    data: T | null;
+    constructor(init: Partial<BaseResponseOne<T>>) {
+        this.statusCode = init.statusCode || 400;
+        this.isSucceeded = init.isSucceeded || false;
+        this.message = init.message || '';
+        this.data = init.data || null;
+    }
+}

@@ -10,8 +10,8 @@ export default class ItemService extends BaseService {
      * @param params 
      * @returns 
      */
-    async getItems(params?: BaseParameters): Promise<BaseResponse<ITemsTapmed>> {
-        const resp = await this.get('', params);
+    async getItems(filter?: BodyFilter): Promise<BaseResponse<ITemsTapmed>> {
+        const resp = await this.post('', filter ? JSON.stringify(filter) : undefined);
         return new BaseResponse<ITemsTapmed>(resp);
     }
     /**

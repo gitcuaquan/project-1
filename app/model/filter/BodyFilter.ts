@@ -1,4 +1,5 @@
 import { FilterItem } from './FilterItem';
+import { OperatorType } from './OperatorType';
 
 /**
  * Lớp mô tả cấu trúc của một yêu cầu lọc dữ liệu với các thuộc tính cần thiết để thực hiện việc lọc, sắp xếp và phân trang.
@@ -21,5 +22,15 @@ export class BodyFilter<T = any> {
     }
     push(filterItem: FilterItem<T>) {
         this.filters.push(filterItem);
+    }
+
+    setValue(filterValue: keyof T | string, valueSearch: string, operatorType: OperatorType = OperatorType.Contains) {
+        const existingFilter = this.filters.find(f => f.filterValue === filterValue);
+        if (existingFilter) {
+            existingFilter.valueSearch = valueSearch;
+            existingFilter.operatorType = operatorType;
+        } else {
+            this.filters.push(new FilterItem<T>({ filterValue, valueSearch, operatorType }));
+        }
     }
 }

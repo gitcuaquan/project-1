@@ -53,7 +53,8 @@
                 :key="idx"
                 class="list-inline-item py-2 text-nowrap"
               >
-                {{ category }}<span v-if="idx < categories.length - 1"> |</span>
+                {{ category }}
+                <span v-if="idx < categories.length - 1"> |</span>
               </li>
             </ul>
           </div>
@@ -61,7 +62,7 @@
         <div class="col-md-3 col-4 order-2 order-md-3">
           <div class="d-flex align-items-center justify-content-end gap-1">
             <!-- Đăng nhập  đăng ký -->
-            <div class="dropdown">
+            <div v-if="!isAuthenticated" class="dropdown">
               <button
                 class="btn px-0 px-md-2 text-dark border-0"
                 type="button"
@@ -98,6 +99,47 @@
                     @click="togglePopupRegister()"
                     ><UserPlus :size="16" />
                     Đăng ký
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div v-else class="dropdown">
+              <button
+                class="btn px-0 px-md-2 text-dark border-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="d-flex align-items-center">
+                  <CircleUser :size="sizeIcon" :stroke-width="1" />
+                  <div class="ms-2 text-start d-none d-md-block">
+                    <small class="d-block">Xin chào !</small>
+                    <small class="fw-semibold d-block text-primary">
+                      {{ user?.ten_kh }}
+                    </small>
+                  </div>
+                  <ChevronDown :stroke-width="0.75" />
+                </div>
+              </button>
+              <ul class="dropdown-menu py-2 border-0 rounded-1 shadow">
+                <li>
+                  <NuxtLink
+                    to="/auth"
+                    class="dropdown-item d-flex align-items-center gap-2"
+                    style="font-size: 14px"
+                  >
+                    <UserCircle :size="16" />Tài khoản của tôi
+                  </NuxtLink>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center gap-2"
+                    style="font-size: 14px"
+                    role="button"
+                    @click="logOut()"
+                 
+                  >
+                    <LogOut :size="16" />Đăng xuất
                   </a>
                 </li>
               </ul>
@@ -146,9 +188,9 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav py-0 gap-1 flex-grow-1">
               <li class="nav-item py-2 px-3 ps-lg-0">
-                <nuxt-link to="/" class="nav-link py-1" role="button"
-                  >Trang chủ</nuxt-link
-                >
+                <nuxt-link to="/" class="nav-link py-1" role="button">
+                  Trang chủ
+                </nuxt-link>
               </li>
               <li
                 class="nav-item py-2 position-relative px-3"
@@ -174,22 +216,26 @@
     </nav>
   </div>
   <ClientOnly>
-    <SharedModalLogin
-      v-if="showLogin"
-      @close="togglePopupLogin()"
-    />
-    <SharedModalRegister
-      v-if="showRegister"
-      @close="togglePopupRegister()"
-    />
+    <SharedModalLogin v-if="showLogin" @close="togglePopupLogin()" />
+    <SharedModalRegister v-if="showRegister" @close="togglePopupRegister()" />
   </ClientOnly>
 </template>
 
 <script lang="ts" setup>
-const { $bootstrap } = useNuxtApp();
-const {showLogin, showRegister,togglePopupLogin,togglePopupRegister} = useAuth();
-const sizeIcon = ref(35);
 
+
+const { $bootstrap } = useNuxtApp();
+const {
+  isAuthenticated,
+  showLogin,
+  showRegister,
+  togglePopupLogin,
+  togglePopupRegister,
+  user,
+  clearToken,
+  clearUser
+} = useAuth();
+const sizeIcon = ref(35);
 
 const route = useRoute();
 
@@ -250,6 +296,14 @@ function checkWindowSize() {
   } else {
     sizeIcon.value = 35;
   }
+}
+
+function logOut() {
+  clearToken();
+  clearUser();
+  togglePopupLogin();
+  useRouter().push("/");
+  useToast().success("Đăng xuất thành công");
 }
 </script>
 

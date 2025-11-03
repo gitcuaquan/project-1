@@ -78,6 +78,8 @@
 const route = useRoute();
 
 import { Modal } from "bootstrap";
+import type { BaseResponseOne } from "~/model/http/BaseResponse";
+
 const { $appServices } = useNuxtApp();
 const modalInstance = ref<Modal | null>(null);
 
@@ -87,8 +89,8 @@ type LoginResponse = {
   refreshToken: string;
 };
 
-const { togglePopupRegister } = useAuth();
-const { setToken } = useAuth();
+
+const { setToken, setUser,togglePopupRegister } = useAuth();
 const emit = defineEmits(["close"]);
 
 const loading = ref(false);
@@ -126,13 +128,13 @@ function openRegister() {
 async function login() {
   loading.value = true;
   try {
-    const response = await $appServices.auth.login<LoginResponse>({
+    const response = await $appServices.auth.login<BaseResponseOne<LoginResponse>>({
       userName: data.userName,
       password: data.password,
     });
-    setToken(response.token);
-    // const user = await $appServices.customer.detail();
-    // console.log("🚀 ~ login ~ user=>", user)
+    setToken(response.data?.token!);
+    const user = await $appServices.customer.detail();
+    setUser(user.data);
     useToast().success("Đăng nhập thành công");
     useRouter().push("/auth");
     modalInstance.value?.hide();
