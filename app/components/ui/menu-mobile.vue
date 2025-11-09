@@ -72,29 +72,43 @@
 </template>
 
 <script lang="ts" setup>
-import type { BaseParameters, BaseResponse, ITemsTapmed } from "~/model";
+import {
+  OperatorType,
+  type BaseParameters,
+  type BaseResponse,
+  BodyFilter,
+  type ITemsTapmed,
+} from "~/model";
 
 const { togglePopupLogin } = useAuth();
 const { $appServices } = useNuxtApp();
 const keyword = useDebouncedRef("", 500);
-const paramsListProduct = ref<BaseParameters>({
-  PageIndex: 1,
-  PageSize: 10,
-  search: keyword.value,
-});
+const filterBody = ref<BodyFilter>(
+  new BodyFilter({
+    pageIndex: 1,
+    pageSize: 10,
+    filters: [
+      {
+        filterValue: "ten_vt",
+        operatorType: OperatorType.Contains,
+        valueSearch: "",
+      },
+    ],
+  })
+);
 const pageState = reactive({
   loading: true,
   listProduct: {} as BaseResponse<ITemsTapmed>,
 });
 watch(keyword, (newVal) => {
-  paramsListProduct.value.search = newVal;
+  filterBody.value.setValue("ten_vt", newVal);
   getListProduct();
 });
 
 async function getListProduct() {
   pageState.loading = true;
   try {
-    const response = await $appServices.items.getItems(paramsListProduct.value);
+    const response = await $appServices.items.getItems(filterBody.value);
     pageState.listProduct = response;
   } catch (error) {
     console.error("Error fetching product list:", error);
@@ -102,7 +116,9 @@ async function getListProduct() {
     pageState.loading = false;
   }
 }
-getListProduct();
+onMounted(() => {
+  getListProduct();
+});
 </script>
 
 <style scoped>

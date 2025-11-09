@@ -23,6 +23,7 @@ export const useAuth = () => {
     user.value = newUser;
   };
 
+
   const clearUser = () => {
     user.value = null;
   }

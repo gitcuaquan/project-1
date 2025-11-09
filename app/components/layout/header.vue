@@ -20,15 +20,21 @@
           </nuxt-link>
         </div>
         <div class="col-md-7 col-12 order-3 order-md-2 d-none d-md-block">
-          <div class="d-flex mt-3 flex-column w-100">
-            <!-- tìm kiếm -->
+          <div
+            :class="
+              'd-flex position-relative my-3 flex-column w-100 has-focus' +
+              (isFocusSearch ? ' has-focus' : '')
+            "
+          >
             <form
-              class="position-relative bg-white d-flex align-items-center overflow-hidden w-100 p-1 border rounded mt-md-0"
+              id="searchId"
+              class="position-relative overflow-hidden bg-white d-flex align-items-center w-100 p-1 border rounded mt-md-0"
               role="search"
             >
               <input
                 class="form-control form-control-sm me-2 border-0 shadow-none"
                 type="search"
+                ref="searchInput"
                 placeholder="Tìm kiếm sản phẩm"
                 aria-label="Search"
               />
@@ -43,8 +49,23 @@
                 </button>
               </div>
             </form>
+
+            <div v-if="isFocusSearch" class="search-backdrop"></div>
+
+            <div
+              v-if="isFocusSearch"
+              class="position-absolute shadow overflow-auto search-view rounded w-100 p-2 bg-white mt-3"
+            >
+              <div
+                class="w-100 h-100 search-view d-flex justify-content-center align-items-center"
+              >
+                <UiLoading />
+              </div>
+            </div>
+            <!-- tìm kiếm -->
+
             <!-- menu button -->
-            <ul
+            <!-- <ul
               class="list-inline mb-0 flex-nowrap w-100 overflow-auto"
               id="category-list"
             >
@@ -56,7 +77,7 @@
                 {{ category }}
                 <span v-if="idx < categories.length - 1"> |</span>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
         <div class="col-md-3 col-4 order-2 order-md-3">
@@ -233,11 +254,12 @@ const {
   clearUser,
 } = useAuth();
 
-const { totalItems,clearCart } = useCart();
+const { totalItems, clearCart } = useCart();
 const sizeIcon = ref(35);
 
 const route = useRoute();
 
+const searchInput = ref<HTMLInputElement | null>(null);
 const categories = [
   "Thuốc",
   "Thực phẩm chức năng",
@@ -266,12 +288,19 @@ const menu = [
   },
 ];
 
+const isFocusSearch = ref(false);
 const offCanvasInstance = ref<any>(null);
 
 onMounted(() => {
   checkWindowSize();
   window.addEventListener("resize", checkWindowSize);
   initOffcanvas();
+  searchInput.value?.addEventListener("focus", () => {
+    isFocusSearch.value = true;
+  });
+  searchInput.value?.addEventListener("blur", () => {
+    isFocusSearch.value = false;
+  });
 });
 watch(
   () => route.fullPath,
@@ -348,6 +377,25 @@ function logOut() {
   }
 }
 .sticky-top {
-  z-index: 99999999999;
+  z-index: 999;
+}
+.search-view {
+  z-index: 1003 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  top: 90%;
+  min-height: 50vh;
+}
+.search-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0000004b;
+  z-index: 1001;
+  backdrop-filter: blur(4px);
+}
+#searchId {
+  z-index: 1002;
 }
 </style>

@@ -21,12 +21,27 @@
                       class="form-control h-100 form-control-sm"
                       placeholder="Nhà sản xuất"
                     />
-                    <ul class="dropdown-menu w-100" style="max-height: 400px;overflow: auto;">
-                      <li style="top: -10px;" class="px-3 py-2 bg-white sticky-top shadow-sm" >
-                        <input type="search" v-model="ten_nhasx" placeholder="Tìm kiếm nhà sản xuất" class="form-control form-control-sm"/>
+                    <ul
+                      class="dropdown-menu w-100"
+                      style="max-height: 400px; overflow: auto"
+                    >
+                      <li
+                        style="top: -10px"
+                        class="px-3 py-2 bg-white sticky-top shadow-sm"
+                      >
+                        <input
+                          type="search"
+                          v-model="ten_nhasx"
+                          placeholder="Tìm kiếm nhà sản xuất"
+                          class="form-control form-control-sm"
+                        />
                       </li>
                       <li v-for="value in listNhaSanXuat">
-                        <a @click="selectNhaSX(value)" role="button" class="dropdown-item" >
+                        <a
+                          @click="selectNhaSX(value)"
+                          role="button"
+                          class="dropdown-item"
+                        >
                           {{ value.ten_nhasanxuat }}
                         </a>
                       </li>
@@ -36,7 +51,9 @@
                     @click="showMoreFilters = true"
                     class="btn-sm btn btn-light position-relative shadow-sm border"
                   >
-                    <span class="position-absolute top-0 start-100 translate-middle lh-sm badge rounded-pill bg-danger">
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle lh-sm badge rounded-pill bg-danger"
+                    >
                       {{ listFilter.length }}
                       <span class="visually-hidden">Filter count</span>
                     </span>
@@ -156,8 +173,22 @@
       <div class="col-lg-4">
         <div class="sticky-custom">
           <div class="card bg-white border-0 shadow-sm mb-3">
+            <div class="card-header border-0 bg-white shadow-sm">
+              Giỏ hàng của bạn
+              <nuxt-link to="/cart" class="float-end text-decoration-none">
+                <small>Xem giỏ hàng</small>
+              </nuxt-link>
+            </div>
             <div class="card-body">
               <SharedModuleCart />
+            </div>
+            <div class="card-footer border-0 bg-white shadow-sm">
+              <nuxt-link
+                to="/checkout"
+                class="btn btn-primary w-100 text-decoration-none"
+              >
+                Thanh toán
+              </nuxt-link>
             </div>
           </div>
           <h6>Mã giảm giá</h6>
@@ -186,13 +217,12 @@ import {
   BodyFilter,
   FilterItem,
   OperatorType,
-  type BaseParameters,
   type BaseResponse,
   type ITemsTapmed,
 } from "~/model";
 const { $appServices } = useNuxtApp();
 
-const { toggleItemInList, listFilter } = useFilter();
+const { listFilter } = useFilter();
 
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh" },
@@ -201,7 +231,6 @@ const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
 const showMoreFilters = ref(false);
 const keyword = useDebouncedRef("", 500);
 const ten_nhasx = useDebouncedRef("", 500);
-
 
 const pageState = reactive({
   loading: true,
@@ -219,20 +248,10 @@ const filterListProduct = ref(
         valueSearch: keyword.value,
       }),
       new FilterItem<ITemsTapmed>({
-        filterValue: "ma_nh",
-        operatorType: OperatorType.Equal,
-        valueSearch: "",
-      }),
-      new FilterItem<ITemsTapmed>({
-        filterValue: "loai_nh",
-        operatorType: OperatorType.Equal,
-        valueSearch: "",
-      }),
-      new FilterItem<ITemsTapmed>({
         filterValue: "ten_nhasanxuat",
         operatorType: OperatorType.Contains,
         valueSearch: "",
-      })
+      }),
     ],
   })
 );
@@ -302,6 +321,7 @@ async function getNhomVatTu() {
     console.error("Error fetching Nhom Vat Tu:", error);
   }
 }
+
 async function getNhaSX() {
   try {
     const response = await $appServices.items.getNhaSX<Item.NhaSanXuat>(
@@ -314,9 +334,14 @@ async function getNhaSX() {
 }
 
 async function getListProduct() {
+  const moreFilters = buildFilter();
+  const deepCloneFilter = JSON.parse(
+    JSON.stringify(filterListProduct.value)
+  ) as BodyFilter<ITemsTapmed>;
   pageState.loading = true;
   try {
-    const response = await $appServices.items.getItems(filterListProduct.value);
+    deepCloneFilter.filters = deepCloneFilter.filters.concat(moreFilters);
+    const response = await $appServices.items.getItems(deepCloneFilter);
     pageState.listProduct = response;
   } catch (error) {
     console.error("Error fetching product list:", error);
@@ -324,8 +349,26 @@ async function getListProduct() {
     pageState.loading = false;
   }
 }
+
+function buildFilter() {
+  const _filter: FilterItem<ITemsTapmed>[] = [];
+  for (const item of listFilter.value) {
+    Object.entries(item).forEach(([key, value]) => {
+      if (key !== "ten_nh") {
+        _filter.push(
+          new FilterItem<ITemsTapmed>({
+            filterValue: key as keyof ITemsTapmed,
+            operatorType: OperatorType.Equal,
+            valueSearch: value.toString(),
+          })
+        );
+      }
+    });
+  }
+  return _filter;
+}
 function applyFilter() {
-  console.log("Applied Filters:", listFilter.value);
+  getListProduct();
 }
 
 function selectNhaSX(nhasx: Item.NhaSanXuat) {

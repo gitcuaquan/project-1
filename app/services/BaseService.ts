@@ -10,13 +10,13 @@ export interface FetchOptions {
 
 
 export default class BaseService {
-    protected baseUrl: string = 'https://api-tapmed.sse.net.vn/api/';
+    protected baseUrl: string = '/api/';
     protected defaultHeaders: Record<string, string>
     private NAME_TOKEN_IN_COOKIE: string = 'tapmed_token_access';
     constructor(endpoint: string) {
         this.baseUrl += endpoint;
         this.defaultHeaders = {
-            "api-sse-code": "e0cc6288e60584582eb706fd6c2612e1"
+
         }
     }
     /**
@@ -34,20 +34,27 @@ export default class BaseService {
     ): Promise<T> {
         try {
             const { method = 'GET', params, body, headers, auth } = options
-            if(auth){
-               const token = useCookie(this.NAME_TOKEN_IN_COOKIE).value;
-               if(token){
-                   this.defaultHeaders['Authorization'] = `Bearer ${token}`;
+            const requestHeaders = { ...this.defaultHeaders, ...headers }
+
+            if (auth) {
+                const _token = useCookie(this.NAME_TOKEN_IN_COOKIE).value;
+                if (_token) {
+                    requestHeaders['Authorization'] = `Bearer ${_token}`;
                 }
             }
+
+            // Tự động set Content-Type nếu có body
+            if (body) {
+                if (!requestHeaders['Content-Type']) {
+                    requestHeaders['Content-Type'] = 'application/json'
+                }
+            }
+
             return await $fetch<T>(`${this.baseUrl}${endpoint}`, {
                 method,
                 params,
                 body,
-                headers: {
-                    ...this.defaultHeaders,
-                    ...headers,
-                },
+                headers: requestHeaders,
             })
         } catch (error: any) {
             console.error(`[BaseService Error]:`, error)

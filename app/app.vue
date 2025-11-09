@@ -4,21 +4,23 @@
     <NuxtPage />
   </NuxtLayout>
   <UiToastContainer />
-  <UiMenuMobile />
+  <UiMenuMobile v-if="isMobile" />
 </template>
 
 <script setup lang="ts">
-import { NuxtLayout } from "#components";
-const { $appServices } = useNuxtApp();
-const { setUser, clearUser } = useAuth();
 
-async function getUser() {
-  try {
-    const response = await $appServices.customer.detail();
-    setUser(response.data);
-  } catch (error) {
-    clearUser();
+  const isMobile = ref(false)
+
+  function checkIsMobile() {
+    isMobile.value = window.innerWidth <= 768
   }
-}
-getUser();
+
+  onMounted(() => {
+    checkIsMobile()
+    window.addEventListener('resize', checkIsMobile)
+  })
+
+  onBeforeUnmount(() => {
+    window.removeEventListener('resize', checkIsMobile)
+  })
 </script>

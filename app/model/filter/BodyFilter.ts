@@ -39,4 +39,11 @@ export class BodyFilter<T = any> {
             this.filters[existingFilterIndex].valueSearch = '';
         }
     }
+
+    removeFilter(filterValue: keyof T | string,valueSearch?:string) {
+        const existingFilterIndex = this.filters.findIndex(f => f.filterValue === filterValue && (valueSearch ? f.valueSearch === valueSearch : true));
+        if (existingFilterIndex !== -1) {
+            this.filters.splice(existingFilterIndex, 1);
+        }
+    }
 }

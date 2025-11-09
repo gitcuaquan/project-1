@@ -1,4 +1,4 @@
-import type { Customer } from "~/model";
+
 import BaseService from "./BaseService";
 
 export default class AuthService extends BaseService {

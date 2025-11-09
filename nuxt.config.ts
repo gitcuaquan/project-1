@@ -33,5 +33,9 @@ export default defineNuxtConfig({
     }
   },
   plugins: ['~/plugins/bootstrap.client.ts', '~/plugins/appServices.ts'],
-
+  runtimeConfig: {
+    public: {
+      apiBase: 'https://api-tapmed.sse.net.vn/api'
+    }
+  },
 })

@@ -1,0 +1,28 @@
+export default defineNuxtPlugin(async (nuxtApp) => {
+    const { token, setUser, clearToken, clearUser } = useAuth();
+    if (!token.value) {
+        return;
+    }
+    try {
+        interface ApiResponse {
+            data: any; // Replace 'any' with the actual type if known
+            [key: string]: any;
+        }
+        const { data, error } = await useFetch<ApiResponse>('/api/CustomerTapmed/details', {
+            method: 'POST',
+            body: {},
+            headers: {
+                'Authorization': `Bearer ${token.value}`
+            }
+        });
+        if (error.value) {
+            clearToken();
+            clearUser();
+            return;
+        }
+        data.value?.data && setUser(data.value.data);
+    } catch (error) {
+        console.error('Error fetching user details:', error);
+        // Xử lý lỗi nếu cần thiết
+    }
+});
