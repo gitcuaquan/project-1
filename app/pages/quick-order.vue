@@ -211,6 +211,16 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+  title: "Đặt hàng nhanh - Sỉ Dược",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Đặt hàng nhanh các sản phẩm y tế và chăm sóc sức khỏe chất lượng cao từ Sỉ Dược. Tận hưởng quy trình mua sắm tiện lợi và nhanh chóng với đa dạng sản phẩm.",
+    },
+  ],
+});
 import type { ProjectConfig } from "~/model";
 import { Item } from "~/model/Item";
 import {

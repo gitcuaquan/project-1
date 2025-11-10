@@ -57,9 +57,33 @@
               class="position-absolute shadow overflow-auto search-view rounded w-100 p-2 bg-white mt-3"
             >
               <div
+                v-if="loading"
                 class="w-100 h-100 search-view d-flex justify-content-center align-items-center"
               >
                 <UiLoading />
+              </div>
+              <div v-else>
+                <ul>
+                  <li
+                    v-for="product in listProduct?.getData || []"
+                    :key="product.ma_vt"
+                    class="d-flex align-items-center gap-2 py-2 border-bottom"
+                  >
+                    <NuxtLink :to="`/product/${product.ma_vt}`">
+                      <img
+                        :src="
+                          product.image_urls?.[0]?.url ||
+                          '/images/image-error.svg'
+                        "
+                        :alt="product.ten_vt"
+                        style="width: 50px; height: 50px; object-fit: contain"
+                      />
+                      <div class="d-flex flex-column">
+                        <span class="fw-medium">{{ product.ten_vt }}</span>
+                      </div>
+                    </NuxtLink>
+                  </li>
+                </ul>
               </div>
             </div>
             <!-- tìm kiếm -->
@@ -242,6 +266,14 @@
 </template>
 
 <script lang="ts" setup>
+import {
+  BaseResponse,
+  BodyFilter,
+  FilterItem,
+  OperatorType,
+  type ITemsTapmed,
+} from "~/model";
+
 const { $bootstrap } = useNuxtApp();
 const {
   isAuthenticated,
@@ -256,8 +288,9 @@ const {
 
 const { totalItems, clearCart } = useCart();
 const sizeIcon = ref(35);
-
+const loading = ref(false);
 const route = useRoute();
+const { $appServices } = useNuxtApp();
 
 const searchInput = ref<HTMLInputElement | null>(null);
 const categories = [
@@ -287,8 +320,26 @@ const menu = [
     url: "/policies",
   },
 ];
-
+const filterListProduct = ref(
+  new BodyFilter<ITemsTapmed>({
+    pageIndex: 1,
+    pageSize: 20,
+    filters: [
+      new FilterItem<ITemsTapmed>({
+        filterValue: "ten_vt",
+        operatorType: OperatorType.Contains,
+        valueSearch: "",
+      }),
+      new FilterItem<ITemsTapmed>({
+        filterValue: "ten_nhasanxuat",
+        operatorType: OperatorType.Contains,
+        valueSearch: "",
+      }),
+    ],
+  })
+);
 const isFocusSearch = ref(false);
+const listProduct = ref<BaseResponse<ITemsTapmed> | null>(null);
 const offCanvasInstance = ref<any>(null);
 
 onMounted(() => {
@@ -299,7 +350,9 @@ onMounted(() => {
     isFocusSearch.value = true;
   });
   searchInput.value?.addEventListener("blur", () => {
-    isFocusSearch.value = false;
+   setTimeout(() => {
+      isFocusSearch.value = false;
+    }, 200);
   });
 });
 watch(
@@ -310,6 +363,20 @@ watch(
     }
   }
 );
+watch(
+  () => isFocusSearch.value,
+  (newVal) => {
+    if (listProduct.value == null && newVal === true) {
+      getListProduct();
+    }
+    if (newVal === false) {
+      window.document.body.style.overflow = "auto";
+    } else {
+      window.document.body.style.overflow = "hidden";
+    }
+  }
+);
+
 function initOffcanvas() {
   const offcanvasElement = document.getElementById("offcanvasNavbar");
   if (offcanvasElement) {
@@ -317,6 +384,19 @@ function initOffcanvas() {
     offCanvasInstance.value = new $bootstrap.Offcanvas(offcanvasElement);
   }
 }
+
+async function getListProduct() {
+  try {
+    loading.value = true;
+    const response = await $appServices.items.getItems(filterListProduct.value);
+    listProduct.value = response;
+  } catch (error) {
+    console.error("Error fetching product list:", error);
+  } finally {
+    loading.value = false;
+  }
+}
+
 function checkWindowSize() {
   const width = window.innerWidth;
   if (width < 768) {
@@ -383,7 +463,8 @@ function logOut() {
   z-index: 1003 !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   top: 90%;
-  min-height: 50vh;
+  height: 50vh;
+  overflow: auto;
 }
 .search-backdrop {
   position: fixed;
