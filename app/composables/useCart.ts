@@ -4,14 +4,19 @@ export const useCart = () => {
   const { isAuthenticated } = useAuth()
   const { error } = useToast()
   const cart = useState<ITemsTapmed[]>('cart', () => [])
-  const addToCart = (product: ITemsTapmed) => {
+  const addToCart = (product: ITemsTapmed, auto?: boolean) => {
     const existingProduct = cart.value.find((item) => item.ma_vt === product.ma_vt)
     if(product.quantity! <=0){
       removeFromCart(product.ma_vt)
       return
     }
     if (existingProduct) {
-      existingProduct.quantity = product.quantity
+      if(!auto){
+        existingProduct.quantity = product.quantity
+      }else{
+        existingProduct.quantity = (existingProduct.quantity || 0) + 1
+      }
+      
     } else {
       cart.value.push({ ...product, quantity: 1 })
     }

@@ -35,6 +35,7 @@
                 class="form-control form-control-sm me-2 border-0 shadow-none"
                 type="search"
                 ref="searchInput"
+                v-model="keywordSearch"
                 placeholder="Tìm kiếm sản phẩm"
                 aria-label="Search"
               />
@@ -54,7 +55,7 @@
 
             <div
               v-if="isFocusSearch"
-              class="position-absolute shadow overflow-auto search-view rounded w-100 p-2 bg-white mt-3"
+              class="position-absolute shadow overflow-auto p-2 search-view rounded w-100 bg-white mt-3"
             >
               <div
                 v-if="loading"
@@ -63,23 +64,33 @@
                 <UiLoading />
               </div>
               <div v-else>
-                <ul>
+                <ul class="list-unstyled">
                   <li
                     v-for="product in listProduct?.getData || []"
                     :key="product.ma_vt"
-                    class="d-flex align-items-center gap-2 py-2 border-bottom"
+                    class="d-flex item-hover align-items-center gap-2 ps-0 py-1"
                   >
-                    <NuxtLink :to="`/product/${product.ma_vt}`">
-                      <img
-                        :src="
-                          product.image_urls?.[0]?.url ||
-                          '/images/image-error.svg'
-                        "
-                        :alt="product.ten_vt"
-                        style="width: 50px; height: 50px; object-fit: contain"
-                      />
-                      <div class="d-flex flex-column">
-                        <span class="fw-medium">{{ product.ten_vt }}</span>
+                    <NuxtLink
+                      :to="`/product/${product.ma_vt}`"
+                      class="text-decoration-none text-dark"
+                    >
+                      <div class="d-flex gap-2 align-items-center">
+                        <div class="ratio ratio-1x1 border rounded" style="width: 60px">
+                          <img
+                            :src="
+                              product.image_urls?.[0]?.url ||
+                              '/images/image-error.svg'
+                            "
+                            :alt="product.ten_vt"
+                            style="
+                              
+                              object-fit: contain;
+                            "
+                          />
+                        </div>
+                        <div class="d-flex flex-column">
+                          <span class="fw-medium">{{ product.ten_vt }}</span>
+                        </div>
                       </div>
                     </NuxtLink>
                   </li>
@@ -291,6 +302,7 @@ const sizeIcon = ref(35);
 const loading = ref(false);
 const route = useRoute();
 const { $appServices } = useNuxtApp();
+const keywordSearch = useDebouncedRef<string>("", 500);
 
 const searchInput = ref<HTMLInputElement | null>(null);
 const categories = [
@@ -302,6 +314,10 @@ const categories = [
 ];
 
 const menu = [
+  {
+    name: "Sản phẩm",
+    url: "/product",
+  },
   {
     name: "Đặt hàng nhanh",
     url: "/quick-order",
@@ -341,7 +357,17 @@ const filterListProduct = ref(
 const isFocusSearch = ref(false);
 const listProduct = ref<BaseResponse<ITemsTapmed> | null>(null);
 const offCanvasInstance = ref<any>(null);
-
+watch(
+  () => keywordSearch.value,
+  (newVal) => {
+    filterListProduct.value.setValue(
+      "ten_vt",
+      keywordSearch.value,
+      OperatorType.Contains
+    );
+    getListProduct();
+  }
+);
 onMounted(() => {
   checkWindowSize();
   window.addEventListener("resize", checkWindowSize);
@@ -350,7 +376,7 @@ onMounted(() => {
     isFocusSearch.value = true;
   });
   searchInput.value?.addEventListener("blur", () => {
-   setTimeout(() => {
+    setTimeout(() => {
       isFocusSearch.value = false;
     }, 200);
   });
@@ -417,6 +443,12 @@ function logOut() {
 </script>
 
 <style scoped>
+.item-hover {
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: #f8f9fa;
+  }
+}
 #bottom-header {
   z-index: 1;
 }
