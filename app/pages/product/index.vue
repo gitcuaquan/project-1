@@ -4,59 +4,171 @@
   <div class="container">
     <div class="row mt-3">
       <div class="col-lg-3">
-        <div class="accordion accordion-flush" id="nhomAccordion">
-          <div
-            class="accordion-item"
-            v-for="(value, name, nhIndex) in listNhomVatTuGrouped"
-            :key="name || nhIndex"
-          >
-            <h2 class="accordion-header" :id="`heading-${nhIndex}`">
-              <button
-                class="accordion-button px-2 collapsed text-capitalize fw-bold"
-                type="button"
-                data-bs-toggle="collapse"
-                :data-bs-target="`#collapse-${nhIndex}`"
-                aria-expanded="false"
-                :aria-controls="`collapse-${nhIndex}`"
-              >
-                <Funnel :size="16" :stroke-width="1" class="me-2" /> {{ name }}
-              </button>
-            </h2>
-            <div
-              :id="`collapse-${nhIndex}`"
-              :class="`accordion-collapse mb-1 collapse ${
-                nhIndex == 0 ? 'show' : ''
-              }`"
-              :aria-labelledby="`heading-${nhIndex}`"
-              data-bs-parent="#nhomAccordion"
+        <div class="mb-3">
+          <div class="d-flex gap-2 align-items-center">
+            <input
+              v-model="keyword"
+              type="text"
+              class="form-control"
+              placeholder="Tìm kiếm sản phẩm..."
+            />
+            <!-- Offcanvas trigger (mobile only) -->
+            <button
+              class="btn h-100 d-block d-lg-none btn-outline-secondary"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#nhomOffcanvas"
+              aria-controls="nhomOffcanvas"
             >
+              <Funnel :size="16" />
+            </button>
+          </div>
+        </div>
+        <div class="d-none d-lg-block">
+          <div
+            v-if="loadingNhomVt"
+            class="text-center d-flex justify-content-center align-items-center w-100 p-5 my-3"
+          >
+            <ui-loading />
+          </div>
+          <div
+            v-else
+            class="accordion accordion-flush"
+            id="nhomAccordionDesktop"
+          >
+            <div
+              class="accordion-item"
+              v-for="(value, name, nhIndex) in listNhomVatTuGrouped"
+              :key="`mobile-${name}-${nhIndex}`"
+            >
+              <h2 class="accordion-header" :id="`heading-mobile-${nhIndex}`">
+                <button
+                  class="accordion-button px-2 collapsed text-capitalize fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  :data-bs-target="`#collapse-mobile-${nhIndex}`"
+                  :aria-expanded="nhIndex === 0 ? 'true' : 'false'"
+                  :aria-controls="`collapse-mobile-${nhIndex}`"
+                >
+                  <Funnel :size="16" :stroke-width="1" class="me-2" />
+                  {{ name }}
+                </button>
+              </h2>
               <div
-                class="accordion-body py-0 pt-1 px-2"
+                :id="`collapse-mobile-${nhIndex}`"
+                :class="[
+                  'accordion-collapse',
+                  'mb-1',
+                  'collapse',
+                  nhIndex === 0 ? 'show' : '',
+                ]"
+                :aria-labelledby="`heading-mobile-${nhIndex}`"
+                data-bs-parent="#nhomAccordionMobile"
               >
-                <template v-if="value && value.length">
-                  <div
-                    v-for="nhom in value"
-                    :key="nhom.ma_nh"
-                    class="form-check w-100"
-                  >
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      :name="`nhom-vat-tu`"
-                      @input="toggleNhomVt(nhom)"
-                      :id="`radio-${nhIndex}-${nhom.ma_nh}`"
-                    />
-                    <label
-                      class="form-check-label"
-                      :for="`radio-${nhIndex}-${nhom.ma_nh}`"
+                <div class="accordion-body py-0 pt-1 px-2">
+                  <template v-if="value && value.length">
+                    <div
+                      v-for="nhom in value"
+                      :key="`mobile-${nhom.ma_nh}`"
+                      class="form-check w-100"
                     >
-                      <small>{{ nhom.ten_nh }}</small>
-                    </label>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        :name="`nhom-vat-tu`"
+                        @input="toggleNhomVt(nhom)"
+                        :id="`radio-mobile-${nhIndex}-${nhom.ma_nh}`"
+                      />
+                      <label
+                        class="form-check-label"
+                        :for="`radio-mobile-${nhIndex}-${nhom.ma_nh}`"
+                      >
+                        <small>{{ nhom.ten_nh }}</small>
+                      </label>
+                    </div>
+                  </template>
+                  <template v-else>
+                    <div class="text-muted small">Không có mục</div>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile offcanvas with accordion duplicate (visible on small screens) -->
+        <div
+          class="offcanvas offcanvas-start d-lg-none"
+          tabindex="-1"
+          id="nhomOffcanvas"
+          aria-labelledby="nhomOffcanvasLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="nhomOffcanvasLabel">Bộ lọc</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="accordion accordion-flush" id="nhomAccordionMobile">
+              <div
+                class="accordion-item"
+                v-for="(value, name, nhIndex) in listNhomVatTuGrouped"
+                :key="`mobile-${name}-${nhIndex}`"
+              >
+                <h2 class="accordion-header" :id="`heading-mobile-${nhIndex}`">
+                  <button
+                    class="accordion-button px-2 collapsed text-capitalize fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    :data-bs-target="`#collapse-mobile-${nhIndex}`"
+                    :aria-expanded="nhIndex === 0 ? 'true' : 'false'"
+                    :aria-controls="`collapse-mobile-${nhIndex}`"
+                  >
+                    <Funnel :size="16" :stroke-width="1" class="me-2" />
+                    {{ name }}
+                  </button>
+                </h2>
+                <div
+                  :id="`collapse-mobile-${nhIndex}`"
+                  :class="[
+                    'accordion-collapse',
+                    'mb-1',
+                    'collapse',
+                    nhIndex === 0 ? 'show' : '',
+                  ]"
+                  :aria-labelledby="`heading-mobile-${nhIndex}`"
+                  data-bs-parent="#nhomAccordionMobile"
+                >
+                  <div class="accordion-body py-0 pt-1 px-2">
+                    <template v-if="value && value.length">
+                      <div
+                        v-for="nhom in value"
+                        :key="`mobile-${nhom.ma_nh}`"
+                        class="form-check w-100"
+                      >
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          :name="`nhom-vat-tu`"
+                          @input="toggleNhomVt(nhom)"
+                          :id="`radio-mobile-${nhIndex}-${nhom.ma_nh}`"
+                        />
+                        <label
+                          class="form-check-label"
+                          :for="`radio-mobile-${nhIndex}-${nhom.ma_nh}`"
+                        >
+                          <small>{{ nhom.ten_nh }}</small>
+                        </label>
+                      </div>
+                    </template>
+                    <template v-else>
+                      <div class="text-muted small">Không có mục</div>
+                    </template>
                   </div>
-                </template>
-                <template v-else>
-                  <div class="text-muted small">Không có mục</div>
-                </template>
+                </div>
               </div>
             </div>
           </div>
@@ -140,12 +252,13 @@ const { isAuthenticated, togglePopupLogin } = useAuth();
 const keyword = useDebouncedRef("", 500);
 const nhomVtSleected = ref<Array<Item.NhomVatTu>>([]);
 const loaiNhomVatTuOptions = [
-  { value: Item.LoaiNhomVatTu.PhanLoai, label: "Phân loại" },
   { value: Item.LoaiNhomVatTu.CongDung, label: "Công dụng" },
+  { value: Item.LoaiNhomVatTu.PhanLoai, label: "Phân loại" },
   { value: Item.LoaiNhomVatTu.NguonGoc, label: "Nguồn gốc" },
   { value: Item.LoaiNhomVatTu.PhanNhom, label: "Phân nhóm" },
   { value: Item.LoaiNhomVatTu.QuyCach, label: "Quy cách" },
 ];
+const loadingNhomVt = ref(false);
 
 const filterNhomVt = ref(
   new BodyFilter<Item.NhomVatTu>({
@@ -163,11 +276,6 @@ const filterListProduct = ref(
         filterValue: "ten_vt",
         operatorType: OperatorType.Contains,
         valueSearch: keyword.value,
-      }),
-      new FilterItem<ITemsTapmed>({
-        filterValue: "ten_nhasanxuat",
-        operatorType: OperatorType.Contains,
-        valueSearch: "",
       }),
     ],
   })
@@ -187,6 +295,12 @@ const listNhomVatTuGrouped = computed(() => {
 watch(
   () => [keyword.value],
   () => {
+    filterListProduct.value.pageIndex = 1;
+    filterListProduct.value.setValue(
+      "ten_vt",
+      keyword.value,
+      OperatorType.Contains
+    );
     refresh(); // Gọi lại API khi giá trị thay đổi
   },
   { deep: true }
@@ -211,6 +325,7 @@ onMounted(() => {
   getNhomVatTu();
 });
 async function getNhomVatTu() {
+  loadingNhomVt.value = true;
   try {
     const response = await $appServices.items.getNhomVatTu<Item.NhomVatTu>(
       filterNhomVt.value
@@ -218,6 +333,8 @@ async function getNhomVatTu() {
     listNhomVatTu.value = response.getData || [];
   } catch (error) {
     console.error("Error fetching Nhom Vat Tu:", error);
+  } finally {
+    loadingNhomVt.value = false;
   }
 }
 function onPageChange(newPage: number) {
@@ -259,7 +376,7 @@ function buildFilter() {
 }
 
 function fncAddToCart(item: ITemsTapmed) {
-  if(!isAuthenticated.value){
+  if (!isAuthenticated.value) {
     useToast().error("Bạn cần đăng nhập để thêm sản phẩm vào giỏ hàng");
     togglePopupLogin();
     return;

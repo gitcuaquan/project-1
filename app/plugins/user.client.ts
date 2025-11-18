@@ -1,8 +1,10 @@
 export default defineNuxtPlugin(async (nuxtApp) => {
     const { token, setUser, clearToken, clearUser } = useAuth();
+    const { initCartFromStorage } = useCart();
     if (!token.value) {
         return;
     }
+    initCartFromStorage();
     try {
         interface ApiResponse {
             data: any; // Replace 'any' with the actual type if known

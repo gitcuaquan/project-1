@@ -31,3 +31,45 @@ export class Customer {
         this.Certificate3 = init.Certificate3 || '';
     }
 }
+
+export class CustomerDetail {
+    ma_kh: string;
+    ten_kh: string;
+    ten_kh2: string;
+    kh_yn: boolean;
+    cc_yn: boolean;
+    nv_yn: boolean;
+    ma_so_thue: string | null;
+    dia_chi: string;
+    dien_thoai: string;
+    fax: string | null;
+    e_mail: string | null;
+    cccd: string;
+    ten_thanh_pho: string;
+    ten_xa_phuong: string;
+    co_so: string;
+    url_giay_to1: string | null;
+    url_giay_to2: string | null;
+    url_giay_to3: string | null;
+
+    constructor(init: Partial<CustomerDetail>) {
+        this.ma_kh = init.ma_kh || '';
+        this.ten_kh = init.ten_kh || '';
+        this.ten_kh2 = init.ten_kh2 || '';
+        this.kh_yn = init.kh_yn ?? false;
+        this.cc_yn = init.cc_yn ?? false;
+        this.nv_yn = init.nv_yn ?? false;
+        this.ma_so_thue = init.ma_so_thue ?? null;
+        this.dia_chi = init.dia_chi || '';
+        this.dien_thoai = init.dien_thoai || '';
+        this.fax = init.fax ?? null;
+        this.e_mail = init.e_mail ?? null;
+        this.cccd = init.cccd || '';
+        this.ten_thanh_pho = init.ten_thanh_pho || '';
+        this.ten_xa_phuong = init.ten_xa_phuong || '';
+        this.co_so = init.co_so || '';
+        this.url_giay_to1 = init.url_giay_to1 ?? null;
+        this.url_giay_to2 = init.url_giay_to2 ?? null;
+        this.url_giay_to3 = init.url_giay_to3 ?? null;
+    }
+}

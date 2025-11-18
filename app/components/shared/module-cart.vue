@@ -29,17 +29,28 @@
               </NuxtLink>
             </div>
             <div
+              v-if="item.gia_nt2"
               class="d-flex gap-2 justify-content-start align-items-center"
             >
-              <div>{{ item.quantity }}  <span class="text-muted">( {{ item.dvt }} )</span></div>
+              <div>{{ item.quantity }} {{ item.dvt }}</div>
               <X :size="16" />
               <div>
                 <span class="text-danger fw-bold">
                   {{ formatCurrency(item.gia_nt2) || "Liên hệ" }}
                 </span>
-                <span class="text-muted">/ {{ item.dvt }}</span>
+                <span class="text-muted">/{{ item.dvt }}</span>
               </div>
             </div>
+            <div v-else>
+              <span class="text-danger">Liên hệ</span>
+            </div>
+          </td>
+          <td>
+            <Trash2
+              :size="16"
+              :stroke-width="1"
+              @click="removeFromCart(item.ma_vt)"
+            />
           </td>
         </tr>
       </tbody>
@@ -48,7 +59,7 @@
 </template>
 
 <script lang="ts" setup>
-const { cart, totalItems } = useCart();
+const { cart, totalItems, removeFromCart } = useCart();
 </script>
 
 <style></style>

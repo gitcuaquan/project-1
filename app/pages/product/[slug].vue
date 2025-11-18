@@ -29,120 +29,108 @@
 
           <!-- Rating and Reviews -->
           <div class="d-flex align-items-center gap-2 mb-3">
-            <span class="text-muted me-2">00049150</span>
-            <div class="me-3 d-flex gap-1 align-items-center">
+            <span class="text-muted me-2"
+              >Mã sản phẩm:
+              <b>{{ detailProduct?.ma_vt || "00000000" }}</b></span
+            >
+            <!-- <div class="me-3 d-flex gap-1 align-items-center">
               <Star :size="16" class="text-warning" :stroke-width="1" />
               <span class="fw-bold">5</span>
-            </div>
-            <span class="text-muted me-3">5 đánh giá</span>
-            <span class="text-muted">21 bình luận</span>
+            </div> -->
+            <!-- <span class="text-muted me-3">5 đánh giá</span>
+            <span class="text-muted">21 bình luận</span> -->
           </div>
+
 
           <!-- Price -->
           <div class="price-section mb-4">
             <div class="d-flex align-items-center mb-2">
-              <h2 class="h2 text-primary fw-bold mb-0 me-3">937.500đ</h2>
-              <span class="text-muted">/ Hộp</span>
+              <h2 class="h2 text-primary fw-bold mb-0 me-3">
+                {{
+                  (detailProduct?.gia_nt2 || 0) > 0
+                    ? formatCurrency(detailProduct?.gia_nt2 || 0)
+                    : "Liên hệ"
+                }}
+              </h2>
+              <span v-if="(detailProduct?.gia_nt2 || 0) > 0" class="text-muted"
+                >/ Hộp</span
+              >
             </div>
-            <p class="text-muted text-decoration-line-through mb-3">
-              1.250.000đ
+            <p
+              v-if="detailProduct?.gia2"
+              class="text-muted text-decoration-line-through mb-3"
+            >
+              {{ formatCurrency(detailProduct?.gia2 || 0) }}
             </p>
           </div>
-          <div
-            id="action"
-            class="row  mt-3 bg-white align-items-end pb-3 g-3"
-          >
+          <div id="action" class="row mt-3 bg-white align-items-end pb-3 g-3">
             <div class="col-md-3">
               <label class="form-label fw-bold">Số lượng</label>
-              <br>
+              <br />
               <UiBtnGroup />
             </div>
             <div class="col-md-6">
-              <button id="add-to-cart" class="btn btn-primary  px-5">
+              <button id="add-to-cart" class="btn btn-primary px-5">
                 Thêm vào giỏ hàng <ShoppingBag />
               </button>
             </div>
           </div>
+          <div class="ingredients-section">
+            <h6 class="fw-bold mb-3">Mô tả sản phẩm</h6>
+            <p class="small text-muted line-break-container">
+              {{ detailProduct?.mo_ta_san_pham }}
+            </p>
+          </div>
           <!-- Product Details Table -->
-          <div class="table-responsive mb-4">
+          <div class="table-responsive my-3">
             <table class="table table-borderless">
               <tbody>
                 <tr>
-                  <td class="text-muted py-2" style="width: 40%">
-                    Chọn đơn vị tính
+                  <td class="text-muted py-2" style="width: 200px">
+                    Đơn vị tính
                   </td>
                   <td class="py-2">
-                    <button class="btn btn-outline-primary btn-sm rounded-pill">
-                      Hộp
-                    </button>
+                    {{ detailProduct?.dvt }}
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-muted py-2">Tên chính hãng</td>
-                  <td class="py-2">Thực phẩm bảo vệ sức khỏe ASHAMI GOLD</td>
-                </tr>
-                <tr>
-                  <td class="text-muted py-2">Danh mục</td>
-                  <td class="py-2">
-                    <span class="badge bg-light text-primary"
-                      >Thần kinh não</span
-                    >
+                  <td class="text-muted py-2">Thành phần</td>
+                  <td class="py-2 line-break-container">
+                    {{ detailProduct?.thanh_phan }}
                   </td>
                 </tr>
                 <tr>
-                  <td class="text-muted py-2">Số đăng ký</td>
-                  <td class="py-2">548/2025/ĐKSP</td>
+                  <td class="text-muted py-2">Công dụng</td>
+                  <td class="py-2 line-break-container">
+                    {{ detailProduct?.cong_dung }}
+                  </td>
                 </tr>
                 <tr>
-                  <td class="text-muted py-2">Dạng bào chế</td>
-                  <td class="py-2">Viên nang cứng</td>
+                  <td class="text-muted py-2">Cách dùng</td>
+                  <td class="py-2 line-break-container">
+                    {{ detailProduct?.cach_dung }}
+                  </td>
                 </tr>
                 <tr>
-                  <td class="text-muted py-2">Quy cách</td>
-                  <td class="py-2">Hộp 60 Viên</td>
+                  <td class="text-muted py-2">Tác dụng phụ</td>
+                  <td class="py-2 line-break-container">
+                    {{ detailProduct?.tac_dung_phu }}
+                  </td>
                 </tr>
                 <tr>
-                  <td class="text-muted py-2">Xuất xứ thương hiệu</td>
-                  <td class="py-2">Nhật Bản</td>
+                  <td class="text-muted py-2">Bảo quản</td>
+                  <td class="py-2 line-break-container">
+                    {{ detailProduct?.bao_quan }}
+                  </td>
                 </tr>
                 <tr>
-                  <td class="text-muted py-2">Nhà sản xuất</td>
-                  <td class="py-2">GENSEI CO.,LTD</td>
-                </tr>
-                <tr>
-                  <td class="text-muted py-2">Nước sản xuất</td>
-                  <td class="py-2">Nhật Bản</td>
+                  <td class="text-muted py-2">Lưu ý</td>
+                  <td class="py-2 line-break-container">
+                    {{ detailProduct?.luu_y }}
+                  </td>
                 </tr>
               </tbody>
             </table>
-          </div>
-
-          <!-- Certificate Link -->
-          <div class="mb-4">
-            <a href="#" class="text-primary text-decoration-none">
-              <i class="fas fa-certificate me-1"></i>
-              Xem giấy công bố sản phẩm
-            </a>
-          </div>
-
-          <!-- Ingredients -->
-          <div class="ingredients-section">
-            <h6 class="fw-bold mb-3">Thành phần</h6>
-            <p class="small text-muted">
-              Hoa cúc tím, Y-amino-butyric acid,
-              <span class="text-primary">Chùm ngây</span>,
-              <span class="text-primary">L-theanine</span>, Chiết xuất lá dâu
-              tằm, <span class="text-primary">Hoa hiên</span>,
-              <span class="text-primary">Glycine</span>,
-              <span class="text-primary">L-Tryptophan</span>, Dầu cá tinh luyện,
-              Dầu cây Ban Âu, <span class="text-primary">Tầm sen</span>, Rễ nữ
-              lang, Hoa cúc vàng, Lò hội, Bột chiết xuất từ hạt đậu mèo rừng, Lá
-              la bô ma, <span class="text-primary">Nhan Sâm</span>,
-              <span class="text-primary">Đông trùng hạ thảo</span>,
-              <span class="text-primary">Vitamin B1</span>,
-              <span class="text-primary">Vitamin B2</span>, Vitamin B6, Chiết
-              xuất hoa nghệ tây
-            </p>
           </div>
         </div>
       </div>
@@ -185,8 +173,8 @@ const { data: detailProduct } = await useAsyncData(
 // 🧠 Reactive useHead — sẽ tự update khi detailProduct.value đổi
 useHead(() => ({
   title: detailProduct.value
-    ? `${detailProduct.value.ten_vt} - Mua ngay tại TAPMED`
-    : "Chi tiết sản phẩm - TAPMED",
+    ? `${detailProduct.value.ten_vt} - Mua ngay tại Sỉ Dược`
+    : "Chi tiết sản phẩm - Sỉ Dược",
   meta: [
     {
       name: "description",
@@ -249,5 +237,8 @@ useHead(() => ({
 }
 .small {
   font-size: 0.875rem;
+}
+.line-break-container {
+  white-space: pre-line;
 }
 </style>

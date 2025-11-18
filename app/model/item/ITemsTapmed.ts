@@ -8,6 +8,120 @@ export type ITemsTapmed = {
     ma_gia?: string;
     ngay_ban?: string;
     image_urls?: { originalName: string, url: string }[];
+    mo_ta_san_pham?: string;
+    tac_dung_phu?: string;
+    luu_y?: string;
+    bao_quan?: string;
+    thanh_phan?: string;
+    cong_dung?: string;
+    cach_dung?: string;
     // Số lượng tạm thêm vào giỏ hàng [ chỉ ở client ]
     quantity?: number;
+}
+
+
+export type TapmedDiscount = {
+    gio_bd: string;
+    gio_kt: string;
+    loai_ck: string;
+    ma_ck: string;
+    ngay_bd: string;
+    ngay_kt: string;
+    ten_ck: string;
+}
+
+export class TapmedOrderHeader {
+    ma_kh?: string;
+    dien_giai?: string;
+    so_dt?: string;
+    dia_chi?: string;
+    email?: string;
+    ngay_ct?: string | Date;
+    ma_gd?: string;
+    status?: string;
+    ma_nt?: string;
+    ty_gia?: number;
+    ten?: string;
+    kenh_ban?: string;
+    kho_ban?: string;
+    bang_gia?: string;
+    voucher_code?: string;
+    constructor(value: Partial<TapmedOrderHeader>) {
+        Object.assign(this, value);
+        if (!this.status) {
+            this.status = '';
+        }
+        if (!this.ty_gia) {
+            this.ty_gia = 1;
+        }
+        if (!this.kenh_ban) {
+            this.kenh_ban = '';
+        }
+        if (!this.ma_kh) {
+            this.ma_kh = '';
+        }
+        if (!this.dien_giai) {
+            this.dien_giai = '';
+        }
+        if (!this.so_dt) {
+            this.so_dt = '';
+        }
+        if (!this.dia_chi) {
+            this.dia_chi = '';
+        }
+        if (!this.email) {
+            this.email = '';
+        }
+        if (!this.ma_gd) {
+            this.ma_gd = '';
+        }
+        if (!this.ma_nt) {
+            this.ma_nt = '';
+        }
+        if (!this.ten) {
+            this.ten = '';
+        }
+        if (!this.kho_ban) {
+            this.kho_ban = '';
+        }
+        if (!this.bang_gia) {
+            this.bang_gia = '';
+        }
+        if (!this.voucher_code) {
+            this.voucher_code = '';
+        }
+        if (!value.ngay_ct) {
+            this.ngay_ct = new Date();
+        }
+    }
+}
+
+export class TapmedOrderDetail {
+    ma_vt?: string;
+    dvt?: string;
+    so_luong?: number;
+    gia_nt2?: number;
+    ma_thue?: string;
+    km_yn?: number;
+    ma_kho?: string;
+    tl_ck?: number;
+    ck_nt?: number;
+    ghi_chu?: string;
+    gc_td1?: string;
+}
+
+export class TapmedOrder {
+    header?: TapmedOrderHeader;
+    details?: TapmedOrderDetail[];
+    userId?: number;
+    maDvcs?: string;
+    lang?: string;
+    constructor(value: Partial<TapmedOrder>) {
+        Object.assign(this, value);
+        if (!value.header) {
+            this.header = new TapmedOrderHeader({});
+            Object.assign(this.header, value.header);
+        }
+
+    }
 }

@@ -2,13 +2,7 @@
   <SharedModuleBreadcrumb :data="breadcrumb" />
 
   <div class="container py-3">
-    <h5>Khuyến mãi cho riêng bạn</h5>
-    <div class="row g-3 my-3">
-      <div v-for="value in 8" class="col-md-3" :key="value">
-        <SharedModuleCoupon />
-      </div>
-    </div>
-    <h5 class="my-3 mt-5">Tin tức nổi bật</h5>
+    <h5 class="my-3">Tin tức nổi bật</h5>
     <news-list />
     <shared-module-pagination class="mt-5" />
   </div>

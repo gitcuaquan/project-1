@@ -75,7 +75,7 @@ const decrease = () => {
     togglePopupLogin();
     return;
   }
-  if (localValue.value > 0) {
+  if (localValue.value > 1) {
     localValue.value--;
     emit("change", localValue.value);
   }

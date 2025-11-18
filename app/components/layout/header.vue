@@ -75,17 +75,17 @@
                       class="text-decoration-none text-dark"
                     >
                       <div class="d-flex gap-2 align-items-center">
-                        <div class="ratio ratio-1x1 border rounded" style="width: 60px">
+                        <div
+                          class="ratio ratio-1x1 border rounded"
+                          style="width: 60px"
+                        >
                           <img
                             :src="
                               product.image_urls?.[0]?.url ||
                               '/images/image-error.svg'
                             "
                             :alt="product.ten_vt"
-                            style="
-                              
-                              object-fit: contain;
-                            "
+                            style="object-fit: contain"
                           />
                         </div>
                         <div class="d-flex flex-column">
@@ -159,46 +159,48 @@
                 </li>
               </ul>
             </div>
-            <div v-else class="dropdown">
-              <button
-                class="btn px-0 px-md-2 text-dark border-0"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <div class="d-flex align-items-center">
-                  <CircleUser :size="sizeIcon" :stroke-width="1" />
-                  <div class="ms-2 text-start d-none d-md-block">
-                    <small class="d-block">Xin chào !</small>
-                    <small class="fw-semibold d-block text-primary">
-                      {{ user?.ten_kh }}
-                    </small>
+            <ClientOnly v-if="isAuthenticated">
+              <div class="dropdown">
+                <button
+                  class="btn px-0 px-md-2 text-dark border-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="d-flex align-items-center">
+                    <CircleUser :size="sizeIcon" :stroke-width="1" />
+                    <div class="ms-2 text-start d-none d-md-block">
+                      <small class="d-block">Xin chào !</small>
+                      <small class="fw-semibold d-block text-primary">
+                        {{ user?.ten_kh }}
+                      </small>
+                    </div>
+                    <ChevronDown :stroke-width="0.75" />
                   </div>
-                  <ChevronDown :stroke-width="0.75" />
-                </div>
-              </button>
-              <ul class="dropdown-menu py-2 border-0 rounded-1 shadow">
-                <li>
-                  <NuxtLink
-                    to="/auth"
-                    class="dropdown-item d-flex align-items-center gap-2"
-                    style="font-size: 14px"
-                  >
-                    <UserCircle :size="16" />Tài khoản của tôi
-                  </NuxtLink>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item d-flex align-items-center gap-2"
-                    style="font-size: 14px"
-                    role="button"
-                    @click="logOut()"
-                  >
-                    <LogOut :size="16" />Đăng xuất
-                  </a>
-                </li>
-              </ul>
-            </div>
+                </button>
+                <ul class="dropdown-menu py-2 border-0 rounded-1 shadow">
+                  <li>
+                    <NuxtLink
+                      to="/auth"
+                      class="dropdown-item d-flex align-items-center gap-2"
+                      style="font-size: 14px"
+                    >
+                      <UserCircle :size="16" />Tài khoản của tôi
+                    </NuxtLink>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center gap-2"
+                      style="font-size: 14px"
+                      role="button"
+                      @click="logOut()"
+                    >
+                      <LogOut :size="16" />Đăng xuất
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ClientOnly>
             <!-- Giỏ hàng -->
             <div class="d-flex h-100 align-items-center">
               <NuxtLink
@@ -206,11 +208,13 @@
                 class="position-relative me-2 px-0 px-md-2 btn text-dark border-0"
               >
                 <ShoppingCart :size="sizeIcon" :stroke-width="1" />
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
-                >
-                  {{ totalItems }}
-                </span>
+                <ClientOnly>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"
+                  >
+                    {{ totalProducts }}
+                  </span>
+                </ClientOnly>
               </NuxtLink>
             </div>
           </div>
@@ -297,7 +301,7 @@ const {
   clearUser,
 } = useAuth();
 
-const { totalItems, clearCart } = useCart();
+const { totalProducts, clearCart } = useCart();
 const sizeIcon = ref(35);
 const loading = ref(false);
 const route = useRoute();

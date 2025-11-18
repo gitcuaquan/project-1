@@ -8,7 +8,7 @@ export { Customer } from './customer/index';
 export { OperatorType, FilterItem, BodyFilter } from './filter/index';
 
 // Item
-export type { ITemsTapmed, BaseParameters } from './item/index';
+export type { ITemsTapmed, BaseParameters, TapmedDiscount } from './item/index';
 
 // Item model
 export { Item } from './Item';

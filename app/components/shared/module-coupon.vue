@@ -1,6 +1,8 @@
 <template>
   <div class="d-flex w-100 align-self-stretch gap-1">
-    <div class="bg-primary d-flex align-items-center rounded-1 px-1 bg-opacity-10">
+    <div
+      class="bg-primary d-flex align-items-center rounded-1 px-1 bg-opacity-10"
+    >
       <div class="ratio ratio-1x1" style="width: 80px">
         <img src="/images/coupon.svg" alt="coupon" />
       </div>
@@ -13,15 +15,12 @@
           <Info :size="18" :stroke-width="1.5" />
         </NuxtLink>
       </div>
-      <h6 class="text-uppercase fw-bold">Phiếu mua hàng</h6>
-      <div style="font-size: 13px" class="line-clamp">
-        Phiếu mua hàng trị giá 150.000đ Áp dụng cho đơn hàng từ
-      </div>
+      <h6 class="text-uppercase fw-bold">{{ coupon.ten_ck }}</h6>
       <div class="d-flex justify-content-between align-items-center mt-2">
         <div style="font-size: 10px" class="text-secondary mt-2">
-          HSD: 31/12/2027
+         HSD: {{ coupon.gio_bd }} {{formatDate(coupon.ngay_bd) }} - {{ coupon.gio_kt }} {{ formatDate(coupon.ngay_kt) }}
         </div>
-        <button class="btn-sm py-0 lh-sm pb-1 btn btn-primary ">
+        <button class="btn-sm py-0 lh-sm pb-1 btn btn-primary">
           <small>Sử dụng</small>
         </button>
       </div>
@@ -29,7 +28,17 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { type PropType } from "vue";
+import type { TapmedDiscount } from "~/model";
+
+const props = defineProps({
+  coupon: {
+    type: Object as PropType<TapmedDiscount>,
+    required: true,
+  },
+});
+</script>
 
 <style scoped>
 .line-clamp {

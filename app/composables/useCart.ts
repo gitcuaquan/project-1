@@ -1,22 +1,23 @@
 import type { ITemsTapmed } from "~/model"
 
 export const useCart = () => {
-  const { isAuthenticated } = useAuth()
-  const { error } = useToast()
+  // const { isAuthenticated } = useAuth()
+  // const { error } = useToast()
+
   const cart = useState<ITemsTapmed[]>('cart', () => [])
+
   const addToCart = (product: ITemsTapmed, auto?: boolean) => {
     const existingProduct = cart.value.find((item) => item.ma_vt === product.ma_vt)
-    if(product.quantity! <=0){
+    if (product.quantity! <= 0) {
       removeFromCart(product.ma_vt)
       return
     }
     if (existingProduct) {
-      if(!auto){
+      if (!auto) {
         existingProduct.quantity = product.quantity
-      }else{
+      } else {
         existingProduct.quantity = (existingProduct.quantity || 0) + 1
       }
-      
     } else {
       cart.value.push({ ...product, quantity: 1 })
     }
@@ -35,6 +36,8 @@ export const useCart = () => {
     cart.value = []
   }
 
+  const totalProducts = computed(() => cart.value.length)
+
   const totalItems = computed(() =>
     cart.value.reduce((total, item) => total + (item.quantity || 0), 0)
   )
@@ -43,6 +46,17 @@ export const useCart = () => {
     cart.value.reduce((total, item) => total + item.gia_nt2 * (item.quantity || 0), 0)
   )
 
+  watch(() => cart.value, (newCart) => {
+    localStorage.setItem('cart_siduoc', JSON.stringify(newCart))
+  }, { deep: true })
+ 
+  const initCartFromStorage = () => {
+    const cartInStorage = localStorage.getItem('cart_siduoc');
+    if (cartInStorage) {
+        cart.value = JSON.parse(cartInStorage);
+    }
+  }
+  const isCartEmpty = computed(() => cart.value.length === 0);
   return {
     cart,
     addToCart,
@@ -50,6 +64,9 @@ export const useCart = () => {
     clearCart,
     totalItems,
     totalPrice,
-    getQtyById
+    getQtyById,
+    initCartFromStorage,
+    totalProducts,
+    isCartEmpty
   }
 }

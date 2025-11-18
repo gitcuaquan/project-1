@@ -81,7 +81,7 @@
 <script lang="ts" setup>
 import type { ITemsTapmed } from "~/model";
 
-const { addToCart, getQtyById } = useCart();
+const { addToCart, getQtyById,cart } = useCart();
 const { isAuthenticated, togglePopupLogin } = useAuth();
 
 const props = defineProps<{
@@ -99,6 +99,16 @@ watch(
       quantity: getQtyById(item.ma_vt),
     })) || [];
   }
+);
+watch(
+  () => cart.value,
+  () => {
+    listProduct.value = listProduct.value.map((item) => ({
+      ...item,
+      quantity: getQtyById(item.ma_vt),
+    }));
+  },
+  { deep: true }
 );
 
 function changeQuantity(item: ITemsTapmed, quantity: number) {

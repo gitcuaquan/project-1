@@ -1,13 +1,12 @@
+import { BaseResponse, type BaseParameters, type TapmedDiscount } from "~/model";
 import BaseService from "./BaseService";
 
 export default class DiscountService extends BaseService {
     constructor() {
         super("DiscountTapmed");
     }
-    getListDiscount(params: any): Promise<any> {
-        return this.get("/list", { method: "GET", params });
-    }
-    findDiscountByCode(filter: any): Promise<any> {
-        return this.get(`/search`, { method: "POST", body: JSON.stringify(filter) });
+    async getListDiscount(params: BaseParameters): Promise<any> {
+        const respone = await this.get("/", params);
+        return new BaseResponse<TapmedDiscount>(respone);
     }
 }

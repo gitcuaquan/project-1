@@ -180,21 +180,26 @@
               </nuxt-link>
             </div>
             <div class="card-body">
-              <SharedModuleCart />
+              <ClientOnly>
+                <SharedModuleCart />
+              </ClientOnly>
             </div>
-            <div class="card-footer border-0 bg-white shadow-sm">
-              <nuxt-link
-                to="/checkout"
-                class="btn btn-primary w-100 text-decoration-none"
-              >
-                Thanh toán
-              </nuxt-link>
-            </div>
+            <ClientOnly>
+              <div class="card-footer border-0 bg-white shadow-sm">
+                <button
+                  class="btn btn-primary w-100 mt-2"
+                  :disabled="isCartEmpty"
+                  @click="showCheckoutModal = true"
+                >
+                  Đặt hàng nhanh
+                </button>
+              </div>
+            </ClientOnly>
           </div>
           <h6>Mã giảm giá</h6>
           <div class="d-flex flex-column gap-3">
-            <div v-for="value in 4" :key="value">
-              <SharedModuleCoupon />
+            <div v-for="value in listDiscount">
+              <SharedModuleCoupon :coupon="value" />
             </div>
           </div>
         </div>
@@ -206,6 +211,10 @@
       :show="showMoreFilters"
       @close="showMoreFilters = false"
       @apply="applyFilter"
+    />
+    <OrderModalCheckOut
+      v-if="showCheckoutModal"
+      @close="showCheckoutModal = false"
     />
   </ClientOnly>
 </template>
@@ -221,7 +230,7 @@ useHead({
     },
   ],
 });
-import type { ProjectConfig } from "~/model";
+import type { BaseParameters, ProjectConfig, TapmedDiscount } from "~/model";
 import { Item } from "~/model/Item";
 import {
   BodyFilter,
@@ -233,7 +242,7 @@ import {
 const { $appServices } = useNuxtApp();
 
 const { listFilter } = useFilter();
-
+const { isCartEmpty } = useCart();
 const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
   { label: "Đặt hàng nhanh" },
 ]);
@@ -241,6 +250,12 @@ const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
 const showMoreFilters = ref(false);
 const keyword = useDebouncedRef("", 500);
 const ten_nhasx = useDebouncedRef("", 500);
+const listDiscount = ref<TapmedDiscount[]>([]);
+const showCheckoutModal = ref(false);
+const parameterDiscount = ref<BaseParameters>({
+  PageIndex: 1,
+  PageSize: 3,
+});
 
 const pageState = reactive({
   loading: true,
@@ -390,6 +405,10 @@ function selectNhaSX(nhasx: Item.NhaSanXuat) {
   filterListProduct.value.pageIndex = 1;
   getListProduct();
 }
+
+$appServices.discount.getListDiscount(parameterDiscount.value).then((res) => {
+  listDiscount.value = res.getData;
+});
 </script>
 
 <style scoped>

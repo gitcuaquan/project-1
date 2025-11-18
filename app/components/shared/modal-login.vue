@@ -90,6 +90,7 @@ type LoginResponse = {
 };
 
 const { setToken, setUser, togglePopupRegister } = useAuth();
+const { initCartFromStorage } = useCart();
 const emit = defineEmits(["close"]);
 
 const loading = ref(false);
@@ -133,15 +134,16 @@ async function login() {
       userName: data.userName,
       password: data.password,
     });
-    
+
     // Set token trước tiên
     setToken(response.data?.token!);
-    
+
     // Đợi một chút để đảm bảo cookie được cập nhật
-    await new Promise(resolve => setTimeout(resolve, 100));
-    
+    await new Promise((resolve) => setTimeout(resolve, 100));
+
     const user = await $appServices.customer.detail();
     setUser(user.data);
+    initCartFromStorage();
     useToast().success("Đăng nhập thành công");
     useRouter().push("/auth");
     modalInstance.value?.hide();
