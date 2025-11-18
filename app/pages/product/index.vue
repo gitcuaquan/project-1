@@ -200,11 +200,6 @@
               </nuxt-link>
               <div class="card-body position-relative">
                 <div class="card-title">{{ item.ten_vt }}</div>
-              </div>
-              <div
-                style="backdrop-filter: blur(4px)"
-                class="d-flex p-2 w-100 card-action align-items-end bg-light bg-light bg-opacity-10 position-absolute start-0 gap-2"
-              >
                 <button
                   @click="fncAddToCart(item)"
                   class="btn d-flex text-nowrap justify-content-center w-100 gap-2 align-items-center flex-nowrap btn-sm btn-primary"
