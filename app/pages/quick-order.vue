@@ -212,7 +212,7 @@
       @close="showMoreFilters = false"
       @apply="applyFilter"
     />
-    <OrderModalCheckOut
+    <CheckoutModalCheckOut
       v-if="showCheckoutModal"
       @close="showCheckoutModal = false"
     />

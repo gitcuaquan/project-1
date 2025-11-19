@@ -138,7 +138,12 @@
                 <span
                   class="badge bg-success d-flex fw-normal align-items-center gap-1 bg-opacity-10 text-dark border border-success"
                 >
-                  <BadgeCheck class="text-white" :fill="'#189847'" :stroke-width="2" :size="18" />
+                  <BadgeCheck
+                    class="text-white"
+                    :fill="'#189847'"
+                    :stroke-width="2"
+                    :size="18"
+                  />
                   Đã hoàn thành
                 </span>
               </span>
@@ -154,12 +159,15 @@
 import { Modal } from "bootstrap";
 
 const modalInstance = ref<Modal | null>(null);
-const { $bootstrap } = useNuxtApp();
-
-const emit = defineEmits(["close",'ticket']);
+const { $bootstrap, $appServices } = useNuxtApp();
+const props = defineProps<{
+  order_id: string;
+}>();
+const emit = defineEmits(["close", "ticket"]);
 
 onMounted(() => {
   initModal();
+  getDetailOrder();
 });
 
 function initModal() {
@@ -172,7 +180,16 @@ function initModal() {
 }
 function createTicket() {
   modalInstance.value?.hide();
-  emit('ticket')
+  emit("ticket");
+}
+
+async function getDetailOrder() {
+  try {
+    const res = await $appServices.order.detail(props.order_id);
+    console.log("🚀 ~ getDetailOrder ~ res=>", res);
+  } catch (error) {
+    console.log("🚀 ~ getDetailOrder ~ error=>", error);
+  }
 }
 </script>
 

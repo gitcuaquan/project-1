@@ -11,11 +11,11 @@
     <!-- Item -->
     <div
       v-for="item in cart"
-      class="cart-item d-block d-lg-table-row border rounded-3 p-3 mb-3 bg-white shadow-sm"
+      class="cart-item d-block d-lg-table-row border rounded-3 p-3 bg-white shadow-sm"
     >
       <!-- Product -->
       <div
-        class="cart-product mb-lg-0 mb-3 d-flex align-items-center gap-3 d-lg-table-cell p-lg-3"
+        class="cart-product mb-lg-0 mb-2 d-flex align-items-center gap-3 d-lg-table-cell p-lg-3"
       >
         <div class="d-flex gap-2">
           <img

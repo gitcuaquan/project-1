@@ -10,7 +10,7 @@ export interface FetchOptions {
 
 
 export default class BaseService {
-    protected baseUrl: string = '/api/';
+    protected baseUrl: string = '/api/proxy/';
     protected defaultHeaders: Record<string, string>
     private NAME_TOKEN_IN_COOKIE: string = 'tapmed_token_access';
     constructor(endpoint: string) {

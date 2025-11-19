@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.scss'],
-  modules: ['nuxt-lucide-icons', 'nuxt-swiper'],
+  modules: ['nuxt-lucide-icons', 'nuxt-swiper', 'nuxt-mongoose'],
   app: {
     head: {
       title: 'Sỉ Dược',

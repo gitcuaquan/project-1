@@ -3,16 +3,17 @@
     <h5 class="fw-semibold mb-3">Tổng quan</h5>
     <div class="d-flex justify-content-between mb-2">
       <span>Tạm tính</span>
-      <span>200.000đ</span>
+      <span>{{ formatCurrency(totalPrice) }}</span>
+      
     </div>
     <div class="d-flex justify-content-between mb-2">
       <span>Phí vận chuyển</span>
-      <span>30.000đ</span>
+      <span>Liên hệ</span>
     </div>
     <hr />
     <div class="d-flex justify-content-between mb-2">
       <span>Khuyến mãi áp dụng</span>
-      <span>30.000đ</span>
+      <!-- <span> 2 khuyến mãi</span> -->
     </div>
     <div class="d-flex gap-2">
       <div
@@ -28,8 +29,8 @@
     </div>
     <hr />
     <div class="d-flex justify-content-between fw-bold fs-5 mb-3">
-      <span>Tổng cộng</span>
-      <span class="text-success">200.000đ</span>
+      <span>Tạm tính</span>
+      <span class="text-success">{{ formatCurrency(totalPrice) }}</span>
     </div>
     <slot>
       <nuxt-link
@@ -42,6 +43,14 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { cart } = useCart();
+
+const totalPrice = computed(() => {
+  return cart.value.reduce((total, item) => {
+    return total + item.gia_nt2 * (item.quantity || 1);
+  }, 0);
+});
+</script>
 
 <style></style>

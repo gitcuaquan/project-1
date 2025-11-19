@@ -96,6 +96,7 @@
     <AuthModalOrderDetail
       v-if="showModalDetail"
       @close="showModalDetail = false"
+      :order_id="route.query.order_id as string"
       @ticket="
         showModalCreateTicket = true;
         showModalDetail = false;
@@ -112,6 +113,7 @@
 import type { ProjectConfig } from "~/model";
 const { $appServices } = useNuxtApp();
 const { setUser, clearUser } = useAuth();
+const route = useRoute();
 
 definePageMeta({
   middleware: "auth",
@@ -124,6 +126,20 @@ const breadcrumb = ref<Array<ProjectConfig.BreadcrumbItem>>([
 
 const showModalDetail = ref(false);
 const showModalCreateTicket = ref(false);
+
+watch(
+  () => route.fullPath,
+  () => {
+    if(route.query.order_id) {
+      showModalDetail.value = true;
+      useRouter().replace({ query: {} });
+    }
+  },{
+    immediate: true,
+    deep: true,
+  }
+);
+
 async function getUser() {
   try {
     const response = await $appServices.customer.detail();

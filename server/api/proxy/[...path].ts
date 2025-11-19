@@ -1,8 +1,7 @@
 import { proxyRequest } from 'h3'
 export default defineEventHandler(async (event) => {
     const config = useRuntimeConfig()
-    const path = event.path.replace('/api/', '')
-    const method = event.method
+    const path = event.path.replace('/api/proxy/', '')
 
     const targetUrl = `${config.public.apiBase}/${path}`
 
@@ -12,5 +11,4 @@ export default defineEventHandler(async (event) => {
             "content-type": getRequestHeader(event, "content-type") || ''
         }
     })
-
 })
