@@ -349,7 +349,8 @@ async function submitForm(e: Event) {
     try {
       loading.value = true;
       const response = await $appServices.auth.register(formData);
-      if (response && response.success) {
+      console.log("🚀 ~ submitForm ~ response=>", response)
+      if (response && response.isSucceeded) {
         modalInstance.value?.hide();
         useToast().success("Đăng ký thành công! Vui lòng đăng nhập.");
         togglePopupLogin();

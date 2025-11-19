@@ -29,8 +29,6 @@
 
 <script lang="ts" setup>
   import {
-    Archive,
-    CreditCard,
     LogOut,
     MessageCircle,
     Truck,
@@ -39,7 +37,7 @@
   const sidebarItems = [
     { icon: Truck, label: "Đơn hàng của tôi", to: "/auth" },
     { icon: User, label: "Hồ sơ khách hàng", to: "/auth/info" },
-    { icon: User, label: "Sản phẩm yêu thích", to: "/" },
+    { icon: User, label: "Sản phẩm yêu thích", to: "/auth/product-top" },
     { icon: MessageCircle, label: "Hỗ trợ khách hàng", to: "/auth/ticket" },
     { icon: LogOut, label: "Đăng xuất", to: "/" },
   ];

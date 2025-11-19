@@ -6,7 +6,7 @@
         <LayoutAuthSiderbar class="sticky-top" />
       </div>
       <div class="col-lg-9">
-        <h2 class="text-capitalize mb-3">Đơn hàng của bạn</h2>
+        <h2 class="text-capitalize mb-3">Sản phẩm yêu thích</h2>
         <div
           class="cart-header table-fake d-none border w-100 d-lg-table-row bg-light fw-semibold"
         >
@@ -79,13 +79,6 @@
       </div>
     </div>
   </div>
-  <ClientOnly>
-    <AuthModalCreateTicket
-      :detail="true"
-      v-if="showModalCreateTicket"
-      @close="showModalCreateTicket = false"
-    />
-  </ClientOnly>
 </template>
 
 <script lang="ts" setup>
