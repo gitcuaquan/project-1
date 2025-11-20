@@ -168,7 +168,9 @@ function initModal() {
     emit("close");
   });
 }
-
+$appServices.order.listVanChuyen().then((res) => {
+  console.log("🚀 ~ res=>", res);
+});
 function createOrder() {
   order.value.details = useCart().cart.value.map((item) => ({
     ma_vt: item.ma_vt,

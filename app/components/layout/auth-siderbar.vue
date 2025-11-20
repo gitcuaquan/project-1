@@ -31,13 +31,16 @@
   import {
     LogOut,
     MessageCircle,
+    Newspaper,
+    PackageSearch,
     Truck,
     User,
   } from "lucide-vue-next";
   const sidebarItems = [
     { icon: Truck, label: "Đơn hàng của tôi", to: "/auth" },
-    { icon: User, label: "Hồ sơ khách hàng", to: "/auth/info" },
-    { icon: User, label: "Sản phẩm yêu thích", to: "/auth/product-top" },
+    { icon: User, label: "Hồ sơ", to: "/auth/info" },
+    { icon: PackageSearch, label: "Sản phẩm yêu thích", to: "/auth/product-top" },
+    { icon: Newspaper, label: "Quản lý tin tức", to: "/auth/news" },
     { icon: MessageCircle, label: "Hỗ trợ khách hàng", to: "/auth/ticket" },
     { icon: LogOut, label: "Đăng xuất", to: "/" },
   ];

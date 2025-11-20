@@ -10,7 +10,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
             data: any; // Replace 'any' with the actual type if known
             [key: string]: any;
         }
-        const { data, error } = await useFetch<ApiResponse>('/api/CustomerTapmed/details', {
+        const { data, error } = await useFetch<ApiResponse>('/api/proxy/CustomerTapmed/details', {
             method: 'POST',
             body: {},
             headers: {
@@ -18,8 +18,6 @@ export default defineNuxtPlugin(async (nuxtApp) => {
             }
         });
         if (error.value) {
-            clearToken();
-            clearUser();
             return;
         }
         data.value?.data && setUser(data.value.data);

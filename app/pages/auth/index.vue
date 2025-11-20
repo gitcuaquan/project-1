@@ -130,11 +130,12 @@ const showModalCreateTicket = ref(false);
 watch(
   () => route.fullPath,
   () => {
-    if(route.query.order_id) {
+    if (route.query.order_id) {
       showModalDetail.value = true;
       useRouter().replace({ query: {} });
     }
-  },{
+  },
+  {
     immediate: true,
     deep: true,
   }
@@ -148,6 +149,9 @@ async function getUser() {
     clearUser();
   }
 }
+$appServices.order.listOrder().then((res) => {
+  console.log("🚀 ~ res=>", res);
+});
 getUser();
 </script>
 
